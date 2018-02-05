@@ -75,7 +75,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
             }
         ])
     ]
-})
+});
 
 module.exports = new Promise((resolve, reject) => {
     portfinder.basePort = process.env.PORT || config.development.port;
@@ -86,12 +86,12 @@ module.exports = new Promise((resolve, reject) => {
             // publish the new Port, necessary for e2e tests
             process.env.PORT = port
             // add port to devServer config
-            devWebpackconfig.developmentServer.port = port;
+            devWebpackConfig.devServer.port = port;
 
             // Add FriendlyErrorsPlugin
             devWebpackConfig.plugins.push(new FriendlyErrorsPlugin({
                 compilationSuccessInfo: {
-                    messages: [`Your application is running here: http://${devWebpackconfig.developmentServer.host}:${port}`],
+                    messages: [`Your application is running here: http://${devWebpackConfig.devServer.host}:${port}`],
                 },
                 onErrors: config.development.notifyOnErrors
                     ? utils.createNotifierCallback()
