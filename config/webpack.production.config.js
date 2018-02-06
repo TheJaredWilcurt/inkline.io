@@ -1,6 +1,5 @@
 'use strict';
 
-
 const path = require('path');
 const utils = require('../helpers/utils');
 const webpack = require('webpack');
@@ -13,11 +12,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-
 const env = process.env.NODE_ENV === 'testing'
     ? require('./env.test')
     : require('./env.production');
-
 
 const webpackConfig = merge(baseWebpackConfig, {
     module: {

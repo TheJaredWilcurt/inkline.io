@@ -1,16 +1,13 @@
 'use strict';
 
-
 const path = require('path');
 const utils = require('../helpers/utils');
 const config = require('./index');
 const vueLoaderConfig = require('./vue-loader.config');
 
-
 function resolve (dir) {
     return  path.join(__dirname, '..', dir)
 }
-
 
 module.exports = {
     context: path.resolve(__dirname, '../'),
@@ -37,7 +34,7 @@ module.exports = {
                 test: /\.(js|vue)$/,
                 loader: 'eslint-loader',
                 enforce: 'pre',
-                include: [resolve('src'), resolve('test')],
+                include: [resolve('src'), resolve('test'), resolve('config'), resolve('helpers')],
                 options: {
                     formatter: require('eslint-friendly-formatter'),
                     emitWarning: !config.development.showEslintErrorsInOverlay

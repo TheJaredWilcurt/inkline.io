@@ -1,6 +1,5 @@
 'use strict';
 
-
 const utils = require('../helpers/utils');
 const webpack = require('webpack');
 const config = require('./index');
@@ -14,7 +13,6 @@ const portfinder = require('portfinder');
 
 const HOST = process.env.HOST;
 const PORT = process.env.PORT && Number(process.env.PORT);
-
 
 const devWebpackConfig = merge(baseWebpackConfig, {
     module: {
