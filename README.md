@@ -5,6 +5,9 @@
 ## Build Setup
 
 ``` bash
+# intialize submodules
+git submodule init
+
 # install dependencies
 npm install
 
