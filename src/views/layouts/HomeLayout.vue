@@ -1,18 +1,18 @@
 <template>
     <div id="content">
         <container>
-            <row>
-                <slot/>
-            </row>
+            <slot />
         </container>
     </div>
 </template>
 
 <script>
-import { Container, Row } from 'inkline';
+import { Container } from 'inkline';
 
 export default {
     name: 'HomeLayout',
-    components: { Container, Row }
+    components: {
+        Container
+    }
 };
 </script>
