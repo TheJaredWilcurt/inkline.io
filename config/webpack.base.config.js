@@ -47,6 +47,10 @@ module.exports = {
                 options: vueLoaderConfig
             },
             {
+                test: /\.md$/,
+                loader: utils.markdownLoader()
+            },
+            {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
@@ -88,8 +92,5 @@ module.exports = {
         net: 'empty',
         tls: 'empty',
         child_process: 'empty'
-    },
-    plugins: {
-
     }
 };

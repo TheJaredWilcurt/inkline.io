@@ -7,12 +7,14 @@
 </template>
 
 <script>
-import { Container } from 'inkline';
+import { Container, Column, Row } from 'inkline';
 
 export default {
     name: 'HomeLayout',
     components: {
-        Container
+        Container,
+        Column,
+        Row
     }
 };
 </script>

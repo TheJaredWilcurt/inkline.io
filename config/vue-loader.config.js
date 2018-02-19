@@ -7,11 +7,15 @@ const sourceMapEnabled = isProduction
     ? config.production.productionSourceMap
     : config.development.cssSourceMap;
 
+const loaders = utils.vueStyleLoaders({
+    sourceMap: sourceMapEnabled,
+    extract: isProduction
+});
+
+loaders['md'] = [utils.markdownLoader()];
+
 module.exports = {
-    loaders: utils.cssLoaders({
-        sourceMap: sourceMapEnabled,
-        extract: isProduction
-    }),
+    loaders: loaders,
     cssSourceMap: sourceMapEnabled,
     cacheBusting: config.development.cacheBusting,
     transformToRequire: {

@@ -5,6 +5,8 @@ const config = require('../config');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const packageConfig = require('../package.json');
 
+// Get assets path based on NODE_ENV
+//
 exports.assetsPath = function (_path) {
     const assetsSubDirectory = process.env.NODE_ENV === 'production'
         ? config.production.assetsSubDirectory
@@ -13,7 +15,9 @@ exports.assetsPath = function (_path) {
     return path.posix.join(assetsSubDirectory, _path);
 };
 
-exports.cssLoaders = function (options) {
+// Generate Vue style loaders for various style engines
+//
+exports.vueStyleLoaders = function (options) {
     options = options || {};
 
     const cssLoader = {
@@ -68,9 +72,10 @@ exports.cssLoaders = function (options) {
 };
 
 // Generate loaders for standalone style files (outside of .vue)
+//
 exports.styleLoaders = function (options) {
     const output = [];
-    const loaders = exports.cssLoaders(options);
+    const loaders = exports.vueStyleLoaders(options);
 
     for (const extension in loaders) {
         const loader = loaders[extension];
@@ -83,6 +88,17 @@ exports.styleLoaders = function (options) {
     return output;
 };
 
+
+// Generate loaders for standalone style files (outside of .vue)
+//
+exports.markdownLoader = function (options) {
+    return {
+        loader: 'vue-markdown-loader'
+    };
+};
+
+// Create desktop notification
+//
 exports.createNotifierCallback = () => {
     const notifier = require('node-notifier');
 
