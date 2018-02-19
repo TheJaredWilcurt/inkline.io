@@ -88,12 +88,16 @@ exports.styleLoaders = function (options) {
     return output;
 };
 
-
 // Generate loaders for standalone style files (outside of .vue)
 //
 exports.markdownLoader = function (options) {
     return {
-        loader: 'vue-markdown-loader'
+        loader: 'markdown-loader',
+        options: {
+            gfm: false,
+            pedantic: true,
+            sanitize: false
+        }
     };
 };
 

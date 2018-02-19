@@ -1,4 +1,4 @@
-import GridView from '@/views/layout/GridView';
+import GridView from '@/views/docs/layout/GridView';
 
 export default [
     {
