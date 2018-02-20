@@ -1,5 +1,10 @@
 <template lang="md">
+    <layout>
+
     # Hello world!
+    This is markdown inside of HTML.
+
+    </layout>
 </template>
 
 <script>
