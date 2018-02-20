@@ -92,12 +92,7 @@ exports.styleLoaders = function (options) {
 //
 exports.markdownLoader = function (options) {
     return {
-        loader: 'markdown-loader',
-        options: {
-            gfm: false,
-            pedantic: true,
-            sanitize: false
-        }
+        loader: 'commonmark-loader'
     };
 };
 

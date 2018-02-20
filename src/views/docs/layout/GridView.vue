@@ -1,10 +1,5 @@
 <template lang="md">
-<layout markdown="1">
-
-# Hello world
-This is markdown.
-
-</layout>
+    # Hello world!
 </template>
 
 <script>
