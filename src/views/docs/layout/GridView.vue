@@ -1,20 +1,15 @@
-<template lang="md">
-    <layout>
-
-    # Hello world!
-    This is markdown inside of HTML.
-
-    </layout>
-</template>
+<template lang="md" src="./GridView.md"></template>
 
 <script>
 import HomeLayout from '@/views/layouts/HomeLayout';
+import GridBox from '@/components/grid-box/GridBox';
 
 export default {
     name: 'HomeView',
     extends: HomeLayout,
     components: {
-        Layout: HomeLayout
+        Layout: HomeLayout,
+        GridBox
     }
 };
 </script>
