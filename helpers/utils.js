@@ -34,6 +34,14 @@ exports.vueStyleLoaders = function (options) {
         }
     };
 
+    const stylusOptions = {
+        modulesDirectories: [path.resolve('node_modules'), path.resolve('src')]
+    };
+
+    const sassOptions = {
+        indentedSyntax: true
+    };
+
     // Generate loader string to be used with extract text plugin
     function generateLoaders (loader, loaderOptions) {
         const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader];
@@ -54,9 +62,9 @@ exports.vueStyleLoaders = function (options) {
                 use: loaders,
                 fallback: 'vue-style-loader'
             });
-        } else {
-            return ['vue-style-loader'].concat(loaders);
         }
+
+        return ['vue-style-loader'].concat(loaders);
     }
 
     // https://vue-loader.vuejs.org/en/configurations/extract-css.html
@@ -64,10 +72,10 @@ exports.vueStyleLoaders = function (options) {
         css: generateLoaders(),
         postcss: generateLoaders(),
         less: generateLoaders('less'),
-        sass: generateLoaders('sass', { indentedSyntax: true }),
+        sass: generateLoaders('sass', sassOptions),
         scss: generateLoaders('sass'),
-        stylus: generateLoaders('stylus'),
-        styl: generateLoaders('stylus')
+        stylus: generateLoaders('stylus', stylusOptions),
+        styl: generateLoaders('stylus', stylusOptions)
     };
 };
 
