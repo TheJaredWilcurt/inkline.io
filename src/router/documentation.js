@@ -1,6 +1,6 @@
-import DocumentationLayout from '@/views/layouts/documentation/DocumentationLayout';
-import ColorsView from '@/views/docs/core/colors/ColorsView';
-import GridView from '@/views/docs/core/grid/GridView';
+import DocumentationLayout from '@/views/layouts/DocumentationLayout';
+import ColorsView from '@/views/docs/core/ColorsView';
+import GridView from '@/views/docs/core/GridView';
 
 export default [
     {

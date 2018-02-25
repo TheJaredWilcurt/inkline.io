@@ -1,5 +1,5 @@
-import HomeLayout from '@/views/layouts/home/HomeLayout';
-import IndexView from '@/views/home/index/IndexView';
+import HomeLayout from '@/views/layouts/HomeLayout';
+import IndexView from '@/views/home/IndexView';
 
 export default [
     {
