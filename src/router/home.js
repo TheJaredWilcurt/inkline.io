@@ -1,9 +1,17 @@
-import HomeView from '@/views/home/HomeView';
+import HomeLayout from '@/views/layouts/home/HomeLayout';
+import IndexView from '@/views/home/index/IndexView';
 
 export default [
     {
         path: '/',
         name: 'home',
-        component: HomeView
+        component: HomeLayout,
+        children: [
+            {
+                path: '',
+                name: 'home.index',
+                component: IndexView
+            }
+        ]
     }
 ];

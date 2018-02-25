@@ -35,7 +35,9 @@ exports.vueStyleLoaders = function (options) {
     };
 
     const stylusOptions = {
-        modulesDirectories: [path.resolve('node_modules'), path.resolve('src')]
+        paths: [path.resolve('node_modules'), path.resolve('src')],
+        'include css': true,
+        'resolve url': true
     };
 
     const sassOptions = {

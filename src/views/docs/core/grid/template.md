@@ -1,8 +1,5 @@
-<layout>
-
 # Grid
-A simple 12 column grid built using flexbox.
-{: .lead }
+<p class="lead">A simple 12 column grid built using flexbox.</p>
 
 <row>
     <column xs="12">
@@ -103,7 +100,7 @@ A simple 12 column grid built using flexbox.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row>
         <column xs="3"></column>
@@ -177,12 +174,12 @@ Grid offsets are used to move a column to the right without creating an empty co
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row>
         <column xs="1" offset-xs="11"></column>
-    </div>
-</row>
+    </row>
+</container>
 ~~~
 
 
@@ -286,13 +283,13 @@ Code-wise, the columns have a different order.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row>
         <column xs="4" push-xs="8"></div>
         <column xs="8" pull-xs="4"></div>
-    </div>
-</row>
+    </row>
+</container>
 ~~~
 
 
@@ -375,14 +372,14 @@ The grid will automatically fit any number of auto sizing columns to a row.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row>
         <column></column>
         <column></column>
         <column></column>
-    </div>
-</row>
+    </row>
+</container>
 ~~~
 
 
@@ -409,18 +406,20 @@ The grid will automatically fit any number of auto sizing columns to a row.
         </grid-box>
     </column>
     <column xs="4">
-        <row>
-            <column xs="6">
-                <grid-box></grid-box>
-            </column>
-            <column xs="6">
-                <grid-box></grid-box>
-            </column>
-        </row>
+        <grid-box>
+            <row>
+                <column xs="6">
+                    <grid-box></grid-box>
+                </column>
+                <column xs="6">
+                    <grid-box></grid-box>
+                </column>
+            </row>
+        </grid-box>
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row>
         <column xs="8">
@@ -432,8 +431,10 @@ The grid will automatically fit any number of auto sizing columns to a row.
             </row>
         </column>
         <column xs="4">
-            <column xs="6"></column>
-            <column xs="6"></column>
+            <row>
+                <column xs="6"></column>
+                <column xs="6"></column>
+            </row>
         </column>
     </row>
 </container>
@@ -451,7 +452,7 @@ Align elements to the start, center, or end of a row.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row start="xs">
         <column xs="4"></column>
@@ -467,7 +468,7 @@ Align elements to the start, center, or end of a row.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row center="xs">
         <column xs="4"></column>
@@ -483,7 +484,7 @@ Align elements to the start, center, or end of a row.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row end="xs">
         <column xs="4"></column>
@@ -506,7 +507,7 @@ Align elements to the top, bottom, or center of a column.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row top="xs">
         <column xs="6"></column>
@@ -526,13 +527,13 @@ Align elements to the top, bottom, or center of a column.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row middle="xs">
         <column xs="6"></column>
         <column xs="6"></column>
     </row>
-</row>
+</container>
 ~~~
 
 ### bottom-*
@@ -546,7 +547,7 @@ Align elements to the top, bottom, or center of a column.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row bottom="xs">
         <column xs="6"></column>
@@ -573,7 +574,7 @@ Distribute the contents of a row or column.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row around="xs">
         <column xs="3"></column>
@@ -597,7 +598,7 @@ Distribute the contents of a row or column.
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row between="xs">
         <column xs="3"></column>
@@ -615,20 +616,20 @@ Reorder columns using helper classes.
 
 <row reverse="xs">
     <column xs="3">
-        <div class="box">1</div>
+        <grid-box>1</grid-box>
     </column>
     <column xs="3">
-        <div class="box">2</div>
+        <grid-box>2</grid-box>
     </column>
     <column xs="3">
-        <div class="box">3</div>
+        <grid-box>3</grid-box>
     </column>
     <column xs="3">
-        <div class="box">4</div>
+        <grid-box>4</grid-box>
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row reverse="xs">
         <column xs="3">1</column>
@@ -643,20 +644,20 @@ Reorder columns using helper classes.
 
 <row>
     <column xs="3">
-        <div class="box">1</div>
+        <grid-box>1</grid-box>
     </column>
     <column xs="3">
-        <div class="box">2</div>
+        <grid-box>2</grid-box>
     </column>
     <column xs="3">
-        <div class="box">3</div>
+        <grid-box>3</grid-box>
     </column>
     <column xs="3" first="xs">
-        <div class="box">4</div>
+        <grid-box>4</grid-box>
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row>
         <column xs="3">1</column>
@@ -671,20 +672,20 @@ Reorder columns using helper classes.
 
 <row>
     <column xs="3" last="xs">
-        <div class="box">1</div>
+        <grid-box>1</grid-box>
     </column>
     <column xs="3">
-        <div class="box">2</div>
+        <grid-box>2</grid-box>
     </column>
     <column xs="3">
-        <div class="box">3</div>
+        <grid-box>3</grid-box>
     </column>
     <column xs="3">
-        <div class="box">4</div>
+        <grid-box>4</grid-box>
     </column>
 </row>
 
-~~~
+~~~html
 <container>
     <row>
         <column xs="3" last="xs">1</div>
@@ -694,6 +695,3 @@ Reorder columns using helper classes.
     </row>
 </container>
 ~~~
-
-
-</layout>

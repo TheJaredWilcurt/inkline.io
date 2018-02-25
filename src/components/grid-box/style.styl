@@ -1,17 +1,24 @@
-//@import '~inkline/src/resources/css'
+@require '~inkline/resources/css/index'
 
+$box-height = 2.5rem
 
 .box
     width: 100%
     display: block
     text-align: center
     border-radius: 4px
-    background: linear-gradient(to bottom right, #2b5876, #2b5876)
+    background: linear-gradient(to bottom right, $brand-colors['primary'], $brand-colors['secondary'])
     color: white
-    margin-bottom: 1rem
-    height: 2.5rem
-    line-height: 2.5rem
+    margin-bottom: $spacer
+    height: $box-height
+    line-height: $box-height
+    padding: 0 ($spacer / 2)
 
     &.-tall
-        height: 7.5rem
-        line-height: 7.5rem
+        height: $box-height * 3
+        line-height: $box-height * 3
+
+    .box
+        background: white
+        margin-top: ($spacer / 2)
+        height: $box-height - $spacer
