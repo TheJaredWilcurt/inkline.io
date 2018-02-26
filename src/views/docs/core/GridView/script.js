@@ -1,5 +1,5 @@
-import View from '@/components/view/View';
-import GridBox from '@/components/grid-box/GridBox';
+import View from '@/components/View';
+import GridBox from '@/components/GridBox';
 
 export default {
     name: 'GridView',

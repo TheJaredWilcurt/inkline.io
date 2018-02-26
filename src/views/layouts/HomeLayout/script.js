@@ -1,4 +1,4 @@
-import View from '@/components/view/View';
+import View from '@/components/View';
 
 export default {
     name: 'HomeLayout',
