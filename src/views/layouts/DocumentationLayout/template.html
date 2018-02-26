@@ -1,12 +1,19 @@
-<div id="content">
+<!--<div id="content">-->
+    <!--<container>-->
+        <!--<aside>-->
+            <!--<sidebar :items="items"></sidebar>-->
+        <!--</aside>-->
+        <!--<container>-->
+            <!--<router-view />-->
+        <!--</container>-->
+    <!--</container>-->
+<!--</div>-->
+
+<layout>
+    <layout-aside>
+        <sidebar :items="items"></sidebar>
+    </layout-aside>
     <container>
-        <row>
-            <column xs="3">
-                <!--<sidebar></sidebar>-->
-            </column>
-            <column xs="9">
-                <router-view />
-            </column>
-        </row>
+        <router-view />
     </container>
-</div>
+</layout>

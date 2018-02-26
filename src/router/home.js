@@ -4,7 +4,6 @@ import IndexView from '@/views/home/IndexView';
 export default [
     {
         path: '/',
-        name: 'home',
         component: HomeLayout,
         children: [
             {
