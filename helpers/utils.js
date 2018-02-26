@@ -34,8 +34,13 @@ exports.vueStyleLoaders = function (options) {
         }
     };
 
+    console.log(path.resolve('src/css/index.styl'))
     const stylusOptions = {
         paths: [path.resolve('node_modules'), path.resolve('src')],
+        import: [
+            path.resolve(__dirname, 'src', 'css', 'index.styl')
+        ],
+        preferPathResolver: 'webpack',
         'include css': true,
         'resolve url': true
     };

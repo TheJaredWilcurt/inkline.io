@@ -1,4 +1,4 @@
-import 'inkline/resources/css/index.styl';
+import '@/resources/css/index.styl';
 
 import Vue from 'vue';
 import App from './App';

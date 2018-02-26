@@ -1,5 +1,5 @@
 import View from '@/components/View';
-import { Layout, LayoutAside, LayoutFooter, LayoutHeader } from 'inkline';
+import { Layout, LayoutAside, LayoutContent, LayoutFooter, LayoutHeader } from 'inkline';
 
 export default {
     name: 'View',

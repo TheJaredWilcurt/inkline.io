@@ -9,11 +9,13 @@
     <!--</container>-->
 <!--</div>-->
 
-<layout>
+<layout has-aside>
     <layout-aside>
         <sidebar :items="items"></sidebar>
     </layout-aside>
-    <container>
-        <router-view />
-    </container>
+    <layout-content>
+        <container>
+            <router-view />
+        </container>
+    </layout-content>
 </layout>
