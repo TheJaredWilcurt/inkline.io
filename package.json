@@ -13,6 +13,8 @@
     "build": "node helpers/build.js"
   },
   "dependencies": {
+    "highlight.js": "^9.12.0",
+    "highlightjs-line-numbers.js": "^2.2.0",
     "inkline": "^1.0.0",
     "prismjs": "^1.11.0",
     "vue": "^2.5.2",

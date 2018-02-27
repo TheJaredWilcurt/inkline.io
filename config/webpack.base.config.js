@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const webpack = require('webpack');
 const utils = require('../helpers/utils');
 const config = require('./index');
 const vueLoaderConfig = require('./vue-loader.config');
@@ -92,5 +93,10 @@ module.exports = {
         net: 'empty',
         tls: 'empty',
         child_process: 'empty'
-    }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            // 'Prism': 'prismjs/components/prism-core'
+        })
+    ]
 };

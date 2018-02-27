@@ -37,7 +37,7 @@ exports.vueStyleLoaders = function (options) {
     const stylusOptions = {
         paths: [path.resolve('node_modules'), path.resolve('src')],
         import: [
-            path.resolve('src', 'resources', 'css', 'index.styl')
+            path.resolve('src', 'resources', 'css', 'config', 'index.styl')
         ],
         preferPathResolver: 'webpack',
         'include css': true,
