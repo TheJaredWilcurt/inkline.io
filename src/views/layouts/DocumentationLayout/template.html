@@ -9,13 +9,15 @@
     <!--</container>-->
 <!--</div>-->
 
-<layout has-aside>
-    <layout-aside>
-        <sidebar :items="items"></sidebar>
-    </layout-aside>
-    <layout-content>
-        <container>
-            <router-view />
-        </container>
-    </layout-content>
+<layout class="-boxed">
+    <container>
+        <layout has-aside>
+            <!--<layout-aside>-->
+                <!--<sidebar :items="items"></sidebar>-->
+            <!--</layout-aside>-->
+            <layout-content>
+                    <router-view />
+            </layout-content>
+        </layout>
+    </container>
 </layout>

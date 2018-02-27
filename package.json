@@ -13,9 +13,10 @@
     "build": "node helpers/build.js"
   },
   "dependencies": {
+    "inkline": "^1.0.0",
+    "prismjs": "^1.11.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1",
-    "inkline": "^1.0.0"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
