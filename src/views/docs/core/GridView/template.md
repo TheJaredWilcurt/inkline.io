@@ -119,7 +119,7 @@ Create basic grid layout using columns.
         <column md="3"></column>
         <column md="9"></column>
     </row>
-</row>
+</container>
 ~~~
 
 
