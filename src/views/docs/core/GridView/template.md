@@ -1,6 +1,14 @@
 # Grid
 <p class="lead">A simple 12 column grid built using flexbox.</p>
 
+Inkline is based on a 24 columns grid layout, with equally divided columns, separated by a small gutter. 
+
+## Outline
+
+
+## Flex Layout
+Our grid system is built on a flex layout, in order to allow elements within a parent to be aligned both horizontally and vertically.
+
 <row>
     <column xs="12">
         <grid-box></grid-box>
@@ -446,7 +454,7 @@ Align elements to the start, center, or end of a row.
 
 ### start-*
 
-<row start="xs">
+<row start-xs>
     <column xs="4">
         <grid-box></grid-box>
     </column>
@@ -454,7 +462,7 @@ Align elements to the start, center, or end of a row.
 
 ~~~html
 <container>
-    <row start="xs">
+    <row start-xs>
         <column xs="4"></column>
     </row>
 </container>
@@ -462,7 +470,7 @@ Align elements to the start, center, or end of a row.
 
 ### center-*
 
-<row center="xs">
+<row center-xs>
     <column xs="4">
         <grid-box></grid-box>
     </column>
@@ -470,7 +478,7 @@ Align elements to the start, center, or end of a row.
 
 ~~~html
 <container>
-    <row center="xs">
+    <row center-xs>
         <column xs="4"></column>
     </row>
 </container>
@@ -478,7 +486,7 @@ Align elements to the start, center, or end of a row.
 
 ### end-*
 
-<row end="xs">
+<row end-xs>
     <column xs="4">
         <grid-box></grid-box>
     </column>
@@ -486,7 +494,7 @@ Align elements to the start, center, or end of a row.
 
 ~~~html
 <container>
-    <row end="xs">
+    <row end-xs>
         <column xs="4"></column>
     </row>
 </container>
@@ -498,7 +506,7 @@ Align elements to the top, bottom, or center of a column.
 
 ### top-*
 
-<row top="xs">
+<row top-xs>
     <column xs="6">
         <grid-box tall></grid-box>
     </column>
@@ -509,7 +517,7 @@ Align elements to the top, bottom, or center of a column.
 
 ~~~html
 <container>
-    <row top="xs">
+    <row top-xs>
         <column xs="6"></column>
         <column xs="6"></column>
     </row>
@@ -518,7 +526,7 @@ Align elements to the top, bottom, or center of a column.
 
 ### middle-*
 
-<row middle="xs">
+<row middle-xs>
     <column xs="6">
         <grid-box tall></grid-box>
     </column>
@@ -529,7 +537,7 @@ Align elements to the top, bottom, or center of a column.
 
 ~~~html
 <container>
-    <row middle="xs">
+    <row middle-xs>
         <column xs="6"></column>
         <column xs="6"></column>
     </row>
@@ -538,7 +546,7 @@ Align elements to the top, bottom, or center of a column.
 
 ### bottom-*
 
-<row bottom="xs">
+<row bottom-xs>
     <column xs="6">
         <grid-box tall></grid-box>
     </column>
@@ -549,7 +557,7 @@ Align elements to the top, bottom, or center of a column.
 
 ~~~html
 <container>
-    <row bottom="xs">
+    <row bottom-xs>
         <column xs="6"></column>
         <column xs="6"></column>
     </row>
@@ -562,7 +570,7 @@ Distribute the contents of a row or column.
 
 ### around-*
 
-<row around="xs">
+<row around-xs>
     <column xs="3">
         <grid-box></grid-box>
     </column>
@@ -576,7 +584,7 @@ Distribute the contents of a row or column.
 
 ~~~html
 <container>
-    <row around="xs">
+    <row around-xs>
         <column xs="3"></column>
         <column xs="3"></column>
         <column xs="3"></column>
@@ -586,7 +594,7 @@ Distribute the contents of a row or column.
 
 ### between-*
 
-<row between="xs">
+<row between-xs>
     <column xs="3">
         <grid-box></grid-box>
     </column>
@@ -600,7 +608,7 @@ Distribute the contents of a row or column.
 
 ~~~html
 <container>
-    <row between="xs">
+    <row between-xs>
         <column xs="3"></column>
         <column xs="3"></column>
         <column xs="3"></column>
@@ -614,7 +622,7 @@ Reorder columns using helper classes.
 
 ### .-reverse-*
 
-<row reverse="xs">
+<row reverse-xs>
     <column xs="3">
         <grid-box>1</grid-box>
     </column>
@@ -631,7 +639,7 @@ Reorder columns using helper classes.
 
 ~~~html
 <container>
-    <row reverse="xs">
+    <row reverse-xs>
         <column xs="3">1</column>
         <column xs="3">2</column>
         <column xs="3">3</column>
@@ -652,7 +660,7 @@ Reorder columns using helper classes.
     <column xs="3">
         <grid-box>3</grid-box>
     </column>
-    <column xs="3" first="xs">
+    <column xs="3" first-xs>
         <grid-box>4</grid-box>
     </column>
 </row>
@@ -663,7 +671,7 @@ Reorder columns using helper classes.
         <column xs="3">1</column>
         <column xs="3">2</column>
         <column xs="3">3</column>
-        <column xs="3" first="xs">4</column>
+        <column xs="3" first-xs>4</column>
     </row>
 </container>
 ~~~
@@ -671,7 +679,7 @@ Reorder columns using helper classes.
 ### .-last-*
 
 <row>
-    <column xs="3" last="xs">
+    <column xs="3" last-xs>
         <grid-box>1</grid-box>
     </column>
     <column xs="3">
@@ -688,7 +696,7 @@ Reorder columns using helper classes.
 ~~~html
 <container>
     <row>
-        <column xs="3" last="xs">1</div>
+        <column xs="3" last-xs>1</div>
         <column xs="3">2</div>
         <column xs="3">3</div>
         <column xs="3">4</div>

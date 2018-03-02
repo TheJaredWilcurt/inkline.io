@@ -4,6 +4,7 @@ const path = require('path');
 const config = require('../config');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const packageConfig = require('../package.json');
+const hljs = require('highlight.js');
 
 // Get assets path based on NODE_ENV
 //
@@ -106,7 +107,11 @@ exports.styleLoaders = function (options) {
 //
 exports.markdownLoader = function (options) {
     return {
-        loader: 'commonmark-loader'
+        loader: 'markdown-complete-loader',
+        options: {
+            html: true,
+            langPrefix: 'line-numbers language-'
+        }
     };
 };
 
