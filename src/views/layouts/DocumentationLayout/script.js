@@ -1,4 +1,4 @@
-import 'prismjs/components/prism-core';
+import Prism from 'prismjs/components/prism-core';
 import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-markup';
 import 'prismjs/components/prism-javascript';
@@ -43,7 +43,7 @@ export default {
     components: {
         Sidebar
     },
-    created: function () {
-        // hljs.initHighlightingOnLoad();
+    mounted () {
+        Prism.highlightAll();
     }
 };
