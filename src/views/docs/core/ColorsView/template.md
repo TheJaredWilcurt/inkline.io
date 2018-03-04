@@ -243,3 +243,110 @@ You can also add neutral text colors using text-specific helper classes:
 <p class="_text-gray-90"></p>
 <p class="_text-black"></p>
 ~~~
+
+
+#### Social Media Colors
+Inkline provides social media colors from most of your favorite sites.
+
+<row>
+    <column xs="3">
+        <color-box type="facebook" title="Facebook" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="twitter" title="Twitter" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="google-plus" title="Google Plus" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="instagram" title="Instagram" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="dribbble" title="Dribbble" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="behance" title="Behance" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="flickr" title="Flickr" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="linkedin" title="LinkedIn" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="youtube" title="YouTube" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="pinterest" title="Pinterest" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="github" title="Github" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="tumblr" title="Tumblr" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="twitch" title="Twitch" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="envato" title="Envato" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+    <column xs="3">
+        <color-box type="vine" title="Vine" description="#24C6DC ~ #514A9D"></color-box>
+    </column>
+</row>
+
+You can use helper classes to add social media color backgrounds:
+
+~~~html
+<div class="_background-facebook"></div>
+<div class="_background-twitter"></div>
+<div class="_background-google-plus"></div>
+<div class="_background-instagram"></div>
+<div class="_background-dribbble"></div>
+<div class="_background-flickr"></div>
+<div class="_background-linkedin"></div>
+<div class="_background-youtube"></div>
+<div class="_background-pinterest"></div>
+<div class="_background-github"></div>
+<div class="_background-tumblr"></div>
+<div class="_background-twitch"></div>
+<div class="_background-envato"></div>
+<div class="_background-vine"></div>
+~~~
+
+You can also add social media text colors using text-specific helper classes:
+
+<ul class="-inline">
+    <li class="_text-facebook">Facebook</li>
+    <li class="_text-twitter">Twitter</li>
+    <li class="_text-google-plus">Google Plus</li>
+    <li class="_text-instagram">Instagram</li>
+    <li class="_text-dribbble">Dribbble</li>
+    <li class="_text-flickr">Flickr</li>
+    <li class="_text-linkedin">LinkedIn</li>
+    <li class="_text-youtube">YouTube</li>
+    <li class="_text-pinterest">Pinterest</li>
+    <li class="_text-github">GitHub</li>
+    <li class="_text-tumblr">Tumblr</li>
+    <li class="_text-twitch">Twitch</li>
+    <li class="_text-envato">Envato</li>
+    <li class="_text-vine">Vine</li>
+</ul>
+
+~~~html
+<p class="_text-facebook"></p>
+<p class="_text-twitter"></p>
+<p class="_text-google-plus"></p>
+<p class="_text-instagram"></p>
+<p class="_text-dribbble"></p>
+<p class="_text-flickr"></p>
+<p class="_text-linkedin"></p>
+<p class="_text-youtube"></p>
+<p class="_text-pinterest"></p>
+<p class="_text-github"></p>
+<p class="_text-tumblr"></p>
+<p class="_text-twitch"></p>
+<p class="_text-envato"></p>
+<p class="_text-vine"></p>
+~~~
