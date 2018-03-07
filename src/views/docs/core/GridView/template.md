@@ -15,100 +15,100 @@ modifiers. Here's how it works:
 Create basic grid layout using columns.
 
 <row>
-    <column md="12">
+    <column xs="12">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="1">
+    <column xs="1">
         <grid-box></grid-box>
     </column>
-    <column md="11">
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column md="2">
-        <grid-box></grid-box>
-    </column>
-    <column md="10">
+    <column xs="11">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="3">
+    <column xs="2">
         <grid-box></grid-box>
     </column>
-    <column md="9">
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column md="4">
-        <grid-box></grid-box>
-    </column>
-    <column md="8">
+    <column xs="10">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="5">
+    <column xs="3">
         <grid-box></grid-box>
     </column>
-    <column md="7">
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column md="6">
-        <grid-box></grid-box>
-    </column>
-    <column md="6">
+    <column xs="9">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="7">
+    <column xs="4">
         <grid-box></grid-box>
     </column>
-    <column md="5">
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column md="8">
-        <grid-box></grid-box>
-    </column>
-    <column md="4">
+    <column xs="8">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="9">
+    <column xs="5">
         <grid-box></grid-box>
     </column>
-    <column md="3">
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column md="10">
-        <grid-box></grid-box>
-    </column>
-    <column md="2">
+    <column xs="7">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="11">
+    <column xs="6">
         <grid-box></grid-box>
     </column>
-    <column md="1">
+    <column xs="6">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="12">
+    <column xs="7">
+        <grid-box></grid-box>
+    </column>
+    <column xs="5">
+        <grid-box></grid-box>
+    </column>
+</row>
+<row>
+    <column xs="8">
+        <grid-box></grid-box>
+    </column>
+    <column xs="4">
+        <grid-box></grid-box>
+    </column>
+</row>
+<row>
+    <column xs="9">
+        <grid-box></grid-box>
+    </column>
+    <column xs="3">
+        <grid-box></grid-box>
+    </column>
+</row>
+<row>
+    <column xs="10">
+        <grid-box></grid-box>
+    </column>
+    <column xs="2">
+        <grid-box></grid-box>
+    </column>
+</row>
+<row>
+    <column xs="11">
+        <grid-box></grid-box>
+    </column>
+    <column xs="1">
+        <grid-box></grid-box>
+    </column>
+</row>
+<row>
+    <column xs="12">
         <grid-box></grid-box>
     </column>
 </row>
@@ -116,8 +116,54 @@ Create basic grid layout using columns.
 ~~~html
 <container>
     <row>
-        <column md="3"></column>
-        <column md="9"></column>
+        <column xs="12"></column>
+    </row>    
+    <row>
+        <column xs="1"></column>
+        <column xs="11"></column>
+    </row>    
+    <row>
+        <column xs="2"></column>
+        <column xs="10"></column>
+    </row>
+    <row>
+        <column xs="3"></column>
+        <column xs="9"></column>
+    </row>
+    <row>
+        <column xs="4"></column>
+        <column xs="8"></column>
+    </row>
+    <row>
+        <column xs="5"></column>
+        <column xs="7"></column>
+    </row>
+    <row>
+        <column xs="6"></column>
+        <column xs="6"></column>
+    </row>
+    <row>
+        <column xs="7"></column>
+        <column xs="5"></column>
+    </row>
+    <row>
+        <column xs="8"></column>
+        <column xs="4"></column>
+    </row>
+    <row>
+        <column xs="9"></column>
+        <column xs="3"></column>
+    </row>
+    <row>
+        <column xs="10"></column>
+        <column xs="2"></column>
+    </row>
+    <row>
+        <column xs="11"></column>
+        <column xs="1"></column>
+    </row>
+    <row>
+        <column xs="12"></column>
     </row>
 </container>
 ~~~
@@ -127,62 +173,62 @@ Create basic grid layout using columns.
 Grid offsets are used to move a column to the right without creating an empty column next to it.
 
 <row>
-    <column md="12">
+    <column xs="12">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="11" offset-md="1">
+    <column xs="11" offset-xs="1">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="10" offset-md="2">
+    <column xs="10" offset-xs="2">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="9" offset-md="3">
+    <column xs="9" offset-xs="3">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="8" offset-md="4">
+    <column xs="8" offset-xs="4">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="7" offset-md="5">
+    <column xs="7" offset-xs="5">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="6" offset-md="6">
+    <column xs="6" offset-xs="6">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="5" offset-md="7">
+    <column xs="5" offset-xs="7">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="4" offset-md="8">
+    <column xs="4" offset-xs="8">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="3" offset-md="9">
+    <column xs="3" offset-xs="9">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="2" offset-md="10">
+    <column xs="2" offset-xs="10">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="1" offset-md="11">
+    <column xs="1" offset-xs="11">
         <grid-box></grid-box>
     </column>
 </row>
@@ -190,7 +236,37 @@ Grid offsets are used to move a column to the right without creating an empty co
 ~~~html
 <container>
     <row>
-        <column md="1" offset-md="11"></column>
+        <column xs="1" offset-xs="11"></column>
+    </row>
+    <row>
+        <column xs="2" offset-xs="10"></column>
+    </row>
+    <row>
+        <column xs="3" offset-xs="9"></column>
+    </row>
+    <row>
+        <column xs="4" offset-xs="8"></column>
+    </row>
+    <row>
+        <column xs="5" offset-xs="7"></column>
+    </row>
+    <row>
+        <column xs="6" offset-xs="6"></column>
+    </row>
+    <row>
+        <column xs="7" offset-xs="5"></column>
+    </row>
+    <row>
+        <column xs="8" offset-xs="4"></column>
+    </row>
+    <row>
+        <column xs="9" offset-xs="3"></column>
+    </row>
+    <row>
+        <column xs="10" offset-xs="2"></column>
+    </row>
+    <row>
+        <column xs="11" offset-xs="1"></column>
     </row>
 </container>
 ~~~
@@ -200,98 +276,98 @@ Grid offsets are used to move a column to the right without creating an empty co
 Code-wise, the columns have a different order.
 
 <row>
-    <column md="12"></column>
+    <column xs="12"></column>
 </row>
 <row>
-    <column md="1" push-md="11">
+    <column xs="1" push-xs="11">
         <grid-box></grid-box>
     </column>
-    <column md="11" pull-md="1">
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column md="2" push-md="10">
-        <grid-box></grid-box>
-    </column>
-    <column md="10" pull-md="2">
+    <column xs="11" pull-xs="1">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="3" push-md="9">
+    <column xs="2" push-xs="10">
         <grid-box></grid-box>
     </column>
-    <column md="9" pull-md="3">
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column md="4" push-md="8">
-        <grid-box></grid-box>
-    </column>
-    <column md="8" pull-md="4">
+    <column xs="10" pull-xs="2">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="5" push-md="7">
+    <column xs="3" push-xs="9">
         <grid-box></grid-box>
     </column>
-    <column md="7" pull-md="5">
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column md="6" push-md="6">
-        <grid-box></grid-box>
-    </column>
-    <column md="6" pull-md="6">
+    <column xs="9" pull-xs="3">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="7" push-md="5">
+    <column xs="4" push-xs="8">
         <grid-box></grid-box>
     </column>
-    <column md="5" pull-md="7">
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column md="8" push-md="4">
-        <grid-box></grid-box>
-    </column>
-    <column md="4" pull-md="8">
+    <column xs="8" pull-xs="4">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="9" push-md="3">
+    <column xs="5" push-xs="7">
         <grid-box></grid-box>
     </column>
-    <column md="3" pull-md="9">
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column md="10" push-md="2">
-        <grid-box></grid-box>
-    </column>
-    <column md="2" pull-md="10">
+    <column xs="7" pull-xs="5">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="11" push-md="1">
+    <column xs="6" push-xs="6">
         <grid-box></grid-box>
     </column>
-    <column md="1" pull-md="11">
+    <column xs="6" pull-xs="6">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column md="12">
+    <column xs="7" push-xs="5">
+        <grid-box></grid-box>
+    </column>
+    <column xs="5" pull-xs="7">
+        <grid-box></grid-box>
+    </column>
+</row>
+<row>
+    <column xs="8" push-xs="4">
+        <grid-box></grid-box>
+    </column>
+    <column xs="4" pull-xs="8">
+        <grid-box></grid-box>
+    </column>
+</row>
+<row>
+    <column xs="9" push-xs="3">
+        <grid-box></grid-box>
+    </column>
+    <column xs="3" pull-xs="9">
+        <grid-box></grid-box>
+    </column>
+</row>
+<row>
+    <column xs="10" push-xs="2">
+        <grid-box></grid-box>
+    </column>
+    <column xs="2" pull-xs="10">
+        <grid-box></grid-box>
+    </column>
+</row>
+<row>
+    <column xs="11" push-xs="1">
+        <grid-box></grid-box>
+    </column>
+    <column xs="1" pull-xs="11">
+        <grid-box></grid-box>
+    </column>
+</row>
+<row>
+    <column xs="12">
         <grid-box></grid-box>
     </column>
 </row>
@@ -299,8 +375,48 @@ Code-wise, the columns have a different order.
 ~~~html
 <container>
     <row>
-        <column md="4" push-md="8"></div>
-        <column md="8" pull-md="4"></div>
+        <column xs="1" push-xs="11"></div>
+        <column xs="11" pull-xs="1"></div>
+    </row>
+    <row>
+        <column xs="2" push-xs="10"></div>
+        <column xs="10" pull-xs="2"></div>
+    </row>
+    <row>
+        <column xs="3" push-xs="9"></div>
+        <column xs="9" pull-xs="3"></div>
+    </row>
+    <row>
+        <column xs="4" push-xs="8"></div>
+        <column xs="8" pull-xs="4"></div>
+    </row>
+    <row>
+        <column xs="5" push-xs="7"></div>
+        <column xs="7" pull-xs="5"></div>
+    </row>
+    <row>
+        <column xs="6" push-xs="6"></div>
+        <column xs="6" pull-xs="6"></div>
+    </row>
+    <row>
+        <column xs="7" push-xs="5"></div>
+        <column xs="5" pull-xs="7"></div>
+    </row>
+    <row>
+        <column xs="8" push-xs="8"></div>
+        <column xs="4" pull-xs="4"></div>
+    </row>
+    <row>
+        <column xs="9" push-xs="3"></div>
+        <column xs="3" pull-xs="9"></div>
+    </row>
+    <row>
+        <column xs="10" push-xs="2"></div>
+        <column xs="2" pull-xs="10"></div>
+    </row>
+    <row>
+        <column xs="11" push-xs="1"></div>
+        <column xs="1" pull-xs="11"></div>
     </row>
 </container>
 ~~~
@@ -310,77 +426,77 @@ Code-wise, the columns have a different order.
 The grid will automatically fit any number of auto sizing columns to a row.
 
 <row>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
-        <grid-box></grid-box>
-    </column>
-</row>
-<row>
-    <column>
-        <grid-box></grid-box>
-    </column>
-    <column>
-        <grid-box></grid-box>
-    </column>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
-        <grid-box></grid-box>
-    </column>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
-        <grid-box></grid-box>
-    </column>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
 </row>
 <row>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
-    <column>
+</row>
+<row>
+    <column :xs="true">
+        <grid-box></grid-box>
+    </column>
+    <column :xs="true">
+        <grid-box></grid-box>
+    </column>
+    <column :xs="true">
+        <grid-box></grid-box>
+    </column>
+    <column :xs="true">
+        <grid-box></grid-box>
+    </column>
+    <column :xs="true">
+        <grid-box></grid-box>
+    </column>
+    <column :xs="true">
         <grid-box></grid-box>
     </column>
 </row>
@@ -388,43 +504,73 @@ The grid will automatically fit any number of auto sizing columns to a row.
 ~~~html
 <container>
     <row>
-        <column></column>
-        <column></column>
-        <column></column>
+        <column :xs="true"></column>
+    </row>
+    <row>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+    </row>
+    <row>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+    </row>
+    <row>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+    </row>
+    <row>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+    </row>
+    <row>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
+        <column :xs="true"></column>
     </row>
 </container>
 ~~~
 
 
 ## Nested Grid
-The grid will automatically fit any number of auto sizing columns to a row.
+Inkline allows you to nest up to 12 columns inside a row. Row can also be nested inside any column, 
+giving you virtually endless layout possibilities. You can place rows only inside a container or a column, 
+while you can place columns only inside a row.
 
 <row>
-    <column md="8">
+    <column xs="8">
         <grid-box>
             <row>
-                <column md="3">
+                <column xs="3">
                     <grid-box></grid-box>
                 </column>
-                <column md="3">
+                <column xs="3">
                     <grid-box></grid-box>
                 </column>
-                <column md="3">
+                <column xs="3">
                     <grid-box></grid-box>
                 </column>
-                <column md="3">
+                <column xs="3">
                     <grid-box></grid-box>
                 </column>
             </row>
         </grid-box>
     </column>
-    <column md="4">
+    <column xs="4">
         <grid-box>
             <row>
-                <column md="6">
+                <column xs="6">
                     <grid-box></grid-box>
                 </column>
-                <column md="6">
+                <column xs="6">
                     <grid-box></grid-box>
                 </column>
             </row>
@@ -435,18 +581,18 @@ The grid will automatically fit any number of auto sizing columns to a row.
 ~~~html
 <container>
     <row>
-        <column md="8">
+        <column xs="8">
             <row>
-                <column md="3"></column>
-                <column md="3"></column>
-                <column md="3"></column>
-                <column md="3"></column>
+                <column xs="3"></column>
+                <column xs="3"></column>
+                <column xs="3"></column>
+                <column xs="3"></column>
             </row>
         </column>
-        <column md="4">
+        <column xs="4">
             <row>
-                <column md="6"></column>
-                <column md="6"></column>
+                <column xs="6"></column>
+                <column xs="6"></column>
             </row>
         </column>
     </row>
@@ -455,168 +601,168 @@ The grid will automatically fit any number of auto sizing columns to a row.
 
 
 ## Horizontal Alignment
-Align elements to the start, center, or end of a row.
+You can align columns horizontally to the start, center, or end of a row.
 
 #### start-*
 
-<row start-md>
-    <column md="4">
+<row start-xs>
+    <column xs="4">
         <grid-box></grid-box>
     </column>
 </row>
 
 ~~~html
 <container>
-    <row start-md>
-        <column md="4"></column>
+    <row start-xs>
+        <column xs="4"></column>
     </row>
 </container>
 ~~~
 
 #### center-*
 
-<row center-md>
-    <column md="4">
+<row center-xs>
+    <column xs="4">
         <grid-box></grid-box>
     </column>
 </row>
 
 ~~~html
 <container>
-    <row center-md>
-        <column md="4"></column>
+    <row center-xs>
+        <column xs="4"></column>
     </row>
 </container>
 ~~~
 
 #### end-*
 
-<row end-md>
-    <column md="4">
+<row end-xs>
+    <column xs="4">
         <grid-box></grid-box>
     </column>
 </row>
 
 ~~~html
 <container>
-    <row end-md>
-        <column md="4"></column>
+    <row end-xs>
+        <column xs="4"></column>
     </row>
 </container>
 ~~~
 
 
 ## Vertical Alignment
-Align elements to the top, bottom, or center of a column.
+You can align columns vertically to the top, middle or bottom of the row.
 
 #### top-*
 
-<row top-md>
-    <column md="6">
+<row top-xs>
+    <column xs="6">
         <grid-box tall></grid-box>
     </column>
-    <column md="6">
+    <column xs="6">
         <grid-box></grid-box>
     </column>
 </row>
 
 ~~~html
 <container>
-    <row top-md>
-        <column md="6"></column>
-        <column md="6"></column>
+    <row top-xs>
+        <column xs="6"></column>
+        <column xs="6"></column>
     </row>
 </container>
 ~~~
 
 #### middle-*
 
-<row middle-md>
-    <column md="6">
+<row middle-xs>
+    <column xs="6">
         <grid-box tall></grid-box>
     </column>
-    <column md="6">
+    <column xs="6">
         <grid-box></grid-box>
     </column>
 </row>
 
 ~~~html
 <container>
-    <row middle-md>
-        <column md="6"></column>
-        <column md="6"></column>
+    <row middle-xs>
+        <column xs="6"></column>
+        <column xs="6"></column>
     </row>
 </container>
 ~~~
 
 #### bottom-*
 
-<row bottom-md>
-    <column md="6">
+<row bottom-xs>
+    <column xs="6">
         <grid-box tall></grid-box>
     </column>
-    <column md="6">
+    <column xs="6">
         <grid-box></grid-box>
     </column>
 </row>
 
 ~~~html
 <container>
-    <row bottom-md>
-        <column md="6"></column>
-        <column md="6"></column>
+    <row bottom-xs>
+        <column xs="6"></column>
+        <column xs="6"></column>
     </row>
 </container>
 ~~~
 
 
 ## Distribution
-Distribute the contents of a row or column.
+Distribute the spacing between the columns of a row.
 
 ### around-*
 
-<row around-md>
-    <column md="3">
+<row around-xs>
+    <column xs="3">
         <grid-box></grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box></grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box></grid-box>
     </column>
 </row>
 
 ~~~html
 <container>
-    <row around-md>
-        <column md="3"></column>
-        <column md="3"></column>
-        <column md="3"></column>
+    <row around-xs>
+        <column xs="3"></column>
+        <column xs="3"></column>
+        <column xs="3"></column>
     </row>
 </container>
 ~~~
 
 ### between-*
 
-<row between-md>
-    <column md="3">
+<row between-xs>
+    <column xs="3">
         <grid-box></grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box></grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box></grid-box>
     </column>
 </row>
 
 ~~~html
 <container>
-    <row between-md>
-        <column md="3"></column>
-        <column md="3"></column>
-        <column md="3"></column>
+    <row between-xs>
+        <column xs="3"></column>
+        <column xs="3"></column>
+        <column xs="3"></column>
     </row>
 </container>
 ~~~
@@ -625,30 +771,30 @@ Distribute the contents of a row or column.
 ## Reordering
 Reorder columns using helper classes.
 
-### .-reverse-*
+### reverse-*
 
-<row reverse-md>
-    <column md="3">
+<row reverse-xs>
+    <column xs="3">
         <grid-box>1</grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box>2</grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box>3</grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box>4</grid-box>
     </column>
 </row>
 
 ~~~html
 <container>
-    <row reverse-md>
-        <column md="3">1</column>
-        <column md="3">2</column>
-        <column md="3">3</column>
-        <column md="3">4</column>
+    <row reverse-xs>
+        <column xs="3">1</column>
+        <column xs="3">2</column>
+        <column xs="3">3</column>
+        <column xs="3">4</column>
     </row>
 </container>
 ~~~
@@ -656,16 +802,16 @@ Reorder columns using helper classes.
 ### first-*
 
 <row>
-    <column md="3">
+    <column xs="3">
         <grid-box>1</grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box>2</grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box>3</grid-box>
     </column>
-    <column md="3" first-md>
+    <column xs="3" first-xs>
         <grid-box>4</grid-box>
     </column>
 </row>
@@ -673,27 +819,27 @@ Reorder columns using helper classes.
 ~~~html
 <container>
     <row>
-        <column md="3">1</column>
-        <column md="3">2</column>
-        <column md="3">3</column>
-        <column md="3" first-md>4</column>
+        <column xs="3">1</column>
+        <column xs="3">2</column>
+        <column xs="3">3</column>
+        <column xs="3" first-xs>4</column>
     </row>
 </container>
 ~~~
 
-### .-last-*
+### last-*
 
 <row>
-    <column md="3" last-md>
+    <column xs="3" last-xs>
         <grid-box>1</grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box>2</grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box>3</grid-box>
     </column>
-    <column md="3">
+    <column xs="3">
         <grid-box>4</grid-box>
     </column>
 </row>
@@ -701,10 +847,40 @@ Reorder columns using helper classes.
 ~~~html
 <container>
     <row>
-        <column md="3" last-md>1</div>
-        <column md="3">2</div>
-        <column md="3">3</div>
-        <column md="3">4</div>
+        <column xs="3" last-xs>1</div>
+        <column xs="3">2</div>
+        <column xs="3">3</div>
+        <column xs="3">4</div>
+    </row>
+</container>
+~~~
+
+
+## Responsive Width
+You can specify column counts for each breakpoint. Try to resize your browser window!
+
+<row>
+    <column xl="3" lg="6" md="6" sm="8" xs="12">
+        <grid-box></grid-box>
+    </column>
+    <column xl="3" lg="6" md="6" sm="4" xs="6">
+        <grid-box></grid-box>
+    </column>
+    <column xl="6" lg="4" md="6" sm="6" xs="3">
+        <grid-box></grid-box>
+    </column>
+    <column xl="12" lg="8" md="6" sm="6" xs="3">
+        <grid-box></grid-box>
+    </column>
+</row>
+
+~~~html
+<container>
+    <row>
+        <column xl="3" lg="6" md="6" sm="8" xs="12"></column>
+        <column xl="3" lg="6" md="6" sm="4" xs="6"></column>
+        <column xl="6" lg="4" md="6" sm="6" xs="3"></column>
+        <column xl="12" lg="8" md="6" sm="6" xs="3"></column>
     </row>
 </container>
 ~~~
