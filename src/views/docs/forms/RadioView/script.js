@@ -1,7 +1,15 @@
 import View from '@/components/View';
-import { RadioInput } from 'inkline';
+import { Radio } from 'inkline';
 
 export default {
     name: 'RadioView',
+    components: {
+        Radio
+    },
+    data () {
+        return {
+            radio: '1'
+        }
+    },
     extends: View
-};
+}
