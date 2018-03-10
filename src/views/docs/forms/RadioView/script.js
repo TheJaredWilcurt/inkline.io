@@ -2,14 +2,15 @@ import View from '@/components/View';
 import { Radio } from 'inkline';
 
 export default {
+    extends: View,
     name: 'RadioView',
     components: {
         Radio
     },
     data () {
         return {
-            radio: '1'
-        }
-    },
-    extends: View
-}
+            selectedValue: 'Apple',
+            selectedValueDisabled: 'Apple'
+        };
+    }
+};
