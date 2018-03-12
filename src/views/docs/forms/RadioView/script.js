@@ -13,7 +13,7 @@ export default {
         return {
             selectedValue: 'Apple',
             selectedValueGroup: 'Football',
-            selectedValueButtonGroup: 'Terra'
+            selectedValueButtonGroup: 'Earth'
         };
     }
 };

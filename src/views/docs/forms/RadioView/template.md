@@ -34,6 +34,7 @@ export default {
     <radio value="Football">Football</radio>
     <radio value="Voleyball">Voleyball</radio>
     <radio value="Basketball">Basketball</radio>
+    <radio value="Tennis" disabled>Tennis</radio>
 </radio-group>
 
 ~~~html
@@ -41,6 +42,7 @@ export default {
     <radio value="Football">Football</radio>
     <radio value="Voleyball">Voleyball</radio>
     <radio value="Basketball">Basketball</radio>
+    <radio value="Tennis">Tennis</radio>
 </radio-group>
 ~~~
 
@@ -56,16 +58,18 @@ export default {
 
 ### Radio buttons
 <radio-group v-model="selectedValueButtonGroup">
-    <radio-button value="Terra">Terra</radio-button>
+    <radio-button value="Earth">Earth</radio-button>
     <radio-button value="Mars">Mars</radio-button>
     <radio-button value="Jupiter">Jupiter</radio-button>
+    <radio-button value="Venus" disabled>Venus</radio-button>
 </radio-group>
 
 ~~~html
 <radio-group v-model="selected">
-    <radio-button value="Terra">Terra</radio-button>
+    <radio-button value="Earth">Earth</radio-button>
     <radio-button value="Mars">Mars</radio-button>
     <radio-button value="Jupiter">Jupiter</radio-button>
+    <radio-button value="Venus" disabled>Venus</radio-button>
 </radio-group>
 ~~~
 
@@ -73,7 +77,7 @@ export default {
 export default {
   data () {
     return {
-      selected: 'Terra'
+      selected: 'Earth'
     };
   }
 }
