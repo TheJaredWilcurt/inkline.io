@@ -13,10 +13,10 @@ Attract your visitor's attention using brand colors. The main colors of Inkline 
         <color-box type="secondary" title="Secondary" description="#C33764 ~ #1D2671"></color-box>
     </column>
     <column xs="3">
-        <color-box type="light" title="Light" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="light" title="Light" description="#F8F9FA ~ #E9ECEf"></color-box>
     </column>
     <column xs="3">
-        <color-box type="dark" title="Dark" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="dark" title="Dark" description="#343A40 ~ #212529"></Color-box>
     </column>
 </row>
 
@@ -51,16 +51,16 @@ When displaying state information such as info, success, warning, or error messa
 
 <row>
     <column xs="3">
-        <color-box type="info" title="Info" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="info" title="Info" description="#43B7DC ~ #506EE5"></color-box>
     </column>
     <column xs="3">
-        <color-box type="success" title="Success" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="success" title="Success" description="#38EF7D ~ #11998E"></color-box>
     </column>
     <column xs="3">
-        <color-box type="warning" title="Warning" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="warning" title="Warning" description="#EEA849 ~ #F46B45"></color-box>
     </column>
     <column xs="3">
-        <color-box type="danger" title="Danger" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="danger" title="Danger" description="#FF7968 ~ #CB2D3E"></color-box>
     </column>
 </row>
 
@@ -90,33 +90,33 @@ You can also add state text colors using text-specific helper classes:
 ~~~
 
 
-#### Basic Colors
+#### BAsic Colors
 Basic colors are useful when working with multiple colors.
 
 <row>
     <column xs="3">
-        <color-box type="red" title="Red" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="red" title="Red" description="#FF7968 ~ #CB2D3E"></color-box>
     </column>
     <column xs="3">
-        <color-box type="orange" title="Orange" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="orange" title="Orange" description="#EEA849 ~ #F46B45"></color-box>
     </column>
     <column xs="3">
-        <color-box type="yellow" title="Yellow" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="yellow" title="Yellow" description="#FFE359 ~ #FFBE21"></color-box>
     </column>
     <column xs="3">
-        <color-box type="green" title="Green" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="green" title="Green" description="#38EF7D ~ #11998E"></color-box>
     </column>
     <column xs="3">
-        <color-box type="teal" title="Teal" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="teal" title="Teal" description="#37F7DF ~ #00AAA1"></color-box>
     </column>
     <column xs="3">
-        <color-box type="blue" title="Blue" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="blue" title="Blue" description="#43B7DC ~ #506EE5"></color-box>
     </column>
     <column xs="3">
-        <color-box type="purple" title="Purple" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="purple" title="Purple" description="#6A89D2 ~ #4B39B9"></color-box>
     </column>
     <column xs="3">
-        <color-box type="pink" title="Pink" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="pink" title="Pink" description="#FF7698 ~ #FF2C59"></color-box>
     </column>
 </row>
 
@@ -158,42 +158,42 @@ You can also add state text colors using text-specific helper classes:
 ~~~
 
 
-#### Neutral Colors
+#### NEutral Colors
 Neutral colors are used for text, background and border colors. You can use different neutral colors to display your content:
 
 <row>
     <column xs="3">
-        <color-box type="white" title="White" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="white" title="White" description="#FFFFFF ~ #FCFDFB"></color-box>
     </column>
     <column xs="3">
-        <color-box type="gray-10" title="10% Gray" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="gray-10" title="10% Gray" description="#FCFDFB ~ #F8F9FA"></color-box>
     </column>
     <column xs="3">
-        <color-box type="gray-20" title="20% Gray" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="gray-20" title="20% Gray" description="#F8F9FA ~ #E9ECEF"></color-box>
     </column>
     <column xs="3">
-        <color-box type="gray-30" title="30% Gray" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="gray-30" title="30% Gray" description="#E9ECEF ~ #DEE2E6"></color-box>
     </column>
     <column xs="3">
-        <color-box type="gray-40" title="40% Gray" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="gray-40" title="40% Gray" description="#DEE2E6 ~ #CEd4DA"></color-box>
     </column>
     <column xs="3">
-        <color-box type="gray-50" title="50% Gray" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="gray-50" title="50% Gray" description="#CEd4DA ~ #ADB5BD"></color-box>
     </column>
     <column xs="3">
-        <color-box type="gray-60" title="60% Gray" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="gray-60" title="60% Gray" description="#ADB5BD ~ #868E96"></color-box>
     </column>
     <column xs="3">
-        <color-box type="gray-70" title="70% Gray" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="gray-70" title="70% Gray" description="#868E96 ~ #495057"></Color-box>
     </column>
     <column xs="3">
-        <color-box type="gray-80" title="80% Gray" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="gray-80" title="80% Gray" description="#495057 ~ #343A40"></color-box>
     </column>
     <column xs="3">
-        <color-box type="gray-90" title="90% Gray" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="gray-90" title="90% Gray" description="#343A40 ~ #212529"></Color-box>
     </column>
     <column xs="3">
-        <color-box type="black" title="Black" description="#C33764 ~ #1D2671"></color-box>
+        <color-box type="black" title="Black" description="#212529 ~ #000000"></Color-box>
     </column>
 </row>
 
@@ -250,49 +250,49 @@ Inkline provides social media colors from most of your favorite sites.
 
 <row>
     <column xs="3">
-        <color-box type="facebook" title="Facebook" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="facebook" title="Facebook" description="#4A7AC9 ~ #3B5998"></color-box>
     </column>
     <column xs="3">
-        <color-box type="twitter" title="Twitter" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="twitter" title="Twitter" description="#57C5FF ~ #1C8DDA"></color-box>
     </column>
     <column xs="3">
-        <color-box type="google-plus" title="Google Plus" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="google-plus" title="Google Plus" description="#DD5F4B ~ #DD3A27"></color-box>
     </column>
     <column xs="3">
-        <color-box type="instagram" title="Instagram" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="instagram" title="Instagram" description="#833AB4 ~ #FD1D1D ~ #FCB045"></color-box>
     </column>
     <column xs="3">
-        <color-box type="dribbble" title="Dribbble" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="dribbble" title="Dribbble" description="#FF64A3 ~ #D13E83"></color-box>
     </column>
     <column xs="3">
-        <color-box type="behance" title="Behance" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="behance" title="Behance" description="#4F88FF ~ #1769FF"></color-box>
     </column>
     <column xs="3">
-        <color-box type="flickr" title="Flickr" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="flickr" title="Flickr" description="#FF669C ~ #D6006E"></color-box>
     </column>
     <column xs="3">
-        <color-box type="linkedin" title="LinkedIn" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="linkedin" title="LinkedIn" description="#00AAFF ~ #0077B5"></color-box>
     </column>
     <column xs="3">
-        <color-box type="youtube" title="YouTube" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="youtube" title="YouTube" description="#E5504c ~ #B31217"></color-box>
     </column>
     <column xs="3">
-        <color-box type="pinterest" title="Pinterest" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="pinterest" title="Pinterest" description="#FF4D56 ~ #BD081C"></color-box>
     </column>
     <column xs="3">
-        <color-box type="github" title="Github" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="github" title="Github" description="#424242 ~ #333333"></Color-box>
     </column>
     <column xs="3">
-        <color-box type="tumblr" title="Tumblr" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="tumblr" title="Tumblr" description="#536884 ~ #35465C"></color-box>
     </column>
     <column xs="3">
-        <color-box type="twitch" title="Twitch" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="twitch" title="Twitch" description="#8B6CCB ~ #6441A5"></color-box>
     </column>
     <column xs="3">
-        <color-box type="envato" title="Envato" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="envato" title="Envato" description="#B2D068 ~ #6EB516"></color-box>
     </column>
     <column xs="3">
-        <color-box type="vine" title="Vine" description="#24C6DC ~ #514A9D"></color-box>
+        <color-box type="vine" title="Vine" description="#30D6A9 ~ #00AE81"></color-box>
     </column>
 </row>
 
