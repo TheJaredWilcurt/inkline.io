@@ -1,7 +1,19 @@
 import View from '@/components/View';
-import { RadioInput } from 'inkline';
+import { Radio, RadioGroup, RadioButton } from 'inkline';
 
 export default {
+    extends: View,
     name: 'RadioView',
-    extends: View
+    components: {
+        Radio,
+        RadioGroup,
+        RadioButton
+    },
+    data () {
+        return {
+            selectedValue: 'Apple',
+            selectedValueGroup: 'Football',
+            selectedValueButtonGroup: 'Earth'
+        };
+    }
 };
