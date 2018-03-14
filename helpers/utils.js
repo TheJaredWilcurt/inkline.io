@@ -109,6 +109,7 @@ exports.markdownLoader = function (options) {
     return {
         loader: 'markdown-complete-loader',
         options: {
+            wrapper: '<article>',
             html: true,
             langPrefix: 'line-numbers language-'
         }
