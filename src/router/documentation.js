@@ -2,6 +2,7 @@ import CodeView from '@/views/docs/core/CodeView';
 import ColorsView from '@/views/docs/core/ColorsView';
 import DocumentationLayout from '@/views/layouts/DocumentationLayout';
 import GridView from '@/views/docs/core/GridView';
+import ImagesView from '@/views/docs/core/ImagesView';
 import LayoutView from '@/views/docs/core/LayoutView';
 import RadioView from '@/views/docs/forms/RadioView';
 import TypographyView from '@/views/docs/core/TypographyView';
@@ -29,6 +30,11 @@ export default [
                 path: 'grid',
                 name: 'docs.grid',
                 component: GridView
+            },
+            {
+                path: 'images',
+                name: 'docs.images',
+                component: ImagesView
             },
             {
                 path: 'layout',
