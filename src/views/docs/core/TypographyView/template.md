@@ -1,6 +1,18 @@
 # Typography
-The typography of an application is one of the most important design elements. Inkline uses the Montserrat font. Each font size, style and weight also has a corresponding helper class to style other elements the same.
+The typography of an application is one of the most important design elements.
+Inkline provides you with basic elements, typography, and link styles. It uses a native font stack that selects the best 
+font family for each OS and device. The base font size is `1rem`, so visitors can customize their font size as needed 
+when zooming. 
 
+When more control is needed, you should check out the textual utility classes. Each font size, style and 
+weight also has a corresponding helper class to style other elements the same.
+
+## Configuration
+When configuring the stylus files, change the `--font-family-primary-base`, `--font-size`, and `--line-height-base` variables 
+as our typographic base applied to the `<body>`. Set the global link color via `--link-color` and apply link underlines 
+only on `:hover`. The defaults for these global variables are defined in `config/_typography.styl`. 
+
+To learn more about style configuration, please read the [Getting Started](/docs/styling) section.
 
 ## Headings
 All HTML headings, `<h1>` through `<h6>`, are available.
@@ -174,3 +186,258 @@ You can align, wrap or truncate text responsively for any given `xs`, `sm`, `md`
 <p class="_text-center-xl">This text is centered on extra-large screens.</p>
 ~~~
 
+## Abbreviations
+The HTML `<abbr>` element for abbreviations and acronyms is styled to show the expanded version on hover. 
+Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of 
+assistive technologies.
+
+<abbr title="attribute">attr</abbr>
+
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+
+~~~html
+<abbr title="attribute">attr</abbr>
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+~~~
+
+## Blockquotes
+To quote blocks of content from another source within your document, wrap `<blockquote class="blockquote">` around any 
+HTML as the quote.
+
+<blockquote class="blockquote">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+
+~~~html
+<blockquote class="blockquote">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+~~~
+
+<blockquote class="blockquote -center">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+
+~~~html
+<blockquote class="blockquote -center">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+~~~
+
+<blockquote class="blockquote -right">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+
+~~~html
+<blockquote class="blockquote -right">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+~~~
+
+
+## Lists
+To enumerate a sequence of elements, you can use lists. Inkline provides you with multiple variations to achieve your 
+target design.
+
+#### Unordered Lists
+When enumerating elements in no specific order, use an unordered list.
+
+<ul>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ul>
+
+~~~html
+<ul>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ul>
+~~~
+
+
+#### Ordered Lists
+When enumerating elements in a specific order, use an ordered list.
+
+<ol>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ol>
+
+~~~html
+<ol>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ol>
+~~~
+
+#### Unstyled Lists
+To remove the default `list-style` and `margin` on list items, use the `-unstyled` modifier. 
+This applies to immediate children list items only, meaning you will need to add the class for any nested lists as well.
+
+<ul class="list -unstyled">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ul>
+
+~~~html
+<ul class="list -unstyled">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ul>
+~~~
+
+#### Inline Lists
+Remove a list’s bullets and apply some light margin using the `-inline` list modifier.
+
+<ul class="list -inline">
+  <li>Lorem ipsum</li>
+  <li>Phasellus iaculis</li>
+  <li>Nulla volutpat</li>
+</ul>
+
+~~~html
+<ul class="list -inline">
+  <li>Lorem ipsum</li>
+  <li>Phasellus iaculis</li>
+  <li>Nulla volutpat</li>
+</ul>
+~~~
+
+#### Description Lists
+Remove a list’s bullets and apply some light margin using the `-inline` list modifier.
+
+<dl class="row">
+  <dt class="column -sm-3">Description lists</dt>
+  <dd class="column -sm-9">A description list is perfect for defining terms.</dd>
+
+  <dt class="column -sm-3">Euismod</dt>
+  <dd class="column -sm-9">
+    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+    <p>Donec id elit non mi porta gravida at eget metus.</p>
+  </dd>
+
+  <dt class="column -sm-3">Malesuada porta</dt>
+  <dd class="column -sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+  <dt class="column -sm-3 text-truncate">Truncated term is truncated</dt>
+  <dd class="column -sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+  <dt class="column -sm-3">Nesting</dt>
+  <dd class="column -sm-9">
+    <dl class="row">
+      <dt class="column -sm-4">Nested definition list</dt>
+      <dd class="column -sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+    </dl>
+  </dd>
+</dl>
+
+~~~html
+<dl class="row">
+  <dt class="column -sm-3">Description lists</dt>
+  <dd class="column -sm-9">A description list is perfect for defining terms.</dd>
+
+  <dt class="column -sm-3">Euismod</dt>
+  <dd class="column -sm-9">
+    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+    <p>Donec id elit non mi porta gravida at eget metus.</p>
+  </dd>
+
+  <dt class="column -sm-3">Malesuada porta</dt>
+  <dd class="column -sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+  <dt class="column -sm-3 text-truncate">Truncated term is truncated</dt>
+  <dd class="column -sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+  <dt class="column -sm-3">Nesting</dt>
+  <dd class="column -sm-9">
+    <dl class="row">
+      <dt class="column -sm-4">Nested definition list</dt>
+      <dd class="column -sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+    </dl>
+  </dd>
+</dl>
+~~~
