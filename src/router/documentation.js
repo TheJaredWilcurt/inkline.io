@@ -1,3 +1,4 @@
+import CodeView from '@/views/docs/core/CodeView';
 import ColorsView from '@/views/docs/core/ColorsView';
 import DocumentationLayout from '@/views/layouts/DocumentationLayout';
 import GridView from '@/views/docs/core/GridView';
@@ -14,6 +15,11 @@ export default [
             /**
              * Core Views
              */
+            {
+                path: 'code',
+                name: 'docs.code',
+                component: CodeView
+            },
             {
                 path: 'colors',
                 name: 'docs.colors',
