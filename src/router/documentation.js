@@ -1,8 +1,9 @@
-import DocumentationLayout from '@/views/layouts/DocumentationLayout';
 import ColorsView from '@/views/docs/core/ColorsView';
+import DocumentationLayout from '@/views/layouts/DocumentationLayout';
 import GridView from '@/views/docs/core/GridView';
 import LayoutView from '@/views/docs/core/LayoutView';
 import RadioView from '@/views/docs/forms/RadioView';
+import TypographyView from '@/views/docs/core/TypographyView';
 
 export default [
     {
@@ -10,6 +11,14 @@ export default [
         path: '/docs',
         component: DocumentationLayout,
         children: [
+            /**
+             * Core Views
+             */
+            {
+                path: 'colors',
+                name: 'docs.colors',
+                component: ColorsView
+            },
             {
                 path: 'grid',
                 name: 'docs.grid',
@@ -21,10 +30,14 @@ export default [
                 component: LayoutView
             },
             {
-                path: 'colors',
-                name: 'docs.colors',
-                component: ColorsView
+                path: 'typography',
+                name: 'docs.typography',
+                component: TypographyView
             },
+
+            /**
+             * Component Views
+             */
             {
                 path: 'components/radio',
                 name: 'docs.components.radio',

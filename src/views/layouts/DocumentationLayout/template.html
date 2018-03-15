@@ -10,12 +10,16 @@
 <!--</div>-->
 
 <container>
-    <layout vertical>
-        <layout-aside>
-            <sidebar :items="items"></sidebar>
-        </layout-aside>
-        <layout-content>
-            <router-view />
-        </layout-content>
-    </layout>
+    <row>
+        <column>
+            <layout vertical>
+                <layout-aside>
+                    <sidebar :items="items"></sidebar>
+                </layout-aside>
+                <layout-content>
+                    <router-view />
+                </layout-content>
+            </layout>
+        </column>
+    </row>
 </container>
