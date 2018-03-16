@@ -28,12 +28,21 @@ and `height: auto;` to the image so that it scales with the parent element.
 ~~~
 
 ## Image Thumbnails
-In addition to our border-radius utilities, you can use .img-thumbnail to give an image a rounded 1px border appearance.
+You can use the `.-thumbnail` modifier to give an image a rounded 1px border appearance.
 
 <img src="https://placehold.it/200x200" class="image -thumbnail" alt="Thumbnail">
 
 ~~~html
 <img src="..." class="image -thumbnail" alt="Thumbnail">
+~~~
+
+## Polaroid
+Besides thumbnails, you can opt for a retro look having a larger bottom border using the `.-polaroid` modifier.
+
+<img src="https://placehold.it/200x200" class="image -polaroid" alt="Polaroid">
+
+~~~html
+<img src="..." class="image -polaroid" alt="Polaroid">
 ~~~
 
 ## Image Alignment
