@@ -4,12 +4,12 @@ and add lightweight styles using modifier classes.
 
 ## Responsive Images
 Images in Inkline are made responsive using the `.-responsive` modifier. To achieve that, we apply `max-width: 100%;` 
-and `height: auto;` to the image so that it scales with the parent element, without overflowing the image's native width.
+and `height: auto;` to the image so that it scales with the parent element, without surpassing the image's native width.
 
-<img src="https://placehold.it/1200x400" width="1200" height="400" class="img -fluid" alt="Responsive image">
+<img src="https://placehold.it/1000x400" width="1000" height="400" class="image -responsive" alt="Responsive image">
 
 ~~~html
-<img src="..." width="1200" height="400" class="img -responsive" alt="Responsive image">
+<img src="..." width="1000" height="400" class="image -responsive" alt="Responsive image">
 ~~~
 
 #### SVG images and IE 10
@@ -21,17 +21,58 @@ apply it automatically unless the extension ends with `.svg`.
 Images in Inkline can be made fluid using the `.-fluid` modifier. To achieve that, we apply `width: 100%;` 
 and `height: auto;` to the image so that it scales with the parent element.
 
-<img src="https://placehold.it/1200x400" width="1200" height="400" class="img -fluid" alt="Fluid image">
+<img src="https://placehold.it/1200x400" width="1200" height="400" class="image -fluid" alt="Fluid image">
 
 ~~~html
-<img src="..." width="1200" height="400" class="img -fluid" alt="Fluid image">
+<img src="..." width="1200" height="400" class="image -fluid" alt="Fluid image">
 ~~~
 
 ## Image Thumbnails
 In addition to our border-radius utilities, you can use .img-thumbnail to give an image a rounded 1px border appearance.
 
-<img src="https://placehold.it/1200x400" width="1200" height="400" class="img -fluid" alt="Fluid image">
+<img src="https://placehold.it/200x200" class="image -thumbnail" alt="Thumbnail">
 
 ~~~html
-<img src="..." width="1200" height="400" class="img -fluid" alt="Fluid image">
+<img src="..." class="image -thumbnail" alt="Thumbnail">
+~~~
+
+## Image Alignment
+Align images with the helper classes or text alignment classes. Block-level images can be centered using the `._margin-x-auto` 
+margin utility class.
+
+<div class="_clearfix">
+    <img src="https://placehold.it/200x200" class="image _float-left" alt="Left floating image">
+    <img src="https://placehold.it/200x200" class="image _float-right" alt="Right floating image">
+</div>
+
+~~~html
+<img src="..." class="image _float-left" alt="Left floating image">
+<img src="..." class="image _float-right" alt="Right floating image">
+~~~
+
+<div class="_text-center">
+    <img src="https://placehold.it/200x200" alt="Centered image">
+</div>
+
+~~~html
+<div class="_text-center">
+    <img src="https://placehold.it/200x200" alt="Centered image">
+</div>
+~~~
+
+<img src="https://placehold.it/200x200" class="_display-block _margin-x-auto" alt="Centered image">
+
+~~~html
+<img src="https://placehold.it/200x200" class="_display-block _margin-x-auto" alt="Centered image">
+~~~
+
+## Picture
+If you are using the `<picture>` element to specify multiple `<source>` elements for a specific `<img>`, make sure to add 
+the `.img` classes to the `<img>` and not to the `<picture>` tag.
+
+~~~html
+​<picture>
+    <source srcset="..." type="image/svg+xml">
+    <img src="..." class="img -fluid -thumbnail" alt="...">
+</picture>
 ~~~
