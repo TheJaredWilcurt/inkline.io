@@ -42,7 +42,7 @@ export default {
     <radio value="Football">Football</radio>
     <radio value="Voleyball">Voleyball</radio>
     <radio value="Basketball">Basketball</radio>
-    <radio value="Tennis">Tennis</radio>
+    <radio value="Tennis" disabled>Tennis</radio>
 </radio-group>
 ~~~
 
