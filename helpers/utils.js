@@ -4,7 +4,6 @@ const path = require('path');
 const config = require('../config');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const packageConfig = require('../package.json');
-const hljs = require('highlight.js');
 
 // Get assets path based on NODE_ENV
 //
@@ -110,8 +109,9 @@ exports.markdownLoader = function (options) {
         loader: 'markdown-complete-loader',
         options: {
             wrapper: '<article>',
+            langPrefix: 'line-numbers language-',
             html: true,
-            langPrefix: 'line-numbers language-'
+            configFile: path.join(__dirname, '..', 'config', 'markdown.config.js')
         }
     };
 };

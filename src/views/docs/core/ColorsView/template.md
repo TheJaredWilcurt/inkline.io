@@ -1,6 +1,5 @@
 # Colors
-Inkline uses [Gradient Design](http://inkline.io) to define the main colors of the framework. All colors are tinted using the primary color, 
-in order to maintain a consistent look and feel throughout the application. The palette used it always
+Inkline uses [Gradient Design](http://inkline.io) to achieve a beautiful, consistent color scheme across the framework. { .lead }
 
 #### Brand Colors
 Attract your visitor's attention using brand colors. The main colors of Inkline used for branding are:

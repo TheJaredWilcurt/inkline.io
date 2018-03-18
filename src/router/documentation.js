@@ -5,6 +5,7 @@ import GridView from '@/views/docs/core/GridView';
 import ImagesView from '@/views/docs/core/ImagesView';
 import LayoutView from '@/views/docs/core/LayoutView';
 import RadioView from '@/views/docs/forms/RadioView';
+import TablesView from '@/views/docs/core/TablesView';
 import TypographyView from '@/views/docs/core/TypographyView';
 
 export default [
@@ -40,6 +41,11 @@ export default [
                 path: 'layout',
                 name: 'docs.layout',
                 component: LayoutView
+            },
+            {
+                path: 'tables',
+                name: 'docs.tables',
+                component: TablesView
             },
             {
                 path: 'typography',

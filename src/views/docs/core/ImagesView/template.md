@@ -1,6 +1,5 @@
 # Images
-Documentation and examples for images, such as responsiveness (so they never become larger than their parent elements) 
-and add lightweight styles using modifier classes.
+Documentation and examples for images, using lightweight styles and modifier classes. { .lead }
 
 ## Responsive Images
 Images in Inkline are made responsive using the `.-responsive` modifier. To achieve that, we apply `max-width: 100%;` 

@@ -1,4 +1,6 @@
 # Layout
+Build basic layouts using Inkline's built-in layout components. { .lead }
+
 The layout components are used for scaffolding the basic structure of the page:
 - `<layout>` is the main layout wrapper in which `layout-header`, `layout-aside`, `layout-content`, `layout-footer`, or `layout` itself can be nested, and can be placed in any parent container.
 - `<layout-header>` is the header area that can also serve as navigation
