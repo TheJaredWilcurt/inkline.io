@@ -59,14 +59,14 @@ export default [
              * Component Views
              */
             {
-                path: 'components/radio',
-                name: 'docs.components.radio',
-                component: RadioView
-            },
-            {
                 path: 'components/checkbox',
                 name: 'docs.components.checkbox',
                 component: CheckboxView
+            },
+            {
+                path: 'components/radio',
+                name: 'docs.components.radio',
+                component: RadioView
             }
         ]
     }
