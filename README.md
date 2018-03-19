@@ -74,48 +74,52 @@ Inkline's documentation, included in this repository in the site directory, is b
 Here you can see the current progress for Inkline:
 
 - [x] Layout
-  - [x] Core
-  - [x] Grid
-  - [ ] Print
-- [ ] Content
-  - [ ] Code
-  - [ ] Images
-  - [ ] Tables
-  - [ ] Typography
+    - [x] Core
+    - [x] Grid
+    - [x] Layout
+    - [x] Typography
+    - [x] Images
+    - [x] Tables
+    - [x] Code
+    - [x] Print
+- [ ] Forms
+    - [x] Checkbox
+    - [ ] Input
+    - [ ] Textarea
+    - [x] Radio
 - [ ] Components
-  - [ ] Alerts
-  - [ ] Badges
-  - [ ] Breadcrumb
-  - [ ] Buttons
-  - [ ] Button Groups
-  - [ ] Card
-  - [ ] Carousel
-  - [ ] Collapse
-  - [ ] Dropdowns
-  - [ ] Forms
-  - [ ] Input Groups
-  - [ ] Header
-  - [ ] List Group
-  - [ ] Media Object
-  - [ ] Modal
-  - [ ] Navs
-  - [ ] Navbar
-  - [ ] Pagination
-  - [ ] Popovers
-  - [ ] Progress
-  - [ ] Scrollspy
-  - [ ] Tooltips
+    - [ ] Alerts
+    - [ ] Badges
+    - [ ] Breadcrumb
+    - [ ] Buttons
+    - [ ] Button Groups
+    - [ ] Card
+    - [ ] Carousel
+    - [ ] Collapse
+    - [ ] Dropdowns
+    - [ ] Input Groups
+    - [ ] Header
+    - [ ] List Group
+    - [ ] Media Object
+    - [ ] Modal
+    - [ ] Navs
+    - [ ] Navbar
+    - [ ] Pagination
+    - [ ] Popovers
+    - [ ] Progress
+    - [ ] Scrollspy
+    - [ ] Tooltips
 - [x] Helpers
-  - [x] Align
-  - [x] Borders
-  - [x] Clearfix
-  - [x] Colors
-  - [x] Display
-  - [x] Embed
-  - [x] Flex
-  - [x] Float
-  - [x] Position
-  - [x] Sizing
-  - [x] Spacing
-  - [x] Text
-  - [x] Visibility
+    - [x] Align
+    - [x] Borders
+    - [x] Clearfix
+    - [x] Colors
+    - [x] Display
+    - [x] Embed
+    - [x] Flex
+    - [x] Float
+    - [x] Position
+    - [x] Sizing
+    - [x] Spacing
+    - [x] Text
+    - [x] Visibility
