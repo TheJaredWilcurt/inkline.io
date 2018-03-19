@@ -11,9 +11,9 @@ export default {
     },
     data () {
         return {
-            selectedValue: 'Apple',
-            selectedValueGroup: 'Football',
-            selectedValueButtonGroup: 'Earth'
+            selected: 'Apple',
+            selectedGroup: 'Football',
+            selectedButton: 'Earth'
         };
     }
 };
