@@ -1,25 +1,25 @@
 <!--<div id="content">-->
-    <!--<container>-->
+    <!--<Container>-->
         <!--<aside>-->
             <!--<sidebar :items="items"></sidebar>-->
         <!--</aside>-->
-        <!--<container>-->
+        <!--<Container>-->
             <!--<router-view />-->
-        <!--</container>-->
-    <!--</container>-->
+        <!--</Container>-->
+    <!--</Container>-->
 <!--</div>-->
 
-<container>
-    <row>
-        <column>
-            <layout vertical>
-                <layout-aside>
+<Container>
+    <Row>
+        <Column>
+            <Layout vertical>
+                <LayoutAside>
                     <sidebar :items="items"></sidebar>
-                </layout-aside>
-                <layout-content>
+                </LayoutAside>
+                <LayoutContent>
                     <router-view />
-                </layout-content>
-            </layout>
-        </column>
-    </row>
-</container>
+                </LayoutContent>
+            </Layout>
+        </Column>
+    </Row>
+</Container>

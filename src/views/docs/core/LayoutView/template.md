@@ -2,11 +2,11 @@
 Build basic layouts using Inkline's built-in layout components. { .lead }
 
 The layout components are used for scaffolding the basic structure of the page:
-- `<layout>` is the main layout wrapper in which `layout-header`, `layout-aside`, `layout-content`, `layout-footer`, or `layout` itself can be nested, and can be placed in any parent container.
-- `<layout-header>` is the header area that can also serve as navigation
-- `<layout-aside>` is a container for side sections (usually a side nav).
-- `<layout-content>` is the main content container
-- `<layout-footer>` is a container for footer elements
+- `<Layout>` is the main layout wrapper in which `layout-header`, `layout-aside`, `layout-content`, `layout-footer`, or `layout` itself can be nested, and can be placed in any parent container.
+- `<LayoutHeader>` is the header area that can also serve as navigation
+- `<LayoutAside>` is a container for side sections (usually a side nav).
+- `<LayoutContent>` is the main content container
+- `<LayoutFooter>` is a container for footer elements
 
 ## Common layouts
 
@@ -17,316 +17,316 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 
 #### Content with header
 
-<layout class="-preview">
-    <layout-header>
+<Layout class="-preview">
+    <LayoutHeader>
         Header
-    </layout-header>
-    <layout-content>
+    </LayoutHeader>
+    <LayoutContent>
         Content
-    </layout-content>
-</layout>
+    </LayoutContent>
+</Layout>
 
 ~~~html
-<layout>
-    <layout-header>
+<Layout>
+    <LayoutHeader>
         Header
-    </layout-header>
+    </LayoutHeader>
     
-    <layout-content>
+    <LayoutContent>
         Content
-    </layout-content>
-</layout>
+    </LayoutContent>
+</Layout>
 ~~~
    
 #### Content with header and footer
 
-<layout class="-preview">
-    <layout-header>
+<Layout class="-preview">
+    <LayoutHeader>
         Header
-    </layout-header>
-    <layout-content>
+    </LayoutHeader>
+    <LayoutContent>
         Content
-    </layout-content>
-    <layout-footer>
+    </LayoutContent>
+    <LayoutFooter>
         Footer
-    </layout-footer>
-</layout>
+    </LayoutFooter>
+</Layout>
 
 ~~~html
-<layout>
-    <layout-header>
+<Layout>
+    <LayoutHeader>
         Header
-    </layout-header>
+    </LayoutHeader>
     
-    <layout-content>
+    <LayoutContent>
         Content
-    </layout-content>
+    </LayoutContent>
     
-    <layout-footer>
+    <LayoutFooter>
         Footer
-    </layout-footer>
-</layout>
+    </LayoutFooter>
+</Layout>
 ~~~
    
 #### Content with left aside
 
-<layout class="-preview">
-    <layout-header>
+<Layout class="-preview">
+    <LayoutHeader>
         Header
-    </layout-header>
-    <layout vertical>
-        <layout-aside>
+    </LayoutHeader>
+    <Layout vertical>
+        <LayoutAside>
             <div class="layout-aside-preview-text">Left Aside</div>
-        </layout-aside>
-        <layout-content>
+        </LayoutAside>
+        <LayoutContent>
             Content
-        </layout-content>
-    </layout>
-    <layout-footer>
+        </LayoutContent>
+    </Layout>
+    <LayoutFooter>
         Footer
-    </layout-footer>
-</layout>
+    </LayoutFooter>
+</Layout>
 
 ~~~html
-<layout>
-    <layout-header>
+<Layout>
+    <LayoutHeader>
         Header
-    </layout-header>
+    </LayoutHeader>
     
-    <layout vertical>
-        <layout-aside>
+    <Layout vertical>
+        <LayoutAside>
             Left Aside
-        </layout-aside>
+        </LayoutAside>
         
-        <layout-content>
+        <LayoutContent>
             Content
-        </layout-content>
-    </layout>
+        </LayoutContent>
+    </Layout>
     
-    <layout-footer>
+    <LayoutFooter>
         Footer
-    </layout-footer>
-</layout>
+    </LayoutFooter>
+</Layout>
 ~~~   
 
 #### Content with right aside
 
-<layout class="-preview">
-    <layout-header>
+<Layout class="-preview">
+    <LayoutHeader>
         Header
-    </layout-header>
-    <layout vertical>
-        <layout-content>
+    </LayoutHeader>
+    <Layout vertical>
+        <LayoutContent>
             Content
-        </layout-content>
-        <layout-aside>
+        </LayoutContent>
+        <LayoutAside>
             <div class="layout-aside-preview-text">Right Aside</div>
-        </layout-aside>
-    </layout>
-    <layout-footer>
+        </LayoutAside>
+    </Layout>
+    <LayoutFooter>
         Footer
-    </layout-footer>
-</layout>
+    </LayoutFooter>
+</Layout>
 
 ~~~html
-<layout>
-    <layout-header>
+<Layout>
+    <LayoutHeader>
         Header
-    </layout-header>
+    </LayoutHeader>
     
-    <layout vertical>
-        <layout-content>
+    <Layout vertical>
+        <LayoutContent>
             Content
-        </layout-content>
+        </LayoutContent>
         
-        <layout-aside>
+        <LayoutAside>
             Right Aside
-        </layout-aside>
-    </layout>
+        </LayoutAside>
+    </Layout>
     
-    <layout-footer>
+    <LayoutFooter>
         Footer
-    </layout-footer>
-</layout>
+    </LayoutFooter>
+</Layout>
 ~~~
 
 
 #### Content with left and right asides
 
-<layout class="-preview">
-    <layout-header>
+<Layout class="-preview">
+    <LayoutHeader>
         Header
-    </layout-header>
-    <layout vertical>
-        <layout-aside>
+    </LayoutHeader>
+    <Layout vertical>
+        <LayoutAside>
             <div class="layout-aside-preview-text">Left Aside</div>
-        </layout-aside>
-        <layout-content>
+        </LayoutAside>
+        <LayoutContent>
             Content
-        </layout-content>
-        <layout-aside>
+        </LayoutContent>
+        <LayoutAside>
             <div class="layout-aside-preview-text">Right Aside</div>
-        </layout-aside>
-    </layout>
-    <layout-footer>
+        </LayoutAside>
+    </Layout>
+    <LayoutFooter>
         Footer
-    </layout-footer>
-</layout>
+    </LayoutFooter>
+</Layout>
 
 ~~~html
-<layout>
-    <layout-header>
+<Layout>
+    <LayoutHeader>
         Header
-    </layout-header>
+    </LayoutHeader>
     
-    <layout vertical>
-        <layout-aside>
+    <Layout vertical>
+        <LayoutAside>
             Left Aside
-        </layout-aside>
+        </LayoutAside>
         
-        <layout-content>
+        <LayoutContent>
             Content
-        </layout-content>
+        </LayoutContent>
         
-        <layout-aside>
+        <LayoutAside>
             Right Aside
-        </layout-aside>
-    </layout>
+        </LayoutAside>
+    </Layout>
     
-    <layout-footer>
+    <LayoutFooter>
         Footer
-    </layout-footer>
-</layout>
+    </LayoutFooter>
+</Layout>
 ~~~
 
 
 #### Layout with left aside
 
-<layout vertical class="-preview">
-    <layout-aside>
+<Layout vertical class="-preview">
+    <LayoutAside>
         <div class="layout-aside-preview-text">Left Aside</div>
-    </layout-aside>
-    <layout>
-        <layout-header>
+    </LayoutAside>
+    <Layout>
+        <LayoutHeader>
             Header
-        </layout-header>
-        <layout-content>
+        </LayoutHeader>
+        <LayoutContent>
             Content
-        </layout-content>
-        <layout-footer>
+        </LayoutContent>
+        <LayoutFooter>
             Footer
-        </layout-footer>
-    </layout>
-</layout>
+        </LayoutFooter>
+    </Layout>
+</Layout>
 
 ~~~html
-<layout vertical>
-    <layout-aside>
+<Layout vertical>
+    <LayoutAside>
         Left Aside
-    </layout-aside>
+    </LayoutAside>
     
-    <layout>
-        <layout-header>
+    <Layout>
+        <LayoutHeader>
             Header
-        </layout-header>
+        </LayoutHeader>
         
-        <layout-content>
+        <LayoutContent>
             Content
-        </layout-content>
+        </LayoutContent>
         
-        <layout-footer>
+        <LayoutFooter>
             Footer
-        </layout-footer>
-    </layout>
-</layout>
+        </LayoutFooter>
+    </Layout>
+</Layout>
 ~~~
 
 
 #### Layout with right aside
 
-<layout vertical class="-preview">
-    <layout>
-        <layout-header>
+<Layout vertical class="-preview">
+    <Layout>
+        <LayoutHeader>
             Header
-        </layout-header>
-        <layout-content>
+        </LayoutHeader>
+        <LayoutContent>
             Content
-        </layout-content>
-        <layout-footer>
+        </LayoutContent>
+        <LayoutFooter>
             Footer
-        </layout-footer>
-    </layout>
-    <layout-aside>
+        </LayoutFooter>
+    </Layout>
+    <LayoutAside>
         <div class="layout-aside-preview-text">Right Aside</div>
-    </layout-aside>
-</layout>
+    </LayoutAside>
+</Layout>
 
 ~~~html
-<layout vertical>
-    <layout>
-        <layout-header>
+<Layout vertical>
+    <Layout>
+        <LayoutHeader>
             Header
-        </layout-header>
+        </LayoutHeader>
         
-        <layout-content>
+        <LayoutContent>
             Content
-        </layout-content>
+        </LayoutContent>
         
-        <layout-footer>
+        <LayoutFooter>
             Footer
-        </layout-footer>
-    </layout>
+        </LayoutFooter>
+    </Layout>
     
-    <layout-aside>
+    <LayoutAside>
         Right Aside
-    </layout-aside>
-</layout>
+    </LayoutAside>
+</Layout>
 ~~~
 
 #### Layout with left and right asides
 
-<layout vertical class="-preview">
-    <layout-aside>
+<Layout vertical class="-preview">
+    <LayoutAside>
         <div class="layout-aside-preview-text">Left Aside</div>
-    </layout-aside>
-    <layout>
-        <layout-header>
+    </LayoutAside>
+    <Layout>
+        <LayoutHeader>
             Header
-        </layout-header>
-        <layout-content>
+        </LayoutHeader>
+        <LayoutContent>
             Content
-        </layout-content>
-        <layout-footer>
+        </LayoutContent>
+        <LayoutFooter>
             Footer
-        </layout-footer>
-    </layout>
-    <layout-aside>
+        </LayoutFooter>
+    </Layout>
+    <LayoutAside>
         <div class="layout-aside-preview-text">Right Aside</div>
-    </layout-aside>
-</layout>
+    </LayoutAside>
+</Layout>
 
 ~~~html
-<layout vertical>
-    <layout-aside>
+<Layout vertical>
+    <LayoutAside>
         Left Aside
-    </layout-aside>
+    </LayoutAside>
     
-    <layout>
-        <layout-header>
+    <Layout>
+        <LayoutHeader>
             Header
-        </layout-header>
+        </LayoutHeader>
         
-        <layout-content>
+        <LayoutContent>
             Content
-        </layout-content>
+        </LayoutContent>
         
-        <layout-footer>
+        <LayoutFooter>
             Footer
-        </layout-footer>
-    </layout>
+        </LayoutFooter>
+    </Layout>
     
-    <layout-aside>
+    <LayoutAside>
         Right Aside
-    </layout-aside>
-</layout>
+    </LayoutAside>
+</Layout>
 ~~~

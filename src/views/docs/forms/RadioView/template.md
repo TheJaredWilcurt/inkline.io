@@ -6,16 +6,16 @@ You will need to use the `Radio` component together with a `RadioGroup`.
 
 ### Basic usage
 
-<radio v-model="selected" value="Apple">Apple</radio>
-<radio v-model="selected" value="Orange">Orange</radio>
-<radio v-model="selected" value="Banana">Banana</radio>
-<radio v-model="selected" value="Strawberry" disabled>Strawberry</radio>
+<Radio v-model="selected" value="Apple">Apple</Radio>
+<Radio v-model="selected" value="Orange">Orange</Radio>
+<Radio v-model="selected" value="Banana">Banana</Radio>
+<Radio v-model="selected" value="Strawberry" disabled>Strawberry</Radio>
 
 ~~~html
-<radio v-model="selected" value="Apple">Apple</radio>
-<radio v-model="selected" value="Orange">Orange</radio>
-<radio v-model="selected" value="Banana">Banana</radio>
-<radio v-model="selected" value="Strawberry" disabled>Strawberry</radio>
+<Radio v-model="selected" value="Apple">Apple</Radio>
+<Radio v-model="selected" value="Orange">Orange</Radio>
+<Radio v-model="selected" value="Banana">Banana</Radio>
+<Radio v-model="selected" value="Strawberry" disabled>Strawberry</Radio>
 ~~~
 
 ~~~js
@@ -30,20 +30,20 @@ export default {
 
 ### Radio group
 
-<radio-group v-model="selectedGroup">
-    <radio value="Football">Football</radio>
-    <radio value="Voleyball">Voleyball</radio>
-    <radio value="Basketball">Basketball</radio>
-    <radio value="Tennis" disabled>Tennis</radio>
-</radio-group>
+<RadioGroup v-model="selectedGroup">
+    <Radio value="Football">Football</Radio>
+    <Radio value="Voleyball">Voleyball</Radio>
+    <Radio value="Basketball">Basketball</Radio>
+    <Radio value="Tennis" disabled>Tennis</Radio>
+</RadioGroup>
 
 ~~~html
-<radio-group v-model="selected">
-    <radio value="Football">Football</radio>
-    <radio value="Voleyball">Voleyball</radio>
-    <radio value="Basketball">Basketball</radio>
-    <radio value="Tennis" disabled>Tennis</radio>
-</radio-group>
+<RadioGroup v-model="selected">
+    <Radio value="Football">Football</Radio>
+    <Radio value="Voleyball">Voleyball</Radio>
+    <Radio value="Basketball">Basketball</Radio>
+    <Radio value="Tennis" disabled>Tennis</Radio>
+</RadioGroup>
 ~~~
 
 ~~~js
@@ -57,20 +57,20 @@ export default {
 ~~~
 
 ### Radio buttons
-<radio-group v-model="selectedButton">
-    <radio-button value="Earth">Earth</radio-button>
-    <radio-button value="Mars">Mars</radio-button>
-    <radio-button value="Jupiter">Jupiter</radio-button>
-    <radio-button value="Venus" disabled>Venus</radio-button>
-</radio-group>
+<RadioGroup v-model="selectedButton">
+    <RadioButton value="Earth">Earth</RadioButton>
+    <RadioButton value="Mars">Mars</RadioButton>
+    <RadioButton value="Jupiter">Jupiter</RadioButton>
+    <RadioButton value="Venus" disabled>Venus</RadioButton>
+</RadioGroup>
 
 ~~~html
-<radio-group v-model="selected">
-    <radio-button value="Earth">Earth</radio-button>
-    <radio-button value="Mars">Mars</radio-button>
-    <radio-button value="Jupiter">Jupiter</radio-button>
-    <radio-button value="Venus" disabled>Venus</radio-button>
-</radio-group>
+<RadioGroup v-model="selected">
+    <RadioButton value="Earth">Earth</RadioButton>
+    <RadioButton value="Mars">Mars</RadioButton>
+    <RadioButton value="Jupiter">Jupiter</RadioButton>
+    <RadioButton value="Venus" disabled>Venus</RadioButton>
+</RadioGroup>
 ~~~
 
 ~~~js

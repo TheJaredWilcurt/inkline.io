@@ -8,12 +8,12 @@ You will need to use the `Checkbox` component together with a `CheckboxGroup`.
 
 ### Basic usage
 
-<checkbox v-model="checked">Apple</checkbox>
+<Checkbox v-model="checked">Apple</Checkbox>
 
 Checked: <span>{{checked}}</span>
 
 ~~~html
-<radio v-model="checked">Apple</radio>
+<Radio v-model="checked">Apple</Radio>
 ~~~
 
 ~~~js
@@ -28,24 +28,24 @@ export default {
 
 ### Checkbox group
 
-<checkbox-group v-model="checkedGroup">
-    <checkbox value="Football">Football</checkbox>
-    <checkbox value="Voleyball">Voleyball</checkbox>
-    <checkbox value="Basketball">Basketball</checkbox>
-    <checkbox value="Snowboarding">Snowboarding</checkbox>
-    <checkbox value="Tennis" disabled>Tennis</checkbox>
-</checkbox-group>
+<CheckboxGroup v-model="checkedGroup">
+    <Checkbox value="Football">Football</Checkbox>
+    <Checkbox value="Voleyball">Voleyball</Checkbox>
+    <Checkbox value="Basketball">Basketball</Checkbox>
+    <Checkbox value="Snowboarding">Snowboarding</Checkbox>
+    <Checkbox value="Tennis" disabled>Tennis</Checkbox>
+</CheckboxGroup>
 
 Checked values: <span>{{checkedGroup}}</span>
 
 ~~~html
-<checkbox-group v-model="checked">
-    <checkbox value="Football">Football</checkbox>
-    <checkbox value="Voleyball">Voleyball</checkbox>
-    <checkbox value="Basketball">Basketball</checkbox>
-    <checkbox value="Snowboarding">Snowboarding</checkbox>
-    <checkbox value="Tennis" disabled>Tennis</checkbox>
-</checkbox-group>
+<CheckboxGroup v-model="checked">
+    <Checkbox value="Football">Football</Checkbox>
+    <Checkbox value="Voleyball">Voleyball</Checkbox>
+    <Checkbox value="Basketball">Basketball</Checkbox>
+    <Checkbox value="Snowboarding">Snowboarding</Checkbox>
+    <Checkbox value="Tennis" disabled>Tennis</Checkbox>
+</CheckboxGroup>
 ~~~
 
 ~~~js
@@ -59,22 +59,22 @@ export default {
 ~~~
 
 ### Checkbox buttons
-<checkbox-group v-model="checkedButton">
-    <checkbox-button value="Earth">Earth</checkbox-button>
-    <checkbox-button value="Mars">Mars</checkbox-button>
-    <checkbox-button value="Jupiter">Jupiter</checkbox-button>
-    <checkbox-button value="Venus" disabled>Venus</checkbox-button>
-</checkbox-group>
+<CheckboxGroup v-model="checkedButton">
+    <CheckboxButton value="Earth">Earth</CheckboxButton>
+    <CheckboxButton value="Mars">Mars</CheckboxButton>
+    <CheckboxButton value="Jupiter">Jupiter</CheckboxButton>
+    <CheckboxButton value="Venus" disabled>Venus</CheckboxButton>
+</CheckboxGroup>
 
 Checked values: <span>{{checkedButton}}</span>
 
 ~~~html
-<checkbox-group v-model="checked">
-    <checkbox-button value="Earth">Earth</checkbox-button>
-    <checkbox-button value="Mars">Mars</checkbox-button>
-    <checkbox-button value="Jupiter">Jupiter</checkbox-button>
-    <checkbox-button value="Venus" disabled>Venus</checkbox-button>
-</checkbox-group>
+<CheckboxGroup v-model="checked">
+    <CheckboxButton value="Earth">Earth</CheckboxButton>
+    <CheckboxButton value="Mars">Mars</CheckboxButton>
+    <CheckboxButton value="Jupiter">Jupiter</CheckboxButton>
+    <CheckboxButton value="Venus" disabled>Venus</CheckboxButton>
+</CheckboxGroup>
 ~~~
 
 ~~~js
