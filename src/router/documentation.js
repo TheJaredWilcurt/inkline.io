@@ -4,9 +4,11 @@ import DocumentationLayout from '@/views/layouts/DocumentationLayout';
 import GridView from '@/views/docs/core/GridView';
 import ImagesView from '@/views/docs/core/ImagesView';
 import LayoutView from '@/views/docs/core/LayoutView';
-import RadioView from '@/views/docs/forms/RadioView';
 import TablesView from '@/views/docs/core/TablesView';
 import TypographyView from '@/views/docs/core/TypographyView';
+
+import CheckboxView from '@/views/docs/forms/CheckboxView';
+import RadioView from '@/views/docs/forms/RadioView';
 
 export default [
     {
@@ -56,6 +58,11 @@ export default [
             /**
              * Component Views
              */
+            {
+                path: 'components/checkbox',
+                name: 'docs.components.checkbox',
+                component: CheckboxView
+            },
             {
                 path: 'components/radio',
                 name: 'docs.components.radio',
