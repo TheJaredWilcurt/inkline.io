@@ -12,8 +12,8 @@ export default {
     data () {
         return {
             checked: true,
-            checkList: ['Football', 'Basketball', 'Tennis'],
-            checkButtonList: ['Earth']
+            checkedGroup: ['Football', 'Basketball', 'Tennis'],
+            checkedButton: ['Earth']
         };
     }
 };

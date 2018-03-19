@@ -1,10 +1,8 @@
 # Checkbox
 
-Checkbox inputs allow the user to select multiple options from a set. 
-
-If you have multiple options appearing in a list, 
+Checkbox inputs allow the user to select multiple options from a set. If you have multiple options appearing in a list, 
 you can preserve space by using checkboxes instead of on/off switches. If you have a single option, avoid using 
-a checkbox and use an on/off switch instead.
+a checkbox and use an on/off switch instead. { .lead }
 
 You will need to use the `Checkbox` component together with a `CheckboxGroup`.
 
@@ -30,7 +28,7 @@ export default {
 
 ### Checkbox group
 
-<checkbox-group v-model="checkList">
+<checkbox-group v-model="checkedGroup">
     <checkbox value="Football">Football</checkbox>
     <checkbox value="Voleyball">Voleyball</checkbox>
     <checkbox value="Basketball">Basketball</checkbox>
@@ -38,10 +36,10 @@ export default {
     <checkbox value="Tennis" disabled>Tennis</checkbox>
 </checkbox-group>
 
-Checked values: {{checkList}}
+Checked values: {{checkedGroup}}
 
 ~~~html
-<checkbox-group v-model="checkList">
+<checkbox-group v-model="checked">
     <checkbox value="Football">Football</checkbox>
     <checkbox value="Voleyball">Voleyball</checkbox>
     <checkbox value="Basketball">Basketball</checkbox>
@@ -54,24 +52,24 @@ Checked values: {{checkList}}
 export default {
   data () {
     return {
-      checkList: ['Football', 'Basketball', 'Tennis']
+      checked: ['Football', 'Basketball', 'Tennis']
     };
   }
 }
 ~~~
 
 ### Checkbox buttons
-<checkbox-group v-model="checkButtonList">
+<checkbox-group v-model="checkedButton">
     <checkbox-button value="Earth">Earth</checkbox-button>
     <checkbox-button value="Mars">Mars</checkbox-button>
     <checkbox-button value="Jupiter">Jupiter</checkbox-button>
     <checkbox-button value="Venus" disabled>Venus</checkbox-button>
 </checkbox-group>
 
-Checked values: {{checkButtonList}}
+Checked values: {{checkedButton}}
 
 ~~~html
-<checkbox-group v-model="checkButtonList">
+<checkbox-group v-model="checked">
     <checkbox-button value="Earth">Earth</checkbox-button>
     <checkbox-button value="Mars">Mars</checkbox-button>
     <checkbox-button value="Jupiter">Jupiter</checkbox-button>
@@ -83,7 +81,7 @@ Checked values: {{checkButtonList}}
 export default {
   data () {
     return {
-      checkButtonList: ['Earth']
+      checked: ['Earth']
     };
   }
 }
