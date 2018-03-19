@@ -8,6 +8,7 @@ import TablesView from '@/views/docs/core/TablesView';
 import TypographyView from '@/views/docs/core/TypographyView';
 
 import CheckboxView from '@/views/docs/forms/CheckboxView';
+import InputView from '@/views/docs/forms/InputView';
 import RadioView from '@/views/docs/forms/RadioView';
 
 export default [
@@ -62,6 +63,11 @@ export default [
                 path: 'components/checkbox',
                 name: 'docs.components.checkbox',
                 component: CheckboxView
+            },
+            {
+                path: 'components/input',
+                name: 'docs.components.input',
+                component: InputView
             },
             {
                 path: 'components/radio',

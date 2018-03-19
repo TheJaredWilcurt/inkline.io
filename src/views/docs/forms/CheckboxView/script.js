@@ -1,13 +1,13 @@
 import View from '@/components/View';
-import { Checkbox, CheckboxGroup, CheckboxButton } from 'inkline';
+import { Checkbox, CheckboxButton, FormGroup } from 'inkline';
 
 export default {
     extends: View,
     name: 'RadioView',
     components: {
         Checkbox,
-        CheckboxGroup,
-        CheckboxButton
+        CheckboxButton,
+        FormGroup
     },
     data () {
         return {

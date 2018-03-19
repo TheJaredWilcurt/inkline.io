@@ -4,7 +4,7 @@ Checkbox inputs allow the user to select multiple options from a set. If you hav
 you can preserve space by using checkboxes instead of on/off switches. If you have a single option, avoid using 
 a checkbox and use an on/off switch instead. { .lead }
 
-You will need to use the `Checkbox` component together with a `CheckboxGroup`.
+You will need to use the `Checkbox` component together with a `FormGroup`.
 
 ### Basic usage
 
@@ -20,7 +20,7 @@ Checked: <span>{{checked}}</span>
 export default {
   data () {
     return {
-      checked: 'true'
+      checked: true
     };
   }
 }
@@ -28,24 +28,24 @@ export default {
 
 ### Checkbox group
 
-<CheckboxGroup v-model="checkedGroup">
+<FormGroup v-model="checkedGroup">
     <Checkbox value="Football">Football</Checkbox>
     <Checkbox value="Voleyball">Voleyball</Checkbox>
     <Checkbox value="Basketball">Basketball</Checkbox>
     <Checkbox value="Snowboarding">Snowboarding</Checkbox>
     <Checkbox value="Tennis" disabled>Tennis</Checkbox>
-</CheckboxGroup>
+</FormGroup>
 
 Checked values: <span>{{checkedGroup}}</span>
 
 ~~~html
-<CheckboxGroup v-model="checked">
+<FormGroup v-model="checked">
     <Checkbox value="Football">Football</Checkbox>
     <Checkbox value="Voleyball">Voleyball</Checkbox>
     <Checkbox value="Basketball">Basketball</Checkbox>
     <Checkbox value="Snowboarding">Snowboarding</Checkbox>
     <Checkbox value="Tennis" disabled>Tennis</Checkbox>
-</CheckboxGroup>
+</FormGroup>
 ~~~
 
 ~~~js
@@ -59,22 +59,22 @@ export default {
 ~~~
 
 ### Checkbox buttons
-<CheckboxGroup v-model="checkedButton">
+<FormGroup v-model="checkedButton">
     <CheckboxButton value="Earth">Earth</CheckboxButton>
     <CheckboxButton value="Mars">Mars</CheckboxButton>
     <CheckboxButton value="Jupiter">Jupiter</CheckboxButton>
     <CheckboxButton value="Venus" disabled>Venus</CheckboxButton>
-</CheckboxGroup>
+</FormGroup>
 
 Checked values: <span>{{checkedButton}}</span>
 
 ~~~html
-<CheckboxGroup v-model="checked">
+<FormGroup v-model="checked">
     <CheckboxButton value="Earth">Earth</CheckboxButton>
     <CheckboxButton value="Mars">Mars</CheckboxButton>
     <CheckboxButton value="Jupiter">Jupiter</CheckboxButton>
     <CheckboxButton value="Venus" disabled>Venus</CheckboxButton>
-</CheckboxGroup>
+</FormGroup>
 ~~~
 
 ~~~js
