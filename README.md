@@ -59,67 +59,11 @@ npm test
 
 ## Contributions, bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/inkline/inkline/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/inkline/inkline/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/inkline/inkline/blob/master/CONTRIBUTING.md) 
+and search for existing and closed issues. If your problem or idea is not addressed yet, 
+[please open a new issue](https://github.com/inkline/inkline/issues/new).
 
 ## Documentation
 
-Inkline's documentation, included in this repository in the site directory, is built with [Jekyll](https://jekyllrb.com) and publicly hosted on GitHub Pages at <https://inkline.io>. The docs may also be run locally.
-
-## Previous releases
-
-[Previous releases](https://github.com/inkline/inkline/releases) and their documentation are also available for download.
-
-## Project Completion
-
-Here you can see the current progress for Inkline:
-
-- [x] Layout
-    - [x] Core
-    - [x] Grid
-    - [x] Layout
-    - [x] Typography
-    - [x] Images
-    - [x] Tables
-    - [x] Code
-    - [x] Print
-- [ ] Forms
-    - [x] Checkbox
-    - [ ] Input
-    - [ ] Textarea
-    - [x] Radio
-- [ ] Components
-    - [ ] Alerts
-    - [ ] Badges
-    - [ ] Breadcrumb
-    - [ ] Buttons
-    - [ ] Button Groups
-    - [ ] Card
-    - [ ] Carousel
-    - [ ] Collapse
-    - [ ] Dropdowns
-    - [ ] Input Groups
-    - [ ] Header
-    - [ ] List Group
-    - [ ] Media Object
-    - [ ] Modal
-    - [ ] Navs
-    - [ ] Navbar
-    - [ ] Pagination
-    - [ ] Popovers
-    - [ ] Progress
-    - [ ] Scrollspy
-    - [ ] Tooltips
-- [x] Helpers
-    - [x] Align
-    - [x] Borders
-    - [x] Clearfix
-    - [x] Colors
-    - [x] Display
-    - [x] Embed
-    - [x] Flex
-    - [x] Float
-    - [x] Position
-    - [x] Sizing
-    - [x] Spacing
-    - [x] Text
-    - [x] Visibility
+Inkline's documentation, found in this repository, is built with [Jekyll](https://jekyllrb.com) and publicly hosted on 
+GitHub Pages at <http://inkline.io>. The docs may also be run locally.
