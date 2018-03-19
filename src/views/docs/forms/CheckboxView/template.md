@@ -10,7 +10,7 @@ You will need to use the `Checkbox` component together with a `CheckboxGroup`.
 
 <checkbox v-model="checked">Apple</checkbox>
 
-Checked: {{checked}}
+Checked: <span>{{checked}}</span>
 
 ~~~html
 <radio v-model="checked">Apple</radio>
@@ -36,7 +36,7 @@ export default {
     <checkbox value="Tennis" disabled>Tennis</checkbox>
 </checkbox-group>
 
-Checked values: {{checkedGroup}}
+Checked values: <span>{{checkedGroup}}</span>
 
 ~~~html
 <checkbox-group v-model="checked">
@@ -66,7 +66,7 @@ export default {
     <checkbox-button value="Venus" disabled>Venus</checkbox-button>
 </checkbox-group>
 
-Checked values: {{checkedButton}}
+Checked values: <span>{{checkedButton}}</span>
 
 ~~~html
 <checkbox-group v-model="checked">
