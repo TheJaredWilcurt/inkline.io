@@ -1,13 +1,6 @@
 # [Inkline](http://inkline.io)
-![Bower version](https://img.shields.io/bower/v/inkline.svg)
-[![npm version](https://img.shields.io/npm/v/inkline.svg)](https://www.npmjs.com/package/inkline)
-[![devDependency Status](https://img.shields.io/david/dev/inkline/inkline.svg)](https://david-dm.org/inkline/inkline?type=dev)
-[![Meteor Atmosphere](https://img.shields.io/badge/meteor-inkline%3Ainkline-blue.svg)](https://atmospherejs.com/inkline/inkline)
-[![Coveralls](https://img.shields.io/coveralls/inkline/inkline.svg)](https://coveralls.io/github/inkline/inkline)
-<!-- [![Packagist Prerelease](https://img.shields.io/packagist/dt/inkline/inkline.svg)](https://packagist.org/packages/inkline/inkline) -->
-<!-- [![Gem version](https://img.shields.io/gem/v/inkline.svg)](https://rubygems.org/gems/inkline) -->
-
-Inkline is a UI/UX framework designed for creating flawless responsive websites, inspired by Apple. Inkline is written and maintained by [@alexgrozav](https://twitter.com/alexgrozav).
+Inkline is a UI/UX framework designed for creating flawless responsive websites, using Gradient Design. 
+This repository contains Inkline's documentation. Inkline is written and maintained by [@alexgrozav](https://twitter.com/alexgrozav).
 
 To get started, check out <http://inkline.io>!
 
