@@ -2,7 +2,7 @@
 Radio inputs allow the user to select one option from a set of options. Typically, there should not be too many options. 
 Make sure you use a select input if you think the user doesn't need to see all the available options side-by-side. { .lead }
 
-You will need to use the `Radio` component together with a `FormGroup`.
+You will need to use the `Radio` component together with a `RadioGroup`.
 
 ### Basic usage
 
@@ -30,20 +30,20 @@ export default {
 
 ### Radio group
 
-<FormGroup v-model="selectedGroup">
+<RadioGroup v-model="selectedGroup">
     <Radio value="Football">Football</Radio>
     <Radio value="Voleyball">Voleyball</Radio>
     <Radio value="Basketball">Basketball</Radio>
     <Radio value="Tennis" disabled>Tennis</Radio>
-</FormGroup>
+</RadioGroup>
 
 ~~~html
-<FormGroup v-model="selected">
+<RadioGroup v-model="selected">
     <Radio value="Football">Football</Radio>
     <Radio value="Voleyball">Voleyball</Radio>
     <Radio value="Basketball">Basketball</Radio>
     <Radio value="Tennis" disabled>Tennis</Radio>
-</FormGroup>
+</RadioGroup>
 ~~~
 
 ~~~js
@@ -57,20 +57,20 @@ export default {
 ~~~
 
 ### Radio buttons
-<FormGroup v-model="selectedButton">
+<RadioGroup v-model="selectedButton">
     <RadioButton value="Earth">Earth</RadioButton>
     <RadioButton value="Mars">Mars</RadioButton>
     <RadioButton value="Jupiter">Jupiter</RadioButton>
     <RadioButton value="Venus" disabled>Venus</RadioButton>
-</FormGroup>
+</RadioGroup>
 
 ~~~html
-<FormGroup v-model="selected">
+<RadioGroup v-model="selected">
     <RadioButton value="Earth">Earth</RadioButton>
     <RadioButton value="Mars">Mars</RadioButton>
     <RadioButton value="Jupiter">Jupiter</RadioButton>
     <RadioButton value="Venus" disabled>Venus</RadioButton>
-</FormGroup>
+</RadioGroup>
 ~~~
 
 ~~~js
