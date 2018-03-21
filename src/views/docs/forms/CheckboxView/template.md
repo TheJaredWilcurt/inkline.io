@@ -12,6 +12,7 @@ You will need to use the `Checkbox` component together with a `CheckboxGroup`.
 
 Checked: <span>{{checked}}</span>
 
+<!--
 ~~~html
 <Radio v-model="checked">Apple</Radio>
 ~~~
@@ -86,4 +87,5 @@ export default {
   }
 }
 ~~~
+-->
 

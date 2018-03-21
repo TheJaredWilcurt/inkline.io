@@ -1,17 +1,13 @@
-# Checkbox
+# Inputs
 
-Allow your users to input data directly from the keyboard . { .lead }
+Allow your users to input data directly from the keyboard. { .lead }
 
-You will need to use the `Checkbox` component together with a `FormGroup`.
+## Basic input
 
-### Basic usage
-
-<Input v-model="inputValue" />
-
-Input: <span>{{inputValue}}</span>
+<Input v-model="usernameInputValue" placeholder="Type something.." />
 
 ~~~html
-<Input v-model="value" />
+<Input v-model="value" placeholder="Type something.." />
 ~~~
 
 ~~~js
@@ -23,3 +19,40 @@ export default {
   }
 }
 ~~~
+
+## Disabled input
+
+<Input v-model="disabledInputValue" placeholder="Type something.." disabled />
+
+~~~html
+<Input v-model="value" placeholder="Type something.." disabled />
+~~~
+
+~~~js
+export default {
+  data () {
+    return {
+      value: ''
+    };
+  }
+}
+~~~
+
+## Clearable input
+
+<Input v-model="disabledInputValue" placeholder="Type something.." clearable />
+
+~~~html
+<Input v-model="value" placeholder="Type something.." clearable />
+~~~
+
+~~~js
+export default {
+  data () {
+    return {
+      value: ''
+    };
+  }
+}
+~~~
+

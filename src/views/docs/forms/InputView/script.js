@@ -1,16 +1,18 @@
 import View from '@/components/View';
-import { Input, FormGroup } from 'inkline';
+import { Input, InputGroup } from 'inkline';
 
 export default {
     extends: View,
     name: 'InputView',
     components: {
         Input,
-        FormGroup
+        InputGroup
     },
     data () {
         return {
-            inputValue: 'Hello world!'
+            usernameInputValue: '',
+            passwordInputValue: '',
+            disabledInputValue: ''
         };
     }
 };
