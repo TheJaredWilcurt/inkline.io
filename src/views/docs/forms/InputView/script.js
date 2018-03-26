@@ -10,9 +10,12 @@ export default {
     },
     data () {
         return {
-            usernameInputValue: '',
-            passwordInputValue: '',
-            disabledInputValue: ''
+            inputValue: '',
+            disabledInputValue: '',
+            clearableInputValue: '',
+            iconLeftInputValue: '',
+            iconBothInputValue: '',
+            iconRightInputValue: ''
         };
     }
 };
