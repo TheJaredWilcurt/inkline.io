@@ -13,9 +13,12 @@ export default {
             inputValue: '',
             disabledInputValue: '',
             clearableInputValue: '',
-            iconLeftInputValue: '',
-            iconBothInputValue: '',
-            iconRightInputValue: ''
+            prefixInputValue: '',
+            suffixInputValue: '',
+            prefixSuffixInputValue: '',
+            prependInputValue: '',
+            appendInputValue: '',
+            prependAppendInputValue: ''
         };
     }
 };

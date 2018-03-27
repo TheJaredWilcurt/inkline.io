@@ -10,6 +10,7 @@ import TypographyView from '@/views/docs/core/TypographyView';
 import CheckboxView from '@/views/docs/forms/CheckboxView';
 import InputView from '@/views/docs/forms/InputView';
 import RadioView from '@/views/docs/forms/RadioView';
+import TextareaView from '@/views/docs/forms/TextareaView';
 
 export default [
     {
@@ -73,6 +74,11 @@ export default [
                 path: 'components/radio',
                 name: 'docs.components.radio',
                 component: RadioView
+            },
+            {
+                path: 'components/textarea',
+                name: 'docs.components.textarea',
+                component: TextareaView
             }
         ]
     }
