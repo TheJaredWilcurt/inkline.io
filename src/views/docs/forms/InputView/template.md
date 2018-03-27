@@ -59,12 +59,36 @@ export default {
 ## Icon input
 Add an icon to indicate input type.
 
-<Input v-model="iconLeftInputValue" placeholder="Type something.." clearable>
+<Input v-model="iconLeftInputValue" placeholder="Type something..">
     <i slot="prefix" class="form-input-icon">@</i>
 </Input>
 
 ~~~html
-<Input v-model="value" placeholder="Type something.." clearable />
+<Input v-model="value" placeholder="Type something..">
+    <i slot="prefix" class="form-input-icon">@</i>
+</Input>
+~~~
+
+<Input v-model="iconRightInputValue" placeholder="Type something..">
+    <i slot="suffix" class="form-input-icon">@</i>
+</Input>
+
+~~~html
+<Input v-model="value" placeholder="Type something..">
+    <i slot="prefix" class="form-input-icon">@</i>
+</Input>
+~~~
+
+<Input v-model="iconBothInputValue" placeholder="Type something..">
+    <i slot="prefix" class="form-input-icon">@</i>
+    <i slot="suffix" class="form-input-icon">@</i>
+</Input>
+
+~~~html
+<Input v-model="value" placeholder="Type something..">
+    <i slot="suffix" class="form-input-icon">@</i>
+    <i slot="prefix" class="form-input-icon">@</i>
+</Input>
 ~~~
 
 ~~~js
