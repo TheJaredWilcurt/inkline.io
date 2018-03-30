@@ -1,14 +1,14 @@
 import View from '@/components/View';
-import { Layout, LayoutHeader, LayoutContent, LayoutAside, LayoutFooter } from 'inkline';
+import { ILayout, ILayoutHeader, ILayoutContent, ILayoutAside, ILayoutFooter } from 'inkline';
 
 export default {
     name: 'LayoutView',
     extends: View,
     components: {
-        Layout,
-        LayoutHeader,
-        LayoutContent,
-        LayoutAside,
-        LayoutFooter
+        ILayout,
+        ILayoutHeader,
+        ILayoutContent,
+        ILayoutAside,
+        ILayoutFooter
     }
 };

@@ -1,10 +1,10 @@
-import { Container, Column, Row } from 'inkline';
+import { IContainer, IColumn, IRow } from 'inkline';
 
 export default {
     name: 'View',
     components: {
-        Container,
-        Column,
-        Row
+        IContainer,
+        IColumn,
+        IRow
     }
 };

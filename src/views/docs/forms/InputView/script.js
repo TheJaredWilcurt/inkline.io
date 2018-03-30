@@ -1,12 +1,12 @@
 import View from '@/components/View';
-import { Input, InputGroup } from 'inkline';
+import { IInput, IInputGroup } from 'inkline';
 
 export default {
     extends: View,
     name: 'InputView',
     components: {
-        Input,
-        InputGroup
+        IInput,
+        IInputGroup
     },
     data () {
         return {

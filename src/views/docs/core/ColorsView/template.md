@@ -4,20 +4,20 @@ Inkline uses [Gradient Design](http://inkline.io) to achieve a beautiful, consis
 #### Brand Colors
 Attract your visitor's attention using brand colors. The main colors of Inkline used for branding are:
 
-<Row>
-    <Column xs="3">
-        <ColorBox type="primary" title="Primary" description="#24C6DC ~ #514A9D"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="secondary" title="Secondary" description="#C33764 ~ #1D2671"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="light" title="Light" description="#F8F9FA ~ #E9ECEf"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="dark" title="Dark" description="#343A40 ~ #212529"></ColorBox>
-    </Column>
-</Row>
+<i-row>
+    <i-column xs="3">
+        <color-box type="primary" title="Primary" description="#24C6DC ~ #514A9D"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="secondary" title="Secondary" description="#C33764 ~ #1D2671"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="light" title="Light" description="#F8F9FA ~ #E9ECEf"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="dark" title="Dark" description="#343A40 ~ #212529"></color-box>
+    </i-column>
+</i-row>
 
 You can use helper classes to add brand color backgrounds:
 
@@ -48,20 +48,20 @@ You can also add brand text colors using text-specific helper classes:
 #### State Colors
 When displaying state information such as info, success, warning, or error messages, you will need to color your message accordingly. The state colors are:
 
-<Row>
-    <Column xs="3">
-        <ColorBox type="info" title="Info" description="#43B7DC ~ #506EE5"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="success" title="Success" description="#38EF7D ~ #11998E"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="warning" title="Warning" description="#EEA849 ~ #F46B45"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="danger" title="Danger" description="#FF7968 ~ #CB2D3E"></ColorBox>
-    </Column>
-</Row>
+<i-row>
+    <i-column xs="3">
+        <color-box type="info" title="Info" description="#43B7DC ~ #506EE5"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="success" title="Success" description="#38EF7D ~ #11998E"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="warning" title="Warning" description="#EEA849 ~ #F46B45"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="danger" title="Danger" description="#FF7968 ~ #CB2D3E"></color-box>
+    </i-column>
+</i-row>
 
 You can use helper classes to add state color backgrounds:
 
@@ -92,32 +92,32 @@ You can also add state text colors using text-specific helper classes:
 #### BAsic Colors
 Basic colors are useful when working with multiple colors.
 
-<Row>
-    <Column xs="3">
-        <ColorBox type="red" title="Red" description="#FF7968 ~ #CB2D3E"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="orange" title="Orange" description="#EEA849 ~ #F46B45"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="yellow" title="Yellow" description="#FFE359 ~ #FFBE21"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="green" title="Green" description="#38EF7D ~ #11998E"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="teal" title="Teal" description="#37F7DF ~ #00AAA1"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="blue" title="Blue" description="#43B7DC ~ #506EE5"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="purple" title="Purple" description="#6A89D2 ~ #4B39B9"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="pink" title="Pink" description="#FF7698 ~ #FF2C59"></ColorBox>
-    </Column>
-</Row>
+<i-row>
+    <i-column xs="3">
+        <color-box type="red" title="Red" description="#FF7968 ~ #CB2D3E"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="orange" title="Orange" description="#EEA849 ~ #F46B45"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="yellow" title="Yellow" description="#FFE359 ~ #FFBE21"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="green" title="Green" description="#38EF7D ~ #11998E"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="teal" title="Teal" description="#37F7DF ~ #00AAA1"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="blue" title="Blue" description="#43B7DC ~ #506EE5"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="purple" title="Purple" description="#6A89D2 ~ #4B39B9"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="pink" title="Pink" description="#FF7698 ~ #FF2C59"></color-box>
+    </i-column>
+</i-row>
 
 You can use helper classes to add state color backgrounds:
 
@@ -160,41 +160,41 @@ You can also add state text colors using text-specific helper classes:
 #### NEutral Colors
 Neutral colors are used for text, background and border colors. You can use different neutral colors to display your content:
 
-<Row>
-    <Column xs="3">
-        <ColorBox type="white" title="White" description="#FFFFFF ~ #FCFDFB"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="gray-10" title="10% Gray" description="#FCFDFB ~ #F8F9FA"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="gray-20" title="20% Gray" description="#F8F9FA ~ #E9ECEF"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="gray-30" title="30% Gray" description="#E9ECEF ~ #DEE2E6"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="gray-40" title="40% Gray" description="#DEE2E6 ~ #CEd4DA"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="gray-50" title="50% Gray" description="#CEd4DA ~ #ADB5BD"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="gray-60" title="60% Gray" description="#ADB5BD ~ #868E96"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="gray-70" title="70% Gray" description="#868E96 ~ #495057"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="gray-80" title="80% Gray" description="#495057 ~ #343A40"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="gray-90" title="90% Gray" description="#343A40 ~ #212529"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="black" title="Black" description="#212529 ~ #000000"></ColorBox>
-    </Column>
-</Row>
+<i-row>
+    <i-column xs="3">
+        <color-box type="white" title="White" description="#FFFFFF ~ #FCFDFB"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="gray-10" title="10% Gray" description="#FCFDFB ~ #F8F9FA"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="gray-20" title="20% Gray" description="#F8F9FA ~ #E9ECEF"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="gray-30" title="30% Gray" description="#E9ECEF ~ #DEE2E6"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="gray-40" title="40% Gray" description="#DEE2E6 ~ #CEd4DA"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="gray-50" title="50% Gray" description="#CEd4DA ~ #ADB5BD"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="gray-60" title="60% Gray" description="#ADB5BD ~ #868E96"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="gray-70" title="70% Gray" description="#868E96 ~ #495057"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="gray-80" title="80% Gray" description="#495057 ~ #343A40"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="gray-90" title="90% Gray" description="#343A40 ~ #212529"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="black" title="Black" description="#212529 ~ #000000"></color-box>
+    </i-column>
+</i-row>
 
 
 You can use helper classes to add neutral color backgrounds:
@@ -247,53 +247,53 @@ You can also add neutral text colors using text-specific helper classes:
 #### Social Media Colors
 Inkline provides social media colors from most of your favorite sites.
 
-<Row>
-    <Column xs="3">
-        <ColorBox type="facebook" title="Facebook" description="#4A7AC9 ~ #3B5998"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="twitter" title="Twitter" description="#57C5FF ~ #1C8DDA"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="google-plus" title="Google Plus" description="#DD5F4B ~ #DD3A27"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="instagram" title="Instagram" description="#833AB4 ~ #FD1D1D ~ #FCB045"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="dribbble" title="Dribbble" description="#FF64A3 ~ #D13E83"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="behance" title="Behance" description="#4F88FF ~ #1769FF"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="flickr" title="Flickr" description="#FF669C ~ #D6006E"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="linkedin" title="LinkedIn" description="#00AAFF ~ #0077B5"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="youtube" title="YouTube" description="#E5504c ~ #B31217"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="pinterest" title="Pinterest" description="#FF4D56 ~ #BD081C"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="github" title="Github" description="#424242 ~ #333333"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="tumblr" title="Tumblr" description="#536884 ~ #35465C"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="twitch" title="Twitch" description="#8B6CCB ~ #6441A5"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="envato" title="Envato" description="#B2D068 ~ #6EB516"></ColorBox>
-    </Column>
-    <Column xs="3">
-        <ColorBox type="vine" title="Vine" description="#30D6A9 ~ #00AE81"></ColorBox>
-    </Column>
-</Row>
+<i-row>
+    <i-column xs="3">
+        <color-box type="facebook" title="Facebook" description="#4A7AC9 ~ #3B5998"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="twitter" title="Twitter" description="#57C5FF ~ #1C8DDA"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="google-plus" title="Google Plus" description="#DD5F4B ~ #DD3A27"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="instagram" title="Instagram" description="#833AB4 ~ #FD1D1D ~ #FCB045"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="dribbble" title="Dribbble" description="#FF64A3 ~ #D13E83"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="behance" title="Behance" description="#4F88FF ~ #1769FF"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="flickr" title="Flickr" description="#FF669C ~ #D6006E"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="linkedin" title="LinkedIn" description="#00AAFF ~ #0077B5"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="youtube" title="YouTube" description="#E5504c ~ #B31217"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="pinterest" title="Pinterest" description="#FF4D56 ~ #BD081C"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="github" title="Github" description="#424242 ~ #333333"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="tumblr" title="Tumblr" description="#536884 ~ #35465C"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="twitch" title="Twitch" description="#8B6CCB ~ #6441A5"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="envato" title="Envato" description="#B2D068 ~ #6EB516"></color-box>
+    </i-column>
+    <i-column xs="3">
+        <color-box type="vine" title="Vine" description="#30D6A9 ~ #00AE81"></color-box>
+    </i-column>
+</i-row>
 
 You can use helper classes to add social media color backgrounds:
 

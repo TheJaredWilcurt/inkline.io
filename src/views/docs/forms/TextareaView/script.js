@@ -1,21 +1,23 @@
 import View from '@/components/View';
-import { Textarea, InputGroup } from 'inkline';
+import { ITextarea, IInputGroup } from 'inkline';
 
 export default {
     extends: View,
     name: 'TextareaView',
     components: {
-        Textarea,
-        InputGroup
+        ITextarea,
+        IInputGroup
     },
     data () {
+        const sampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+
         return {
-            TextareaValue: '',
+            textareaValue: '',
             disabledTextareaValue: '',
             clearableTextareaValue: '',
-            prefixTextareaValue: '',
-            suffixTextareaValue: '',
-            prefixSuffixTextareaValue: '',
+            prefixTextareaValue: sampleText,
+            suffixTextareaValue: sampleText,
+            prefixSuffixTextareaValue: sampleText,
             prependTextareaValue: '',
             appendTextareaValue: '',
             prependAppendTextareaValue: ''
