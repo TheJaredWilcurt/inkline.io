@@ -147,3 +147,72 @@ export default {
 }
 ~~~
 
+## Input Sizes
+You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
+
+<i-input-group>
+    <i-input size="sm" v-model="smInputValue" placeholder="Type something small.." />
+</i-input-group>
+
+<i-input-group>
+    <i-input size="md" v-model="mdInputValue" placeholder="Type something medium.." />
+</i-input-group>
+
+<i-input-group>
+    <i-input size="lg" v-model="lgInputValue" placeholder="Type something large.." />
+</i-input-group>
+
+~~~html
+<i-input size="sm" v-model="value" placeholder="Type something small.." />
+<i-input size="md" v-model="value" placeholder="Type something medium.." />
+<i-input size="lg" v-model="value" placeholder="Type something large.." />
+~~~
+
+~~~js
+export default {
+  data () {
+    return {
+      value: ''
+    };
+  }
+}
+~~~
+
+## Input Labels
+You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
+
+<i-input v-model="labelDefaultInputValue" placeholder="Type something..">
+    <template slot="label">Input Label Default</template>
+</i-input>
+<i-input v-model="labelLeftInputValue" label-position="left" placeholder="Type something..">
+    <template slot="label">Input Label Left</template>
+</i-input>
+<i-input v-model="labelRightInputValue" label-position="right" placeholder="Type something..">
+    <template slot="label">Input Label Right</template>
+</i-input>
+
+~~~html
+<i-input v-model="value" placeholder="Type something..">
+    <template slot="label">Input Label Default</template>
+</i-input>
+
+<i-input v-model="value" label-position="left" placeholder="Type something..">
+    <template slot="label">Input Label Left</template>
+</i-input>
+
+<i-input v-model="value" label-position="right" placeholder="Type something..">
+    <template slot="label">Input Label Right</template>
+</i-input>
+~~~
+
+~~~js
+export default {
+  data () {
+    return {
+      value: ''
+    };
+  }
+}
+~~~
+
+

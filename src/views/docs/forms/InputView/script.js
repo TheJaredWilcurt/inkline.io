@@ -18,7 +18,13 @@ export default {
             prefixSuffixInputValue: '',
             prependInputValue: '',
             appendInputValue: '',
-            prependAppendInputValue: ''
+            prependAppendInputValue: '',
+            smInputValue: '',
+            mdInputValue: '',
+            lgInputValue: '',
+            labelDefaultInputValue: '',
+            labelLeftInputValue: '',
+            labelRightInputValue: ''
         };
     }
 };
