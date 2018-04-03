@@ -1,6 +1,6 @@
 # Textareas
 
-Allow your users to Textarea data directly from the keyboard. { .lead }
+Allow your users to input data directly from the keyboard, on multiple lines. { .lead }
 
 ## Basic Textarea
 

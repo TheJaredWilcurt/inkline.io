@@ -4,7 +4,7 @@ Checkbox inputs allow the user to select multiple options from a set. If you hav
 you can preserve space by using checkboxes instead of on/off switches. If you have a single option, avoid using 
 a checkbox and use an on/off switch instead. { .lead }
 
-You will need to use the `Checkbox` component together with a `CheckboxGroup`.
+You will need to use the `i-checkbox` component together with a `i-checkbox-group`.
 
 ### Basic usage
 
