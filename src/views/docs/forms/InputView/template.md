@@ -150,17 +150,9 @@ export default {
 ## Input Sizes
 You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
 
-<i-input-group>
-    <i-input size="sm" v-model="smInputValue" placeholder="Type something small.." />
-</i-input-group>
-
-<i-input-group>
-    <i-input size="md" v-model="mdInputValue" placeholder="Type something medium.." />
-</i-input-group>
-
-<i-input-group>
-    <i-input size="lg" v-model="lgInputValue" placeholder="Type something large.." />
-</i-input-group>
+<i-input size="sm" v-model="smInputValue" placeholder="Type something small.." />
+<i-input size="md" v-model="mdInputValue" placeholder="Type something medium.." />
+<i-input size="lg" v-model="lgInputValue" placeholder="Type something large.." />
 
 ~~~html
 <i-input size="sm" v-model="value" placeholder="Type something small.." />
@@ -179,7 +171,7 @@ export default {
 ~~~
 
 ## Input Labels
-You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
+You can add labels to either side of your input using the `label` slot, together with the optional `label-position` property.
 
 <i-input v-model="labelDefaultInputValue" placeholder="Type something..">
     <template slot="label">Input Label Default</template>

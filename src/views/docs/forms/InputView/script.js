@@ -5,8 +5,7 @@ export default {
     extends: View,
     name: 'InputView',
     components: {
-        IInput,
-        IInputGroup
+        IInput
     },
     data () {
         return {

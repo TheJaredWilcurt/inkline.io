@@ -147,3 +147,63 @@ export default {
 }
 ~~~
 
+
+## Textarea Sizes
+You're able to use the `size` modifier to control the size of your textareas, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
+
+<i-textarea size="sm" v-model="smTextareaValue" placeholder="Type something small.." />
+<i-textarea size="md" v-model="mdTextareaValue" placeholder="Type something medium.." />
+<i-textarea size="lg" v-model="lgTextareaValue" placeholder="Type something large.." />
+
+~~~html
+<i-textarea size="sm" v-model="value" placeholder="Type something small.." />
+<i-textarea size="md" v-model="value" placeholder="Type something medium.." />
+<i-textarea size="lg" v-model="value" placeholder="Type something large.." />
+~~~
+
+~~~js
+export default {
+  data () {
+    return {
+      value: ''
+    };
+  }
+}
+~~~
+
+## Textarea Labels
+You can add labels to either side of your textarea using the `label` slot, together with the optional `label-position` property.
+
+<i-textarea v-model="labelDefaultTextareaValue" placeholder="Type something..">
+    <template slot="label">Input Label Default</template>
+</i-textarea>
+<i-textarea v-model="labelLeftTextareaValue" label-position="left" placeholder="Type something..">
+    <template slot="label">Input Label Left</template>
+</i-textarea>
+<i-textarea v-model="labelRightTextareaValue" label-position="right" placeholder="Type something..">
+    <template slot="label">Input Label Right</template>
+</i-textarea>
+
+~~~html
+<i-textarea v-model="value" placeholder="Type something..">
+    <template slot="label">Input Label Default</template>
+</i-textarea>
+
+<i-textarea v-model="value" label-position="left" placeholder="Type something..">
+    <template slot="label">Input Label Left</template>
+</i-textarea>
+
+<i-textarea v-model="value" label-position="right" placeholder="Type something..">
+    <template slot="label">Input Label Right</template>
+</i-textarea>
+~~~
+
+~~~js
+export default {
+  data () {
+    return {
+      value: ''
+    };
+  }
+}
+~~~
