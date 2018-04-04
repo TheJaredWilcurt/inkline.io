@@ -9,17 +9,17 @@
     <!--</Container>-->
 <!--</div>-->
 
-<Container>
-    <Row>
-        <Column>
-            <Layout vertical>
-                <LayoutAside>
+<i-container>
+    <i-row>
+        <i-column>
+            <i-layout vertical>
+                <i-layout-aside>
                     <sidebar :items="items"></sidebar>
-                </LayoutAside>
-                <LayoutContent>
+                </i-layout-aside>
+                <i-layout-content>
                     <router-view />
-                </LayoutContent>
-            </Layout>
-        </Column>
-    </Row>
-</Container>
+                </i-layout-content>
+            </i-layout>
+        </i-column>
+    </i-row>
+</i-container>

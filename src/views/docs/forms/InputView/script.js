@@ -1,16 +1,29 @@
 import View from '@/components/View';
-import { Input, FormGroup } from 'inkline';
+import { IInput, IInputGroup } from 'inkline';
 
 export default {
     extends: View,
     name: 'InputView',
     components: {
-        Input,
-        FormGroup
+        IInput
     },
     data () {
         return {
-            inputValue: 'Hello world!'
+            inputValue: '',
+            disabledInputValue: '',
+            clearableInputValue: '',
+            prefixInputValue: '',
+            suffixInputValue: '',
+            prefixSuffixInputValue: '',
+            prependInputValue: '',
+            appendInputValue: '',
+            prependAppendInputValue: '',
+            smInputValue: '',
+            mdInputValue: '',
+            lgInputValue: '',
+            labelDefaultInputValue: '',
+            labelLeftInputValue: '',
+            labelRightInputValue: ''
         };
     }
 };
