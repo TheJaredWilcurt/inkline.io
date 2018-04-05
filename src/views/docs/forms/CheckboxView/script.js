@@ -13,6 +13,12 @@ export default {
         return {
             checked: true,
             checkedGroup: ['Football', 'Basketball', 'Tennis'],
+            checkedSize: ['Basketball'],
+            checkedSizeGroupSm: ['Basketball', 'Tennis'],
+            checkedSizeGroupMd: ['Basketball', 'Tennis'],
+            checkedSizeGroupLg: ['Basketball', 'Tennis'],
+            checkedCustomTrue: ['Basketball'],
+            checkedCustomFalse: ['Basketball'],
             checkedButton: ['Earth']
         };
     }

@@ -13,6 +13,12 @@ export default {
         return {
             selected: 'Apple',
             selectedGroup: 'Football',
+            selectedSize: 'Basketball',
+            selectedSizeGroupSm: 'Basketball',
+            selectedSizeGroupMd: 'Basketball',
+            selectedSizeGroupLg: 'Basketball',
+            selectedCustomTrue: 'Basketball',
+            selectedCustomFalse: 'Basketball',
             selectedButton: 'Earth'
         };
     }

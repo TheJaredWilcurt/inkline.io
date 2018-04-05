@@ -56,6 +56,172 @@ export default {
 }
 ~~~
 
+
+## Radio sizes
+You're able to use the `size` property to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`. 
+
+<i-radio-group v-model="selectedSize">
+    <i-radio size="sm" value="Football">Football</i-radio>
+    <i-radio size="md" value="Volleyball">Tennis</i-radio>
+    <i-radio size="lg" value="Basketball">Basketball</i-radio>
+</i-radio-group>
+
+Checked values: <span>{{selectedSize}}</span>
+
+~~~html
+<i-radio-group v-model="selected">
+    <i-radio size="sm" value="Football">Football</i-radio>
+    <i-radio size="md" value="Volleyball">Tennis</i-radio>
+    <i-radio size="lg" value="Basketball">Basketball</i-radio>
+</i-radio-group>
+~~~
+
+~~~js
+export default {
+  data () {
+    return {
+      selected: ['Basketball']
+    };
+  }
+}
+~~~
+
+Applying the size `size` property to a `i-radio-group` will set the chosen size to all of its child inputs.
+
+<i-radio-group size="sm" v-model="selectedSizeGroupSm">
+    <i-radio value="Football">Football</i-radio>
+    <i-radio value="Volleyball">Tennis</i-radio>
+    <i-radio value="Basketball">Basketball</i-radio>
+    <i-radio value="Tennis" disabled>Tennis</i-radio>
+</i-radio-group>
+
+~~~html
+<i-radio-group size="sm" v-model="selected">
+    <i-radio value="Football">Football</i-radio>
+    <i-radio value="Volleyball">Tennis</i-radio>
+    <i-radio value="Basketball">Basketball</i-radio>
+    <i-radio value="Tennis" disabled>Tennis</i-radio>
+</i-radio-group>
+~~~
+~~~js
+export default {
+  data () {
+    return {
+      selected: ['Basketball']
+    };
+  }
+}
+~~~
+
+<i-radio-group size="md" v-model="selectedSizeGroupMd">
+    <i-radio value="Football">Football</i-radio>
+    <i-radio value="Volleyball">Tennis</i-radio>
+    <i-radio value="Basketball">Basketball</i-radio>
+    <i-radio value="Tennis" disabled>Tennis</i-radio>
+</i-radio-group>
+
+~~~html
+<i-radio-group size="md" v-model="selected">
+    <i-radio value="Football">Football</i-radio>
+    <i-radio value="Volleyball">Tennis</i-radio>
+    <i-radio value="Basketball">Basketball</i-radio>
+    <i-radio value="Tennis" disabled>Tennis</i-radio>
+</i-radio-group>
+~~~
+~~~js
+export default {
+  data () {
+    return {
+      selected: ['Basketball']
+    };
+  }
+}
+~~~
+
+<i-radio-group size="lg" v-model="selectedSizeGroupLg">
+    <i-radio value="Football">Football</i-radio>
+    <i-radio value="Volleyball">Tennis</i-radio>
+    <i-radio value="Basketball">Basketball</i-radio>
+    <i-radio value="Tennis" disabled>Tennis</i-radio>
+</i-radio-group>
+
+~~~html
+<i-radio-group size="lg" v-model="selected">
+    <i-radio value="Football">Football</i-radio>
+    <i-radio value="Volleyball">Tennis</i-radio>
+    <i-radio value="Basketball">Basketball</i-radio>
+    <i-radio value="Tennis" disabled>Tennis</i-radio>
+</i-radio-group>
+~~~
+
+~~~js
+export default {
+  data () {
+    return {
+      selected: ['Basketball']
+    };
+  }
+}
+~~~
+
+
+## Custom Checkbox
+Inkline uses custom checkbox designs by setting the `custom` property to `true` by default. 
+
+<i-radio-group v-model="selectedCustomTrue">
+    <i-radio :custom="true" value="Football">Football</i-radio>
+    <i-radio :custom="true" value="Volleyball">Tennis</i-radio>
+    <i-radio :custom="true" value="Basketball">Basketball</i-radio>    
+</i-radio-group>
+
+Checked values: <span>{{selectedCustomTrue}}</span>
+
+~~~html
+<i-radio-group v-model="selectedCustomTrue">
+    <i-radio :custom="true" value="Football">Football</i-radio>
+    <i-radio :custom="true" value="Volleyball">Tennis</i-radio>
+    <i-radio :custom="true" value="Basketball">Basketball</i-radio>    
+</i-radio-group>
+~~~
+
+~~~js
+export default {
+  data () {
+    return {
+      selected: ['Basketball']
+    };
+  }
+}
+~~~
+
+By setting the `custom` property to `false`, the checkboxes use the browser's default design. 
+
+<i-radio-group v-model="selectedCustomFalse">
+    <i-radio :custom="false" value="Football">Football</i-radio>
+    <i-radio :custom="false" value="Volleyball">Tennis</i-radio>
+    <i-radio :custom="false" value="Basketball">Basketball</i-radio>
+</i-radio-group>
+
+Checked values: <span>{{selectedCustomFalse}}</span>
+
+~~~html
+<i-radio-group v-model="selected">
+    <i-radio :custom="false" value="Football">Football</i-radio>
+    <i-radio :custom="false" value="Volleyball">Tennis</i-radio>
+    <i-radio :custom="false" value="Basketball">Basketball</i-radio>
+</i-radio-group>
+~~~
+
+~~~js
+export default {
+  data () {
+    return {
+      selected: ['Basketball']
+    };
+  }
+}
+~~~
+
 ### Radio buttons
 <i-radio-group v-model="selectedButton">
     <i-radio-button value="Earth">Earth</i-radio-button>
