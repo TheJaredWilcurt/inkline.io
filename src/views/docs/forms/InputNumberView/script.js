@@ -1,11 +1,11 @@
 import View from '@/components/View';
-import { IInput } from 'inkline';
+import { IInputNumber } from 'inkline';
 
 export default {
     extends: View,
     name: 'InputView',
     components: {
-        IInput
+        IInputNumber
     },
     data () {
         return {

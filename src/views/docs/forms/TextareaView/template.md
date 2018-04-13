@@ -106,34 +106,34 @@ export default {
 You can add additional content such as select fields, buttons or plain text, to either side of the Textarea by using the prepend and append slots.
 
 <i-textarea v-model="prependTextareaValue" placeholder="Type something..">
-    <template slot="prepend" class="form-input-prepend">http://</template>
+    <span slot="prepend" class="form-input-prepend">http://</span>
 </i-textarea>
 
 ~~~html
 <i-textarea v-model="value" placeholder="Type something..">
-    <template slot="prepend" class="form-input-prepend">http://</template>
+    <span slot="prepend" class="form-input-prepend">http://</span>
 </i-textarea>
 ~~~
 
 <i-textarea v-model="appendTextareaValue" placeholder="Type something..">
-    <template slot="append" class="form-input-append">http://</template>
+    <span slot="append" class="form-input-append">http://</span>
 </i-textarea>
 
 ~~~html
 <i-textarea v-model="value" placeholder="Type something..">
-    <template slot="append" class="form-input-append">.com</template>
+    <span slot="append" class="form-input-append">.com</span>
 </i-textarea>
 ~~~
 
 <i-textarea v-model="prependAppendTextareaValue" placeholder="Type something..">
-    <template slot="prepend" class="form-input-prepend">http://</template>
-    <template slot="append" class="form-input-append">.com</template>
+    <span slot="prepend" class="form-input-prepend">http://</span>
+    <span slot="append" class="form-input-append">.com</span>
 </i-textarea>
 
 ~~~html
 <i-textarea v-model="value" placeholder="Type something..">
-    <template slot="prepend" class="form-input-prepend">http://</template>
-    <template slot="append" class="form-input-append">.com</template>
+    <span slot="prepend" class="form-input-prepend">http://</span>
+    <span slot="append" class="form-input-append">.com</span>
 </i-textarea>
 ~~~
 
