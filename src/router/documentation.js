@@ -9,6 +9,7 @@ import TypographyView from '@/views/docs/core/TypographyView';
 
 import CheckboxView from '@/views/docs/forms/CheckboxView';
 import InputView from '@/views/docs/forms/InputView';
+import InputNumberView from '@/views/docs/forms/InputNumberView';
 import RadioView from '@/views/docs/forms/RadioView';
 import TextareaView from '@/views/docs/forms/TextareaView';
 
@@ -69,6 +70,11 @@ export default [
                 path: 'components/input',
                 name: 'docs.components.input',
                 component: InputView
+            },
+            {
+                path: 'components/input-number',
+                name: 'docs.components.input-number',
+                component: InputNumberView
             },
             {
                 path: 'components/radio',
