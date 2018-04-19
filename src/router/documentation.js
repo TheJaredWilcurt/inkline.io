@@ -7,6 +7,8 @@ import LayoutView from '@/views/docs/core/LayoutView';
 import TablesView from '@/views/docs/core/TablesView';
 import TypographyView from '@/views/docs/core/TypographyView';
 
+import ButtonView from '@/views/docs/components/ButtonView';
+
 import CheckboxView from '@/views/docs/forms/CheckboxView';
 import InputView from '@/views/docs/forms/InputView';
 import InputNumberView from '@/views/docs/forms/InputNumberView';
@@ -60,6 +62,15 @@ export default [
 
             /**
              * Component Views
+             */
+            {
+                path: 'components/button',
+                name: 'docs.components.button',
+                component: ButtonView
+            },
+
+            /**
+             * Form Component Views
              */
             {
                 path: 'components/checkbox',
