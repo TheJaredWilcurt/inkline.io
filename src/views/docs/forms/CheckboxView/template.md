@@ -6,7 +6,7 @@ a checkbox and use an on/off switch instead. { .lead }
 
 You will need to use the `i-checkbox` component together with a `i-checkbox-group`.
 
-## Basic usage
+## Basic Usage
 
 <i-checkbox v-model="checked">Apple</i-checkbox>
 
@@ -26,7 +26,7 @@ export default {
 }
 ~~~
 
-## Checkbox group
+## Checkbox Group
 
 <i-checkbox-group v-model="checkedGroup">
     <i-checkbox value="Football">Football</i-checkbox>
@@ -59,7 +59,7 @@ export default {
 ~~~
 
 
-## Checkbox sizes
+## Checkbox Sizes
 You're able to use the `size` property to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`. 
 
 <i-checkbox-group v-model="checkedSize">
@@ -229,7 +229,7 @@ export default {
 }
 ~~~
 
-## Checkbox buttons
+## Checkbox Buttons
 <i-checkbox-group v-model="checkedButton">
     <i-checkbox-button value="Earth">Earth</i-checkbox-button>
     <i-checkbox-button value="Mars">Mars</i-checkbox-button>

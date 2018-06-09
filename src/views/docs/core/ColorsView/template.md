@@ -89,7 +89,7 @@ You can also add state text colors using text-specific helper classes:
 ~~~
 
 
-#### BAsic Colors
+#### Basic Colors
 Basic colors are useful when working with multiple colors.
 
 <i-row>
@@ -157,7 +157,7 @@ You can also add state text colors using text-specific helper classes:
 ~~~
 
 
-#### NEutral Colors
+#### Neutral Colors
 Neutral colors are used for text, background and border colors. You can use different neutral colors to display your content:
 
 <i-row>

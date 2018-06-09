@@ -94,7 +94,7 @@ Make a paragraph stand out by adding `.lead`.
 ~~~
 
 
-## Inline text elements
+## Inline Text Elements
 Inkline provides basic styling for all common HTML5 inline text elements.
 
 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
@@ -123,7 +123,7 @@ available to apply the same styles as `<mark>` and `<small>`.
 While not shown above, you can also use `<b>` and `<i>` in HTML5. `<b>` is meant to highlight words or phrases 
 without adding additional semantics, while `<i>` is mostly for voice, technical terms, etc.
 
-## Text utilities
+## Text Utilities
 You can change text alignment, transform, style, weight, and color with text utilities and [color utilities](/docs/colors).
 
 #### Text Alignment
@@ -169,7 +169,7 @@ You can easily realign text to components with text alignment classes.
 </div>
 ~~~
 
-#### Responsive utilities
+#### Responsive Utilities
 
 You can align, wrap or truncate text responsively for any given `xs`, `sm`, `md`, `lg`, or `xl` breakpoint by adding the breakpoint suffix:
 

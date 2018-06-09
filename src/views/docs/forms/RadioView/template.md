@@ -4,7 +4,7 @@ Make sure you use a select input if you think the user doesn't need to see all t
 
 You will need to use the `i-radio` component together with a `i-radio-group`.
 
-### Basic usage
+### Basic Usage
 
 <i-radio v-model="selected" value="Apple">Apple</i-radio>
 <i-radio v-model="selected" value="Orange">Orange</i-radio>
@@ -28,7 +28,7 @@ export default {
 }
 ~~~
 
-### Radio group
+### Radio Group
 
 <i-radio-group v-model="selectedGroup">
     <i-radio value="Football">Football</i-radio>
@@ -57,7 +57,7 @@ export default {
 ~~~
 
 
-## Radio sizes
+## Radio Sizes
 You're able to use the `size` property to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`. 
 
 <i-radio-group v-model="selectedSize">
@@ -222,7 +222,7 @@ export default {
 }
 ~~~
 
-### Radio buttons
+### Radio Buttons
 <i-radio-group v-model="selectedButton">
     <i-radio-button value="Earth">Earth</i-radio-button>
     <i-radio-button value="Mars">Mars</i-radio-button>

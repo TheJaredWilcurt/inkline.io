@@ -11,7 +11,7 @@ and `height: auto;` to the image so that it scales with the parent element, with
 <img src="..." width="1000" height="400" class="image -responsive" alt="Responsive image">
 ~~~
 
-#### SVG images and IE 10
+#### SVG Images and IE 10
 In Internet Explorer 10, SVG images with `.img.-responsive` are disproportionately sized. 
 To fix this, we add `width: 100% \9;` where necessary. This fix improperly sizes other image formats, so we don’t 
 apply it automatically unless the extension ends with `.svg`.

@@ -272,7 +272,6 @@ Add `.-hover` to enable a hover state on table rows within a `<tbody>`.
 </table>
 ~~~
 
-
 ## Responsive Table
 Enabled responsiveness by adding `.-responsive`. Responsive tables scroll horizontally on small devices. When viewing on anything larger, you will not see any difference in these tables.
 

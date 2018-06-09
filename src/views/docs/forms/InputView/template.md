@@ -2,7 +2,7 @@
 
 Allow your users to input data directly from the keyboard. { .lead }
 
-## Basic input
+## Basic Input
 
 <i-input v-model="inputValue" placeholder="Type something.." />
 
@@ -20,7 +20,7 @@ export default {
 }
 ~~~
 
-## Disabled input
+## Disabled Input
 
 <i-input v-model="disabledInputValue" placeholder="Type something.." disabled />
 
@@ -38,7 +38,7 @@ export default {
 }
 ~~~
 
-## Clearable input
+## Clearable Input
 
 <i-input v-model="clearableInputValue" placeholder="Type something.." clearable />
 

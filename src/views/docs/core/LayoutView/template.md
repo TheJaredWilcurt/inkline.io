@@ -8,14 +8,14 @@ The layout components are used for scaffolding the basic structure of the page:
 - `<i-layout-content>` is the main content container
 - `<i-layout-footer>` is a container for footer elements
 
-## Common layouts
+## Common Layouts
 
 The previewed layouts are styled for documentation purposes only. When using the components, they will only 
 provide the correct element positioning without colors and paddings.
 
 Layouts are based on flexbox, so please make sure your browser fully supports it. 
 
-#### Content with header
+#### Content with Header
 
 <i-layout class="-preview">
     <i-layout-header>
@@ -38,7 +38,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-layout>
 ~~~
    
-#### Content with header and footer
+#### Content with Header and Footer
 
 <i-layout class="-preview">
     <i-layout-header>
@@ -68,7 +68,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-layout>
 ~~~
    
-#### Content with left aside
+#### Content with Left Aside
 
 <i-layout class="-preview">
     <i-layout-header>
@@ -109,7 +109,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-layout>
 ~~~   
 
-#### Content with right aside
+#### Content with Right Aside
 
 <i-layout class="-preview">
     <i-layout-header>
@@ -151,7 +151,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 ~~~
 
 
-#### Content with left and right asides
+#### Content with Left and Right Asides
 
 <i-layout class="-preview">
     <i-layout-header>
@@ -200,7 +200,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 ~~~
 
 
-#### Layout with left aside
+#### Layout with Left Aside
 
 <i-layout vertical class="-preview">
     <i-layout-aside>
@@ -242,7 +242,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 ~~~
 
 
-#### Layout with right aside
+#### Layout with Right Aside
 
 <i-layout vertical class="-preview">
     <i-layout>
@@ -283,7 +283,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-layout>
 ~~~
 
-#### Layout with left and right asides
+#### Layout with Left and Right Asides
 
 <i-layout vertical class="-preview">
     <i-layout-aside>
