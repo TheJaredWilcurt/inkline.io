@@ -110,6 +110,28 @@ You can create block level buttons that span the full width of a parent by addin
 <i-button block>Block Button</i-button>
 ~~~
 
+## Active State
+Buttons will appear pressed when active. You can force a button to have an active appearance with the `active` property (this will also include the aria-pressed="true" attribute).
+
+<i-button active>Active Default Button</i-button>
+<i-button active theme="primary">Active Primary Button</i-button>
+
+~~~html
+<i-button active>Active Default Button</i-button>
+<i-button active theme="primary">Active Primary Button</i-button>
+~~~
+
+## Disabled State
+You can make buttons look inactive or disabled by adding the `disabled` boolean property to an `<i-button>` element.
+
+<i-button disabled>Disabled Default Button</i-button>
+<i-button disabled theme="primary">Disabled Primary Button</i-button>
+
+~~~html
+<i-button active>Active Default Button</i-button>
+<i-button active theme="primary">Active Primary Button</i-button>
+~~~
+
 ## Button Linking and Routing
 Buttons can be used as link anchors using the `href` property, just like you'd use it on the `<a>` tag. You can also
 specify a `target` property.
