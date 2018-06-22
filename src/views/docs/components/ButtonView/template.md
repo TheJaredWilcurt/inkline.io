@@ -87,6 +87,47 @@ to remove background images and colors on any button when not interacted with.
 <i-button outline theme="dark">Dark</i-button>
 ~~~
 
+
+## Flat Buttons
+If you do not fancy gradients you can always use the `flat` property. This will convert your button design to one with 
+a flat color background.
+
+<i-button flat theme="primary">Primary</i-button>
+<i-button flat theme="secondary">Secondary</i-button>
+<i-button flat theme="success">Success</i-button>
+<i-button flat theme="danger">Danger</i-button>
+<i-button flat theme="warning">Warning</i-button>
+<i-button flat theme="info">Info</i-button>
+<i-button flat theme="light">Light</i-button>
+<i-button flat theme="dark">Dark</i-button>
+<i-button flat theme="link">Link</i-button>
+
+~~~html
+<i-button flat theme="primary">Primary</i-button>
+<i-button flat theme="secondary">Secondary</i-button>
+<i-button flat theme="success">Success</i-button>
+<i-button flat theme="danger">Danger</i-button>
+<i-button flat theme="warning">Warning</i-button>
+<i-button flat theme="info">Info</i-button>
+<i-button flat theme="light">Light</i-button>
+<i-button flat theme="dark">Dark</i-button>
+<i-button flat theme="link">Link</i-button>
+~~~
+
+## Circle Buttons
+Circle buttons are very common when working with icon actions. You can transform buttons into circles using the `circle`
+modifier. You're also able to use the `size` modifier to control the size of your circle buttons. 
+
+<i-button circle size="sm">S</i-button>
+<i-button circle>M</i-button>
+<i-button circle size="lg">L</i-button>
+
+~~~html
+<i-button circle size="sm">S</i-button>
+<i-button circle>M</i-button>
+<i-button circle size="lg">L</i-button>
+~~~
+
 ## Button Sizes
 You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. 
 The default size is set to `md`.
