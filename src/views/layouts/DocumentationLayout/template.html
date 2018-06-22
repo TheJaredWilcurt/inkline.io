@@ -14,7 +14,8 @@
         <i-column>
             <i-layout vertical>
                 <i-layout-aside>
-                    <sidebar :items="items"></sidebar>
+                    <h4><router-link :to="{ name: 'home.index' }">Inkline</router-link></h4>
+                    <table-of-contents></table-of-contents>
                 </i-layout-aside>
                 <i-layout-content>
                     <router-view />

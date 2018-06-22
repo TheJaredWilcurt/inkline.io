@@ -16,34 +16,15 @@ import 'prismjs/plugins/previewers/prism-previewers';
 import 'prismjs/plugins/previewers/prism-previewers.css';
 
 import Layout from '@/components/Layout';
-import Sidebar from '@/components/Sidebar';
+import TableOfContents from '@/components/TableOfContents';
 
 export default {
     name: 'DocumentationLayout',
     extends: Layout,
-    computed: {
-        items: function () {
-            return [
-                {
-                    title: 'Components',
-                    children: [
-                        {
-                            title: 'TEST',
-                            header: true
-                        },
-                        {
-                            title: 'TEST',
-                            url: this.$router.resolve('test')
-                        }
-                    ]
-                }
-            ];
-        }
-    },
     components: {
-        Sidebar
+        TableOfContents
     },
-    mounted () {
+    updated () {
         Prism.highlightAll();
     }
 };
