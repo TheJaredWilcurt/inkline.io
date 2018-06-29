@@ -12,7 +12,6 @@ Inkline includes several predefined button styles, each serving its own semantic
 <i-button theme="info">Info</i-button>
 <i-button theme="light">Light</i-button>
 <i-button theme="dark">Dark</i-button>
-<i-button theme="link">Link</i-button>
 
 ~~~html
 <i-button theme="primary">Primary</i-button>
@@ -23,7 +22,6 @@ Inkline includes several predefined button styles, each serving its own semantic
 <i-button theme="info">Info</i-button>
 <i-button theme="light">Light</i-button>
 <i-button theme="dark">Dark</i-button>
-<i-button theme="link">Link</i-button>
 ~~~
 
 ## Button Type
@@ -100,7 +98,6 @@ a flat color background.
 <i-button flat theme="info">Info</i-button>
 <i-button flat theme="light">Light</i-button>
 <i-button flat theme="dark">Dark</i-button>
-<i-button flat theme="link">Link</i-button>
 
 ~~~html
 <i-button flat theme="primary">Primary</i-button>
@@ -111,7 +108,30 @@ a flat color background.
 <i-button flat theme="info">Info</i-button>
 <i-button flat theme="light">Light</i-button>
 <i-button flat theme="dark">Dark</i-button>
-<i-button flat theme="link">Link</i-button>
+~~~
+
+
+## Link Button
+You can create link buttons that look the same as normal links. Link buttons will use the `theme` property to set the color of the link.
+
+<i-button link theme="primary">Primary</i-button>
+<i-button link theme="secondary">Secondary</i-button>
+<i-button link theme="success">Success</i-button>
+<i-button link theme="danger">Danger</i-button>
+<i-button link theme="warning">Warning</i-button>
+<i-button link theme="info">Info</i-button>
+<i-button link theme="light">Light</i-button>
+<i-button link theme="dark">Dark</i-button>
+
+~~~html
+<i-button link theme="primary">Primary</i-button>
+<i-button link theme="secondary">Secondary</i-button>
+<i-button link theme="success">Success</i-button>
+<i-button link theme="danger">Danger</i-button>
+<i-button link theme="warning">Warning</i-button>
+<i-button link theme="info">Info</i-button>
+<i-button link theme="light">Light</i-button>
+<i-button link theme="dark">Dark</i-button>
 ~~~
 
 ## Circle Buttons
