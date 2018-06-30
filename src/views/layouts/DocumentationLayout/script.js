@@ -24,6 +24,9 @@ export default {
     components: {
         TableOfContents
     },
+    mounted () {
+        Prism.highlightAll();
+    },
     updated () {
         Prism.highlightAll();
     }

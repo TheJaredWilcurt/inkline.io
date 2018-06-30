@@ -2,7 +2,7 @@
 Inkline provides you with custom button styles for all important actions with support for multiple sizes, states, and more. { .lead }
 
 ## Button Themes
-Inkline includes several predefined button styles, each serving its own semantic purpose, with a few extras available for more control.
+Inkline includes several predefined button styles, each serving its own semantic purpose, with a few extra themes available for more control.
 
 <i-button theme="primary">Primary</i-button>
 <i-button theme="secondary">Secondary</i-button>
