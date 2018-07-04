@@ -8,6 +8,7 @@ import TablesView from '@/views/docs/core/TablesView';
 import TypographyView from '@/views/docs/core/TypographyView';
 
 import ButtonView from '@/views/docs/components/ButtonView';
+import ButtonGroupView from '@/views/docs/components/ButtonGroupView';
 
 import CheckboxView from '@/views/docs/forms/CheckboxView';
 import InputView from '@/views/docs/forms/InputView';
@@ -67,6 +68,11 @@ export default [
                 path: 'components/button',
                 name: 'docs.components.button',
                 component: ButtonView
+            },
+            {
+                path: 'components/button-group',
+                name: 'docs.components.button-group',
+                component: ButtonGroupView
             },
 
             /**
