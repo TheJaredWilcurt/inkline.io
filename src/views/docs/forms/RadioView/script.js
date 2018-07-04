@@ -1,5 +1,5 @@
-import View from '@/components/View';
-import { IRadio, IRadioButton, IRadioGroup } from 'inkline';
+import View from '@components/View';
+import { IRadio, IRadioButton, IRadioGroup } from '@inkline';
 
 export default {
     extends: View,

@@ -1,5 +1,5 @@
-import View from '@/components/View';
-import { IInput } from 'inkline';
+import View from '@components/View';
+import { IInput } from '@inkline';
 
 export default {
     extends: View,

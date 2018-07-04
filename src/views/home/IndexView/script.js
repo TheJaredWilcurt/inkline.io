@@ -1,5 +1,5 @@
-import View from '@/components/View';
-import TableOfContents from '@/components/TableOfContents';
+import View from '@components/View';
+import TableOfContents from '@components/TableOfContents';
 
 export default {
     name: 'HomeView',

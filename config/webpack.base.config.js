@@ -6,12 +6,8 @@ const utils = require('../helpers/utils');
 const config = require('./index');
 const vueLoaderConfig = require('./vue-loader.config');
 
-function resolve (dir) {
-    return  path.join(__dirname, '..', dir)
-}
-
 module.exports = {
-    context: path.resolve(__dirname, '../'),
+    context: path.join(__dirname, '../'),
     entry: {
         app: './src/index.js'
     },
@@ -25,9 +21,13 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.vue', '.json'],
         alias: {
-            'vue$': 'vue/dist/vue.esm.js',
-            '@': resolve('src'),
-            'inkline': 'inkline/src'
+            '@': path.join(__dirname, '..', 'src'),
+            '@components': path.join(__dirname, '..', 'src', 'components'),
+            '@resources': path.join(__dirname, '..', 'src', 'resources'),
+            '@routes': path.join(__dirname, '..', 'src', 'routes'),
+            '@views': path.join(__dirname, '..', 'src', 'views'),
+            '@inkline': 'inkline/src',
+            'vue$': 'vue/dist/vue.esm.js'
         }
     },
     module: {
@@ -36,7 +36,12 @@ module.exports = {
                 test: /\.(js|vue)$/,
                 loader: 'eslint-loader',
                 enforce: 'pre',
-                include: [resolve('src'), resolve('test'), resolve('config'), resolve('helpers')],
+                include: [
+                    path.join(__dirname, '..', 'src'),
+                    path.join(__dirname, '..', 'test'),
+                    path.join(__dirname, '..', 'config'),
+                    path.join(__dirname, '..', 'helpers')
+                ],
                 options: {
                     formatter: require('eslint-friendly-formatter'),
                     emitWarning: !config.development.showEslintErrorsInOverlay
@@ -54,7 +59,11 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+                include: [
+                    path.join(__dirname, '..', 'src'),
+                    path.join(__dirname, '..', 'test'),
+                    path.join(__dirname, '..', 'node_modules/webpack-dev-server/client')
+                ]
             },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

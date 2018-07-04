@@ -1,4 +1,4 @@
-import { IContainer, IColumn, IRow } from 'inkline';
+import { IContainer, IColumn, IRow } from '@inkline';
 
 export default {
     name: 'View',

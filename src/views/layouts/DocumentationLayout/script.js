@@ -15,8 +15,8 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import 'prismjs/plugins/previewers/prism-previewers';
 import 'prismjs/plugins/previewers/prism-previewers.css';
 
-import Layout from '@/components/Layout';
-import TableOfContents from '@/components/TableOfContents';
+import Layout from '@components/Layout';
+import TableOfContents from '@components/TableOfContents';
 
 export default {
     name: 'DocumentationLayout',
