@@ -19,7 +19,7 @@ You can group a series of `<i-button>` components inside a `<i-button-group>` to
 ~~~
 
 ## Button Group Sizes
-You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. 
+You're able to use the `size` modifier to control the size of your buttons, using one of the available sizes: `sm`, `md`, and `lg`. 
 The default size is set to `md`.
 
 <div class="_margin-bottom-1">
@@ -66,49 +66,91 @@ The default size is set to `md`.
 </i-button-group>
 ~~~
 
-## Block Button
-You can create block level buttons that span the full width of a parent by adding the `block` property.
+## Nesting
+When placing a `<i-button-group>` inside another `<i-button-group>`, you'll get a mixed series of buttons.
 
-<i-button block>Block Button</i-button>
+<i-button-group>
+    <i-button>Button 1</i-button>
+    <i-button>Button 2</i-button>
+    <i-button-group>
+        <i-button>Button 3</i-button>
+        <i-button>Button 4</i-button>
+    </i-button-group>
+</i-button-group>
 
 ~~~html
-<i-button block>Block Button</i-button>
+<i-button-group>
+    <i-button>Button 1</i-button>
+    <i-button>Button 2</i-button>
+    <i-button-group>
+        <i-button>Button 3</i-button>
+        <i-button>Button 4</i-button>
+    </i-button-group>
+</i-button-group>
 ~~~
 
-## Active State
-Buttons will appear pressed when active. You can force a button to have an active appearance with the `active` property (this will also include the aria-pressed="true" attribute).
+## Vertical Button Group
+Using the `vertical` property, you can stack a set of buttons vertically rather than horizontally.
 
-<i-button active>Active Default Button</i-button>
-<i-button active theme="primary">Active Primary Button</i-button>
+<i-button-group vertical>
+    <i-button>Button 1</i-button>
+    <i-button>Button 2</i-button>
+    <i-button>Button 3</i-button>
+</i-button-group>
 
 ~~~html
-<i-button active>Active Default Button</i-button>
-<i-button active theme="primary">Active Primary Button</i-button>
+<i-button-group vertical>
+    <i-button>Button 1</i-button>
+    <i-button>Button 2</i-button>
+    <i-button>Button 3</i-button>
+</i-button-group>
 ~~~
 
-## Disabled State
-You can make buttons look inactive or disabled by adding the `disabled` boolean property to an `<i-button>` element.
+## Vertical Button Group Sizes
+Just like horizontal button groups, the size of vertical button groups can also be controlled using the `size` modifier. 
+The default size is set to `md`.
 
-<i-button disabled>Disabled Default Button</i-button>
-<i-button disabled theme="primary">Disabled Primary Button</i-button>
+<div class="_clearfix">
+    <div class="_float-left _margin-right-1">
+        <i-button-group vertical size="sm">
+            <i-button>Left</i-button>
+            <i-button>Middle</i-button>
+            <i-button>Right</i-button>
+        </i-button-group>
+    </div>
+    <div class="_float-left _margin-right-1">
+        <i-button-group vertical size="md">
+            <i-button>Left</i-button>
+            <i-button>Middle</i-button>
+            <i-button>Right</i-button>
+        </i-button-group>
+    </div>
+    <div class="_float-left _margin-right-1">
+        <i-button-group vertical size="lg">
+            <i-button>Left</i-button>
+            <i-button>Middle</i-button>
+            <i-button>Right</i-button>
+        </i-button-group>
+    </div>
+
+</div>
 
 ~~~html
-<i-button active>Active Default Button</i-button>
-<i-button active theme="primary">Active Primary Button</i-button>
-~~~
+<i-button-group vertical size="sm">
+    <i-button>Left</i-button>
+    <i-button>Middle</i-button>
+    <i-button>Right</i-button>
+</i-button-group>
 
-## Button Linking and Routing
-Buttons can be used as link anchors using the `href` property, just like you'd use it on the `<a>` tag. You can also
-specify a `target` property.
+<i-button-group vertical size="md">
+    <i-button>Left</i-button>
+    <i-button>Middle</i-button>
+    <i-button>Right</i-button>
+</i-button-group>
 
-The `<i-button>` component is well integrated with the [Vue Router](https://router.vuejs.org) plugin.
-Using `$router.push` behind the scenes, you can easily pass route objects to the component, the same way you would do 
-to a `<router-link>`.
-
-<i-button href="http://inkline.io" rel="nofollow">Button Link</i-button>
-<i-button :href="{ name: 'docs.components.button' }">Button Route</i-button>
-
-~~~html
-<i-button href="http://inkline.io" rel="nofollow">Button Link</i-button>
-<i-button :href="{ name: 'docs.components.button' }">Button Route</i-button>
+<i-button-group vertical size="lg">
+    <i-button>Left</i-button>
+    <i-button>Middle</i-button>
+    <i-button>Right</i-button>
+</i-button-group>
 ~~~
