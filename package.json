@@ -1,7 +1,7 @@
 {
   "name": "inkline.io",
-  "version": "1.0.1",
-  "description": "A Vue.js project",
+  "version": "1.1.0",
+  "description": "The documentation for Inkline, a UI/UX framework designed for creating flawless responsive websites, using Gradient Design. Inkline is written and maintained by @alexgrozav.",
   "author": "Alex Grozav <alex@grozav.com>",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config config/webpack.development.config.js",
