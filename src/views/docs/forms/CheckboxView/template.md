@@ -99,23 +99,15 @@ Applying the size `size` property to a `i-checkbox-group` will set the chosen si
 
 Checked values: <span>{{checkedSizeGroupSm}}</span>
 
-~~~html
-<i-checkbox-group size="sm" v-model="checked">
+<i-checkbox-group size="lg" v-model="checkedSizeGroupLg">
     <i-checkbox value="Football">Football</i-checkbox>
     <i-checkbox value="Volleyball">Volleyball</i-checkbox>
     <i-checkbox value="Basketball">Basketball</i-checkbox>
     <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
 </i-checkbox-group>
-~~~
-~~~js
-export default {
-  data () {
-    return {
-      checked: ['Basketball']
-    };
-  }
-}
-~~~
+
+Checked values: <span>{{checkedSizeGroupLg}}</span>
+
 
 <i-checkbox-group size="md" v-model="checkedSizeGroupMd">
     <i-checkbox value="Football">Football</i-checkbox>
@@ -127,33 +119,20 @@ export default {
 Checked values: <span>{{checkedSizeGroupMd}}</span>
 
 ~~~html
+<i-checkbox-group size="sm" v-model="checked">
+    <i-checkbox value="Football">Football</i-checkbox>
+    <i-checkbox value="Volleyball">Volleyball</i-checkbox>
+    <i-checkbox value="Basketball">Basketball</i-checkbox>
+    <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
+</i-checkbox-group>
+
 <i-checkbox-group size="md" v-model="checked">
     <i-checkbox value="Football">Football</i-checkbox>
     <i-checkbox value="Volleyball">Volleyball</i-checkbox>
     <i-checkbox value="Basketball">Basketball</i-checkbox>
     <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
 </i-checkbox-group>
-~~~
-~~~js
-export default {
-  data () {
-    return {
-      checked: ['Basketball']
-    };
-  }
-}
-~~~
 
-<i-checkbox-group size="lg" v-model="checkedSizeGroupLg">
-    <i-checkbox value="Football">Football</i-checkbox>
-    <i-checkbox value="Volleyball">Volleyball</i-checkbox>
-    <i-checkbox value="Basketball">Basketball</i-checkbox>
-    <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
-</i-checkbox-group>
-
-Checked values: <span>{{checkedSizeGroupLg}}</span>
-
-~~~html
 <i-checkbox-group size="lg" v-model="checked">
     <i-checkbox value="Football">Football</i-checkbox>
     <i-checkbox value="Volleyball">Volleyball</i-checkbox>

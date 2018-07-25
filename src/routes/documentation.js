@@ -1,19 +1,20 @@
-import CodeView from '@/views/docs/core/CodeView';
-import ColorsView from '@/views/docs/core/ColorsView';
-import DocumentationLayout from '@/views/layouts/DocumentationLayout';
-import GridView from '@/views/docs/core/GridView';
-import ImagesView from '@/views/docs/core/ImagesView';
-import LayoutView from '@/views/docs/core/LayoutView';
-import TablesView from '@/views/docs/core/TablesView';
-import TypographyView from '@/views/docs/core/TypographyView';
+import CodeView from '@views/docs/core/CodeView';
+import ColorsView from '@views/docs/core/ColorsView';
+import DocumentationLayout from '@views/layouts/DocumentationLayout';
+import GridView from '@views/docs/core/GridView';
+import ImagesView from '@views/docs/core/ImagesView';
+import LayoutView from '@views/docs/core/LayoutView';
+import TablesView from '@views/docs/core/TablesView';
+import TypographyView from '@views/docs/core/TypographyView';
 
-import ButtonView from '@/views/docs/components/ButtonView';
+import ButtonView from '@views/docs/components/ButtonView';
+import ButtonGroupView from '@views/docs/components/ButtonGroupView';
 
-import CheckboxView from '@/views/docs/forms/CheckboxView';
-import InputView from '@/views/docs/forms/InputView';
-import InputNumberView from '@/views/docs/forms/InputNumberView';
-import RadioView from '@/views/docs/forms/RadioView';
-import TextareaView from '@/views/docs/forms/TextareaView';
+import CheckboxView from '@views/docs/forms/CheckboxView';
+import InputView from '@views/docs/forms/InputView';
+import InputNumberView from '@views/docs/forms/InputNumberView';
+import RadioView from '@views/docs/forms/RadioView';
+import TextareaView from '@views/docs/forms/TextareaView';
 
 export default [
     {
@@ -67,6 +68,11 @@ export default [
                 path: 'components/button',
                 name: 'docs.components.button',
                 component: ButtonView
+            },
+            {
+                path: 'components/button-group',
+                name: 'docs.components.button-group',
+                component: ButtonGroupView
             },
 
             /**
