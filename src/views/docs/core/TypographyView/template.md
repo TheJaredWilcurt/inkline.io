@@ -404,7 +404,7 @@ Remove a list’s bullets and apply some light margin using the `-inline` list m
   <dt class="column -sm-3">Malesuada porta</dt>
   <dd class="column -sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-  <dt class="column -sm-3 text-truncate">Truncated term is truncated</dt>
+  <dt class="column -sm-3">Fusce dapibus</dt>
   <dd class="column -sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
 
   <dt class="column -sm-3">Nesting</dt>
@@ -430,7 +430,7 @@ Remove a list’s bullets and apply some light margin using the `-inline` list m
   <dt class="column -sm-3">Malesuada porta</dt>
   <dd class="column -sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-  <dt class="column -sm-3 text-truncate">Truncated term is truncated</dt>
+  <dt class="column -sm-3">Fusce dapibus</dt>
   <dd class="column -sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
 
   <dt class="column -sm-3">Nesting</dt>
