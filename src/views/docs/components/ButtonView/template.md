@@ -149,7 +149,7 @@ modifier. You're also able to use the `size` modifier to control the size of you
 ~~~
 
 ## Button Sizes
-You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. 
+You're able to use the `size` modifier to control the size of your buttons, using one of the available sizes: `sm`, `md`, and `lg`. 
 The default size is set to `md`.
 
 <i-button size="sm">Small Button</i-button>
