@@ -1,4 +1,5 @@
 import '@inkline/resources/css/index.styl';
+import '@inkline/resources/themes/default/index.styl';
 import '@resources/css/index.styl';
 
 import Vue from 'vue';
