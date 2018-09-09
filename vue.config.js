@@ -10,15 +10,16 @@ module.exports = {
         }
     },
     chainWebpack: config => {
-        config.module
+        ['normal', 'normal-modules', 'vue', 'vue-modules'].forEach((oneOf) => config.module
             .rule('stylus')
-            .oneOf('normal')
+            .oneOf(oneOf)
             .use('stylus-loader')
             .tap((options) => Object.assign(options, {
                 import: [
                     path.join(__dirname, 'src/css/config/index.styl')
                 ]
-            }));
+            })));
+
 
         config.module
             .rule('md')

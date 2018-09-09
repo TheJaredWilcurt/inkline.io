@@ -68,7 +68,9 @@ Optionally, you can provide a header or a footer for your cards.
 
 ~~~html
 <i-card>
+    <template slot="header">Card Header</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
+    <template slot="footer">Card Footer</template>
 </i-card>
 ~~~
 

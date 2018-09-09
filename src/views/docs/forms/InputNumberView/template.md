@@ -38,19 +38,20 @@ export default {
 }
 ~~~
 
-## Clearable Input
 
-<i-input-number v-model="clearableInputValue" placeholder="Type something.." clearable />
+## Minimum and Maximum Value
+
+<i-input-number v-model="minMaxInputValue" :min="1" :max="10" placeholder="Type something.." />
 
 ~~~html
-<i-input-number v-model="value" placeholder="Type something.." clearable />
+<i-input-number v-model="value" :min="1" :max="10" placeholder="Type something.." />
 ~~~
 
 ~~~js
 export default {
   data () {
     return {
-      value: ''
+      value: 1
     };
   }
 }

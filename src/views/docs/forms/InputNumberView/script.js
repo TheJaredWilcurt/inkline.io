@@ -11,6 +11,8 @@ export default {
         return {
             inputValue: '',
             disabledInputValue: '',
+            minMaxInputValue: '1',
+            precisionInputValue: '',
             clearableInputValue: '',
             prefixInputValue: '',
             suffixInputValue: '',

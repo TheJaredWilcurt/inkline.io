@@ -61,34 +61,34 @@ Inkline allows you to easily add a prefix or suffix to your inputs. Using prefix
 your input type using an icon or text. 
 
 <i-input v-model="prefixInputValue" placeholder="Type something..">
-    <i slot="prefix" class="form-input-icon">@</i>
+    <i slot="prefix">@</i>
 </i-input>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something..">
-    <i slot="prefix" class="form-input-icon">@</i>
+    <i slot="prefix">@</i>
 </i-input>
 ~~~
 
 <i-input v-model="suffixInputValue" placeholder="Type something..">
-    <i slot="suffix" class="form-input-icon">@</i>
+    <i slot="suffix">@</i>
 </i-input>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something..">
-    <i slot="suffix" class="form-input-icon">@</i>
+    <i slot="suffix">@</i>
 </i-input>
 ~~~
 
 <i-input v-model="prefixSuffixInputValue" placeholder="Type something..">
-    <i slot="prefix" class="form-input-icon">@</i>
-    <i slot="suffix" class="form-input-icon">@</i>
+    <i slot="prefix">@</i>
+    <i slot="suffix">@</i>
 </i-input>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something..">
-    <i slot="prefix" class="form-input-icon">@</i>
-    <i slot="suffix" class="form-input-icon">@</i>
+    <i slot="prefix">@</i>
+    <i slot="suffix">@</i>
 </i-input>
 ~~~
 
@@ -106,34 +106,34 @@ export default {
 You can add additional content such as select fields, buttons or plain text, to either side of the input by using the prepend and append slots.
 
 <i-input v-model="prependInputValue" placeholder="Type something..">
-    <span slot="prepend" class="form-input-prepend">http://</span>
+    <span slot="prepend">http://</span>
 </i-input>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something..">
-    <span slot="prepend" class="form-input-prepend">http://</span>
+    <span slot="prepend">http://</span>
 </i-input>
 ~~~
 
 <i-input v-model="appendInputValue" placeholder="Type something..">
-    <span slot="append" class="form-input-append">http://</span>
+    <span slot="append">http://</span>
 </i-input>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something..">
-    <span slot="append" class="form-input-append">.com</span>
+    <span slot="append">.com</span>
 </i-input>
 ~~~
 
 <i-input v-model="prependAppendInputValue" placeholder="Type something..">
-    <span slot="prepend" class="form-input-prepend">http://</span>
-    <span slot="append" class="form-input-append">.com</span>
+    <span slot="prepend">http://</span>
+    <span slot="append">.com</span>
 </i-input>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something..">
-    <span slot="prepend" class="form-input-prepend">http://</span>
-    <span slot="append" class="form-input-append">.com</span>
+    <span slot="prepend">http://</span>
+    <span slot="append">.com</span>
 </i-input>
 ~~~
 
