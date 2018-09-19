@@ -20,10 +20,8 @@
 <br/>
   
 <p align="center">
-    <a href="https://www.npmjs.com/package/inkline"><img src="https://img.shields.io/npm/v/inkline.svg" alt="npm version"></a>
-    <img src="https://img.shields.io/david/inkline/inkline.svg?style=popout" alt="dependencies status">
-    <img src="https://img.shields.io/david/inkline/inkline.svg?style=popout" alt="devDependencies status">
-    <a href="https://www.npmjs.com/package/inkline"><img src="https://img.shields.io/npm/dm/inkline.svg" alt="Downloads"></a>
+    <img src="https://img.shields.io/david/inkline/inkline.io.svg?style=popout" alt="dependencies status">
+    <img src="https://img.shields.io/david/inkline/inkline.io.svg?style=popout" alt="devDependencies status">
 </a>
 
 <br/>
