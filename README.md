@@ -29,8 +29,7 @@
 
 ## Running documentation locally
 
-1. First, [install Jekyll](http://jekyllrb.com/docs/installation) and other Ruby dependencies with `bundle install`.
-   **Note for Windows users:** Read [this unofficial guide](http://jekyll-windows.juthilo.com/) to get Jekyll up and running without problems.
+1. First, install dependencies using `npm install`.
 2. From the root directory, run `npm run dev` in the command line.
 3. Open `http://localhost:8080` in your browser.
 
