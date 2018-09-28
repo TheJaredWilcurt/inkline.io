@@ -165,8 +165,7 @@ If you want to achieve a faded background color, you can use the `faded` propert
 
 
 ## Alert Sizes
-You're able to use the `size` modifier to control the text and spacing size of your alerts, using one of the available sizes: `sm`, `md`, and `lg`.
-The default size is set to `md`.
+You're able to use the `size` modifier to control the text and spacing size of your alerts, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
 
 <div class="_margin-bottom-1">
     <i-alert size="sm">
@@ -231,37 +230,28 @@ You can add an icon to the `<i-alert>` component by providing a icon `slot`.
 <div class="_margin-bottom-1">
     <i-alert theme="primary">
         <template slot="icon">✓</template>
-        <p>Whoa! Nicely done.</p>
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </i-alert>
 </div>
 
 ~~~html
-<i-alert dismissible :show="visible" theme="success">
-    <p>Whoa! Nicely done.</p>
+<i-alert theme="primary">
+    <template slot="icon">✓</template>
+    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 </i-alert>
 ~~~
 
-~~~js
-export default {
-  data () {
-    return {
-      visible: true
-    };
-  }
-}
-~~~
-
 ## Dismissible Alert
-You can dismiss alerts using a combination of the provided `dismissible` and `show` properties.
+You can dismiss alerts using a combination of the provided `dismissible` and `show` properties. The `dismissible` property will be used to show the dismiss icon. The `show` property will show or hide the alert, resetting dismissed alerts when needed.
 
 <div class="_margin-bottom-1">
-    <i-alert dismissible :show="visible" theme="success">
+    <i-alert dismissible :show="visible" theme="primary">
         <p>Whoa! Nicely done.</p>
     </i-alert>
 </div>
 
 ~~~html
-<i-alert dismissible :show="visible" theme="success">
+<i-alert dismissible :show="visible" theme="primary">
     <p>Whoa! Nicely done.</p>
 </i-alert>
 ~~~
