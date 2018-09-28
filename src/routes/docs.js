@@ -7,6 +7,7 @@ import LayoutView from '@views/docs/core/LayoutView';
 import TablesView from '@views/docs/core/TablesView';
 import TypographyView from '@views/docs/core/TypographyView';
 
+import AlertView from '@views/docs/components/AlertView';
 import ButtonView from '@views/docs/components/ButtonView';
 import ButtonGroupView from '@views/docs/components/ButtonGroupView';
 import CardView from '@views/docs/components/CardView';
@@ -65,6 +66,11 @@ export default [
             /**
              * Component Views
              */
+            {
+                path: 'components/alert',
+                name: 'docs.components.alert',
+                component: AlertView
+            },
             {
                 path: 'components/button',
                 name: 'docs.components.button',
