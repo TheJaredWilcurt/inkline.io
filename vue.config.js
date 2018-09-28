@@ -11,6 +11,12 @@ module.exports = {
         }
     },
     chainWebpack: config => {
+        if (process.env.NODE_ENV === 'development') {
+            config.output
+                .filename('[name].[hash].js')
+                .end()
+        }
+
         ['normal', 'normal-modules', 'vue', 'vue-modules'].forEach((oneOf) => config.module
             .rule('stylus')
             .oneOf(oneOf)
@@ -20,7 +26,6 @@ module.exports = {
                     path.join(__dirname, 'src/css/config/index.styl')
                 ]
             })));
-
 
         config.module
             .rule('md')
