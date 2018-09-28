@@ -201,20 +201,20 @@ export default {
 ~~~
 
 ### Radio Buttons
-<i-radio-group v-model="selectedButton">
+<i-radio-button-group v-model="selectedButton">
     <i-radio-button value="Earth">Earth</i-radio-button>
     <i-radio-button value="Mars">Mars</i-radio-button>
     <i-radio-button value="Jupiter">Jupiter</i-radio-button>
     <i-radio-button value="Venus" disabled>Venus</i-radio-button>
-</i-radio-group>
+</i-radio-button-group>
 
 ~~~html
-<i-radio-group v-model="selected">
+<i-radio-button-group v-model="selected">
     <i-radio-button value="Earth">Earth</i-radio-button>
     <i-radio-button value="Mars">Mars</i-radio-button>
     <i-radio-button value="Jupiter">Jupiter</i-radio-button>
     <i-radio-button value="Venus" disabled>Venus</i-radio-button>
-</i-radio-group>
+</i-radio-button-group>
 ~~~
 
 ~~~js

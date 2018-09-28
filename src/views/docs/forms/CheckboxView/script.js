@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { ICheckbox, ICheckboxButton, ICheckboxGroup } from '@inkline';
+import { ICheckbox, ICheckboxButton, ICheckboxGroup, ICheckboxButtonGroup } from '@inkline';
 
 export default {
     extends: View,
@@ -7,7 +7,8 @@ export default {
     components: {
         ICheckbox,
         ICheckboxButton,
-        ICheckboxGroup
+        ICheckboxGroup,
+        ICheckboxButtonGroup
     },
     data () {
         return {

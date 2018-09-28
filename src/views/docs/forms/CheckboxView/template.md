@@ -209,22 +209,22 @@ export default {
 ~~~
 
 ## Checkbox Buttons
-<i-checkbox-group v-model="checkedButton">
+<i-checkbox-button-group v-model="checkedButton">
     <i-checkbox-button value="Earth">Earth</i-checkbox-button>
     <i-checkbox-button value="Mars">Mars</i-checkbox-button>
     <i-checkbox-button value="Jupiter">Jupiter</i-checkbox-button>
     <i-checkbox-button value="Venus" disabled>Venus</i-checkbox-button>
-</i-checkbox-group>
+</i-checkbox-button-group>
 
 Checked values: <span>{{checkedButton}}</span>
 
 ~~~html
-<i-checkbox-group v-model="checked">
+<i-checkbox-button-group v-model="checked">
     <i-checkbox-button value="Earth">Earth</i-checkbox-button>
     <i-checkbox-button value="Mars">Mars</i-checkbox-button>
     <i-checkbox-button value="Jupiter">Jupiter</i-checkbox-button>
     <i-checkbox-button value="Venus" disabled>Venus</i-checkbox-button>
-</i-checkbox-group>
+</i-checkbox-button-group>
 ~~~
 
 ~~~js

@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IRadio, IRadioButton, IRadioGroup } from '@inkline';
+import { IRadio, IRadioButton, IRadioGroup, IRadioButtonGroup } from '@inkline';
 
 export default {
     extends: View,
@@ -7,7 +7,8 @@ export default {
     components: {
         IRadio,
         IRadioButton,
-        IRadioGroup
+        IRadioGroup,
+        IRadioButtonGroup
     },
     data () {
         return {
