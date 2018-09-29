@@ -159,13 +159,13 @@ Inkline includes several predefined card styles that you can use within your app
         </i-card>
     </i-column>
     <i-column md="4">
-        <i-card theme="light">
+        <i-card variant="light">
             <template slot="header">Light Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
     <i-column md="4">
-        <i-card theme="dark">
+        <i-card variant="dark">
             <template slot="header">Dark Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
@@ -174,19 +174,19 @@ Inkline includes several predefined card styles that you can use within your app
 
 <i-row class="_margin-bottom-1">
     <i-column md="4">
-        <i-card theme="primary">
+        <i-card variant="primary">
             <template slot="header">Primary Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
     <i-column md="4">
-        <i-card theme="secondary">
+        <i-card variant="secondary">
             <template slot="header">Secondary Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
     <i-column md="4">
-        <i-card theme="success">
+        <i-card variant="success">
             <template slot="header">Success Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
@@ -195,19 +195,19 @@ Inkline includes several predefined card styles that you can use within your app
 
 <i-row class="_margin-bottom-1">
     <i-column md="4">
-        <i-card theme="danger">
+        <i-card variant="danger">
             <template slot="header">Danger Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
     <i-column md="4">
-        <i-card theme="warning">
+        <i-card variant="warning">
             <template slot="header">Warning Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
     <i-column md="4">
-        <i-card theme="info">
+        <i-card variant="info">
             <template slot="header">Info Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
@@ -220,42 +220,42 @@ Inkline includes several predefined card styles that you can use within your app
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 
-<i-card theme="light">
+<i-card variant="light">
     <template slot="header">Light Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 
-<i-card theme="dark">
+<i-card variant="dark">
     <template slot="header">Dark Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 
-<i-card theme="primary">
+<i-card variant="primary">
     <template slot="header">Primary Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 
-<i-card theme="secondary">
+<i-card variant="secondary">
     <template slot="header">Secondary Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 
-<i-card theme="success">
+<i-card variant="success">
     <template slot="header">Success Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 
-<i-card theme="danger">
+<i-card variant="danger">
     <template slot="header">Danger Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 
-<i-card theme="warning">
+<i-card variant="warning">
     <template slot="header">Warning Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 
-<i-card theme="info">
+<i-card variant="info">
     <template slot="header">Info Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>

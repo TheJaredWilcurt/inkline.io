@@ -4,24 +4,24 @@ Inkline provides you with custom button styles with support for multiple sizes, 
 ## Button Themes
 Inkline includes several predefined button styles, each serving its own semantic purpose, with a few extra themes available for more control.
 
-<i-button theme="primary">Primary</i-button>
-<i-button theme="secondary">Secondary</i-button>
-<i-button theme="success">Success</i-button>
-<i-button theme="danger">Danger</i-button>
-<i-button theme="warning">Warning</i-button>
-<i-button theme="info">Info</i-button>
-<i-button theme="light">Light</i-button>
-<i-button theme="dark">Dark</i-button>
+<i-button variant="primary">Primary</i-button>
+<i-button variant="secondary">Secondary</i-button>
+<i-button variant="success">Success</i-button>
+<i-button variant="danger">Danger</i-button>
+<i-button variant="warning">Warning</i-button>
+<i-button variant="info">Info</i-button>
+<i-button variant="light">Light</i-button>
+<i-button variant="dark">Dark</i-button>
 
 ~~~html
-<i-button theme="primary">Primary</i-button>
-<i-button theme="secondary">Secondary</i-button>
-<i-button theme="success">Success</i-button>
-<i-button theme="danger">Danger</i-button>
-<i-button theme="warning">Warning</i-button>
-<i-button theme="info">Info</i-button>
-<i-button theme="light">Light</i-button>
-<i-button theme="dark">Dark</i-button>
+<i-button variant="primary">Primary</i-button>
+<i-button variant="secondary">Secondary</i-button>
+<i-button variant="success">Success</i-button>
+<i-button variant="danger">Danger</i-button>
+<i-button variant="warning">Warning</i-button>
+<i-button variant="info">Info</i-button>
+<i-button variant="light">Light</i-button>
+<i-button variant="dark">Dark</i-button>
 ~~~
 
 ## Button Type
@@ -65,24 +65,24 @@ If you need to change the `<button>` node used to render the component, you can 
 Sometimes, buttons should not stand out so much. Replace the default modifier classes with the `outline` property
 to remove background images and colors on any button when not interacted with.
 
-<i-button outline theme="primary">Primary</i-button>
-<i-button outline theme="secondary">Secondary</i-button>
-<i-button outline theme="success">Success</i-button>
-<i-button outline theme="danger">Danger</i-button>
-<i-button outline theme="warning">Warning</i-button>
-<i-button outline theme="info">Info</i-button>
-<i-button outline theme="light">Light</i-button>
-<i-button outline theme="dark">Dark</i-button>
+<i-button outline variant="primary">Primary</i-button>
+<i-button outline variant="secondary">Secondary</i-button>
+<i-button outline variant="success">Success</i-button>
+<i-button outline variant="danger">Danger</i-button>
+<i-button outline variant="warning">Warning</i-button>
+<i-button outline variant="info">Info</i-button>
+<i-button outline variant="light">Light</i-button>
+<i-button outline variant="dark">Dark</i-button>
 
 ~~~html
-<i-button outline theme="primary">Primary</i-button>
-<i-button outline theme="secondary">Secondary</i-button>
-<i-button outline theme="success">Success</i-button>
-<i-button outline theme="danger">Danger</i-button>
-<i-button outline theme="warning">Warning</i-button>
-<i-button outline theme="info">Info</i-button>
-<i-button outline theme="light">Light</i-button>
-<i-button outline theme="dark">Dark</i-button>
+<i-button outline variant="primary">Primary</i-button>
+<i-button outline variant="secondary">Secondary</i-button>
+<i-button outline variant="success">Success</i-button>
+<i-button outline variant="danger">Danger</i-button>
+<i-button outline variant="warning">Warning</i-button>
+<i-button outline variant="info">Info</i-button>
+<i-button outline variant="light">Light</i-button>
+<i-button outline variant="dark">Dark</i-button>
 ~~~
 
 
@@ -90,48 +90,48 @@ to remove background images and colors on any button when not interacted with.
 If you do not fancy gradients you can always use the `flat` property. This will convert your button design to one with 
 a flat color background.
 
-<i-button flat theme="primary">Primary</i-button>
-<i-button flat theme="secondary">Secondary</i-button>
-<i-button flat theme="success">Success</i-button>
-<i-button flat theme="danger">Danger</i-button>
-<i-button flat theme="warning">Warning</i-button>
-<i-button flat theme="info">Info</i-button>
-<i-button flat theme="light">Light</i-button>
-<i-button flat theme="dark">Dark</i-button>
+<i-button flat variant="primary">Primary</i-button>
+<i-button flat variant="secondary">Secondary</i-button>
+<i-button flat variant="success">Success</i-button>
+<i-button flat variant="danger">Danger</i-button>
+<i-button flat variant="warning">Warning</i-button>
+<i-button flat variant="info">Info</i-button>
+<i-button flat variant="light">Light</i-button>
+<i-button flat variant="dark">Dark</i-button>
 
 ~~~html
-<i-button flat theme="primary">Primary</i-button>
-<i-button flat theme="secondary">Secondary</i-button>
-<i-button flat theme="success">Success</i-button>
-<i-button flat theme="danger">Danger</i-button>
-<i-button flat theme="warning">Warning</i-button>
-<i-button flat theme="info">Info</i-button>
-<i-button flat theme="light">Light</i-button>
-<i-button flat theme="dark">Dark</i-button>
+<i-button flat variant="primary">Primary</i-button>
+<i-button flat variant="secondary">Secondary</i-button>
+<i-button flat variant="success">Success</i-button>
+<i-button flat variant="danger">Danger</i-button>
+<i-button flat variant="warning">Warning</i-button>
+<i-button flat variant="info">Info</i-button>
+<i-button flat variant="light">Light</i-button>
+<i-button flat variant="dark">Dark</i-button>
 ~~~
 
 
 ## Link Button
-You can create link buttons that look the same as normal links. Link buttons will use the `theme` property to set the color of the link.
+You can create link buttons that look the same as normal links. Link buttons will use the `variant` property to set the color of the link.
 
-<i-button link theme="primary">Primary</i-button>
-<i-button link theme="secondary">Secondary</i-button>
-<i-button link theme="success">Success</i-button>
-<i-button link theme="danger">Danger</i-button>
-<i-button link theme="warning">Warning</i-button>
-<i-button link theme="info">Info</i-button>
-<i-button link theme="light">Light</i-button>
-<i-button link theme="dark">Dark</i-button>
+<i-button link variant="primary">Primary</i-button>
+<i-button link variant="secondary">Secondary</i-button>
+<i-button link variant="success">Success</i-button>
+<i-button link variant="danger">Danger</i-button>
+<i-button link variant="warning">Warning</i-button>
+<i-button link variant="info">Info</i-button>
+<i-button link variant="light">Light</i-button>
+<i-button link variant="dark">Dark</i-button>
 
 ~~~html
-<i-button link theme="primary">Primary</i-button>
-<i-button link theme="secondary">Secondary</i-button>
-<i-button link theme="success">Success</i-button>
-<i-button link theme="danger">Danger</i-button>
-<i-button link theme="warning">Warning</i-button>
-<i-button link theme="info">Info</i-button>
-<i-button link theme="light">Light</i-button>
-<i-button link theme="dark">Dark</i-button>
+<i-button link variant="primary">Primary</i-button>
+<i-button link variant="secondary">Secondary</i-button>
+<i-button link variant="success">Success</i-button>
+<i-button link variant="danger">Danger</i-button>
+<i-button link variant="warning">Warning</i-button>
+<i-button link variant="info">Info</i-button>
+<i-button link variant="light">Light</i-button>
+<i-button link variant="dark">Dark</i-button>
 ~~~
 
 ## Circle Buttons
@@ -175,22 +175,22 @@ You can create block level buttons that span the full width of a parent by addin
 Buttons will appear pressed when active. You can force a button to have an active appearance with the `active` property (this will also include the aria-pressed="true" attribute).
 
 <i-button active>Active Default Button</i-button>
-<i-button active theme="primary">Active Primary Button</i-button>
+<i-button active variant="primary">Active Primary Button</i-button>
 
 ~~~html
 <i-button active>Active Default Button</i-button>
-<i-button active theme="primary">Active Primary Button</i-button>
+<i-button active variant="primary">Active Primary Button</i-button>
 ~~~
 
 ## Disabled State
 You can make buttons look inactive or disabled by adding the `disabled` boolean property to an `<i-button>` element.
 
 <i-button disabled>Disabled Default Button</i-button>
-<i-button disabled theme="primary">Disabled Primary Button</i-button>
+<i-button disabled variant="primary">Disabled Primary Button</i-button>
 
 ~~~html
 <i-button active>Active Default Button</i-button>
-<i-button active theme="primary">Active Primary Button</i-button>
+<i-button active variant="primary">Active Primary Button</i-button>
 ~~~
 
 ## Button Linking and Routing
