@@ -8,6 +8,7 @@ import TablesView from '@views/docs/core/TablesView';
 import TypographyView from '@views/docs/core/TypographyView';
 
 import AlertView from '@views/docs/components/AlertView';
+import BadgeView from '@views/docs/components/BadgeView';
 import ButtonView from '@views/docs/components/ButtonView';
 import ButtonGroupView from '@views/docs/components/ButtonGroupView';
 import CardView from '@views/docs/components/CardView';
@@ -70,6 +71,11 @@ export default [
                 path: 'components/alert',
                 name: 'docs.components.alert',
                 component: AlertView
+            },
+            {
+                path: 'components/badge',
+                name: 'docs.components.badge',
+                component: BadgeView
             },
             {
                 path: 'components/button',
