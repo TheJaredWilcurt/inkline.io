@@ -9,6 +9,7 @@ import TypographyView from '@views/docs/core/TypographyView';
 
 import AlertView from '@views/docs/components/AlertView';
 import BadgeView from '@views/docs/components/BadgeView';
+import BreadcrumbView from '@views/docs/components/BreadcrumbView';
 import ButtonView from '@views/docs/components/ButtonView';
 import ButtonGroupView from '@views/docs/components/ButtonGroupView';
 import CardView from '@views/docs/components/CardView';
@@ -76,6 +77,11 @@ export default [
                 path: 'components/badge',
                 name: 'docs.components.badge',
                 component: BadgeView
+            },
+            {
+                path: 'components/breadcrumb',
+                name: 'docs.components.breadcrumb',
+                component: BreadcrumbView
             },
             {
                 path: 'components/button',
