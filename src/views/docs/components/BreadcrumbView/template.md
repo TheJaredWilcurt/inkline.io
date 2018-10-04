@@ -1,52 +1,128 @@
 # Breadcrumbs
-Documentation and examples for badges, a small component used for counting and labeling.{.lead}
+Indicate the current page’s location depth using a navigation list that automatically adds separators using CSS.{.lead}
 
 ## Examples
-Badges always match the size of the immediate parent element by using relative font sizing and `em` units.
+Separators are automatically added in CSS through `::before` and `content`. You can change the separator by changing the `--breadcrumb-separator` stylus variable.
 
-<div class="_margin-bottom-1">
-    <h1 class="_margin-top-0">Heading 1 <i-badge variant="primary">New</i-badge></h1>
-    <h2 class="_margin-top-0">Heading 2 <i-badge variant="primary">New</i-badge></h2>
-    <h3 class="_margin-top-0">Heading 3 <i-badge variant="primary">New</i-badge></h3>
-    <h4 class="_margin-top-0">Heading 4 <i-badge variant="primary">New</i-badge></h4>
-    <h5 class="_margin-top-0">Heading 5 <i-badge variant="primary">New</i-badge></h5>
-    <h6 class="_margin-top-0">Heading 6 <i-badge variant="primary">New</i-badge></h6>
-</div>
+<breadcrumb>
+    <breadcrumb-item active>Home</breadcrumb-item>
+</breadcrumb>
+
+<breadcrumb>
+    <breadcrumb-item href="/">Home</breadcrumb-item>
+    <breadcrumb-item :to="{ name: 'docs' }">Library</breadcrumb-item>
+    <breadcrumb-item active>Data</breadcrumb-item>
+</breadcrumb>
 
 ~~~html
-<h1>Heading 1 <i-badge variant="primary">New</i-badge></h1>
-<h2>Heading 2 <i-badge variant="primary">New</i-badge></h2>
-<h3>Heading 3 <i-badge variant="primary">New</i-badge></h3>
-<h4>Heading 4 <i-badge variant="primary">New</i-badge></h4>
-<h5>Heading 5 <i-badge variant="primary">New</i-badge></h5>
-<h6>Heading 6 <i-badge variant="primary">New</i-badge></h6>
+<breadcrumb>
+    <breadcrumb-item active>Home</breadcrumb-item>
+</breadcrumb>
+
+<breadcrumb>
+    <breadcrumb-item href="/">Home</breadcrumb-item>
+    <breadcrumb-item :to="{ name: 'docs' }">Library</breadcrumb-item>
+    <breadcrumb-item active>Data</breadcrumb-item>
+</breadcrumb>
 ~~~
 
-## Badge Sizes
-You're able to use the `size` modifier to control the text and spacing size of your badges, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
+#### Dynamically Generated
+You can generate and bind breadcrumbs from your JS data using a combination of `v-for` and `v-bind` as follows:
 
-<div class="_margin-bottom-1">
-    <i-badge size="sm">
-        Small
-    </i-badge>&nbsp; 
-    <i-badge size="md">
-        Medium
-    </i-badge>&nbsp; 
-    <i-badge size="lg">
-        Large
-    </i-badge>
-</div>
+<breadcrumb>
+    <breadcrumb-item v-bind="item" v-for="item in items" :key="item.title">{{item.title}}</breadcrumb-item>
+</breadcrumb>
+
+<div v-pre>
 
 ~~~html
-<i-alert size="sm">
-    Some quick example text to build on the alert title and make up the bulk of the alert's content.
-</i-alert>
+<breadcrumb>
+    <breadcrumb-item v-bind="item" v-for="item in items" :key="item.title">{{item.title}}</breadcrumb-item>
+</breadcrumb>
+~~~
 
-<i-alert size="md">
-    Some quick example text to build on the alert title and make up the bulk of the alert's content.
-</i-alert>
+~~~js
+export default {
+    data () {
+        return {
+            items: [
+                { title: 'Home', href: '/' },
+                { title: 'Components', to: 'docs.components' },
+                { title: 'Breadcrumbs', active: true }
+            ]
+        };
+    }
+};
+~~~
 
-<i-alert size="lg">
-    Some quick example text to build on the alert title and make up the bulk of the alert's content.
-</i-alert>
+</div>
+
+## Breadcrumb Sizes
+You're able to use the `size` modifier to control the text and spacing size of your breadcrumb, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
+
+<i-breadcrumb size="sm">
+    <breadcrumb-item href="/">Sizes</breadcrumb-item>
+    <breadcrumb-item active>Small</breadcrumb-item>
+</i-breadcrumb>
+<i-breadcrumb size="md">
+    <breadcrumb-item href="/">Sizes</breadcrumb-item>
+    <breadcrumb-item active>Medium</breadcrumb-item>
+</i-breadcrumb>
+<i-breadcrumb size="lg">
+    <breadcrumb-item href="/">Sizes</breadcrumb-item>
+    <breadcrumb-item active>Large</breadcrumb-item>
+</i-breadcrumb>
+
+~~~html
+<i-breadcrumb size="sm">
+    <breadcrumb-item href="/">Sizes</breadcrumb-item>
+    <breadcrumb-item active>Small</breadcrumb-item>
+</i-breadcrumb>
+
+<i-breadcrumb size="md">
+    <breadcrumb-item href="/">Sizes</breadcrumb-item>
+    <breadcrumb-item active>Medium</breadcrumb-item>
+</i-breadcrumb>
+
+<i-breadcrumb size="lg">
+    <breadcrumb-item href="/">Sizes</breadcrumb-item>
+    <breadcrumb-item active>Large</breadcrumb-item>
+</i-breadcrumb>
+~~~
+
+## Breadcrumb Variants
+Inkline includes basic predefined breadcrumb styles to allow for some breadcrumb styling flexibility depending on their background.
+
+<i-breadcrumb variant="light">
+    <breadcrumb-item href="/">Variants</breadcrumb-item>
+    <breadcrumb-item active>Light</breadcrumb-item>
+</i-breadcrumb>
+<i-breadcrumb variant="dark">
+    <breadcrumb-item href="/">Variants</breadcrumb-item>
+    <breadcrumb-item active>Dark</breadcrumb-item>
+</i-breadcrumb>
+<i-breadcrumb variant="primary">
+    <breadcrumb-item href="/">Variants</breadcrumb-item>
+    <breadcrumb-item active>Primary</breadcrumb-item>
+</i-breadcrumb>
+<i-breadcrumb variant="secondary">
+    <breadcrumb-item href="/">Variants</breadcrumb-item>
+    <breadcrumb-item active>Secondary</breadcrumb-item>
+</i-breadcrumb>
+
+~~~html
+<i-breadcrumb size="sm">
+    <breadcrumb-item href="/">Sizes</breadcrumb-item>
+    <breadcrumb-item active>Small</breadcrumb-item>
+</i-breadcrumb>
+
+<i-breadcrumb size="md">
+    <breadcrumb-item href="/">Sizes</breadcrumb-item>
+    <breadcrumb-item active>Medium</breadcrumb-item>
+</i-breadcrumb>
+
+<i-breadcrumb size="lg">
+    <breadcrumb-item href="/">Sizes</breadcrumb-item>
+    <breadcrumb-item active>Large</breadcrumb-item>
+</i-breadcrumb>
 ~~~
