@@ -366,8 +366,8 @@ You can target specific responsive breakpoints using `.-responsive-*`.
 ~~~
 
 
-## Themes
-Tables can be themed using brand modifier classes such as `.-light`, `.-dark`, `.-primary`, `.-secondary`, `.-info`, `.-success`, `.-warning`, and `.-danger`. You can theme the table as a whole or individual table elements. By default, tables have the `.-light` theme. You can use a variation of any of the above classes to create the table design you need.
+## Variants
+Tables can be themed using brand modifier classes such as `.-light`, `.-dark`, `.-primary`, `.-secondary`, `.-info`, `.-success`, `.-warning`, and `.-danger`. You can set a variant for the table as a whole or individual table elements. By default, tables have the `.-light` variant. You can use a variation of any of the above classes to create the table design you need.
 
 <table class="table -light -bordered -striped -hoverable">
   <thead>

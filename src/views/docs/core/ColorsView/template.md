@@ -91,7 +91,7 @@ You can also add state text colors using text-specific helper classes:
 
 #### Basic Colors
 Basic colors are useful when working with multiple colors on the same page. The following basic colors are 
-available when using the default theme.
+available when using the default variant.
 
 <i-row>
     <i-column xs="3">
@@ -247,7 +247,7 @@ You can also add neutral text colors using text-specific helper classes:
 
 #### Social Media Colors
 Inkline provides social media colors from most of your favorite sites. Social media colors are available only using
-the default theme.
+the default variant.
 
 <i-row>
     <i-column xs="3">

@@ -1,8 +1,8 @@
 # Buttons
 Inkline provides you with custom button styles with support for multiple sizes, states, and more. { .lead }
 
-## Button Themes
-Inkline includes several predefined button styles, each serving its own semantic purpose, with a few extra themes available for more control.
+## Button Variants
+Inkline includes several predefined button styles, each serving its own semantic purpose, with a few extra variants available for more control.
 
 <div>
     <i-button variant="primary">Primary</i-button>&nbsp;
@@ -214,19 +214,17 @@ You can make buttons look inactive or disabled by adding the `disabled` boolean 
 ~~~
 
 ## Button Linking and Routing
-Buttons can be used as link anchors using the `href` property, just like you'd use it on the `<a>` tag. You can also
-specify a `target` property.
+Buttons will be automatically converted to link anchors `<a>` when providing a `href` property. You can also specify `target` and `rel` properties.
 
-The `<i-button>` component is well integrated with the [Vue Router](https://router.vuejs.org) plugin.
-Using `$router.push` behind the scenes, you can easily pass route objects to the component, the same way you would do 
-to a `<router-link>`.
+The `<i-button>` component is well integrated with the [Vue Router](https://router.vuejs.org) plugin and will be converted to a `<router-link>` when using the `to` property.
+
 
 <div>
-    <i-button href="http://inkline.io" rel="nofollow">Button Link</i-button>&nbsp;
-    <i-button :href="{ name: 'docs.components.button' }">Button Route</i-button>
+    <i-button href="http://inkline.io">Button Link</i-button>&nbsp;
+    <i-button :to="{ name: 'docs.components.button' }">Button Route</i-button>
 </div>
 
 ~~~html
-<i-button href="http://inkline.io" rel="nofollow">Button Link</i-button>
-<i-button :href="{ name: 'docs.components.button' }">Button Route</i-button>
+<i-button href="http://inkline.io">Button Link</i-button>
+<i-button :to="{ name: 'docs.components.button' }">Button Route</i-button>
 ~~~

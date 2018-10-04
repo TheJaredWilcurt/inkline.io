@@ -1,7 +1,7 @@
 # Alerts
 Provide contextual feedback messages for typical user actions using the alert component. {.lead}
 
-## Alert Themes
+## Alert Variants
 Alerts are available for any length of text, and can have an optional dismiss button. For choosing the context of the alert,
 use the `variant` property.
 
@@ -82,7 +82,7 @@ By default, alerts are set to have `width: 100%`, fully spanning the width of th
 </i-alert>
 ~~~
 
-## Faded Alert Themes
+## Faded Alert Variants
 If you want to achieve a faded background color, you can use the `faded` property.
 
 <div class="_margin-bottom-1">

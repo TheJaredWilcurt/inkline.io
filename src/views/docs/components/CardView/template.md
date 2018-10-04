@@ -148,7 +148,7 @@ The default size is set to `md`.
 </i-card>
 ~~~
 
-## Card Themes
+## Card Variants
 Inkline includes several predefined card styles that you can use within your application.
 
 <i-row class="_margin-bottom-1">
