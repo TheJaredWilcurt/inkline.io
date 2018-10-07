@@ -38,15 +38,48 @@ You're able to use the `size` modifier to control the text and spacing size of y
 </div>
 
 ~~~html
-<i-alert size="sm">
-    Some quick example text to build on the alert title and make up the bulk of the alert's content.
-</i-alert>
+<i-badge size="sm">Small</i-badge>
+<i-badge size="md">Medium</i-badge>
+<i-badge size="lg">Large</i-badge>
+~~~
 
-<i-alert size="md">
-    Some quick example text to build on the alert title and make up the bulk of the alert's content.
-</i-alert>
+## Badge Variants
+Inkline includes several predefined badge styles, each serving its own semantic purpose, which you can control using the `variant` property.
 
-<i-alert size="lg">
-    Some quick example text to build on the alert title and make up the bulk of the alert's content.
-</i-alert>
+<div class="_margin-bottom-1">
+    <i-badge variant="primary">
+        Primary
+    </i-badge>&nbsp; 
+    <i-badge variant="secondary">
+        Secondary
+    </i-badge>&nbsp; 
+    <i-badge variant="light">
+        Light
+    </i-badge>&nbsp; 
+    <i-badge variant="dark">
+        Dark
+    </i-badge>&nbsp; 
+    <i-badge variant="info">
+        Info
+    </i-badge>&nbsp; 
+    <i-badge variant="sucess">
+        Sucess
+    </i-badge>&nbsp; 
+    <i-badge variant="warning">
+        Warning
+    </i-badge>&nbsp; 
+    <i-badge variant="danger">
+        Danger
+    </i-badge>
+</div>
+
+~~~html
+<i-badge variant="primary">Primary</i-badge>
+<i-badge variant="secondary">Secondary</i-badge>
+<i-badge variant="light">Light</i-badge>
+<i-badge variant="dark">Dark</i-badge>
+<i-badge variant="info">Info</i-badge>
+<i-badge variant="sucess">Success</i-badge>
+<i-badge variant="warning">Warning</i-badge>
+<i-badge variant="danger">Danger</i-badge>
 ~~~
