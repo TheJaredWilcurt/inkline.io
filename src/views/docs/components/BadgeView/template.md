@@ -62,7 +62,7 @@ Inkline includes several predefined badge styles, each serving its own semantic 
     <i-badge variant="info">
         Info
     </i-badge>&nbsp; 
-    <i-badge variant="sucess">
+    <i-badge variant="success">
         Sucess
     </i-badge>&nbsp; 
     <i-badge variant="warning">
@@ -79,7 +79,7 @@ Inkline includes several predefined badge styles, each serving its own semantic 
 <i-badge variant="light">Light</i-badge>
 <i-badge variant="dark">Dark</i-badge>
 <i-badge variant="info">Info</i-badge>
-<i-badge variant="sucess">Success</i-badge>
+<i-badge variant="success">Success</i-badge>
 <i-badge variant="warning">Warning</i-badge>
 <i-badge variant="danger">Danger</i-badge>
 ~~~
