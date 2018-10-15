@@ -13,6 +13,7 @@ import BreadcrumbView from '@views/docs/components/BreadcrumbView';
 import ButtonView from '@views/docs/components/ButtonView';
 import ButtonGroupView from '@views/docs/components/ButtonGroupView';
 import CardView from '@views/docs/components/CardView';
+import CollapsibleView from '@views/docs/components/CollapsibleView';
 
 import CheckboxView from '@views/docs/forms/CheckboxView';
 import InputView from '@views/docs/forms/InputView';
@@ -97,6 +98,11 @@ export default [
                 path: 'components/card',
                 name: 'docs.components.card',
                 component: CardView
+            },
+            {
+                path: 'components/collapsible',
+                name: 'docs.components.collapsible',
+                component: CollapsibleView
             },
 
             /**
