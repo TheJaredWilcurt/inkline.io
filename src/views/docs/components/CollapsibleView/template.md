@@ -2,7 +2,7 @@
 Collapsible elements are used to show and hide content. {.lead}
 
 ## Example
-Collapsing an element will animate the height from 0 to its default value. Set an
+Collapsing an element will animate the height from zero to its default value. This component is useful for creating clearly separated content sections such as FAQ pages.
 
 <i-collapsible>
     <i-collapsible-item title="Item 1">
