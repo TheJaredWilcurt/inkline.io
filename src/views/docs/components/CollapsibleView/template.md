@@ -1,23 +1,42 @@
 # Collapsible
-Cards provide you with a flexible and extensible content container with multiple color variants and options.{.lead}
-
-A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, 
-contextual background colors, and powerful display options. 
+Collapsible elements are used to show and hide content. {.lead}
 
 ## Example
-Cards are customizable content holders built with as little markup and styles as possible. 
-They are based on flexbox, offering easy alignment and mixing well with other components. 
+Collapsing an element will animate the height from 0 to its default value. Set an
 
-By default, cards are set to have `width: 100%`, fully spanning the width of the parent container. 
+<i-collapsible>
+    <i-collapsible-item title="Item 1">
+        Item 1 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 2">
+        Item 2 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 3">
+        Item 3 content
+    </i-collapsible-item>
+</i-collapsible>
+
+~~~html
+<i-collapsible>
+    <i-collapsible-item title="Item 1">
+        Item 1 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 2">
+        Item 2 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 3">
+        Item 3 content
+    </i-collapsible-item>
+</i-collapsible>
+~~~
+
+## Collapsible Item Title
+You can use the `title` slot to provide a custom title for the collapsible panel's heading. 
 
 <i-collapsible>
     <i-collapsible-item>
         <template slot="title">Item 1</template>
-        <p>Item 1 content</p>
-        <p>Item 1 content</p>
-        <p>Item 1 content</p>
-        <p>Item 1 content</p>
-        <p>Item 1 content</p>
+        Item 1 content
     </i-collapsible-item>
     <i-collapsible-item>
         <template slot="title">Item 2</template>
@@ -30,13 +49,136 @@ By default, cards are set to have `width: 100%`, fully spanning the width of the
 </i-collapsible>
 
 ~~~html
-<i-card>
-    <img slot="image" src="image.jpg" alt="Card Image" />
-    <h4 class="title">Card Title</h4>
-    <p class="subtitle">Card Subtitle</p>
-    <p>
-        Some quick example text to build on the card title and make up the bulk of the card's content.
-    </p>
-    <a class="link" href="http://inkline.io">Example Link</a>
-</i-card>
+<i-collapsible>
+    <i-collapsible-item>
+        <template slot="title">Item 1</template>
+        Item 1 content
+    </i-collapsible-item>
+    <i-collapsible-item>
+        <template slot="title">Item 2</template>
+        Item 2 content
+    </i-collapsible-item>
+    <i-collapsible-item>
+        <template slot="title">Item 3</template>
+        Item 3 content
+    </i-collapsible-item>
+</i-collapsible>
+~~~
+
+## Default Open Panels
+Panels can be opened by default, on page load, using the `active` field of the `<i-collapsible>` component. First, you'll need to assign an `id` to the `<i-collapsible-item>` components which will identify the open panels.
+ 
+<i-collapsible :active="active">
+    <i-collapsible-item id="panel-1">
+        <template slot="title">Item 1</template>
+        Item 1 content
+    </i-collapsible-item>
+    <i-collapsible-item id="panel-2">
+        <template slot="title">Item 2</template>
+        Item 2 content
+    </i-collapsible-item>
+    <i-collapsible-item id="panel-3">
+        <template slot="title">Item 3</template>
+        Item 3 content
+    </i-collapsible-item>
+</i-collapsible>
+
+~~~html
+<i-collapsible :active="active">
+    <i-collapsible-item id="panel-1">
+        <template slot="title">Item 1</template>
+        Item 1 content
+    </i-collapsible-item>
+    <i-collapsible-item id="panel-2">
+        <template slot="title">Item 2</template>
+        Item 2 content
+    </i-collapsible-item>
+    <i-collapsible-item id="panel-3">
+        <template slot="title">Item 3</template>
+        Item 3 content
+    </i-collapsible-item>
+</i-collapsible>
+~~~
+
+~~~js
+export default {
+    data () {
+        return {
+            active: ['panel-1']
+        };
+    }
+}
+~~~
+
+## Accordion
+Accordion collapsible groups can have only one content panel open at a single time. This behaviour can be set using the `accordion` property.
+
+<i-collapsible accordion>
+    <i-collapsible-item title="Item 1">
+        Item 1 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 2">
+        Item 2 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 3">
+        Item 3 content
+    </i-collapsible-item>
+</i-collapsible>
+
+~~~html
+<i-collapsible accordion>
+    <i-collapsible-item title="Item 1">
+        Item 1 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 2">
+        Item 2 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 3">
+        Item 3 content
+    </i-collapsible-item>
+</i-collapsible>
+~~~
+
+
+## Color Variants
+Inkline includes basic predefined collapsible styles that you can use within your application. You can apply a style using the `variant` property.
+
+<i-collapsible variant="light">
+    <i-collapsible-item title="Item 1">
+        Item 1 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 2">
+        Item 2 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 3">
+        Item 3 content
+    </i-collapsible-item>
+</i-collapsible>
+
+<div class="_margin-top-1">
+    <i-collapsible variant="dark">
+        <i-collapsible-item title="Item 1">
+            Item 1 content
+        </i-collapsible-item>
+        <i-collapsible-item title="Item 2">
+            Item 2 content
+        </i-collapsible-item>
+        <i-collapsible-item title="Item 3">
+            Item 3 content
+        </i-collapsible-item>
+    </i-collapsible>
+</div>
+
+~~~html
+<i-collapsible accordion>
+    <i-collapsible-item title="Item 1">
+        Item 1 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 2">
+        Item 2 content
+    </i-collapsible-item>
+    <i-collapsible-item title="Item 3">
+        Item 3 content
+    </i-collapsible-item>
+</i-collapsible>
 ~~~

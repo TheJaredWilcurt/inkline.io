@@ -149,7 +149,7 @@ The default size is set to `md`.
 ~~~
 
 ## Card Variants
-Inkline includes several predefined card styles that you can use within your application.
+Inkline includes several predefined card styles that you can use within your application. You can apply a style using the `variant` property.
 
 <i-row class="_margin-bottom-1">
     <i-column md="4">
