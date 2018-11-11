@@ -14,6 +14,7 @@ import ButtonView from '@views/docs/components/ButtonView';
 import ButtonGroupView from '@views/docs/components/ButtonGroupView';
 import CardView from '@views/docs/components/CardView';
 import CollapsibleView from '@views/docs/components/CollapsibleView';
+import DropdownView from '@views/docs/components/DropdownView';
 
 import CheckboxView from '@views/docs/forms/CheckboxView';
 import InputView from '@views/docs/forms/InputView';
@@ -103,6 +104,11 @@ export default [
                 path: 'components/collapsible',
                 name: 'docs.components.collapsible',
                 component: CollapsibleView
+            },
+            {
+                path: 'components/dropdown',
+                name: 'docs.components.dropdown',
+                component: DropdownView
             },
 
             /**
