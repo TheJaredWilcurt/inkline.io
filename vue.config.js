@@ -44,7 +44,7 @@ module.exports = {
             .set('@resources', path.join(__dirname, 'src', 'resources'))
             .set('@routes', path.join(__dirname, 'src', 'routes'))
             .set('@views', path.join(__dirname, 'src', 'views'))
-            .set('@inkline', 'inkline/src')
+            .set('inkline', 'inkline/src')
             .set('vue$', 'vue/dist/vue.esm.js')
             .end();
     }

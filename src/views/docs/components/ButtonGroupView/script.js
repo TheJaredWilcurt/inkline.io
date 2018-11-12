@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IButton, IButtonGroup } from '@inkline';
+import { IButton, IButtonGroup } from 'inkline';
 
 export default {
     name: 'ButtonGroupView',

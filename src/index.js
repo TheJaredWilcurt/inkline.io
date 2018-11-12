@@ -1,11 +1,11 @@
 import '@/index.styl';
-import '@inkline/index.styl';
-import '@inkline/theme/index.styl';
+import 'inkline/index.styl';
+import 'inkline/theme/index.styl';
 
 import Vue from 'vue';
 import App from '@/App';
 import router from '@routes';
-import Inkline from '@inkline';
+import Inkline from 'inkline';
 
 Vue.config.productionTip = false;
 Vue.use(Inkline);

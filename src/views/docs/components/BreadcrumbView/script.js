@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IBreadcrumb, IBreadcrumbItem } from '@inkline';
+import { IBreadcrumb, IBreadcrumbItem } from 'inkline';
 
 export default {
     name: 'BreadcrumbView',

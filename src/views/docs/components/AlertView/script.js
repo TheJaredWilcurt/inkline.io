@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IAlert } from '@inkline';
+import { IAlert } from 'inkline';
 
 export default {
     name: 'AlertView',
