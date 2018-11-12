@@ -12,7 +12,37 @@ By default, cards are set to have `width: 100%`, fully spanning the width of the
 
 <i-dropdown>
     <i-button slot="trigger">Dropdown</i-button>
-    <a>Hello world!</a>
+    <i-dropdown-menu>
+        Hello world!
+    </i-dropdown-menu>
+</i-dropdown>
+
+<i-dropdown placement="top">
+    <i-button slot="trigger">Dropdown</i-button>
+    <i-dropdown-menu>
+        Hello world!
+    </i-dropdown-menu>
+</i-dropdown>
+
+<i-dropdown placement="bottom">
+    <i-button slot="trigger">Dropdown</i-button>
+    <i-dropdown-menu>
+        Hello world!
+    </i-dropdown-menu>
+</i-dropdown>
+
+<i-dropdown placement="left">
+    <i-button slot="trigger">Dropdown</i-button>
+    <i-dropdown-menu>
+        Hello world!
+    </i-dropdown-menu>
+</i-dropdown>
+
+<i-dropdown placement="right">
+    <i-button slot="trigger">Dropdown</i-button>
+    <i-dropdown-menu>
+        Hello world!
+    </i-dropdown-menu>
 </i-dropdown>
 
 
