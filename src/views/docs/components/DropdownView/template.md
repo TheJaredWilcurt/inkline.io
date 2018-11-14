@@ -13,35 +13,50 @@ By default, cards are set to have `width: 100%`, fully spanning the width of the
 <i-dropdown>
     <i-button slot="trigger">Dropdown</i-button>
     <i-dropdown-menu>
-        Hello world!
+        <i-dropdown-item>Action</i-dropdown-item>
+        <i-dropdown-item>Another action</i-dropdown-item>
+        <i-dropdown-item>Something else here</i-dropdown-item>
+        <i-dropdown-item divider>Separated link</i-dropdown-item>
     </i-dropdown-menu>
 </i-dropdown>
 
 <i-dropdown placement="top">
     <i-button slot="trigger">Dropdown</i-button>
     <i-dropdown-menu>
-        Hello world!
+        <i-dropdown-item>Action</i-dropdown-item>
+        <i-dropdown-item>Another action</i-dropdown-item>
+        <i-dropdown-item>Something else here</i-dropdown-item>
+        <i-dropdown-item divider>Separated link</i-dropdown-item>
     </i-dropdown-menu>
 </i-dropdown>
 
 <i-dropdown placement="bottom">
     <i-button slot="trigger">Dropdown</i-button>
     <i-dropdown-menu>
-        Hello world!
+        <i-dropdown-item>Action</i-dropdown-item>
+        <i-dropdown-item>Another action</i-dropdown-item>
+        <i-dropdown-item>Something else here</i-dropdown-item>
+        <i-dropdown-item divider>Separated link</i-dropdown-item>
     </i-dropdown-menu>
 </i-dropdown>
 
 <i-dropdown placement="left">
     <i-button slot="trigger">Dropdown</i-button>
     <i-dropdown-menu>
-        Hello world!
+        <i-dropdown-item>Action</i-dropdown-item>
+        <i-dropdown-item>Another action</i-dropdown-item>
+        <i-dropdown-item>Something else here</i-dropdown-item>
+        <i-dropdown-item divider>Separated link</i-dropdown-item>
     </i-dropdown-menu>
 </i-dropdown>
 
 <i-dropdown placement="right">
     <i-button slot="trigger">Dropdown</i-button>
     <i-dropdown-menu>
-        Hello world!
+        <i-dropdown-item>Action</i-dropdown-item>
+        <i-dropdown-item>Another action</i-dropdown-item>
+        <i-dropdown-item>Something else here</i-dropdown-item>
+        <i-dropdown-item divider>Separated link</i-dropdown-item>
     </i-dropdown-menu>
 </i-dropdown>
 
