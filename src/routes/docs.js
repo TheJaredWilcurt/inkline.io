@@ -15,6 +15,7 @@ import ButtonGroupView from '@views/docs/components/ButtonGroupView';
 import CardView from '@views/docs/components/CardView';
 import CollapsibleView from '@views/docs/components/CollapsibleView';
 import DropdownView from '@views/docs/components/DropdownView';
+import TooltipView from '@views/docs/components/TooltipView';
 
 import CheckboxView from '@views/docs/forms/CheckboxView';
 import InputView from '@views/docs/forms/InputView';
@@ -109,6 +110,11 @@ export default [
                 path: 'components/dropdown',
                 name: 'docs.components.dropdown',
                 component: DropdownView
+            },
+            {
+                path: 'components/tooltip',
+                name: 'docs.components.tooltip',
+                component: TooltipView
             },
 
             /**

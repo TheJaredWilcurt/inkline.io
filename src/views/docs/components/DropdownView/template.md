@@ -33,7 +33,7 @@ Wrap both the dropdown's trigger element (such as an `<i-button>`) and the `<i-d
 ## Placement
 Trigger dropdown menus at the `top`, `bottom`, `left` or `right` of elements by adding the `placement` property to the parent `<i-dropdown>` element. 
 
-Each of the positions also has a `-start` or `-end` variant (`top-start`, `top-end`, `bottom-start`, etc.) that sets the dropdown to the start or end of the placement instead of centering it. 
+Each of the positions also has a `-start` or `-end` variant (`top-start`, `top-end`, `bottom-start`, `bottom-end`, etc.) that sets the dropdown to the start or end of the placement instead of centering it. 
 
 <div>
 <i-dropdown placement="top">
@@ -133,7 +133,7 @@ You're not required to use any dropdown-specific components inside of `<i-dropdo
 <i-dropdown>
     <i-button>Dropdown</i-button>
     <i-dropdown-menu>
-        <span class="_padding-1">This is a freeform content example</span>
+        <div class="_padding-1">This is a freeform dropdown example.</div>
     </i-dropdown-menu>
 </i-dropdown>&nbsp;
 
@@ -141,7 +141,7 @@ You're not required to use any dropdown-specific components inside of `<i-dropdo
 <i-dropdown>
     <i-button>Dropdown</i-button>
     <i-dropdown-menu>
-        <span class="_padding-1">This is a freeform content example</span>
+        <div class="_padding-1">This is a freeform dropdown example.</div>
     </i-dropdown-menu>
 </i-dropdown>
 ~~~
@@ -317,6 +317,52 @@ Inkline includes two predefined dropdown styles, each serving its own semantic p
         <i-dropdown-item disabled>Something disabled here</i-dropdown-item>
         <i-dropdown-divider />
         <i-dropdown-item>Separated item</i-dropdown-item>
+    </i-dropdown-menu>
+</i-dropdown>
+~~~
+
+
+## Recursive Dropdowns
+Inkline allows you to have virtually infinite recursive dropdown submenus structure by defining another `<i-dropdown>` inside of a `<i-dropdown-menu>`. This awesome feature gives you great design flexibility.
+
+<div>
+<i-dropdown :hide-on-click="false">
+    <i-button>Recursive Dropdown</i-button>
+    <i-dropdown-menu>
+        <i-dropdown placement="right-start">
+            <i-dropdown-item href>Dropdown here</i-dropdown-item>
+            <i-dropdown-menu>
+                <i-dropdown-item href>Action</i-dropdown-item>
+                <i-dropdown-item href>Another action</i-dropdown-item>
+                <i-dropdown-item disabled>Something disabled here</i-dropdown-item>
+                <i-dropdown-divider />
+                <i-dropdown-item>Separated item</i-dropdown-item>
+            </i-dropdown-menu>
+        </i-dropdown>
+        <i-dropdown-divider />
+        <i-dropdown-item href>Some action</i-dropdown-item>
+        <i-dropdown-item disabled>Something else here</i-dropdown-item>
+    </i-dropdown-menu>
+</i-dropdown>
+</div>
+
+~~~html
+<i-dropdown :hide-on-click="false">
+    <i-button>Dropdown</i-button>
+    <i-dropdown-menu>
+        <i-dropdown placement="right-start">
+            <i-dropdown-item href>Dropdown here</i-dropdown-item>
+            <i-dropdown-menu>
+                <i-dropdown-item href>Action</i-dropdown-item>
+                <i-dropdown-item href>Another action</i-dropdown-item>
+                <i-dropdown-item disabled>Something disabled here</i-dropdown-item>
+                <i-dropdown-divider />
+                <i-dropdown-item>Separated item</i-dropdown-item>
+            </i-dropdown-menu>
+        </i-dropdown>
+        <i-dropdown-divider />
+        <i-dropdown-item href>Some action</i-dropdown-item>
+        <i-dropdown-item disabled>Something else here</i-dropdown-item>
     </i-dropdown-menu>
 </i-dropdown>
 ~~~
