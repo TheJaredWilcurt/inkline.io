@@ -2,19 +2,19 @@
 Tooltips are useful for conveying information when an user hovers over an element.{.lead}
 
 ## Example
-Wrap both the tooltip's trigger element (such as an `<i-button>`) and the `<template slot="tooltip">` inside a `<i-tooltip>` component.
+Wrap both the tooltip's trigger element (such as an `<i-button>`) and the `<template slot="body">` inside a `<i-tooltip>` component.
 
 
 <i-tooltip>
     <i-button>Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 
 
 ~~~html
 <i-tooltip>
     <i-button>Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 ~~~
 
@@ -26,44 +26,44 @@ Each of the positions also has a `-start` or `-end` variant (`top-start`, `top-e
 <div>
 <i-tooltip placement="top">
     <i-button>Top Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip placement="bottom">
     <i-button>Bottom Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip placement="left">
     <i-button>Left Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip placement="right">
     <i-button>Right Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 </div>
 
 ~~~html
 <i-tooltip placement="top">
     <i-button>Top Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 
 <i-tooltip placement="bottom">
     <i-button>Bottom Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 
 <i-tooltip placement="left">
     <i-button>Left Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 
 <i-tooltip placement="right">
     <i-button>Right Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 ~~~
 
@@ -73,14 +73,14 @@ Tooltips can contain text of virtually any size. You can control the wrapping an
 <div>
 <i-tooltip>
     <i-button>Normal Tooltip</i-button>
-    <template slot="tooltip">
+    <template slot="body">
         This is a <strong>freeform tooltip</strong> with a <u>long text</u>. Its width is not controlled.
     </template>
 </i-tooltip>&nbsp;
 
 <i-tooltip>
     <i-button>Fixed Width Tooltip</i-button>
-    <div style="white-space: normal; width: 240px" slot="tooltip">
+    <div style="white-space: normal; width: 240px" slot="body">
         This is a <strong>freeform tooltip</strong> with a <u>long text</u>. Its width is controlled.
     </div>
 </i-tooltip>
@@ -89,14 +89,14 @@ Tooltips can contain text of virtually any size. You can control the wrapping an
 ~~~html
 <i-tooltip>
     <i-button>Normal Tooltip</i-button>
-    <template slot="tooltip">
+    <template slot="body">
         This is a <strong>freeform tooltip</strong> with a <u>long text</u>. Its width is not controlled.
     </template>
 </i-tooltip>
 
 <i-tooltip>
     <i-button>Fixed Width Tooltip</i-button>
-    <div style="white-space: normal; width: 240px" slot="tooltip">
+    <div style="white-space: normal; width: 240px" slot="body">
         This is a <strong>freeform tooltip</strong> with a <u>long text</u>. Its width is controlled.
     </div>
 </i-tooltip>
@@ -107,23 +107,23 @@ You can use the `trigger` property to trigger the tooltip on `hover` or `click`.
 
 <i-tooltip trigger="click">
     <i-button>Click Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip trigger="hover">
     <i-button>Hover Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>&nbsp;
 
 ~~~html
 <i-tooltip trigger="click">
     <i-button>Click Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 
 <i-tooltip trigger="hover">
     <i-button>Hover Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 ~~~
 
@@ -134,34 +134,34 @@ The default size is set to `md`.
 <div>
 <i-tooltip size="sm">
     <i-button>Small Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip size="md">
     <i-button>Medium Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip size="lg">
     <i-button>Large Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 </div>
 
 ~~~html
 <i-tooltip size="sm">
     <i-button>Small Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 
 <i-tooltip size="md">
     <i-button>Medium Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 
 <i-tooltip size="lg">
     <i-button>Large Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 ~~~
 
@@ -172,23 +172,23 @@ Inkline includes two predefined tooltip styles, each serving its own semantic pu
 <div>
 <i-tooltip variant="light">
     <i-button variant="light">Light Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip variant="dark">
     <i-button variant="dark">Dark Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 </div>
 
 ~~~html
 <i-tooltip variant="light">
     <i-button variant="light">Light Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 
 <i-tooltip variant="dark">
     <i-button variant="dark">Dark Tooltip</i-button>
-    <template slot="tooltip">Tooltip</template>
+    <template slot="body">Tooltip</template>
 </i-tooltip>
 ~~~
