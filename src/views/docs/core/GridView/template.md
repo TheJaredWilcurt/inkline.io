@@ -2,11 +2,10 @@
 Inkline's grid system is modelled as a 12 columns layout built using flexbox, with equally divided columns, 
 separated by a small gutter. We've made sure to use percentage widths, so that it is usable at any nesting level. { .lead }
 
-The grid system is defined using `row` and `column` components, with each one having specific responsive 
-modifiers. Here's how it works:
+The grid system is defined using `<i-container>`, `<i-row>` and `<i-column>` components, with each one having specific responsive modifiers. Here's how it works:
 
 - First, we define a row with a set of columns inside of it.
-- Your content elements should be placed directly in a `column`, and only `column` should be placed directly in `row`
+- Your content elements should be placed directly in a `<i-column>`, and only `<i-column>` should be placed directly inside an `<i-row>` component
 - The column width takes a value of 1-12 at each responsive breakpoint (`xs`, `sm`, `md`, `lg`, `xlg`).
 - If the sum of `column` widths in a row is more than 12, then the overflowing column will start on a new line.
 
@@ -881,6 +880,30 @@ You can specify column counts for each breakpoint. Try to resize your browser wi
         <i-column xl="3" lg="6" md="6" sm="4" xs="6"></i-column>
         <i-column xl="6" lg="4" md="6" sm="6" xs="3"></i-column>
         <i-column xl="12" lg="8" md="6" sm="6" xs="3"></i-column>
+    </i-row>
+</i-container>
+~~~
+
+## Fluid Container
+You can make the `<i-container>` component fill the whole width of the parent element using the `fluid` property. 
+<i-row>
+    <i-column :xs="true">
+        <grid-box></grid-box>
+    </i-column>
+    <i-column :xs="true">
+        <grid-box></grid-box>
+    </i-column>
+    <i-column :xs="true">
+        <grid-box></grid-box>
+    </i-column>
+</i-row>
+
+~~~html
+<i-container fluid>
+    <i-row>
+        <i-column :xs="true"></i-column>
+        <i-column :xs="true"></i-column>
+        <i-column :xs="true"></i-column>
     </i-row>
 </i-container>
 ~~~
