@@ -71,15 +71,10 @@ Each of the positions also has a `-start` or `-end` variant (`top-start`, `top-e
 ~~~
 
 ## Trigger type
-You can use the `trigger` property to trigger the popover on `focus`, `hover` or `click`. By default, popovers are triggered on `click`, a design decision made to improve user experience.
+You can use the `trigger` property to trigger the popover on `hover` or `click`. By default, popovers are triggered on `click`, a design decision made to improve user experience.
 
 <i-popover trigger="click">
     <i-button>Click Popover</i-button>
-    <template slot="body">This is the popover body. Useful information goes here.</template>
-</i-popover>&nbsp;
-
-<i-popover trigger="focus">
-    <i-button>Hover Popover</i-button>
     <template slot="body">This is the popover body. Useful information goes here.</template>
 </i-popover>&nbsp;
 
@@ -93,11 +88,6 @@ You can use the `trigger` property to trigger the popover on `focus`, `hover` or
     <i-button>Click Popover</i-button>
     <template slot="body">This is the popover body. Useful information goes here.</template>
 </i-popover>
-
-<i-popover trigger="focus">
-    <i-button>Focus Popover</i-button>
-    <template slot="body">This is the popover body. Useful information goes here.</template>
-</i-popover>&nbsp;
 
 <i-popover trigger="hover">
     <i-button>Hover Popover</i-button>
