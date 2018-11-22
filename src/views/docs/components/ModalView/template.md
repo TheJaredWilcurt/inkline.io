@@ -103,9 +103,11 @@ Inkline includes two predefined modal styles, each serving its own semantic purp
     <template slot="body">This is the modal body. Useful information goes here.</template>
     <template slot="footer">Modal Footer</template>
 </i-modal>&nbsp;
+</div>
 
+<div class="_margin-top-1">
 <i-modal variant="info">
-    <i-button variant="dark">Dark Modal</i-button>
+    <i-button variant="info">Info Modal</i-button>
     <template slot="header">Modal Header</template>
     <template slot="body">This is the modal body. Useful information goes here.</template>
     <template slot="footer">Modal Footer</template>
@@ -134,6 +136,20 @@ Inkline includes two predefined modal styles, each serving its own semantic purp
 </div>
 
 ~~~html
+<i-modal variant="primary">
+    <i-button variant="primary">Primary Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="secondary">
+    <i-button variant="secondary">Secondary Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
 <i-modal variant="light">
     <i-button variant="light">Light Modal</i-button>
     <template slot="header">Modal Header</template>
@@ -143,6 +159,155 @@ Inkline includes two predefined modal styles, each serving its own semantic purp
 
 <i-modal variant="dark">
     <i-button variant="dark">Dark Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="info">
+    <i-button variant="info">Info Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="success">
+    <i-button variant="success">Success Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="warning">
+    <i-button variant="warning">Warning Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="danger">
+    <i-button variant="danger">Danger Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+~~~
+
+## Filled Modal Variants
+You can add a variant background to all modal parts by using the `fill` property.
+
+<div>
+<i-modal variant="primary" fill>
+    <i-button variant="primary">Primary Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>&nbsp;
+
+<i-modal variant="secondary" fill>
+    <i-button variant="secondary">Secondary Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>&nbsp;
+
+<i-modal variant="light" fill>
+    <i-button variant="light">Light Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>&nbsp;
+
+<i-modal variant="dark" fill>
+    <i-button variant="dark">Dark Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>&nbsp;
+</div>
+
+<div class="_margin-top-1">
+<i-modal variant="info" fill>
+    <i-button variant="info">Info Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>&nbsp;
+
+<i-modal variant="success" fill>
+    <i-button variant="success">Success Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>&nbsp;
+
+<i-modal variant="warning" fill>
+    <i-button variant="warning">Warning Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>&nbsp;
+
+<i-modal variant="danger" fill>
+    <i-button variant="danger">Danger Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>&nbsp;
+</div>
+
+~~~html
+<i-modal variant="primary" fill>
+    <i-button variant="primary">Primary Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="secondary" fill>
+    <i-button variant="secondary">Secondary Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="light" fill>
+    <i-button variant="light">Light Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="dark" fill>
+    <i-button variant="dark">Dark Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="info" fill>
+    <i-button variant="info">Info Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="success" fill>
+    <i-button variant="success">Success Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="warning" fill>
+    <i-button variant="warning">Warning Modal</i-button>
+    <template slot="header">Modal Header</template>
+    <template slot="body">This is the modal body. Useful information goes here.</template>
+    <template slot="footer">Modal Footer</template>
+</i-modal>
+
+<i-modal variant="danger" fill>
+    <i-button variant="danger">Danger Modal</i-button>
     <template slot="header">Modal Header</template>
     <template slot="body">This is the modal body. Useful information goes here.</template>
     <template slot="footer">Modal Footer</template>
