@@ -16,6 +16,8 @@ import CardView from '@views/docs/components/CardView';
 import CollapsibleView from '@views/docs/components/CollapsibleView';
 import DropdownView from '@views/docs/components/DropdownView';
 import ModalView from '@views/docs/components/ModalView';
+import NavView from '@views/docs/components/NavView';
+import NavbarView from '@views/docs/components/NavbarView';
 import PopoverView from '@views/docs/components/PopoverView';
 import TooltipView from '@views/docs/components/TooltipView';
 
@@ -117,6 +119,16 @@ export default [
                 path: 'components/modal',
                 name: 'docs.components.modal',
                 component: ModalView
+            },
+            {
+                path: 'components/nav',
+                name: 'docs.components.nav',
+                component: NavView
+            },
+            {
+                path: 'components/navbar',
+                name: 'docs.components.navbar',
+                component: NavbarView
             },
             {
                 path: 'components/popover',
