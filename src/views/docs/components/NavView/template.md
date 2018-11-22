@@ -89,3 +89,21 @@ You're able to use the `size` modifier to control the size of your navs, using o
     <i-nav-item disabled>Disabled</i-nav-item>
 </i-nav>
 ~~~
+
+
+## Active State
+You can control the active state of your `<i-nav-item>` using the `active` property. If you're providing a `:to` property, converting it into a `router-link`, you can use the `active-class` and `exact-active-class` properties and set them to `-active`.
+
+<div>
+<i-nav>
+    <i-nav-item :to="{ name: 'docs.components.nav' }" exact-active-class="-active">Active Router Link</i-nav-item>
+    <i-nav-item :to="{ name: 'home.index' }" active>Active Link</i-nav-item>
+</i-nav>
+</div>
+
+~~~html
+<i-nav>
+    <i-nav-item :to="{ name: 'docs.components.nav' }" exact-active-class="-active">Active Router Link</i-nav-item>
+    <i-nav-item :to="{ name: 'home.index' }" active>Active Link</i-nav-item>
+</i-nav>
+~~~
