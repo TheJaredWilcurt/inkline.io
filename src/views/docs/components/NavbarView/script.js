@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IButton, INav, INavItem, INavbar, INavbarBrand } from 'inkline';
+import { IButton, INav, INavItem, INavbar, INavbarBrand, INavbarItems } from 'inkline';
 
 export default {
     name: 'NavbarView',
@@ -9,6 +9,7 @@ export default {
         INav,
         INavItem,
         INavbar,
-        INavbarBrand
+        INavbarBrand,
+        INavbarItems
     }
 };
