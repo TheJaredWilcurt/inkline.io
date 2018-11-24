@@ -1,319 +1,285 @@
 # Navbar
-Modals are useful for conveying information when an user hovers over an element.{.lead}
+A responsive navigation header that includes support for branding, navigation, forms and more.{.lead}
 
 ## Example
-Wrap both the modal's trigger element (such as an `<i-button>`) and the `<template slot="body">` inside a `<i-modal>` component. Optionally, you can provide a modal header and footer using `slot="header"` and `slot="footer"`.
+Here’s an example of the basic components included in a  `<i-navbar>` that automatically collapses responsively.
 
 <i-navbar>
-    <i-navbar-brand :to="{ name: 'home.index' }">Navbar</i-navbar-brand>
+    <i-navbar-brand :to="{ name: 'docs.components.navbar' }">Navbar</i-navbar-brand>
     <i-navbar-items>
         <i-nav>
-            <i-nav-item :to="{ name: 'home.index' }">Home</i-nav-item>
-            <i-nav-item :to="{ name: 'home.about' }">About</i-nav-item>
-            <i-nav-item :to="{ name: 'home.contact' }">Contact</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Contact</i-nav-item>
+        </i-nav>
+        <i-nav>
+            <i-input placeholder="Type something.." class="_margin-right-1" />
+            <i-button variant="primary">Search</i-button>
         </i-nav>
     </i-navbar-items>
 </i-navbar>
 
 ~~~html
-<i-modal>
-    <i-button>Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
-
+<i-navbar>
+    <i-navbar-brand :to="{ name: 'index' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'about' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'contact' }">Contact</i-nav-item>
+        </i-nav>
+        <i-nav>
+            <i-input placeholder="Type something.." class="_margin-right-1" />
+            <i-button variant="primary">Search</i-button>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 ~~~
 
-## Modal Sizes
-You're able to use the `size` modifier to control the size of your modals, using one of the available sizes: `sm`, `md`, and `lg`. 
+## Navbar Sizes
+You're able to use the `size` modifier to control the size of your navbar, using one of the available sizes: `sm`, `md`, and `lg`. 
 The default size is set to `md`.
 
-<div>
-<i-modal size="sm">
-    <i-button>Small Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
 
-<i-modal size="md">
-    <i-button>Medium Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
+<i-navbar size="sm" class="_margin-bottom-1">
+    <i-navbar-brand :to="{ name: 'docs.components.navbar' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 
-<i-modal size="lg">
-    <i-button>Large Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
-</div>
+<i-navbar size="md" class="_margin-bottom-1">
+    <i-navbar-brand :to="{ name: 'docs.components.navbar' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
+
+<i-navbar size="lg">
+    <i-navbar-brand :to="{ name: 'docs.components.navbar' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
+
 
 ~~~html
-<i-modal size="sm">
-    <i-button>Small Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+<i-navbar size="sm">
+    <i-navbar-brand :to="{ name: 'index' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'about' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'contact' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 
-<i-modal size="md">
-    <i-button>Medium Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+<i-navbar size="md">
+    <i-navbar-brand :to="{ name: 'index' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'about' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'contact' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 
-<i-modal size="lg">
-    <i-button>Large Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+<i-navbar size="lg">
+    <i-navbar-brand :to="{ name: 'index' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'about' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'contact' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 ~~~
 
+## Navbar Variants
+Inkline includes two predefined navbar styles. You can set the style of a `<i-navbar>` using the `variant` property, which can have a value of `light` or `dark`. By default, modals use the `light` variant.
 
-## Modal Variants
-Inkline includes two predefined modal styles, each serving its own semantic purpose. You can set the style of a `<i-modal>` using the `variant` property, which can have a value of `light` or `dark`. By default, modals use the `light` variant.
+<i-navbar variant="light" class="_margin-bottom-1">
+    <i-navbar-brand :to="{ name: 'docs.components.navbar' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 
-<div>
-<i-modal variant="primary">
-    <i-button variant="primary">Primary Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="secondary">
-    <i-button variant="secondary">Secondary Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="light">
-    <i-button variant="light">Light Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="dark">
-    <i-button variant="dark">Dark Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-</div>
-
-<div class="_margin-top-1">
-<i-modal variant="info">
-    <i-button variant="info">Info Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="success">
-    <i-button variant="success">Success Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="warning">
-    <i-button variant="warning">Warning Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="danger">
-    <i-button variant="danger">Danger Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-</div>
+<i-navbar variant="dark">
+    <i-navbar-brand :to="{ name: 'docs.components.navbar' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 
 ~~~html
-<i-modal variant="primary">
-    <i-button variant="primary">Primary Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+<i-navbar variant="light">
+    <i-navbar-brand :to="{ name: 'index' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'about' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'contact' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 
-<i-modal variant="secondary">
-    <i-button variant="secondary">Secondary Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
-
-<i-modal variant="light">
-    <i-button variant="light">Light Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
-
-<i-modal variant="dark">
-    <i-button variant="dark">Dark Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
-
-<i-modal variant="info">
-    <i-button variant="info">Info Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
-
-<i-modal variant="success">
-    <i-button variant="success">Success Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
-
-<i-modal variant="warning">
-    <i-button variant="warning">Warning Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
-
-<i-modal variant="danger">
-    <i-button variant="danger">Danger Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+<i-navbar variant="dark">
+    <i-navbar-brand :to="{ name: 'index' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'about' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'contact' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 ~~~
 
-## Filled Modal Variants
-You can add a variant background to all modal parts by using the `fill` property.
+## Navbar Dropdown
+You can use an `<i-dropdown>` component inside the `<i-navbar-items>` or `<i-nav>` component to create a contextual navbar menu. 
 
-<div>
-<i-modal variant="primary" fill>
-    <i-button variant="primary">Primary Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="secondary" fill>
-    <i-button variant="secondary">Secondary Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="light" fill>
-    <i-button variant="light">Light Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="dark" fill>
-    <i-button variant="dark">Dark Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-</div>
-
-<div class="_margin-top-1">
-<i-modal variant="info" fill>
-    <i-button variant="info">Info Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="success" fill>
-    <i-button variant="success">Success Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="warning" fill>
-    <i-button variant="warning">Warning Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-
-<i-modal variant="danger" fill>
-    <i-button variant="danger">Danger Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>&nbsp;
-</div>
+<i-navbar>
+    <i-navbar-brand :to="{ name: 'docs.components.navbar' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Contact</i-nav-item>
+        </i-nav>
+        <i-nav>
+            <i-dropdown placement="bottom-end">
+                <i-button variant="primary">Dropdown</i-button>
+                <i-dropdown-menu>
+                    <i-dropdown-item href>Action</i-dropdown-item>
+                    <i-dropdown-item href>Another action</i-dropdown-item>
+                    <i-dropdown-item href disabled>Something disabled here</i-dropdown-item>
+                    <i-dropdown-divider />
+                    <i-dropdown-item>Separated item</i-dropdown-item>
+                </i-dropdown-menu>
+            </i-dropdown>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 
 ~~~html
-<i-modal variant="primary" fill>
-    <i-button variant="primary">Primary Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+<i-navbar>
+    <i-navbar-brand :to="{ name: 'index' }">Navbar</i-navbar-brand>
+    <i-navbar-items>
+        <i-nav>
+            <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'about' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'contact' }">Contact</i-nav-item>
+        </i-nav>
+        <i-nav>
+            <i-dropdown placement="bottom-end">
+                <i-button variant="primary">Dropdown</i-button>
+                <i-dropdown-menu>
+                    <i-dropdown-item href>Action</i-dropdown-item>
+                    <i-dropdown-item href>Another action</i-dropdown-item>
+                    <i-dropdown-item href disabled>Something disabled here</i-dropdown-item>
+                    <i-dropdown-divider />
+                    <i-dropdown-item>Separated item</i-dropdown-item>
+                </i-dropdown-menu>
+            </i-dropdown>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
+~~~
 
-<i-modal variant="secondary" fill>
-    <i-button variant="secondary">Secondary Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+## Navbar Nav Placement
+You can position the `<i-nav>` component to the `start`, `end`, or `center` of the `<i-navbar-items>` component using flexbox utilities.
 
-<i-modal variant="light" fill>
-    <i-button variant="light">Light Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
 
-<i-modal variant="dark" fill>
-    <i-button variant="dark">Dark Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+<i-navbar class="_margin-bottom-1">
+    <i-navbar-brand :to="{ name: 'docs.components.navbar' }">Navbar</i-navbar-brand>
+    <i-navbar-items class="_justify-content-start">
+        <i-nav>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 
-<i-modal variant="info" fill>
-    <i-button variant="info">Info Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
 
-<i-modal variant="success" fill>
-    <i-button variant="success">Success Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+<i-navbar class="_margin-bottom-1">
+    <i-navbar-brand :to="{ name: 'docs.components.navbar' }">Navbar</i-navbar-brand>
+    <i-navbar-items class="_justify-content-center">
+        <i-nav>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 
-<i-modal variant="warning" fill>
-    <i-button variant="warning">Warning Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+<i-navbar>
+    <i-navbar-brand :to="{ name: 'docs.components.navbar' }">Navbar</i-navbar-brand>
+    <i-navbar-items class="_justify-content-end">
+        <i-nav>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'docs.components.navbar' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 
-<i-modal variant="danger" fill>
-    <i-button variant="danger">Danger Modal</i-button>
-    <template slot="header">Modal Header</template>
-    <template slot="body">This is the modal body. Useful information goes here.</template>
-    <template slot="footer">Modal Footer</template>
-</i-modal>
+~~~html
+
+<i-navbar>
+    <i-navbar-brand :to="{ name: 'index' }">Navbar</i-navbar-brand>
+    <i-navbar-items class="_justify-content-start">
+        <i-nav>
+            <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'about' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'contact' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
+
+<i-navbar>
+    <i-navbar-brand :to="{ name: 'index' }">Navbar</i-navbar-brand>
+    <i-navbar-items class="_justify-content-center">
+        <i-nav>
+            <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'about' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'contact' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
+
+<i-navbar>
+    <i-navbar-brand :to="{ name: 'index' }">Navbar</i-navbar-brand>
+    <i-navbar-items class="_justify-content-end">
+        <i-nav>
+            <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+            <i-nav-item :to="{ name: 'about' }">About</i-nav-item>
+            <i-nav-item :to="{ name: 'contact' }">Contact</i-nav-item>
+        </i-nav>
+    </i-navbar-items>
+</i-navbar>
 ~~~
