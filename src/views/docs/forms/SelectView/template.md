@@ -5,15 +5,19 @@ Allow your users to input data directly from the keyboard. { .lead }
 ## Basic Input
 
 <i-select v-model="selectValue" placeholder="Choose an option">
-    <i-select-option value="a">Option A</i-select-option>
-    <i-select-option value="b">Option B</i-select-option>
-    <i-select-option value="c">Option C</i-select-option>
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
 </i-select>
 
-{{selectValue}}
-
 ~~~html
-<i-input v-model="value" placeholder="Choose an option" />
+<i-select v-model="value" placeholder="Choose an option">
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
+</i-select>
 ~~~
 
 ~~~js
