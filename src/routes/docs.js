@@ -26,6 +26,7 @@ import CheckboxView from '@views/docs/forms/CheckboxView';
 import InputView from '@views/docs/forms/InputView';
 import InputNumberView from '@views/docs/forms/InputNumberView';
 import RadioView from '@views/docs/forms/RadioView';
+import SelectView from '@views/docs/forms/SelectView';
 import TextareaView from '@views/docs/forms/TextareaView';
 
 export default [
@@ -169,6 +170,11 @@ export default [
                 path: 'components/radio',
                 name: 'docs.components.radio',
                 component: RadioView
+            },
+            {
+                path: 'components/select',
+                name: 'docs.components.select',
+                component: SelectView
             },
             {
                 path: 'components/textarea',
