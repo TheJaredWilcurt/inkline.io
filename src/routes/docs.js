@@ -19,6 +19,7 @@ import ModalView from '@views/docs/components/ModalView';
 import NavView from '@views/docs/components/NavView';
 import NavbarView from '@views/docs/components/NavbarView';
 import PopoverView from '@views/docs/components/PopoverView';
+import ProgressView from '@views/docs/components/ProgressView';
 import TooltipView from '@views/docs/components/TooltipView';
 
 import CheckboxView from '@views/docs/forms/CheckboxView';
@@ -134,6 +135,11 @@ export default [
                 path: 'components/popover',
                 name: 'docs.components.popover',
                 component: PopoverView
+            },
+            {
+                path: 'components/progress',
+                name: 'docs.components.progress',
+                component: ProgressView
             },
             {
                 path: 'components/tooltip',
