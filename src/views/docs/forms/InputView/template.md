@@ -150,51 +150,22 @@ export default {
 ## Input Sizes
 You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
 
-<i-input size="sm" v-model="smInputValue" placeholder="Type something small.." />
-<i-input size="md" v-model="mdInputValue" placeholder="Type something medium.." />
-<i-input size="lg" v-model="lgInputValue" placeholder="Type something large.." />
+<div class="_margin-bottom-1">
+    <i-input size="sm" v-model="smInputValue" placeholder="Type something small.." />
+</div>
+
+<div class="_margin-bottom-1">
+    <i-input size="md" v-model="mdInputValue" placeholder="Type something medium.." />
+</div>
+
+<div class="_margin-bottom-1">
+    <i-input size="lg" v-model="lgInputValue" placeholder="Type something large.." />
+</div>
 
 ~~~html
 <i-input size="sm" v-model="value" placeholder="Type something small.." />
 <i-input size="md" v-model="value" placeholder="Type something medium.." />
 <i-input size="lg" v-model="value" placeholder="Type something large.." />
-~~~
-
-~~~js
-export default {
-  data () {
-    return {
-      value: ''
-    };
-  }
-}
-~~~
-
-## Input Labels
-You can add labels to either side of your input using the `label` slot, together with the optional `label-position` property.
-
-<i-input v-model="labelDefaultInputValue" placeholder="Type something..">
-    <template slot="label">Input Label Default</template>
-</i-input>
-<i-input v-model="labelLeftInputValue" label-position="left" placeholder="Type something..">
-    <template slot="label">Input Label Left</template>
-</i-input>
-<i-input v-model="labelRightInputValue" label-position="right" placeholder="Type something..">
-    <template slot="label">Input Label Right</template>
-</i-input>
-
-~~~html
-<i-input v-model="value" placeholder="Type something..">
-    <template slot="label">Input Label Default</template>
-</i-input>
-
-<i-input v-model="value" label-position="left" placeholder="Type something..">
-    <template slot="label">Input Label Left</template>
-</i-input>
-
-<i-input v-model="value" label-position="right" placeholder="Type something..">
-    <template slot="label">Input Label Right</template>
-</i-input>
 ~~~
 
 ~~~js

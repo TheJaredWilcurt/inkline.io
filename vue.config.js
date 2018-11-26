@@ -47,5 +47,11 @@ module.exports = {
             .set('inkline', 'inkline/src')
             .set('vue$', 'vue/dist/vue.esm.js')
             .end();
+    },
+    devServer: {
+        allowedHosts: [
+            '.ngrok.io',
+            '.serveo.net'
+        ]
     }
 };
