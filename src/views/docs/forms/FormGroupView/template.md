@@ -73,7 +73,7 @@ export default {
       textarea: '',
       select: '',
       checkbox: ['Football'],
-      radio: 'Decline'
+      radio: 'Decline',
     };
   }
 }
@@ -401,7 +401,7 @@ export default {
 ~~~
 
 ## Form Group Nesting
-You can nest form groups in order to control the `disabled`, `readonly` and `size` properties of multiple inputs at once. 
+You can nest form groups in order to control the `disabled`, `readonly` and `size` properties of multiple inputs at once. All the child inputs of the parent form group will inherit the property. 
 
 <p class="_text-muted">Disabled Form Group</p>
 <i-form-group disabled>
@@ -488,37 +488,6 @@ export default {
       select: '',
       checkbox: ['Football'],
       radio: 'Decline'
-    };
-  }
-}
-~~~
-
-## Form Labels
-You can add labels to either side of your input using the `label` slot, together with the optional `label-position` property.
-
-<i-input v-model="labelDefaultInputValue" placeholder="Type something.." />
-<i-input v-model="labelLeftInputValue" label-position="left" placeholder="Type something.." />
-<i-input v-model="labelRightInputValue" label-position="right" placeholder="Type something.." />
-
-~~~html
-<i-input v-model="value" placeholder="Type something..">
-    <template slot="label">Input Label Default</template>
-</i-input>
-
-<i-input v-model="value" label-position="left" placeholder="Type something..">
-    <template slot="label">Input Label Left</template>
-</i-input>
-
-<i-input v-model="value" label-position="right" placeholder="Type something..">
-    <template slot="label">Input Label Right</template>
-</i-input>
-~~~
-
-~~~js
-export default {
-  data () {
-    return {
-      value: ''
     };
   }
 }

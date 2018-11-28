@@ -24,6 +24,7 @@ import TooltipView from '@views/docs/components/TooltipView';
 
 import CheckboxView from '@views/docs/forms/CheckboxView';
 import FormGroupView from '@views/docs/forms/FormGroupView';
+import FormLabelView from '@views/docs/forms/FormLabelView';
 import InputView from '@views/docs/forms/InputView';
 import InputNumberView from '@views/docs/forms/InputNumberView';
 import RadioView from '@views/docs/forms/RadioView';
@@ -161,6 +162,11 @@ export default [
                 path: 'components/form-group',
                 name: 'docs.components.form-group',
                 component: FormGroupView
+            },
+            {
+                path: 'components/form-label',
+                name: 'docs.components.form-label',
+                component: FormLabelView
             },
             {
                 path: 'components/input',
