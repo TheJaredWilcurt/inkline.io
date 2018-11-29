@@ -44,6 +44,15 @@ You can add labels to either side of your input using the `label` slot, together
     <i-input v-model="labelRightInputValue" placeholder="Type something.." />
 </i-form-group>
 
+<i-form-group inline>
+    <i-form-label placement="left">Input Label Right</i-form-label>
+    <i-select v-model="labelRightInputValue" placeholder="Choose an option">
+        <i-select-option value="a" label="Option A" />
+        <i-select-option value="b" label="Option B" />
+        <i-select-option value="c" label="Option C" disabled />
+    </i-select>
+</i-form-group>
+
 ~~~html
 <i-form-group>
     <i-form-label>Input Label Default</i-form-label>

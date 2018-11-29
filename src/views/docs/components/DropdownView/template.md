@@ -4,7 +4,6 @@ Dropdowns are contextual overlays toggled through clicking or hovering, used for
 ## Example
 Wrap both the dropdown's trigger element (such as an `<i-button>`) and the `<i-dropdown-menu>` inside a `<i-dropdown>` component. The dropdown component will always choose the first child element as a trigger and the last child element as the defined dropdown menu.
 
-
 <i-dropdown>
     <i-button>Dropdown</i-button>
     <i-dropdown-menu>
