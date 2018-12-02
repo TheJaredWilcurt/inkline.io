@@ -23,6 +23,7 @@ import ProgressView from '@views/docs/components/ProgressView';
 import TooltipView from '@views/docs/components/TooltipView';
 
 import CheckboxView from '@views/docs/forms/CheckboxView';
+import FormView from '@views/docs/forms/FormView';
 import FormGroupView from '@views/docs/forms/FormGroupView';
 import FormLabelView from '@views/docs/forms/FormLabelView';
 import InputView from '@views/docs/forms/InputView';
@@ -157,6 +158,11 @@ export default [
                 path: 'components/checkbox',
                 name: 'docs.components.checkbox',
                 component: CheckboxView
+            },
+            {
+                path: 'components/form',
+                name: 'docs.components.form',
+                component: FormView
             },
             {
                 path: 'components/form-group',

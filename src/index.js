@@ -1,6 +1,6 @@
 import '@/index.styl';
 import 'inkline/index.styl';
-import 'inkline/theme/index.styl';
+// import 'inkline/theme/index.styl';
 
 import Vue from 'vue';
 import App from '@/App';
