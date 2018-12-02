@@ -32,28 +32,20 @@ export default {
 
 ## Disabled Input
 
-<i-input v-model="disabledSelectValue" placeholder="Type something.." disabled />
+<i-select v-model="disabledSelectValue" placeholder="Choose an option" disabled>
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
+</i-select>
 
 ~~~html
-<i-input v-model="value" placeholder="Type something.." disabled />
-~~~
-
-~~~js
-export default {
-  data () {
-    return {
-      value: ''
-    };
-  }
-}
-~~~
-
-## Clearable Input
-
-<i-input v-model="clearableSelectValue" placeholder="Type something.." clearable />
-
-~~~html
-<i-input v-model="value" placeholder="Type something.." clearable />
+<i-select v-model="value" placeholder="Choose an option">
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
+</i-select>
 ~~~
 
 ~~~js
@@ -70,24 +62,40 @@ export default {
 Inkline allows you to easily add a prefix or suffix to your inputs. Using prefixes and suffixes you can, indicate 
 your input type using an icon or text. 
 
-<i-input v-model="prefixSelectValue" placeholder="Type something..">
+<i-select v-model="prefixSelectValue" placeholder="Choose an option">
     <i slot="prefix">@</i>
-</i-input>
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
+</i-select>
 
 ~~~html
-<i-input v-model="value" placeholder="Type something..">
+<i-select v-model="value" placeholder="Choose an option">
     <i slot="prefix">@</i>
-</i-input>
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
+</i-select>
 ~~~
 
-<i-input v-model="suffixSelectValue" placeholder="Type something..">
+<i-select v-model="suffixSelectValue" placeholder="Choose an option">
     <i slot="suffix">@</i>
-</i-input>
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
+</i-select>
 
 ~~~html
-<i-input v-model="value" placeholder="Type something..">
+<i-select v-model="value" placeholder="Choose an option">
     <i slot="suffix">@</i>
-</i-input>
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
+</i-select>
 ~~~
 
 <i-input v-model="prefixSuffixSelectValue" placeholder="Type something..">

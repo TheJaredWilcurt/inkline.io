@@ -3,7 +3,7 @@ import { IForm, IFormGroup, IFormLabel, IInput, ITextarea, ICheckbox, ICheckboxG
 
 export default {
     extends: View,
-    name: 'FormView',
+    name: 'FormValidationView',
     components: {
         IForm,
         IFormGroup,
@@ -17,6 +17,23 @@ export default {
     },
     data () {
         return {
+            form: this.$form({
+                requiredInput: {
+                    value: '',
+                    validators: [
+                        { rule: 'required', message: 'Input is required.' }
+                    ]
+                },
+                formGroup: this.$form({
+                    requiredInput: {
+                        value: 'Default Value',
+                        validators: [
+                            { rule: 'required', message: 'Input is required.' }
+                        ]
+                    }
+                })
+            }),
+
             input: '',
             textarea: '',
             select: '',

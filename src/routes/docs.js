@@ -26,6 +26,7 @@ import CheckboxView from '@views/docs/forms/CheckboxView';
 import FormView from '@views/docs/forms/FormView';
 import FormGroupView from '@views/docs/forms/FormGroupView';
 import FormLabelView from '@views/docs/forms/FormLabelView';
+import FormValidationView from '@views/docs/forms/FormValidationView';
 import InputView from '@views/docs/forms/InputView';
 import InputNumberView from '@views/docs/forms/InputNumberView';
 import RadioView from '@views/docs/forms/RadioView';
@@ -42,38 +43,38 @@ export default [
              * Core Views
              */
             {
-                path: 'code',
-                name: 'docs.code',
+                path: 'core/code',
+                name: 'docs.core.code',
                 component: CodeView
             },
             {
-                path: 'colors',
-                name: 'docs.colors',
+                path: 'core/colors',
+                name: 'docs.core.colors',
                 component: ColorsView
             },
             {
-                path: 'grid',
-                name: 'docs.grid',
+                path: 'core/grid',
+                name: 'docs.core.grid',
                 component: GridView
             },
             {
-                path: 'images',
-                name: 'docs.images',
+                path: 'core/images',
+                name: 'docs.core.images',
                 component: ImagesView
             },
             {
-                path: 'layout',
-                name: 'docs.layout',
+                path: 'core/layout',
+                name: 'docs.core.layout',
                 component: LayoutView
             },
             {
-                path: 'tables',
-                name: 'docs.tables',
+                path: 'core/tables',
+                name: 'docs.core.tables',
                 component: TablesView
             },
             {
-                path: 'typography',
-                name: 'docs.typography',
+                path: 'core/typography',
+                name: 'docs.core.typography',
                 component: TypographyView
             },
 
@@ -155,48 +156,53 @@ export default [
              * Form Component Views
              */
             {
-                path: 'components/checkbox',
-                name: 'docs.components.checkbox',
+                path: 'forms/checkbox',
+                name: 'docs.forms.checkbox',
                 component: CheckboxView
             },
             {
-                path: 'components/form',
-                name: 'docs.components.form',
+                path: 'forms/form',
+                name: 'docs.forms.form',
                 component: FormView
             },
             {
-                path: 'components/form-group',
-                name: 'docs.components.form-group',
+                path: 'forms/form-group',
+                name: 'docs.forms.form-group',
                 component: FormGroupView
             },
             {
-                path: 'components/form-label',
-                name: 'docs.components.form-label',
+                path: 'forms/form-label',
+                name: 'docs.forms.form-label',
                 component: FormLabelView
             },
             {
-                path: 'components/input',
-                name: 'docs.components.input',
+                path: 'forms/form-validation',
+                name: 'docs.forms.form-validation',
+                component: FormValidationView
+            },
+            {
+                path: 'forms/input',
+                name: 'docs.forms.input',
                 component: InputView
             },
             {
-                path: 'components/input-number',
-                name: 'docs.components.input-number',
+                path: 'forms/input-number',
+                name: 'docs.forms.input-number',
                 component: InputNumberView
             },
             {
-                path: 'components/radio',
-                name: 'docs.components.radio',
+                path: 'forms/radio',
+                name: 'docs.forms.radio',
                 component: RadioView
             },
             {
-                path: 'components/select',
-                name: 'docs.components.select',
+                path: 'forms/select',
+                name: 'docs.forms.select',
                 component: SelectView
             },
             {
-                path: 'components/textarea',
-                name: 'docs.components.textarea',
+                path: 'forms/textarea',
+                name: 'docs.forms.textarea',
                 component: TextareaView
             }
         ]
