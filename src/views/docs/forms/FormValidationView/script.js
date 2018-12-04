@@ -18,21 +18,44 @@ export default {
     data () {
         return {
             form: this.$form({
-                requiredInput: {
-                    value: '',
+                input: {
                     validators: [
                         { rule: 'required', message: 'Input is required.' }
                     ]
                 },
-                formGroup: this.$form({
-                    requiredInput: {
-                        value: 'Default Value',
+                textarea: {
+                    validators: [
+                        { rule: 'required', message: 'Textarea is required.' }
+                    ]
+                },
+                group: {
+                    select: {
+                        value: 'a',
                         validators: [
-                            { rule: 'required', message: 'Input is required.' }
+                            { rule: 'required', message: 'Select is required.' }
+                        ]
+                    },
+                    checked: {
+                        value: true,
+                        validators: [
+                            { rule: 'required', message: 'Checkbox is required.' }
+                        ]
+                    },
+                    checkbox: {
+                        value: ['Football'],
+                        validators: [
+                            { rule: 'required', message: 'Checkbox is required.' }
+                        ]
+                    },
+                    radio: {
+                        value: 'Accept',
+                        validators: [
+                            { rule: 'required', message: 'Radio is required.' }
                         ]
                     }
-                })
+                }
             }),
+
 
             input: '',
             textarea: '',
