@@ -25,7 +25,7 @@ export default {
                 },
                 textarea: {
                     validators: [
-                        { rule: 'required', message: 'Textarea is required.' }
+                        { rule: 'required', message: 'Textarea is required.', enabled: false }
                     ]
                 },
                 group: {
