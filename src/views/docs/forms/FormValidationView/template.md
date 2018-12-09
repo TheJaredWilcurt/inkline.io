@@ -84,3 +84,14 @@ export default {
     }
 }
 ~~~
+
+
+<i-form :schema="listForm">
+    <i-form-group v-for="item in listForm.items" :key="item.name">
+        <i-input :schema="item" v-model="item.value" placeholder="Enter your name.." />
+        {{ item }}
+    </i-form-group>
+    <button @click="addField" type="button">Add</button>
+</i-form>
+
+{{listForm}}

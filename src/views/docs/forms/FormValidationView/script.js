@@ -56,6 +56,15 @@ export default {
                 }
             }),
 
+            listForm: this.$form({
+                items: [
+                    {
+                        validators: [
+                            { rule: 'required', message: 'Input is required.' }
+                        ]
+                    }
+                ]
+            }),
 
             input: '',
             textarea: '',
@@ -89,5 +98,14 @@ export default {
             checkboxNested: ['Football'],
             radioNested: 'Decline',
         };
+    },
+    methods: {
+        addField() {
+            this.listForm.items.$push({
+                validators: [
+                    { rule: 'required', message: 'Input is required.' }
+                ]
+            });
+        }
     }
 };
