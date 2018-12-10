@@ -62,7 +62,9 @@ export default {
                         validators: [
                             { rule: 'required', message: 'Input is required.' }
                         ]
-                    }
+                    },
+                    {},
+                    {},
                 ]
             }),
 
@@ -102,6 +104,13 @@ export default {
     methods: {
         addField() {
             this.listForm.items.$push({
+                validators: [
+                    { rule: 'required', message: 'Input is required.' }
+                ]
+            });
+        },
+        spliceField() {
+            this.listForm.items.$splice(1, 2, {
                 validators: [
                     { rule: 'required', message: 'Input is required.' }
                 ]

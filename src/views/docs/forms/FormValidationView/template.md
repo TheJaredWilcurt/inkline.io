@@ -92,6 +92,7 @@ export default {
         {{ item }}
     </i-form-group>
     <button @click="addField" type="button">Add</button>
+    <button @click="spliceField" type="button">Splice</button>
 </i-form>
 
 {{listForm}}
