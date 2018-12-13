@@ -37,16 +37,6 @@ By default, alerts are set to have `width: 100%`, fully spanning the width of th
         <p>A simple info alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
     </i-alert>
 </div>
-<div class="_margin-bottom-1">
-    <i-alert variant="light">
-        <p>A simple light alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-    </i-alert>
-</div>
-<div class="_margin-bottom-1">
-    <i-alert variant="dark">
-        <p>A simple dark alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-    </i-alert>
-</div>
 
 ~~~html
 <i-alert variant="primary">
@@ -72,94 +62,7 @@ By default, alerts are set to have `width: 100%`, fully spanning the width of th
 <i-alert variant="info">
     <p>A simple info alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
 </i-alert>
-
-<i-alert variant="light">
-    <p>A simple light alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-</i-alert>
-
-<i-alert variant="dark">
-    <p>A simple dark alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-</i-alert>
 ~~~
-
-## Faded Alert Variants
-If you want to achieve a faded background color, you can use the `faded` property.
-
-<div class="_margin-bottom-1">
-    <i-alert variant="primary" faded>
-        <p>A simple primary alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-    </i-alert>
-</div>
-<div class="_margin-bottom-1">
-    <i-alert variant="secondary" faded>
-        <p>A simple secondary alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-    </i-alert>
-</div>
-<div class="_margin-bottom-1">
-    <i-alert variant="success" faded>
-        <p>A simple success alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-    </i-alert>
-</div>
-<div class="_margin-bottom-1">
-    <i-alert variant="danger" faded>
-        <p>A simple danger alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-    </i-alert>
-</div>
-<div class="_margin-bottom-1">
-    <i-alert variant="warning" faded>
-        <p>A simple warning alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-    </i-alert>
-</div>
-<div class="_margin-bottom-1">
-    <i-alert variant="info" faded>
-        <p>A simple info alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-    </i-alert>
-</div>
-<div class="_margin-bottom-1">
-    <i-alert variant="light" faded>
-        <p>A simple light alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-    </i-alert>
-</div>
-<div class="_margin-bottom-1">
-    <i-alert variant="dark" faded>
-        <p>A simple dark alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-    </i-alert>
-</div>
-
-~~~html
-<i-alert variant="primary" faded>
-    <p>A simple primary alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-</i-alert>
-
-<i-alert variant="secondary" faded>
-    <p>A simple secondary alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-</i-alert>
-
-<i-alert variant="success" faded>
-    <p>A simple success alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-</i-alert>
-
-<i-alert variant="danger" faded>
-    <p>A simple danger alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-</i-alert>
-
-<i-alert variant="warning" faded>
-    <p>A simple warning alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-</i-alert>
-
-<i-alert variant="info" faded>
-    <p>A simple info alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-</i-alert>
-
-<i-alert variant="light" faded>
-    <p>A simple light alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-</i-alert>
-
-<i-alert variant="dark" faded>
-    <p>A simple dark alert with an <a href="http://inkline.io">example link</a>. It's clickable!</p>
-</i-alert>
-~~~
-
 
 ## Alert Sizes
 You're able to use the `size` modifier to control the text and spacing size of your alerts, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
@@ -209,15 +112,11 @@ You can provide a title and subtitle for your alerts using the `.title` and `.su
 
 ~~~html
 <i-alert size="sm">
-    Some quick example text to build on the alert title and make up the bulk of the alert's content.
-</i-alert>
-
-<i-alert size="md">
-    Some quick example text to build on the alert title and make up the bulk of the alert's content.
-</i-alert>
-
-<i-alert size="lg">
-    Some quick example text to build on the alert title and make up the bulk of the alert's content.
+    <h4 class="title">Alert Title</h4>
+    <div class="subtitle">Alert Subtitle</div>
+    <p>
+        Some quick example text to build on the alert and make up the bulk of the alert's content.
+    </p>
 </i-alert>
 ~~~
 
