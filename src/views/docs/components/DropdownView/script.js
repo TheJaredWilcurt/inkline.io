@@ -1,0 +1,14 @@
+import View from '@components/View';
+import { IButton, IDropdown, IDropdownDivider, IDropdownItem, IDropdownMenu } from 'inkline';
+
+export default {
+    name: 'DropdownView',
+    extends: View,
+    components: {
+        IButton,
+        IDropdown,
+        IDropdownDivider,
+        IDropdownItem,
+        IDropdownMenu
+    }
+};
