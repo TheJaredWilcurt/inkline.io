@@ -1,11 +1,10 @@
 language: node_js
 node_js:
 - 8.9.1
-before_script:
-- cd ..
 script:
 - npm install
 after_script:
+- cd ..
 - git clone https://github.com/inkline/inkline inkline
 - cd inkline.io
 - npm link ../inkline
@@ -14,7 +13,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token:
-    secure: n9r+MLPulm8Q7igXIRrrq163MaVsMDm25Nfl/GJL8iJEO+jfDGQCA31+DdyKW8Db+OM2jFrbCoeUsEyTIgtHrulrxi480yu8eLlW1nLgwBAhdG4HVpSxhzGsmCYgTcUo3XU5hV3Wiikw1Hm6BuMKQGv/nnkhxLevMprg0tnxP+Vdf5uoe6pGc3D96NlNZjja5l/2qbbMtZPZw8w6wOf/kNe/XJLMR+/8U/9lXUQvA5b9ppVQZ89IQiijK7alpd7l87jKeoEYnMJhMNysmyazWwjU93tGqW7sdOsWNZr4kv/XhMBCPpOB9WPaRZFNkpwNAON2ZXbtxD8eR7xVC4aAf0yIlitihtOiX8wVYI1MpxpEXXhgp8uF7pSv2uI2J40QugU148Qgq1nEpi+d7Q4BDaIL77teCjBJB/68DvTdSUPsElbd2zv9+23LIndhPWWEezl/eCL6o2XdHqYZyCL21anHnC7BVpmezM2Gz+SnAXqqA44s2FxZf2+A88TVPI4/8qKT8l96/Z/i1tmEkIMWrTiUK8IsjMevuD1SJ1k7+N55/LecUrsJfjZS13NnBry4NvwDSp//6S05t19NLWaH/1Tb4rQ4cpfMRWpclJ6WmK+JV3F6D1W0pJQPBeJiGFZ/MJg1tmigQmKxn2Fpr97yuXoVbRmEX/S2FujQVpGezu0=
+    secure: kt45d8oXcAyzQ2ZEv1EETJUcpGnF2KuZF3cq59z5T5Fi6sGPHMiNgYotBH5/kV/ne3gobMAcN0MViN9iAeTTovESLkUTzUrUqnwPZPT7y2MlUi2Gv/Q3Orocvh3lWkU7SiAQOTxwJ8jHwkZpRGeMgnj4UH4Hd55CDZzb2RNMfmj3Jz+CkxdHQ4CxSJak7jpjS0u21n+aLxl3nhjiMFG44bp1sNCm24YyJyrNuMlG2pUUsWeuJv83E6KvHXnwoHv6uEXf9B7xKcBOuj7jPKnp5Ix85WAUZPi6en2HLsGeIn8IEilMuvtcLKEMofmvnQiqAkwxKLCLnHPCtHaJIUT/lHBtTLeX5dIiBhmiP5PcSyDhiBXUyHMjgW7Jl58qTzlfb7Bi5gOTCZz/xeKJyEkxoXU+1rroEtFuGo++tYFMQTYlLjwOcZ83qoLSZ/S+GQ0WN5HXRX/f4jFR3lL+3D81Ds/ekKDMbeDW5SR+9N1y/Q+puq1GZPOFHJrgDt2VkGbazcAqLxPPiw/jA4a4drATNF1Zj8aocY/qcwt00cXVKTaZtUF7TwJcXXVuWHdrPck3Ex9DE71SbNb6y3zSNE3MnuGOo8tYezNaIw9eO9qt1xJrH/qKS/YE5B2IX+AJvXoAlyvqTfsCdecOTXHHUO0lJVbWPGehafBMsHatNx0qHNY=
   keep-history: true
   on:
     branch: master
