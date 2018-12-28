@@ -10,4 +10,11 @@ after_script:
 - cd inkline.io
 - npm link ../inkline
 - npm run build
-
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token:
+    secure: n9r+MLPulm8Q7igXIRrrq163MaVsMDm25Nfl/GJL8iJEO+jfDGQCA31+DdyKW8Db+OM2jFrbCoeUsEyTIgtHrulrxi480yu8eLlW1nLgwBAhdG4HVpSxhzGsmCYgTcUo3XU5hV3Wiikw1Hm6BuMKQGv/nnkhxLevMprg0tnxP+Vdf5uoe6pGc3D96NlNZjja5l/2qbbMtZPZw8w6wOf/kNe/XJLMR+/8U/9lXUQvA5b9ppVQZ89IQiijK7alpd7l87jKeoEYnMJhMNysmyazWwjU93tGqW7sdOsWNZr4kv/XhMBCPpOB9WPaRZFNkpwNAON2ZXbtxD8eR7xVC4aAf0yIlitihtOiX8wVYI1MpxpEXXhgp8uF7pSv2uI2J40QugU148Qgq1nEpi+d7Q4BDaIL77teCjBJB/68DvTdSUPsElbd2zv9+23LIndhPWWEezl/eCL6o2XdHqYZyCL21anHnC7BVpmezM2Gz+SnAXqqA44s2FxZf2+A88TVPI4/8qKT8l96/Z/i1tmEkIMWrTiUK8IsjMevuD1SJ1k7+N55/LecUrsJfjZS13NnBry4NvwDSp//6S05t19NLWaH/1Tb4rQ4cpfMRWpclJ6WmK+JV3F6D1W0pJQPBeJiGFZ/MJg1tmigQmKxn2Fpr97yuXoVbRmEX/S2FujQVpGezu0=
+  keep-history: true
+  on:
+    branch: master
