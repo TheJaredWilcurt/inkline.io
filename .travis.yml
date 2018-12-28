@@ -4,10 +4,6 @@ node_js:
 script:
 - npm install
 before_deploy:
-- cd ..
-- git clone https://github.com/inkline/inkline inkline
-- cd inkline.io
-- npm link ../inkline
 - npm run build
 deploy:
   provider: pages

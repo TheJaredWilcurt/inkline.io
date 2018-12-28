@@ -10,6 +10,9 @@ module.exports = {
             filename: 'index.html'
         }
     },
+    transpileDependencies: [
+        'node_modules/inkline'
+    ],
     chainWebpack: config => {
         if (process.env.NODE_ENV === 'development') {
             config.output
