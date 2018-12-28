@@ -6,7 +6,8 @@ before_script:
 script:
 - npm install
 after_script:
-- git clone https://github.com/inkline/inkline
+- git clone https://github.com/inkline/inkline inkline
+- cd inkline.io
 - npm link ../inkline
 - npm run build
 
