@@ -20,9 +20,9 @@
 <br/>
   
 <p align="center">
-    <img src="https://img.shields.io/david/inkline/inkline.io.svg?style=popout" alt="dependencies status">
+    <a href="https://travis-ci.org/inkline/inkline.io"><img src="https://travis-ci.org/inkline/inkline.io.svg?branch=master" alt="Build"></a>
     <img src="https://img.shields.io/david/inkline/inkline.io.svg?style=popout" alt="devDependencies status">
-</a>
+</p>
 
 <br/>
 <br/>
