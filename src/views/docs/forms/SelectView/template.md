@@ -98,61 +98,24 @@ your input type using an icon or text.
 </i-select>
 ~~~
 
-<i-input v-model="prefixSuffixSelectValue" placeholder="Type something..">
-    <i slot="prefix">@</i>
+<i-select v-model="prefixSuffixSelectValue" placeholder="Choose an option">
     <i slot="suffix">@</i>
-</i-input>
-
-~~~html
-<i-input v-model="value" placeholder="Type something..">
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
     <i slot="prefix">@</i>
+</i-select>
+
+~~~html
+<i-select v-model="value" placeholder="Choose an option">
+    <i slot="prefix">@</i>
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
     <i slot="suffix">@</i>
-</i-input>
-~~~
-
-~~~js
-export default {
-  data () {
-    return {
-      value: ''
-    };
-  }
-}
-~~~
-
-## Input Prepend and Append
-You can add additional content such as select fields, buttons or plain text, to either side of the input by using the prepend and append slots.
-
-<i-input v-model="prependSelectValue" placeholder="Type something..">
-    <span slot="prepend">http://</span>
-</i-input>
-
-~~~html
-<i-input v-model="value" placeholder="Type something..">
-    <span slot="prepend">http://</span>
-</i-input>
-~~~
-
-<i-input v-model="appendSelectValue" placeholder="Type something..">
-    <span slot="append">http://</span>
-</i-input>
-
-~~~html
-<i-input v-model="value" placeholder="Type something..">
-    <span slot="append">.com</span>
-</i-input>
-~~~
-
-<i-input v-model="prependAppendSelectValue" placeholder="Type something..">
-    <span slot="prepend">http://</span>
-    <span slot="append">.com</span>
-</i-input>
-
-~~~html
-<i-input v-model="value" placeholder="Type something..">
-    <span slot="prepend">http://</span>
-    <span slot="append">.com</span>
-</i-input>
+</i-select>
 ~~~
 
 ~~~js
@@ -168,14 +131,54 @@ export default {
 ## Input Sizes
 You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
 
-<i-input size="sm" v-model="smSelectValue" placeholder="Type something small.." />
-<i-input size="md" v-model="mdSelectValue" placeholder="Type something medium.." />
-<i-input size="lg" v-model="lgSelectValue" placeholder="Type something large.." />
+<i-form-group>
+    <i-select v-model="smSelectValue" size="sm" placeholder="Choose an option">
+        <i-select-option value="a" label="Option A" />
+        <i-select-option value="b" label="Option B" />
+        <i-select-option value="c" label="Option C" />
+        <i-select-option value="d" label="Option D" disabled />
+    </i-select>
+</i-form-group>
+
+<i-form-group>
+    <i-select v-model="mdSelectValue" size="md" placeholder="Choose an option">
+        <i-select-option value="a" label="Option A" />
+        <i-select-option value="b" label="Option B" />
+        <i-select-option value="c" label="Option C" />
+        <i-select-option value="d" label="Option D" disabled />
+    </i-select>
+</i-form-group>
+
+<i-form-group>
+    <i-select v-model="lgSelectValue" size="lg" placeholder="Choose an option">
+        <i-select-option value="a" label="Option A" />
+        <i-select-option value="b" label="Option B" />
+        <i-select-option value="c" label="Option C" />
+        <i-select-option value="d" label="Option D" disabled />
+    </i-select>
+</i-form-group>
 
 ~~~html
-<i-input size="sm" v-model="value" placeholder="Type something small.." />
-<i-input size="md" v-model="value" placeholder="Type something medium.." />
-<i-input size="lg" v-model="value" placeholder="Type something large.." />
+<i-select v-model="value" size="sm" placeholder="Choose an option">
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
+</i-select>
+
+<i-select v-model="value" size="md" placeholder="Choose an option">
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
+</i-select>
+
+<i-select v-model="value" size="lg" placeholder="Choose an option">
+    <i-select-option value="a" label="Option A" />
+    <i-select-option value="b" label="Option B" />
+    <i-select-option value="c" label="Option C" />
+    <i-select-option value="d" label="Option D" disabled />
+</i-select>
 ~~~
 
 ~~~js
@@ -187,42 +190,3 @@ export default {
   }
 }
 ~~~
-
-## Input Labels
-You can add labels to either side of your input using the `label` slot, together with the optional `label-position` property.
-
-<i-input v-model="labelDefaultSelectValue" placeholder="Type something..">
-    <template slot="label">Input Label Default</template>
-</i-input>
-<i-input v-model="labelLeftSelectValue" label-position="left" placeholder="Type something..">
-    <template slot="label">Input Label Left</template>
-</i-input>
-<i-input v-model="labelRightSelectValue" label-position="right" placeholder="Type something..">
-    <template slot="label">Input Label Right</template>
-</i-input>
-
-~~~html
-<i-input v-model="value" placeholder="Type something..">
-    <template slot="label">Input Label Default</template>
-</i-input>
-
-<i-input v-model="value" label-position="left" placeholder="Type something..">
-    <template slot="label">Input Label Left</template>
-</i-input>
-
-<i-input v-model="value" label-position="right" placeholder="Type something..">
-    <template slot="label">Input Label Right</template>
-</i-input>
-~~~
-
-~~~js
-export default {
-  data () {
-    return {
-      value: ''
-    };
-  }
-}
-~~~
-
-

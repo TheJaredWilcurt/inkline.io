@@ -17,6 +17,33 @@ export default {
     },
     data () {
         return {
+            basicForm: this.$form({
+                input: {}
+            }),
+            defaultValueForm: this.$form({
+                input: {
+                    value: 'Default Value'
+                }
+            }),
+            validateValueForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'required', message: 'Input is required' }
+                    ]
+                }
+            }),
+            groupedValueForm: this.$form({
+                input: {},
+                group: {
+                    input: {}
+                }
+            }),
+            arrayValueForm: this.$form({
+                group: [
+                    { value: 'First Field' },
+                    { value: 'Second Field' }
+                ]
+            }),
             form: this.$form({
                 input: {
                     validators: [
@@ -115,6 +142,11 @@ export default {
                     { rule: 'required', message: 'Input is required.' }
                 ]
             });
+        }
+    },
+    filters: {
+        prettify (value) {
+            return JSON.stringify(value, null, 2);
         }
     }
 };

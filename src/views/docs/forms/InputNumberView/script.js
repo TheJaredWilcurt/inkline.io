@@ -12,6 +12,7 @@ export default {
             inputValue: '',
             disabledInputValue: '',
             minMaxInputValue: '1',
+            stepInputValue: '',
             precisionInputValue: '',
             clearableInputValue: '',
             prefixInputValue: '',

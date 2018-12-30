@@ -10,7 +10,7 @@ You will need to use the `i-checkbox` component together with a `i-checkbox-grou
 
 <i-checkbox v-model="checked">Apple</i-checkbox>
 
-Checked: <span>{{checked}}</span>
+Checked: <code>{{checked}}</code>
 
 ~~~html
 <i-checkbox v-model="checked">Apple</i-checkbox>
@@ -36,7 +36,7 @@ export default {
     <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
 </i-checkbox-group>
 
-Checked values: <span>{{checkedGroup}}</span>
+Checked values: <code>{{checkedGroup}}</code>
 
 ~~~html
 <i-checkbox-group v-model="checked">
@@ -68,7 +68,7 @@ You're able to use the `size` property to control the size of your inputs, using
     <i-checkbox size="lg" value="Basketball">Basketball</i-checkbox>
 </i-checkbox-group>
 
-Checked values: <span>{{checkedSize}}</span>
+Checked values: <code>{{checkedSize}}</code>
 
 ~~~html
 <i-checkbox-group v-model="checked">
@@ -97,17 +97,7 @@ Applying the size `size` property to a `i-checkbox-group` will set the chosen si
     <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
 </i-checkbox-group>
 
-Checked values: <span>{{checkedSizeGroupSm}}</span>
-
-<i-checkbox-group size="lg" v-model="checkedSizeGroupLg">
-    <i-checkbox value="Football">Football</i-checkbox>
-    <i-checkbox value="Volleyball">Volleyball</i-checkbox>
-    <i-checkbox value="Basketball">Basketball</i-checkbox>
-    <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
-</i-checkbox-group>
-
-Checked values: <span>{{checkedSizeGroupLg}}</span>
-
+Checked values: <code>{{checkedSizeGroupSm}}</code>
 
 <i-checkbox-group size="md" v-model="checkedSizeGroupMd">
     <i-checkbox value="Football">Football</i-checkbox>
@@ -116,7 +106,16 @@ Checked values: <span>{{checkedSizeGroupLg}}</span>
     <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
 </i-checkbox-group>
 
-Checked values: <span>{{checkedSizeGroupMd}}</span>
+Checked values: <code>{{checkedSizeGroupMd}}</code>
+
+<i-checkbox-group size="lg" v-model="checkedSizeGroupLg">
+    <i-checkbox value="Football">Football</i-checkbox>
+    <i-checkbox value="Volleyball">Volleyball</i-checkbox>
+    <i-checkbox value="Basketball">Basketball</i-checkbox>
+    <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
+</i-checkbox-group>
+
+Checked values: <code>{{checkedSizeGroupLg}}</code>
 
 ~~~html
 <i-checkbox-group size="sm" v-model="checked">
@@ -160,7 +159,7 @@ Inkline uses custom checkbox designs by setting the `custom` property to `true` 
     <i-checkbox :custom="true" value="Basketball">Basketball</i-checkbox>    
 </i-checkbox-group>
 
-Checked values: <span>{{checkedCustomTrue}}</span>
+Checked values: <code>{{checkedCustomTrue}}</code>
 
 ~~~html
 <i-checkbox-group v-model="checkedCustomTrue">
@@ -188,7 +187,7 @@ By setting the `custom` property to `false`, the checkboxes use the browser's de
     <i-checkbox :custom="false" value="Basketball">Basketball</i-checkbox>
 </i-checkbox-group>
 
-Checked values: <span>{{checkedCustomFalse}}</span>
+Checked values: <code>{{checkedCustomFalse}}</code>
 
 ~~~html
 <i-checkbox-group v-model="checked">
@@ -216,7 +215,7 @@ export default {
     <i-checkbox-button value="Venus" disabled>Venus</i-checkbox-button>
 </i-checkbox-button-group>
 
-Checked values: <span>{{checkedButton}}</span>
+Checked values: <code>{{checkedButton}}</code>
 
 ~~~html
 <i-checkbox-button-group v-model="checked">

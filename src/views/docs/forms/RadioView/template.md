@@ -4,12 +4,14 @@ Make sure you use a select input if you think the user doesn't need to see all t
 
 You will need to use the `i-radio` component together with a `i-radio-group`.
 
-### Basic Usage
+## Basic Usage
 
 <i-radio v-model="selected" value="Apple">Apple</i-radio>
 <i-radio v-model="selected" value="Orange">Orange</i-radio>
 <i-radio v-model="selected" value="Banana">Banana</i-radio>
 <i-radio v-model="selected" value="Strawberry" disabled>Strawberry</i-radio>
+
+Selected value: <code>{{selected}}</code>
 
 ~~~html
 <i-radio v-model="selected" value="Apple">Apple</i-radio>
@@ -36,6 +38,8 @@ export default {
     <i-radio value="Basketball">Basketball</i-radio>
     <i-radio value="Tennis" disabled>Tennis</i-radio>
 </i-radio-group>
+
+Selected value: <code>{{selectedGroup}}</code>
 
 ~~~html
 <i-radio-group v-model="selected">
@@ -66,7 +70,7 @@ You're able to use the `size` property to control the size of your inputs, using
     <i-radio size="lg" value="Basketball">Basketball</i-radio>
 </i-radio-group>
 
-Selected value: <span>{{selectedSize}}</span>
+Selected value: <code>{{selectedSize}}</code>
 
 ~~~html
 <i-radio-group v-model="selected">
@@ -95,6 +99,8 @@ Applying the size `size` property to a `i-radio-group` will set the chosen size 
     <i-radio value="Tennis" disabled>Tennis</i-radio>
 </i-radio-group>
 
+Selected value: <code>{{selectedSizeGroupSm}}</code>
+
 <i-radio-group size="md" v-model="selectedSizeGroupMd">
     <i-radio value="Football">Football</i-radio>
     <i-radio value="Volleyball">Tennis</i-radio>
@@ -102,12 +108,16 @@ Applying the size `size` property to a `i-radio-group` will set the chosen size 
     <i-radio value="Tennis" disabled>Tennis</i-radio>
 </i-radio-group>
 
+Selected value: <code>{{selectedSizeGroupMd}}</code>
+
 <i-radio-group size="lg" v-model="selectedSizeGroupLg">
     <i-radio value="Football">Football</i-radio>
     <i-radio value="Volleyball">Tennis</i-radio>
     <i-radio value="Basketball">Basketball</i-radio>
     <i-radio value="Tennis" disabled>Tennis</i-radio>
 </i-radio-group>
+
+Selected value: <code>{{selectedSizeGroupLg}}</code>
 
 ~~~html
 <i-radio-group size="sm" v-model="selected">
@@ -152,7 +162,7 @@ Inkline uses custom radio designs by setting the `custom` property to `true` by 
     <i-radio :custom="true" value="Basketball">Basketball</i-radio>    
 </i-radio-group>
 
-Selected value: <span>{{selectedCustomTrue}}</span>
+Selected value: <code>{{selectedCustomTrue}}</code>
 
 ~~~html
 <i-radio-group v-model="selectedCustomTrue">
@@ -180,7 +190,7 @@ By setting the `custom` property to `false`, the radios use the browser's defaul
     <i-radio :custom="false" value="Basketball">Basketball</i-radio>
 </i-radio-group>
 
-Selected value: <span>{{selectedCustomFalse}}</span>
+Selected value: <code>{{selectedCustomFalse}}</code>
 
 ~~~html
 <i-radio-group v-model="selected">
@@ -207,6 +217,8 @@ export default {
     <i-radio-button value="Jupiter">Jupiter</i-radio-button>
     <i-radio-button value="Venus" disabled>Venus</i-radio-button>
 </i-radio-button-group>
+
+Selected value: <code>{{selectedButton}}</code>
 
 ~~~html
 <i-radio-button-group v-model="selected">
