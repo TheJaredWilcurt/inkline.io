@@ -85,63 +85,41 @@ export default {
 
             listForm: this.$form({
                 items: [
-                    {
-                        validators: [
-                            { rule: 'required', message: 'Input is required.' }
-                        ]
-                    },
-                    {},
-                    {},
+                    { value: 'Existing Field' },
+                    { value: 'Existing Field' }
                 ]
             }),
 
-            input: '',
-            textarea: '',
-            select: '',
-            checkbox: ['Football'],
-            radio: 'Decline',
-            inputDisabled: '',
-            textareaDisabled: '',
-            selectDisabled: '',
-            checkboxDisabled: ['Football'],
-            radioDisabled: 'Decline',
-            inputSizeSm: '',
-            textareaSizeSm: '',
-            selectSizeSm: '',
-            checkboxSizeSm: ['Football'],
-            radioSizeSm: 'Decline',
-            inputSizeMd: '',
-            textareaSizeMd: '',
-            selectSizeMd: '',
-            checkboxSizeMd: ['Football'],
-            radioSizeMd: 'Decline',
-            inputSizeLg: '',
-            textareaSizeLg: '',
-            selectSizeLg: '',
-            checkboxSizeLg: ['Football'],
-            radioSizeLg: 'Decline',
-            inputNested: '',
-            passwordNested: '',
-            textareaNested: '',
-            selectNested: '',
-            checkboxNested: ['Football'],
-            radioNested: 'Decline',
+            objectForm: this.$form({
+                name: {}
+            }),
         };
     },
     methods: {
         addField() {
             this.listForm.items.$push({
-                validators: [
-                    { rule: 'required', message: 'Input is required.' }
-                ]
+                value: 'Added Field'
             });
         },
-        spliceField() {
-            this.listForm.items.$splice(1, 2, {
-                validators: [
-                    { rule: 'required', message: 'Input is required.' }
-                ]
+        removeField() {
+            this.listForm.items.$splice(0, 1);
+        },
+        replaceField() {
+            this.listForm.items.$splice(0, 1, {
+                value: 'Spliced Field'
             });
+        },
+        setEmail() {
+            this.objectForm.$set('email', {
+                validators: [
+                    { rule: 'email' }
+                ]
+            }, { instance: this });
+        },
+        setAddress() {
+            this.objectForm.$set('address', {
+                value: '32 Inkline St.'
+            }, { instance: this });
         }
     },
     filters: {
