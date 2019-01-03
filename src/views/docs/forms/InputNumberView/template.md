@@ -26,8 +26,6 @@ export default {
 
 <i-input-number v-model="disabledInputValue" placeholder="Type something.." disabled />
 
-Value: <code>{{disabledInputValue}}</code>
-
 ~~~html
 <i-input-number v-model="value" placeholder="Type something.." disabled />
 ~~~
@@ -115,8 +113,6 @@ your input type using an icon or text.
     <i slot="prefix" class="form-input-icon">@</i>
 </i-input-number>
 
-Value: <code>{{prefixInputValue}}</code>
-
 ~~~html
 <i-input-number v-model="value" placeholder="Type something..">
     <i slot="prefix" class="form-input-icon">@</i>
@@ -126,8 +122,6 @@ Value: <code>{{prefixInputValue}}</code>
 <i-input-number v-model="suffixInputValue" placeholder="Type something..">
     <i slot="suffix" class="form-input-icon">@</i>
 </i-input-number>
-
-Value: <code>{{suffixInputValue}}</code>
 
 ~~~html
 <i-input-number v-model="value" placeholder="Type something..">
@@ -139,8 +133,6 @@ Value: <code>{{suffixInputValue}}</code>
     <i slot="prefix" class="form-input-icon">@</i>
     <i slot="suffix" class="form-input-icon">@</i>
 </i-input-number>
-
-Value: <code>{{prefixSuffixInputValue}}</code>
 
 ~~~html
 <i-input-number v-model="value" placeholder="Type something..">
@@ -166,8 +158,6 @@ You can add additional content such as select fields, buttons or plain text, to 
     <span slot="prepend" class="form-input-prepend">http://</span>
 </i-input-number>
 
-Value: <code>{{prependInputValue}}</code>
-
 ~~~html
 <i-input-number v-model="value" placeholder="Type something..">
     <span slot="prepend" class="form-input-prepend">http://</span>
@@ -177,8 +167,6 @@ Value: <code>{{prependInputValue}}</code>
 <i-input-number v-model="appendInputValue" placeholder="Type something..">
     <span slot="append" class="form-input-append">http://</span>
 </i-input-number>
-
-Value: <code>{{appendInputValue}}</code>
 
 ~~~html
 <i-input-number v-model="value" placeholder="Type something..">
@@ -190,8 +178,6 @@ Value: <code>{{appendInputValue}}</code>
     <span slot="prepend" class="form-input-prepend">http://</span>
     <span slot="append" class="form-input-append">.com</span>
 </i-input-number>
-
-Value: <code>{{prependAppendInputValue}}</code>
 
 ~~~html
 <i-input-number v-model="value" placeholder="Type something..">
@@ -213,17 +199,17 @@ export default {
 ## Input Sizes
 You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
 
-<i-input-number size="sm" v-model="smInputValue" placeholder="Type something small.." />
+<i-form-group>
+    <i-input-number size="sm" v-model="smInputValue" placeholder="Type something small.." />
+</i-form-group>
 
-Value: <code>{{smInputValue}}</code>
+<i-form-group>
+    <i-input-number size="md" v-model="mdInputValue" placeholder="Type something medium.." />
+</i-form-group>
 
-<i-input-number size="md" v-model="mdInputValue" placeholder="Type something medium.." />
-
-Value: <code>{{mdInputValue}}</code>
-
-<i-input-number size="lg" v-model="lgInputValue" placeholder="Type something large.." />
-
-Value: <code>{{lgInputValue}}</code>
+<i-form-group>
+    <i-input-number size="lg" v-model="lgInputValue" placeholder="Type something large.." />
+</i-form-group>
 
 ~~~html
 <i-input-number size="sm" v-model="value" placeholder="Type something small.." />

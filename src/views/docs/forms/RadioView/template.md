@@ -70,8 +70,6 @@ You're able to use the `size` property to control the size of your inputs, using
     <i-radio size="lg" value="Basketball">Basketball</i-radio>
 </i-radio-group>
 
-Selected value: <code>{{selectedSize}}</code>
-
 ~~~html
 <i-radio-group v-model="selected">
     <i-radio size="sm" value="Football">Football</i-radio>
@@ -99,8 +97,6 @@ Applying the size `size` property to a `i-radio-group` will set the chosen size 
     <i-radio value="Tennis" disabled>Tennis</i-radio>
 </i-radio-group>
 
-Selected value: <code>{{selectedSizeGroupSm}}</code>
-
 <i-radio-group size="md" v-model="selectedSizeGroupMd">
     <i-radio value="Football">Football</i-radio>
     <i-radio value="Volleyball">Tennis</i-radio>
@@ -108,16 +104,12 @@ Selected value: <code>{{selectedSizeGroupSm}}</code>
     <i-radio value="Tennis" disabled>Tennis</i-radio>
 </i-radio-group>
 
-Selected value: <code>{{selectedSizeGroupMd}}</code>
-
 <i-radio-group size="lg" v-model="selectedSizeGroupLg">
     <i-radio value="Football">Football</i-radio>
     <i-radio value="Volleyball">Tennis</i-radio>
     <i-radio value="Basketball">Basketball</i-radio>
     <i-radio value="Tennis" disabled>Tennis</i-radio>
 </i-radio-group>
-
-Selected value: <code>{{selectedSizeGroupLg}}</code>
 
 ~~~html
 <i-radio-group size="sm" v-model="selected">
@@ -162,8 +154,6 @@ Inkline uses custom radio designs by setting the `custom` property to `true` by 
     <i-radio :custom="true" value="Basketball">Basketball</i-radio>    
 </i-radio-group>
 
-Selected value: <code>{{selectedCustomTrue}}</code>
-
 ~~~html
 <i-radio-group v-model="selectedCustomTrue">
     <i-radio :custom="true" value="Football">Football</i-radio>
@@ -190,8 +180,6 @@ By setting the `custom` property to `false`, the radios use the browser's defaul
     <i-radio :custom="false" value="Basketball">Basketball</i-radio>
 </i-radio-group>
 
-Selected value: <code>{{selectedCustomFalse}}</code>
-
 ~~~html
 <i-radio-group v-model="selected">
     <i-radio :custom="false" value="Football">Football</i-radio>
@@ -217,8 +205,6 @@ export default {
     <i-radio-button value="Jupiter">Jupiter</i-radio-button>
     <i-radio-button value="Venus" disabled>Venus</i-radio-button>
 </i-radio-button-group>
-
-Selected value: <code>{{selectedButton}}</code>
 
 ~~~html
 <i-radio-button-group v-model="selected">
