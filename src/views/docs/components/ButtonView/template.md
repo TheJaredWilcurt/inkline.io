@@ -93,34 +93,6 @@ to remove background images and colors on any button when not interacted with.
 <i-button outline variant="dark">Dark</i-button>
 ~~~
 
-
-## Flat Buttons
-If you do not fancy gradients you can always use the `flat` property. This will convert your button design to one with 
-a flat color background.
-
-<div>
-    <i-button flat variant="primary">Primary</i-button>&nbsp;
-    <i-button flat variant="secondary">Secondary</i-button>&nbsp;
-    <i-button flat variant="success">Success</i-button>&nbsp;
-    <i-button flat variant="danger">Danger</i-button>&nbsp;
-    <i-button flat variant="warning">Warning</i-button>&nbsp;
-    <i-button flat variant="info">Info</i-button>&nbsp;
-    <i-button flat variant="light">Light</i-button>&nbsp;
-    <i-button flat variant="dark">Dark</i-button>
-</div>
-
-~~~html
-<i-button flat variant="primary">Primary</i-button>
-<i-button flat variant="secondary">Secondary</i-button>
-<i-button flat variant="success">Success</i-button>
-<i-button flat variant="danger">Danger</i-button>
-<i-button flat variant="warning">Warning</i-button>
-<i-button flat variant="info">Info</i-button>
-<i-button flat variant="light">Light</i-button>
-<i-button flat variant="dark">Dark</i-button>
-~~~
-
-
 ## Link Button
 You can create link buttons that look the same as normal links. Link buttons will use the `variant` property to set the color of the link.
 
