@@ -103,7 +103,6 @@ You can provide a title and subtitle for your alerts using the `.title` and `.su
 <div class="_margin-bottom-1">
     <i-alert>
         <h4 class="title">Alert Title</h4>
-        <div class="subtitle">Alert Subtitle</div>
         <p>
             Some quick example text to build on the alert and make up the bulk of the alert's content.
         </p>
@@ -113,7 +112,6 @@ You can provide a title and subtitle for your alerts using the `.title` and `.su
 ~~~html
 <i-alert size="sm">
     <h4 class="title">Alert Title</h4>
-    <div class="subtitle">Alert Subtitle</div>
     <p>
         Some quick example text to build on the alert and make up the bulk of the alert's content.
     </p>
@@ -121,18 +119,20 @@ You can provide a title and subtitle for your alerts using the `.title` and `.su
 ~~~
 
 ## Alert Icon
-You can add an icon to the `<i-alert>` component by providing a icon `slot`.
+You can add an icon to the `<i-alert>` component by providing a icon `slot`. 
+
+The following example makes use of the <a href="https://fontawesome.com/how-to-use/on-the-web/using-with/vuejs" rel="nofollow">Font Awesome</a> icons package.
 
 <div class="_margin-bottom-1">
     <i-alert variant="primary">
-        <template slot="icon">✓</template>
+        <template slot="icon"><font-awesome-icon icon="info-circle"></font-awesome-icon></template>
         <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
     </i-alert>
 </div>
 
 ~~~html
 <i-alert variant="primary">
-    <template slot="icon">✓</template>
+    <template slot="icon"><font-awesome-icon icon="info-circle"></font-awesome-icon></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 ~~~
