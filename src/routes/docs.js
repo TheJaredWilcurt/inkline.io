@@ -15,6 +15,7 @@ import ButtonGroupView from '@views/docs/components/ButtonGroupView';
 import CardView from '@views/docs/components/CardView';
 import CollapsibleView from '@views/docs/components/CollapsibleView';
 import DropdownView from '@views/docs/components/DropdownView';
+import HeaderView from '@views/docs/components/HeaderView';
 import ModalView from '@views/docs/components/ModalView';
 import NavView from '@views/docs/components/NavView';
 import NavbarView from '@views/docs/components/NavbarView';
@@ -120,6 +121,11 @@ export default [
                 path: 'components/dropdown',
                 name: 'docs.components.dropdown',
                 component: DropdownView
+            },
+            {
+                path: 'components/header',
+                name: 'docs.components.header',
+                component: HeaderView
             },
             {
                 path: 'components/modal',
