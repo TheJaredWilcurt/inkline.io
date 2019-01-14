@@ -19,6 +19,7 @@ import HeaderView from '@views/docs/components/HeaderView';
 import ModalView from '@views/docs/components/ModalView';
 import NavView from '@views/docs/components/NavView';
 import NavbarView from '@views/docs/components/NavbarView';
+import PaginationView from '@views/docs/components/PaginationView';
 import PopoverView from '@views/docs/components/PopoverView';
 import ProgressView from '@views/docs/components/ProgressView';
 import TooltipView from '@views/docs/components/TooltipView';
@@ -141,6 +142,11 @@ export default [
                 path: 'components/navbar',
                 name: 'docs.components.navbar',
                 component: NavbarView
+            },
+            {
+                path: 'components/pagination',
+                name: 'docs.components.pagination',
+                component: PaginationView
             },
             {
                 path: 'components/popover',
