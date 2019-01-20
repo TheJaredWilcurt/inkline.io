@@ -1,3 +1,5 @@
+import IApiPreview from '../ApiPreview';
+import ICodePreview from '../CodePreview';
 import { IContainer, IColumn, IRow } from 'inkline';
 
 export default {
@@ -5,6 +7,8 @@ export default {
     components: {
         IContainer,
         IColumn,
-        IRow
+        IRow,
+        ICodePreview,
+        IApiPreview
     }
 };
