@@ -16,6 +16,7 @@ import CardView from '@views/docs/components/CardView';
 import CollapsibleView from '@views/docs/components/CollapsibleView';
 import DropdownView from '@views/docs/components/DropdownView';
 import HeaderView from '@views/docs/components/HeaderView';
+import ListGroupView from '@views/docs/components/ListGroupView';
 import MediaView from '@views/docs/components/MediaView';
 import ModalView from '@views/docs/components/ModalView';
 import NavView from '@views/docs/components/NavView';
@@ -128,6 +129,11 @@ export default [
                 path: 'components/header',
                 name: 'docs.components.header',
                 component: HeaderView
+            },
+            {
+                path: 'components/list-group',
+                name: 'docs.components.list-group',
+                component: ListGroupView
             },
             {
                 path: 'components/media',
