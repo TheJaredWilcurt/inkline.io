@@ -4,7 +4,7 @@ Indicate the current page’s location depth using a navigation list that automa
 ### Examples
 Separators are automatically added in CSS through `::before` and `content`. You can change the separator by changing the `--breadcrumb-separator` stylus variable.
 
-<i-code-preview title="Breadcrumbs Example">
+<i-code-preview title="Breadcrumbs Example" link="https://github.com/inkline/inkline/tree/master/src/components/Breadcrumb">
 
 <i-breadcrumb>
     <i-breadcrumb-item>Home</i-breadcrumb-item>
@@ -39,7 +39,7 @@ Separators are automatically added in CSS through `::before` and `content`. You 
 ### Dynamically Generated
 You can generate and bind breadcrumbs from your JS data using a combination of `v-for` and `v-bind` as follows:
 
-<i-code-preview title="Dynamically Generated Breadcrumbs">
+<i-code-preview title="Dynamically Generated Breadcrumbs" link="https://github.com/inkline/inkline/tree/master/src/components/Breadcrumb">
 
 <i-breadcrumb>
     <i-breadcrumb-item v-bind="item" v-for="item in items" :key="item.title">{{item.title}}</i-breadcrumb-item>
@@ -79,7 +79,7 @@ export default {
 ### Sizes
 You're able to use the `size` modifier to control the text and spacing size of your breadcrumb, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
 
-<i-code-preview title="Breadcrumbs Sizes">
+<i-code-preview title="Breadcrumbs Sizes" link="https://github.com/inkline/inkline/tree/master/src/components/Breadcrumb">
 
 <i-breadcrumb size="sm">
     <i-breadcrumb-item href="/">Sizes</i-breadcrumb-item>
@@ -121,7 +121,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
 
 ### API
 
-<i-api-preview title="Breadcrumb API" expanded>
+<i-api-preview title="Breadcrumb API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Breadcrumb">
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -162,7 +162,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
     </template>
 </i-api-preview>
 
-<i-api-preview title="Breadcrumb Item API" expanded>
+<i-api-preview title="Breadcrumb Item API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/BreadcrumbItem">
     <template slot="props">
         <table class="table -bordered">
             <thead>

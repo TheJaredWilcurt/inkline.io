@@ -221,6 +221,27 @@ export default {
             </thead>
             <tbody>
                 <tr>
+                    <td>dismissLabel</td>
+                    <td>Sets the dismiss lable, replaceable using the <code>dismiss</code> slot.</td>
+                    <td>String</td>
+                    <td></td>
+                    <td><code>×</code></td>
+                </tr>
+                <tr>
+                    <td>dismissible</td>
+                    <td>Sets the alert as dismissible.</td>
+                    <td>Boolean</td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>show</td>
+                    <td>Sets the dismiss v-model for the alert component. Alert is only visible if show is <code>true</code>.</td>
+                    <td>Boolean</td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>true</code></td>
+                </tr>
+                <tr>
                     <td>size</td>
                     <td>Sets the size of the alert component.</td>
                     <td>String</td>
@@ -233,27 +254,6 @@ export default {
                     <td>String</td>
                     <td><code>primary</code>, <code>secondary</code>, <code>success</code>, <code>danger</code>, <code>warning</code>, <code>info</code></td>
                     <td><code>primary</code></td>
-                </tr>
-                <tr>
-                    <td>show</td>
-                    <td>Sets the dismiss v-model for the alert component. Alert is only visible if show is <code>true</code>.</td>
-                    <td>Boolean</td>
-                    <td><code>true</code>, <code>false</code></td>
-                    <td><code>true</code></td>
-                </tr>
-                <tr>
-                    <td>dismissible</td>
-                    <td>Sets the alert as dismissible.</td>
-                    <td>Boolean</td>
-                    <td><code>true</code>, <code>false</code></td>
-                    <td><code>false</code></td>
-                </tr>
-                <tr>
-                    <td>dismissLabel</td>
-                    <td>Sets the dismiss lable, replaceable using the <code>dismiss</code> slot.</td>
-                    <td>String</td>
-                    <td></td>
-                    <td><code>×</code></td>
                 </tr>
             </tbody>
         </table>
@@ -272,12 +272,12 @@ export default {
                     <td>Slot for alert default content.</td>
                 </tr>
                 <tr>
-                    <td>icon</td>
-                    <td>Slot for alert icon.</td>
-                </tr>
-                <tr>
                     <td>dismiss</td>
                     <td>Slot for alert dismiss button.</td>
+                </tr>
+                <tr>
+                    <td>icon</td>
+                    <td>Slot for alert icon.</td>
                 </tr>
             </tbody>
         </table>
