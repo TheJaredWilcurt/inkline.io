@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { ISelect, ISelectOption } from 'inkline';
+import { ISelect, ISelectOption } from '@inkline/inkline';
 
 export default {
     extends: View,

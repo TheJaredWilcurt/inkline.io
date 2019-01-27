@@ -11,7 +11,7 @@ module.exports = {
         }
     },
     transpileDependencies: [
-        'node_modules/inkline'
+        'node_modules/@inkline/inkline'
     ],
     chainWebpack: config => {
         if (process.env.NODE_ENV === 'development') {
@@ -47,7 +47,7 @@ module.exports = {
             .set('@resources', path.join(__dirname, 'src', 'resources'))
             .set('@routes', path.join(__dirname, 'src', 'routes'))
             .set('@views', path.join(__dirname, 'src', 'views'))
-            .set('inkline', 'inkline/src')
+            .set('@inkline/inkline', '@inkline/inkline/src')
             .set('vue$', 'vue/dist/vue.esm.js')
             .end();
     },

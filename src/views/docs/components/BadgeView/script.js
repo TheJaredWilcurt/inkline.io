@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IBadge } from 'inkline';
+import { IBadge } from '@inkline/inkline';
 
 export default {
     name: 'BadgeView',

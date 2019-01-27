@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IButton, IPopover } from 'inkline';
+import { IButton, IPopover } from '@inkline/inkline';
 
 export default {
     name: 'PopoverView',

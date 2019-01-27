@@ -1,7 +1,7 @@
 import '@/index.styl';
-import 'inkline/index.styl';
-// import 'inkline/theme/index.styl';
-import Inkline from 'inkline';
+import '@inkline/inkline/index.styl';
+// import '@inkline/inkline/theme/index.styl';
+import Inkline from '@inkline/inkline';
 
 import { library as fontAwesomeLibrary } from '@fortawesome/fontawesome-svg-core';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';

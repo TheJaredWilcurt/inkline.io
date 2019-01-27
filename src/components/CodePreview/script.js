@@ -1,4 +1,4 @@
-import { IButton, IButtonGroup } from 'inkline';
+import { IButton, IButtonGroup } from '@inkline/inkline';
 
 export default {
     name: 'ICodePreview',

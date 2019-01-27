@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { ITextarea } from 'inkline';
+import { ITextarea } from '@inkline/inkline';
 
 export default {
     extends: View,

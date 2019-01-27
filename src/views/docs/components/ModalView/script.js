@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IButton, IModal } from 'inkline';
+import { IButton, IModal } from '@inkline/inkline';
 
 export default {
     name: 'ModalView',

@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IButton, INav, INavItem } from 'inkline';
+import { IButton, INav, INavItem } from '@inkline/inkline';
 
 export default {
     name: 'NavView',

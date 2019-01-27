@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IMedia } from 'inkline';
+import { IMedia } from '@inkline/inkline';
 
 export default {
     name: 'CardView',

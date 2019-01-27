@@ -1,5 +1,5 @@
 import View from '@components/View';
-import { IInput } from 'inkline';
+import { IInput } from '@inkline/inkline';
 
 export default {
     extends: View,
