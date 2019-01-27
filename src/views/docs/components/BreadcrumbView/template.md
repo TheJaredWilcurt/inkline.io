@@ -137,7 +137,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
                 <tr>
                     <td>size</td>
                     <td>Sets the size of the breadcrumb component.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
                     <td><code>md</code></td>
                 </tr>
@@ -178,21 +178,21 @@ You're able to use the `size` modifier to control the text and spacing size of y
                 <tr>
                     <td>active</td>
                     <td>Sets the breadcrumb item component as active.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
                 <tr>
                     <td>size</td>
                     <td>Sets the size of the breadcrumb item component.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
                     <td><code>md</code></td>
                 </tr>
                 <tr>
                     <td>href</td>
                     <td>Treats the breadcrumb item component as an anchor.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td></td>
                     <td></td>
                 </tr>

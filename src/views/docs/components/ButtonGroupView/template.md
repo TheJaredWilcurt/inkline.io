@@ -212,21 +212,21 @@ The default size is set to `md`.
                 <tr>
                     <td>disabled</td>
                     <td>Sets the state of the button group component and its child button components to disabled.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
                 <tr>
                     <td>size</td>
                     <td>Sets the size of the button group component and its child button components.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
                     <td><code>md</code></td>
                 </tr>
                 <tr>
                     <td>vertical</td>
                     <td>Sets the direction of the button group component.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>

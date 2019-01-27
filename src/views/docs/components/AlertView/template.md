@@ -223,35 +223,35 @@ export default {
                 <tr>
                     <td>dismissLabel</td>
                     <td>Sets the dismiss lable, replaceable using the <code>dismiss</code> slot.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td></td>
                     <td><code>×</code></td>
                 </tr>
                 <tr>
                     <td>dismissible</td>
                     <td>Sets the alert as dismissible.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
                 <tr>
                     <td>show</td>
                     <td>Sets the dismiss v-model for the alert component. Alert is only visible if show is <code>true</code>.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>true</code></td>
                 </tr>
                 <tr>
                     <td>size</td>
                     <td>Sets the size of the alert component.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
                     <td><code>md</code></td>
                 </tr>
                 <tr>
                     <td>variant</td>
                     <td>Sets the color variant of the alert component.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td><code>primary</code>, <code>secondary</code>, <code>success</code>, <code>danger</code>, <code>warning</code>, <code>info</code></td>
                     <td><code>primary</code></td>
                 </tr>

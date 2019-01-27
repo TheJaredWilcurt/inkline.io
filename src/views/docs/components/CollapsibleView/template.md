@@ -254,7 +254,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
                 <tr>
                     <td>accordion</td>
                     <td>Sets the collapsible in accordion mode.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
@@ -268,7 +268,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
                 <tr>
                     <td>variant</td>
                     <td>Sets the color variant of the collapsible component.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td><code>light</code>, <code>dark</code></td>
                     <td><code>light</code></td>
                 </tr>
@@ -304,7 +304,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
                 <tr>
                     <td>change</td>
                     <td>Emitted when collapsible items are opened or closed.</td>
-                    <td><code>(activeItems: string[]) => {}</code></td>
+                    <td><code>(activeItems: String[]) => {}</code></td>
                 </tr>
             </tbody>
         </table>
@@ -325,25 +325,18 @@ Inkline includes basic predefined collapsible styles that you can use within you
             </thead>
             <tbody>
                 <tr>
-                    <td>accordion</td>
-                    <td>Sets the collapsible in accordion mode.</td>
-                    <td>Boolean</td>
-                    <td><code>true</code>, <code>false</code></td>
-                    <td><code>false</code></td>
-                </tr>
-                <tr>
-                    <td>active</td>
-                    <td>Sets the default active collapsible item.</td>
-                    <td>Array</td>
+                    <td>title</td>
+                    <td>Sets the title of the collapsible panel. Replaceable using the <code>title</code> slot.</td>
+                    <td><code>String</code></td>
                     <td></td>
-                    <td><code>[]</code></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>variant</td>
-                    <td>Sets the color variant of the collapsible component.</td>
-                    <td>String</td>
-                    <td><code>light</code>, <code>dark</code></td>
-                    <td><code>light</code></td>
+                    <td>id</td>
+                    <td>Sets the identifier of the collapsible item.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td><code>collapsible-item-&lt;uid&gt;</code></td>
                 </tr>
             </tbody>
         </table>
@@ -359,25 +352,11 @@ Inkline includes basic predefined collapsible styles that you can use within you
             <tbody>
                 <tr>
                     <td>default</td>
-                    <td>Slot for collapsible default content.</td>
+                    <td>Slot for collapsible item default content.</td>
                 </tr>
-            </tbody>
-        </table>
-    </template>
-    <template slot="events">
-        <table class="table -bordered _margin-bottom-0">
-            <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Prototype</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>change</td>
-                    <td>Emitted when collapsible items are opened or closed.</td>
-                    <td><code>(activeItems: string[]) => {}</code></td>
+                    <td>title</td>
+                    <td>Slot for collapsible item title.</td>
                 </tr>
             </tbody>
         </table>

@@ -362,70 +362,70 @@ The `<i-button>` component is well integrated with the [Vue Router](https://rout
                 <tr>
                     <td>active</td>
                     <td>Sets the button component state as active.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
                 <tr>
                     <td>block</td>
                     <td>Sets the button component style to span the whole parent width.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
                 <tr>
                     <td>circle</td>
                     <td>Sets the button component style to be a circle.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
                 <tr>
                     <td>disabled</td>
                     <td>Sets the button component state as disabled.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
                 <tr>
                     <td>href</td>
                     <td>Treats the button component as an anchor.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>link</td>
                     <td>Sets the button component style to be a plain link.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
                 <tr>
                     <td>loading</td>
                     <td>Sets the button loading state. To be used together with the <code>loading</code> slot.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
                 <tr>
                     <td>outline</td>
                     <td>Sets the button component style to be an outline.</td>
-                    <td>Boolean</td>
+                    <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>false</code></td>
                 </tr>
                 <tr>
                     <td>size</td>
-                    <td>Sets the size of the breadcrumb component.</td>
-                    <td>String</td>
+                    <td>Sets the size of the button component.</td>
+                    <td><code>String</code></td>
                     <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
                     <td><code>md</code></td>
                 </tr>
                 <tr>
                     <td>tag</td>
                     <td>Sets the tag used to render the button component.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td><code>a</code>, <code>button</code>, <code>input</code></td>
                     <td><code>button</code></td>
                 </tr>
@@ -439,7 +439,7 @@ The `<i-button>` component is well integrated with the [Vue Router](https://rout
                 <tr>
                     <td>variant</td>
                     <td>Sets the color variant of the button component.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td><code>primary</code>, <code>secondary</code>, <code>light</code>, <code>dark</code>, <code>success</code>, <code>danger</code>, <code>warning</code>, <code>info</code></td>
                     <td><code>light</code></td>
                 </tr>

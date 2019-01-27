@@ -144,14 +144,14 @@ Badges always match the size of the immediate parent element by using relative f
                 <tr>
                     <td>size</td>
                     <td>Sets the size of the badge component.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
                     <td><code>md</code></td>
                 </tr>
                 <tr>
                     <td>variant</td>
                     <td>Sets the color variant of the badge component.</td>
-                    <td>String</td>
+                    <td><code>String</code></td>
                     <td><code>primary</code>, <code>secondary</code>, <code>light</code>, <code>dark</code>, <code>success</code>, <code>danger</code>, <code>warning</code>, <code>info</code></td>
                     <td><code>primary</code></td>
                 </tr>

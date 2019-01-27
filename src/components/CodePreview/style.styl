@@ -25,14 +25,17 @@
             > .link
                 margin-left: --spacer
 
-    &.-expanded > .panels
-        margin-left: -17px
-        margin-right: -17px
+    &.-expanded
+        padding-bottom: 0
+
+        > .panels
+            margin-left: -17px
+            margin-right: -17px
+            margin-bottom: -1px
 
     > .panels
         display: block
         position: relative
-        overflow: hidden
 
         .panel
             width: 100%
