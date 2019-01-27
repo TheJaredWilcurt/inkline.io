@@ -2,9 +2,10 @@
     <a href="http://inkline.io/">
         <img src="https://raw.githubusercontent.com/inkline/inkline.io/master/src/resources/logo.png" alt="Inkline logo" width=72 height=72>
     </a>
-    <h1 align="center">Inkline</h1>
 </p>
 
+<h1 align="center">Inkline</h1>
+    
 <p align="center">
     Inkline's documentation and homepage is built with Jekyll and publicly hosted on GitHub Pages. Inkline is 
     written and maintained by <a href="https://twitter.com/alexgrozav">@alexgrozav</a>. 
