@@ -15,7 +15,7 @@ provide the correct element positioning without colors and paddings.
 
 Layouts are based on flexbox, so please make sure your browser fully supports it. 
 
-#### Content with Header
+<i-code-preview title="Content With Header">
 
 <i-layout class="-preview">
     <i-layout-header>
@@ -25,6 +25,8 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
         Content
     </i-layout-content>
 </i-layout>
+
+<template slot="html">
 
 ~~~html
 <i-layout>
@@ -37,8 +39,11 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-content>
 </i-layout>
 ~~~
+
+</template>
+</i-code-preview>
    
-#### Content with Header and Footer
+<i-code-preview title="Content With Header and Footer">
 
 <i-layout class="-preview">
     <i-layout-header>
@@ -52,6 +57,8 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-footer>
 </i-layout>
 
+<template slot="html">
+
 ~~~html
 <i-layout>
     <i-layout-header>
@@ -67,8 +74,11 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-footer>
 </i-layout>
 ~~~
-   
-#### Content with Left Aside
+
+</template>
+</i-code-preview>
+
+<i-code-preview title="Content With Left Aside">
 
 <i-layout class="-preview">
     <i-layout-header>
@@ -86,6 +96,8 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
         Footer
     </i-layout-footer>
 </i-layout>
+
+<template slot="html">
 
 ~~~html
 <i-layout>
@@ -109,7 +121,10 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-layout>
 ~~~   
 
-#### Content with Right Aside
+</template>
+</i-code-preview>
+
+<i-code-preview title="Content With Right Aside">
 
 <i-layout class="-preview">
     <i-layout-header>
@@ -127,6 +142,8 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
         Footer
     </i-layout-footer>
 </i-layout>
+
+<template slot="html">
 
 ~~~html
 <i-layout>
@@ -150,8 +167,10 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-layout>
 ~~~
 
+</template>
+</i-code-preview>
 
-#### Content with Left and Right Asides
+<i-code-preview title="Content With Left and Right Asides">
 
 <i-layout class="-preview">
     <i-layout-header>
@@ -172,6 +191,8 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
         Footer
     </i-layout-footer>
 </i-layout>
+
+<template slot="html">
 
 ~~~html
 <i-layout>
@@ -199,8 +220,10 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-layout>
 ~~~
 
+</template>
+</i-code-preview>
 
-#### Layout with Left Aside
+<i-code-preview title="Layout with Left Aside">
 
 <i-layout vertical class="-preview">
     <i-layout-aside>
@@ -218,6 +241,8 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
         </i-layout-footer>
     </i-layout>
 </i-layout>
+
+<template slot="html">
 
 ~~~html
 <i-layout vertical>
@@ -241,8 +266,10 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-layout>
 ~~~
 
+</template>
+</i-code-preview>
 
-#### Layout with Right Aside
+<i-code-preview title="Layout with Right Aside">
 
 <i-layout vertical class="-preview">
     <i-layout>
@@ -260,6 +287,8 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
         <div class="layout-aside-preview-text">Right Aside</div>
     </i-layout-aside>
 </i-layout>
+
+<template slot="html">
 
 ~~~html
 <i-layout vertical>
@@ -283,7 +312,10 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-layout>
 ~~~
 
-#### Layout with Left and Right Asides
+</template>
+</i-code-preview>
+
+<i-code-preview title="Layout with Left and Right Asides">
 
 <i-layout vertical class="-preview">
     <i-layout-aside>
@@ -304,6 +336,8 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
         <div class="layout-aside-preview-text">Right Aside</div>
     </i-layout-aside>
 </i-layout>
+
+<template slot="html">
 
 ~~~html
 <i-layout vertical>
@@ -330,3 +364,6 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-aside>
 </i-layout>
 ~~~
+
+</template>
+</i-code-preview>

@@ -12,6 +12,8 @@ The grid system is defined using `<i-container>`, `<i-row>` and `<i-column>` com
 ## Basic Layout
 Create basic grid layout using columns.
 
+<i-code-preview title="Basic Layout">
+
 <i-row>
     <i-column xs="12">
         <grid-box></grid-box>
@@ -110,6 +112,8 @@ Create basic grid layout using columns.
         <grid-box></grid-box>
     </i-column>
 </i-row>
+
+<template slot="html">
 
 ~~~html
 <i-container>
@@ -166,9 +170,14 @@ Create basic grid layout using columns.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 ## Grid Offset
 Grid offsets are used to move a column to the right without creating an empty column next to it.
+
+<i-code-preview title="Grid Offset">
 
 <i-row>
     <i-column xs="12">
@@ -231,6 +240,8 @@ Grid offsets are used to move a column to the right without creating an empty co
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row>
@@ -269,9 +280,14 @@ Grid offsets are used to move a column to the right without creating an empty co
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 ## Grid Push / Pull
 Code-wise, the columns have a different order.
+
+<i-code-preview title="Grid Push / Pull">
 
 <i-row>
     <i-column xs="12"></i-column>
@@ -370,6 +386,8 @@ Code-wise, the columns have a different order.
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row>
@@ -419,10 +437,15 @@ Code-wise, the columns have a different order.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 ## Auto Width
 The grid will automatically fit any number of auto sizing columns to a row.
 
+<i-code-preview title="Auto Width">
+
 <i-row>
     <i-column :xs="true">
         <grid-box></grid-box>
@@ -498,6 +521,8 @@ The grid will automatically fit any number of auto sizing columns to a row.
         <grid-box></grid-box>
     </i-column>
 </i-row>
+
+<template slot="html">
 
 ~~~html
 <i-container>
@@ -537,11 +562,16 @@ The grid will automatically fit any number of auto sizing columns to a row.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 ## Nested Grid
 Inkline allows you to nest up to 12 columns inside a row. Row can also be nested inside any column, 
 giving you virtually endless layout possibilities. You can place rows only inside a container or a column, 
 while you can place columns only inside a row.
+
+<i-code-preview title="Nested Grid">
 
 <i-row>
     <i-column xs="8">
@@ -576,6 +606,8 @@ while you can place columns only inside a row.
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row>
@@ -597,17 +629,24 @@ while you can place columns only inside a row.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 ## Horizontal Alignment
 You can align columns horizontally to the start, center, or end of a row.
 
 #### start-*
 
+<i-code-preview title="Horizontal Alignment - Start">
+
 <i-row start-xs>
     <i-column xs="4">
         <grid-box></grid-box>
     </i-column>
 </i-row>
+
+<template slot="html">
 
 ~~~html
 <i-container>
@@ -617,13 +656,20 @@ You can align columns horizontally to the start, center, or end of a row.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 #### center-*
+
+<i-code-preview title="Horizontal Alignment - Center">
 
 <i-row center-xs>
     <i-column xs="4">
         <grid-box></grid-box>
     </i-column>
 </i-row>
+
+<template slot="html">
 
 ~~~html
 <i-container>
@@ -633,13 +679,20 @@ You can align columns horizontally to the start, center, or end of a row.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 #### end-*
+
+<i-code-preview title="Horizontal Alignment - End">
 
 <i-row end-xs>
     <i-column xs="4">
         <grid-box></grid-box>
     </i-column>
 </i-row>
+
+<template slot="html">
 
 ~~~html
 <i-container>
@@ -649,11 +702,16 @@ You can align columns horizontally to the start, center, or end of a row.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 ## Vertical Alignment
 You can align columns vertically to the top, middle or bottom of the row.
 
 #### top-*
+
+<i-code-preview title="Vertical Alignment - Top">
 
 <i-row top-xs>
     <i-column xs="6">
@@ -664,6 +722,8 @@ You can align columns vertically to the top, middle or bottom of the row.
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row top-xs>
@@ -673,7 +733,12 @@ You can align columns vertically to the top, middle or bottom of the row.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 #### middle-*
+
+<i-code-preview title="Vertical Alignment - Middle">
 
 <i-row middle-xs>
     <i-column xs="6">
@@ -684,6 +749,8 @@ You can align columns vertically to the top, middle or bottom of the row.
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row middle-xs>
@@ -693,7 +760,12 @@ You can align columns vertically to the top, middle or bottom of the row.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 #### bottom-*
+
+<i-code-preview title="Vertical Alignment - Bottom">
 
 <i-row bottom-xs>
     <i-column xs="6">
@@ -704,6 +776,8 @@ You can align columns vertically to the top, middle or bottom of the row.
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row bottom-xs>
@@ -713,11 +787,16 @@ You can align columns vertically to the top, middle or bottom of the row.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 ## Distribution
 Distribute the spacing between the columns of a row.
 
 ### around-*
+
+<i-code-preview title="Distribution - Around">
 
 <i-row around-xs>
     <i-column xs="3">
@@ -731,6 +810,8 @@ Distribute the spacing between the columns of a row.
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row around-xs>
@@ -741,7 +822,12 @@ Distribute the spacing between the columns of a row.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 ### between-*
+
+<i-code-preview title="Distribution - Between">
 
 <i-row between-xs>
     <i-column xs="3">
@@ -755,6 +841,8 @@ Distribute the spacing between the columns of a row.
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row between-xs>
@@ -765,11 +853,16 @@ Distribute the spacing between the columns of a row.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 ## Reordering
 Reorder columns using helper classes.
 
 ### reverse-*
+
+<i-code-preview title="Reordering - Reverse">
 
 <i-row reverse-xs>
     <i-column xs="3">
@@ -786,6 +879,8 @@ Reorder columns using helper classes.
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row reverse-xs>
@@ -797,7 +892,12 @@ Reorder columns using helper classes.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 ### first-*
+
+<i-code-preview title="Reordering - First">
 
 <i-row>
     <i-column xs="3">
@@ -814,6 +914,8 @@ Reorder columns using helper classes.
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row>
@@ -825,7 +927,12 @@ Reorder columns using helper classes.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 ### last-*
+
+<i-code-preview title="Reordering - Last">
 
 <i-row>
     <i-column xs="3" last-xs>
@@ -842,6 +949,8 @@ Reorder columns using helper classes.
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row>
@@ -853,9 +962,14 @@ Reorder columns using helper classes.
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 ## Responsive Width
 You can specify column counts for each breakpoint. Try to resize your browser window!
+
+<i-code-preview title="Responsive Grid Width">
 
 <i-row>
     <i-column xl="3" lg="6" md="6" sm="8" xs="12">
@@ -872,6 +986,8 @@ You can specify column counts for each breakpoint. Try to resize your browser wi
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container>
     <i-row>
@@ -883,8 +999,14 @@ You can specify column counts for each breakpoint. Try to resize your browser wi
 </i-container>
 ~~~
 
+</template>
+</i-code-preview>
+
 ## Fluid Container
 You can make the `<i-container>` component fill the whole width of the parent element using the `fluid` property. 
+
+<i-code-preview title="Fluid Container">
+
 <i-row>
     <i-column :xs="true">
         <grid-box></grid-box>
@@ -897,6 +1019,8 @@ You can make the `<i-container>` component fill the whole width of the parent el
     </i-column>
 </i-row>
 
+<template slot="html">
+
 ~~~html
 <i-container fluid>
     <i-row>
@@ -906,3 +1030,6 @@ You can make the `<i-container>` component fill the whole width of the parent el
     </i-row>
 </i-container>
 ~~~
+
+</template>
+</i-code-preview>

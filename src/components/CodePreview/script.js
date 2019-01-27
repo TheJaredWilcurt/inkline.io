@@ -8,7 +8,7 @@ export default {
     },
     data() {
         return {
-            active: 'default',
+            active: this.defaultActive || 'default',
             tabs: [
                 { id: 'default', title: 'Result' },
                 { id: 'html', title: 'HTML' },
@@ -18,6 +18,10 @@ export default {
         };
     },
     props: {
+        defaultActive: {
+            type: String,
+            default: ''
+        },
         title: {
             type: String,
             default: ''

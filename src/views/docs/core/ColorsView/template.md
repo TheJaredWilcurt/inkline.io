@@ -4,6 +4,8 @@ Inkline uses [Gradient Design](http://inkline.io) to achieve a beautiful, consis
 #### Brand Colors
 Attract your visitor's attention using brand colors. The main colors of Inkline used for branding are:
 
+<i-code-preview title="Brand Color Background" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
+
 <i-row>
     <i-column xs="3">
         <color-box type="primary" title="Primary" description="#178bb2"></color-box>
@@ -21,6 +23,8 @@ Attract your visitor's attention using brand colors. The main colors of Inkline 
 
 You can use helper classes to add brand color backgrounds:
 
+<template slot="html">
+
 ~~~html
 <div class="_background-primary"></div>
 <div class="_background-secondary"></div>
@@ -28,7 +32,12 @@ You can use helper classes to add brand color backgrounds:
 <div class="_background-dark"></div>
 ~~~
 
+</template>
+</i-code-preview>
+
 You can also add brand text colors using text-specific helper classes:
+
+<i-code-preview title="Brand Color Text" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
 
 <ul class="-inline">
     <li class="_text-primary">Primary</li>
@@ -37,6 +46,8 @@ You can also add brand text colors using text-specific helper classes:
     <li class="_text-dark">Dark</li>
 </ul>
 
+<template slot="html">
+
 ~~~html
 <p class="_text-primary"></p>
 <p class="_text-secondary"></p>
@@ -44,9 +55,14 @@ You can also add brand text colors using text-specific helper classes:
 <p class="_text-dark"></p>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 #### State Colors
 When displaying state information such as info, success, warning, or error messages, you will need to color your message accordingly. The state colors are:
+
+<i-code-preview title="State Color Background" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
 
 <i-row>
     <i-column xs="3">
@@ -65,6 +81,8 @@ When displaying state information such as info, success, warning, or error messa
 
 You can use helper classes to add state color backgrounds:
 
+<template slot="html">
+
 ~~~html
 <div class="_background-info"></div>
 <div class="_background-success"></div>
@@ -72,7 +90,12 @@ You can use helper classes to add state color backgrounds:
 <div class="_background-danger"></div>
 ~~~
 
+</template>
+</i-code-preview>
+
 You can also add state text colors using text-specific helper classes:
+
+<i-code-preview title="State Color Text" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
 
 <ul class="-inline">
     <li class="_text-info">Info</li>
@@ -81,6 +104,8 @@ You can also add state text colors using text-specific helper classes:
     <li class="_text-danger">Danger</li>
 </ul>
 
+<template slot="html">
+
 ~~~html
 <p class="_text-info"></p>
 <p class="_text-success"></p>
@@ -88,10 +113,15 @@ You can also add state text colors using text-specific helper classes:
 <p class="_text-danger"></p>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 #### Basic Colors
 Basic colors are useful when working with multiple colors on the same page. The following basic colors are 
 available when using the default variant.
+
+<i-code-preview title="Basic Color Background" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
 
 <i-row>
     <i-column xs="3">
@@ -122,6 +152,8 @@ available when using the default variant.
 
 You can use helper classes to add state color backgrounds:
 
+<template slot="html">
+
 ~~~html
 <div class="_background-red"></div>
 <div class="_background-orange"></div>
@@ -133,7 +165,12 @@ You can use helper classes to add state color backgrounds:
 <div class="_background-pink"></div>
 ~~~
 
+</template>
+</i-code-preview>
+
 You can also add state text colors using text-specific helper classes:
+
+<i-code-preview title="Basic Color Text" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
 
 <ul class="-inline">
     <li class="_text-red">Red</li>
@@ -146,6 +183,8 @@ You can also add state text colors using text-specific helper classes:
     <li class="_text-pink">Pink</li>
 </ul>
 
+<template slot="html">
+
 ~~~html
 <p class="_text-red"></p>
 <p class="_text-orange"></p>
@@ -157,9 +196,14 @@ You can also add state text colors using text-specific helper classes:
 <p class="_text-pink"></p>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 #### Neutral Colors
 Neutral colors are used for text, background and border colors. You can use different neutral colors to display your content:
+
+<i-code-preview title="Neutral Color Background" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
 
 <i-row>
     <i-column xs="3">
@@ -200,6 +244,8 @@ Neutral colors are used for text, background and border colors. You can use diff
 
 You can use helper classes to add neutral color backgrounds:
 
+<template slot="html">
+
 ~~~html
 <div class="_background-white"></div>
 <div class="_background-gray-10"></div>
@@ -214,7 +260,12 @@ You can use helper classes to add neutral color backgrounds:
 <div class="_background-black"></div>
 ~~~
 
+</template>
+</i-code-preview>
+
 You can also add neutral text colors using text-specific helper classes:
+
+<i-code-preview title="Neutral Color Text" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
 
 <ul class="-inline">
     <li class="_text-white _background-black">White</li>
@@ -230,6 +281,8 @@ You can also add neutral text colors using text-specific helper classes:
     <li class="_text-black">Black</li>
 </ul>
 
+<template slot="html">
+
 ~~~html
 <p class="_text-white"></p>
 <p class="_text-gray-10"></p>
@@ -244,10 +297,15 @@ You can also add neutral text colors using text-specific helper classes:
 <p class="_text-black"></p>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 #### Social Media Colors
 Inkline provides social media colors from most of your favorite sites. Social media colors are available only using
 the default variant.
+
+<i-code-preview title="Social Media Color Background" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
 
 <i-row>
     <i-column xs="3">
@@ -299,6 +357,8 @@ the default variant.
 
 You can use helper classes to add social media color backgrounds:
 
+<template slot="html">
+
 ~~~html
 <div class="_background-facebook"></div>
 <div class="_background-twitter"></div>
@@ -316,7 +376,12 @@ You can use helper classes to add social media color backgrounds:
 <div class="_background-vine"></div>
 ~~~
 
+</template>
+</i-code-preview>
+
 You can also add social media text colors using text-specific helper classes:
+
+<i-code-preview title="Social Media Color Text" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
 
 <ul class="-inline">
     <li class="_text-facebook">Facebook</li>
@@ -335,6 +400,8 @@ You can also add social media text colors using text-specific helper classes:
     <li class="_text-vine">Vine</li>
 </ul>
 
+<template slot="html">
+
 ~~~html
 <p class="_text-facebook"></p>
 <p class="_text-twitter"></p>
@@ -351,3 +418,6 @@ You can also add social media text colors using text-specific helper classes:
 <p class="_text-envato"></p>
 <p class="_text-vine"></p>
 ~~~
+
+</template>
+</i-code-preview>

@@ -4,6 +4,8 @@ Documentation and examples for opt-in styling of tables with Inkline. { .lead }
 ## Basic Table
 Using the most basic table markup, here’s how tables look in Inkline. All table styles are inherited in Inkline, meaning any nested tables will be styled in the same manner as the parent.
 
+<i-code-preview title="Basic Table" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">
+
 <table class="table">
   <thead>
     <tr>
@@ -35,6 +37,8 @@ Using the most basic table markup, here’s how tables look in Inkline. All tabl
   </tbody>
 </table>
 
+<template slot="html">
+
 ~~~html
 <table class="table">
   <thead>
@@ -45,7 +49,7 @@ Using the most basic table markup, here’s how tables look in Inkline. All tabl
       <th>Username</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody>1az    <z>`azxzz</z>
     <tr>
       <th scope="row">#</th>
       <td>Alex</td>
@@ -67,11 +71,16 @@ Using the most basic table markup, here’s how tables look in Inkline. All tabl
   </tbody>
 </table>
 ~~~
+
+</template>
+</i-code-preview>
 
 
 ## Bordered Table
 Add `.-bordered` for borders on all sides of the table and table cells.
 
+<i-code-preview title="Bordered Table" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">
+
 <table class="table -bordered">
   <thead>
     <tr>
@@ -102,6 +111,8 @@ Add `.-bordered` for borders on all sides of the table and table cells.
     </tr>
   </tbody>
 </table>
+
+<template slot="html">
 
 ~~~html
 <table class="table -bordered">
@@ -135,11 +146,16 @@ Add `.-bordered` for borders on all sides of the table and table cells.
   </tbody>
 </table>
 ~~~
+
+</template>
+</i-code-preview>
 
 
 ## Striped Table
 Add `.-striped` to add zebra-striping to any table row within the table body.
 
+<i-code-preview title="Striped Table" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">
+
 <table class="table -striped">
   <thead>
     <tr>
@@ -170,6 +186,8 @@ Add `.-striped` to add zebra-striping to any table row within the table body.
     </tr>
   </tbody>
 </table>
+
+<template slot="html">
 
 ~~~html
 <table class="table -striped">
@@ -203,11 +221,16 @@ Add `.-striped` to add zebra-striping to any table row within the table body.
   </tbody>
 </table>
 ~~~
+
+</template>
+</i-code-preview>
 
 
 ## Hoverable Table
 Add `.-hover` to enable a hover state on table rows within a `<tbody>`.
 
+<i-code-preview title="Hoverable Table" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">
+
 <table class="table -hover">
   <thead>
     <tr>
@@ -238,6 +261,8 @@ Add `.-hover` to enable a hover state on table rows within a `<tbody>`.
     </tr>
   </tbody>
 </table>
+
+<template slot="html">
 
 ~~~html
 <table class="table -hover">
@@ -271,12 +296,17 @@ Add `.-hover` to enable a hover state on table rows within a `<tbody>`.
   </tbody>
 </table>
 ~~~
+
+</template>
+</i-code-preview>
 
 ## Responsive Table
 Enabled responsiveness by wrapping your table inside a `.table-responsive` class. Responsive tables scroll horizontally on small devices. When viewing on anything larger, you will not see any difference in these tables.
 
 You can target specific responsive breakpoints using `.table-responsive-*`.
 
+<i-code-preview title="Responsive Table" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">
+
 <div class="table-responsive">
     <table class="table">
       <thead>
@@ -321,6 +351,8 @@ You can target specific responsive breakpoints using `.table-responsive-*`.
       </tbody>
     </table>
 </div>
+
+<template slot="html">
 
 ~~~html
 <div class="table-responsive">
@@ -369,9 +401,14 @@ You can target specific responsive breakpoints using `.table-responsive-*`.
 </div>
 ~~~
 
+</template>
+</i-code-preview>
+
 
 ## Variants
 Tables can be themed using brand modifier classes such as `.-light`, `.-dark`, `.-primary`, `.-secondary`, `.-info`, `.-success`, `.-warning`, and `.-danger`. You can set a variant for the table as a whole or individual table elements. By default, tables have the `.-light` variant. You can use a variation of any of the above classes to create the table design you need.
+
+<i-code-preview title="Table Variants" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">
 
 <table class="table -light -bordered -striped -hoverable">
   <thead>
@@ -614,6 +651,8 @@ Tables can be themed using brand modifier classes such as `.-light`, `.-dark`, `
   </tbody>
 </table>
 
+<template slot="html">
+
 ~~~html
 <table class="table -light"> .. </table>
 <table class="table -dark"> .. </table>
@@ -624,3 +663,6 @@ Tables can be themed using brand modifier classes such as `.-light`, `.-dark`, `
 <table class="table -warning"> .. </table>
 <table class="table -danger"> .. </table>
 ~~~
+
+</template>
+</i-code-preview>
