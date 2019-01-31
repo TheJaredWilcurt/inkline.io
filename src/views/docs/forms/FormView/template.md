@@ -5,6 +5,9 @@ Forms are the main wrapper components for form elements. { .lead }
 
 The `<i-form>` component is a wrapper that provides proper handling of form validation and form grouping.
 
+
+<i-code-preview title="Form" link="https://github.com/inkline/inkline/tree/master/src/components/Form">
+
 <i-form>
     <i-form-group>
         <i-input v-model="input" name="input" placeholder="Type something.." />
@@ -36,6 +39,8 @@ The `<i-form>` component is a wrapper that provides proper handling of form vali
         <i-button type="submit">Submit</i-button>
     </i-form-group>
 </i-form>
+
+<template slot="html">
 
 ~~~html
 <i-form>
@@ -76,6 +81,9 @@ The `<i-form>` component is a wrapper that provides proper handling of form vali
 </i-form>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -90,8 +98,14 @@ export default {
 }
 ~~~
 
+</template>
+</i-code-preview>
+
 ## Disabled Form
 Setting a form as `disabled` will cause all of its child inputs to be disabled.
+
+
+<i-code-preview title="Disabled Form" link="https://github.com/inkline/inkline/tree/master/src/components/Form">
 
 <i-form disabled>
     <i-form-group>
@@ -124,6 +138,8 @@ Setting a form as `disabled` will cause all of its child inputs to be disabled.
         <i-button type="submit">Submit</i-button>
     </i-form-group>
 </i-form>
+
+<template slot="html">
 
 ~~~html
 <i-form disabled>
@@ -164,6 +180,9 @@ Setting a form as `disabled` will cause all of its child inputs to be disabled.
 </i-form>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -178,10 +197,16 @@ export default {
 }
 ~~~
 
+</template>
+</i-code-preview>
+
 ## Form Sizes
 You're able to use the `size` modifier to control the size of the components inside your `<i-form>`, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`. 
 
 All of the components inside the `<i-form>` will inherit the parent form group's size.
+
+
+<i-code-preview title="Small Form Size" link="https://github.com/inkline/inkline/tree/master/src/components/Form">
 
 <i-form size="sm">
     <i-form-group>
@@ -215,6 +240,8 @@ All of the components inside the `<i-form>` will inherit the parent form group's
     </i-form-group>
 </i-form>
 
+<template slot="html">
+
 ~~~html
 <i-form size="sm">
     <i-form-group>
@@ -254,6 +281,9 @@ All of the components inside the `<i-form>` will inherit the parent form group's
 </i-form>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -267,6 +297,12 @@ export default {
   }
 }
 ~~~
+
+</template>
+</i-code-preview>
+
+
+<i-code-preview title="Medium Form Size" link="https://github.com/inkline/inkline/tree/master/src/components/Form">
 
 <i-form size="md">
     <i-form-group>
@@ -300,6 +336,8 @@ export default {
     </i-form-group>
 </i-form>
 
+<template slot="html">
+
 ~~~html
 <i-form size="md">
     <i-form-group>
@@ -339,6 +377,9 @@ export default {
 </i-form>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -352,6 +393,12 @@ export default {
   }
 }
 ~~~
+
+</template>
+</i-code-preview>
+
+
+<i-code-preview title="Large Form Size" link="https://github.com/inkline/inkline/tree/master/src/components/Form">
 
 <i-form size="lg">
     <i-form-group>
@@ -384,6 +431,8 @@ export default {
         <i-button type="submit">Submit</i-button>
     </i-form-group>
 </i-form>
+
+<template slot="html">
 
 ~~~html
 <i-form size="lg">
@@ -424,6 +473,9 @@ export default {
 </i-form>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -437,3 +489,6 @@ export default {
   }
 }
 ~~~
+
+</template>
+</i-code-preview>

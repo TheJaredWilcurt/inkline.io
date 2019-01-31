@@ -1,16 +1,20 @@
 # Form Validation
-Inkline provides you with helpful form validation utilities. { .lead }
+Inkline provides you with some powerful form validation utilities. { .lead }
 
 ## Basic usage
 The `<i-form>` component and all input components have a `schema` property that can be used to provide form schema validation. The schema object provides form validation status fields such as `valid`, `invalid`, `touched`, `untouched`, `dirty`, `pristine` and `errors`.
 
 The `<i-form>` component needs to take the form itself as a `schema`. Each input needs to take the `form.inputName` as a schema and `form.inputName.value` as a model. This will ensure that form validation is working properly.
 
+<i-code-preview title="Basic Form Validation" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
+
 <i-form :schema="basicForm">
     <i-form-group>
         <i-input :schema="basicForm.input" v-model="basicForm.input.value" placeholder="Enter your first name.." />
     </i-form-group>
 </i-form>
+
+<template slot="html">
 
 ~~~html
 <i-form :schema="form">
@@ -19,6 +23,9 @@ The `<i-form>` component needs to take the form itself as a `schema`. Each input
     </i-form-group>
 </i-form>
 ~~~
+
+</template>
+<template slot="js">
 
 ~~~js
 export default {
@@ -32,20 +39,32 @@ export default {
 }
 ~~~
 
+</template>
+<template slot="output">
+
 <pre>
 <code>
+<span class="_text-muted">// console.log(this.form);</span>
+
 {{ basicForm | prettify }}
 </code>
 </pre>
 
+</template>
+</i-code-preview>
+
 ## Default Input Value
 Providing a default value for a schema field can be done using the `value` field as follows:
+
+<i-code-preview title="Form Schema Input Default Value" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
 
 <i-form :schema="defaultValueForm">
     <i-form-group>
         <i-input :schema="defaultValueForm.input" v-model="defaultValueForm.input.value" placeholder="Enter your first name.." />
     </i-form-group>
 </i-form>
+
+<template slot="html">
 
 ~~~html
 <i-form :schema="form">
@@ -54,6 +73,9 @@ Providing a default value for a schema field can be done using the `value` field
     </i-form-group>
 </i-form>
 ~~~
+
+</template>
+<template slot="js">
 
 ~~~js
 export default {
@@ -69,20 +91,31 @@ export default {
 }
 ~~~
 
+</template>
+<template slot="output">
+<span class="_text-muted">// console.log(this.form);</span>
+
 <pre>
 <code>
 {{ defaultValueForm | prettify }}
 </code>
 </pre>
 
+</template>
+</i-code-preview>
+
 ## Input Validation
 Using the `validators` field, you can specify an array of validators to be used on the input. You can use the `validateOn` field to specify the event that triggers the validation.
+
+<i-code-preview title="Form Schema Input Validation" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
 
 <i-form :schema="validateValueForm">
     <i-form-group>
         <i-input :schema="validateValueForm.input" v-model="validateValueForm.input.value" placeholder="Enter your first name.." />
     </i-form-group>
 </i-form>
+
+<template slot="html">
 
 ~~~html
 <i-form :schema="form">
@@ -91,6 +124,9 @@ Using the `validators` field, you can specify an array of validators to be used 
     </i-form-group>
 </i-form>
 ~~~
+
+</template>
+<template slot="js">
 
 ~~~js
 export default {
@@ -108,14 +144,23 @@ export default {
 }
 ~~~
 
+</template>
+<template slot="output">
+<span class="_text-muted">// console.log(this.form);</span>
+
 <pre>
 <code>
 {{ validateValueForm | prettify }}
 </code>
 </pre>
 
-## Form Groups
+</template>
+</i-code-preview>
+
+## Object Form Groups
 Objects that aren't empty and don't have a `value` or `validators` field are treated as form groups. Form groups can be used to see the validation status of specific fields.
+
+<i-code-preview title="Form Schema Form Groups" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
 
 <i-form :schema="groupedValueForm">
     <i-form-group>
@@ -125,6 +170,8 @@ Objects that aren't empty and don't have a `value` or `validators` field are tre
         <i-input :schema="groupedValueForm.group.input" v-model="groupedValueForm.group.input.value" placeholder="Enter your address.." />
     </i-form-group>
 </i-form>
+
+<template slot="html">
 
 ~~~html
 <i-form :schema="form">
@@ -136,6 +183,9 @@ Objects that aren't empty and don't have a `value` or `validators` field are tre
     </i-form-group>
 </i-form>
 ~~~
+
+</template>
+<template slot="js">
 
 ~~~js
 export default {
@@ -152,20 +202,31 @@ export default {
 }
 ~~~
 
+</template>
+<template slot="output">
+<span class="_text-muted">// console.log(this.form);</span>
+
 <pre>
 <code>
 {{ groupedValueForm | prettify }}
 </code>
 </pre>
 
+</template>
+</i-code-preview>
+
 ## Array Form Groups
 Form groups can be an `Array` of fields, allowing you to loop over them using `v-for`.
+
+<i-code-preview title="Form Schema Array Form Groups" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
 
 <i-form :schema="arrayValueForm">
     <i-form-group v-for="field in arrayValueForm.group" :key="field.name">
         <i-input :schema="field" v-model="field.value" placeholder="Type something.." />
     </i-form-group>
 </i-form>
+
+<template slot="html">
 
 ~~~html
 <i-form :schema="form">
@@ -174,6 +235,9 @@ Form groups can be an `Array` of fields, allowing you to loop over them using `v
     </i-form-group>
 </i-form>
 ~~~
+
+</template>
+<template slot="js">
 
 ~~~js
 export default {
@@ -190,15 +254,28 @@ export default {
 }
 ~~~
 
+</template>
+<template slot="output">
+<span class="_text-muted">// console.log(this.form);</span>
+
 <pre>
 <code>
 {{ arrayValueForm | prettify }}
 </code>
 </pre>
 
+</template>
+</i-code-preview>
+
+
+
 ## Complete Form Example
 
 The `<i-form>` component and all input components have a `schema` property that can be used to provide form schema validation. The schema object provides form validation status fields such as `valid`, `invalid`, `touched`, `untouched`, `dirty`, `pristine` and `errors`.
+
+The schema object `this.form` contains the validation state of the `<i-form>`, and is updated as soon as the input changes. The object looks as seen in the Output tab: 
+
+<i-code-preview title="Complete Form Example" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
 
 <i-form :schema="form">
     <i-form-group>
@@ -234,6 +311,8 @@ The `<i-form>` component and all input components have a `schema` property that 
     </i-form-group>
 </i-form>
 
+<template slot="html">
+
 ~~~html
 <i-form :schema="form">
     <i-form-group>
@@ -268,6 +347,9 @@ The `<i-form>` component and all input components have a `schema` property that 
     </i-form-group>
 </i-form>
 ~~~
+
+</template>
+<template slot="js">
 
 ~~~js
 export default {
@@ -310,13 +392,19 @@ export default {
 }
 ~~~
 
-The schema object `this.form` contains the validation state of the `<i-form>`, and is updated as soon as the input changes. The object looks as follows: 
+</template>
+<template slot="output">
+
+<span class="_text-muted">// console.log(this.form);</span>
 
 <pre>
 <code>
 {{ form | prettify }}
 </code>
 </pre>
+
+</template>
+</i-code-preview>
 
 ## Dynamically Added Fields and Groups
 The form validation framework wouldn't be complete without dynamically added fields and groups. Inkline provides a simple API for adding and removing fields.
@@ -326,6 +414,8 @@ Inkline provides you with custom implementations for Array group operations usin
 
 <code>this.form.group.$push(item, options)</code><br/>
 <code>this.form.group.$splice(index, deleteCount, item, options)</code>
+
+<i-code-preview title="Form Schema Array Group Operations" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
 
 <i-form :schema="listForm">
     <i-form-group v-for="item in listForm.items" :key="item.name">
@@ -337,6 +427,8 @@ Inkline provides you with custom implementations for Array group operations usin
         <i-button @click="replaceField" type="button">Replace First</i-button>
     </i-form-group>
 </i-form>
+
+<template slot="html">
 
 ~~~html
 <i-form :schema="form">
@@ -351,6 +443,9 @@ Inkline provides you with custom implementations for Array group operations usin
     </i-form-group>
 </i-form>
 ~~~
+
+</template>
+<template slot="js">
 
 ~~~js
 export default {
@@ -378,16 +473,25 @@ export default {
 }
 ~~~
 
+</template>
+<template slot="output">
+<span class="_text-muted">// console.log(this.form);</span>
+
 <pre>
 <code>
 {{ listForm | prettify }}
 </code>
 </pre>
 
+</template>
+</i-code-preview>
+
 ### Object Group Operations
 Just like Arrays, Objects can be manipulated and kept up to date using a custom API. You can use the `$set` method to update an object field. To enable reactivity, we'll need to also pass in the current Vue instance inside the options to take advantage of it's internal methods.
 
 <code>this.form.group.$set(name, item, options)</code>
+
+<i-code-preview title="Form Schema Object Group Operations" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
 
 <i-form :schema="objectForm">
     <i-form-group>
@@ -405,6 +509,8 @@ Just like Arrays, Objects can be manipulated and kept up to date using a custom 
     </i-form-group>
 </i-form>
 
+
+<template slot="html">
 
 ~~~html
 <i-form :schema="form">
@@ -424,6 +530,9 @@ Just like Arrays, Objects can be manipulated and kept up to date using a custom 
     </i-form-group>
 </i-form>
 ~~~
+
+</template>
+<template slot="js">
 
 ~~~js
 export default {
@@ -451,8 +560,15 @@ export default {
 }
 ~~~
 
+</template>
+<template slot="output">
+<span class="_text-muted">// console.log(this.form);</span>
+
 <pre>
 <code>
 {{ objectForm | prettify }}
 </code>
 </pre>
+
+</template>
+</i-code-preview>

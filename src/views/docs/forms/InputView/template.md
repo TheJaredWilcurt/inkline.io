@@ -2,16 +2,21 @@
 
 Allow your users to input data directly from the keyboard. { .lead }
 
-## Basic Input
+### Basic Input
+
+<i-code-preview title="Input" link="https://github.com/inkline/inkline/tree/master/src/components/Input">
 
 <i-input v-model="inputValue" placeholder="Type something.." />
 
-Value: <code>{{inputValue}}</code>
+<template slot="html">
 
 ~~~html
 <i-input v-model="value" placeholder="Type something.." />
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -22,14 +27,30 @@ export default {
 }
 ~~~
 
-## Disabled Input
+</template>
+<template slot="output">
+
+Value: <code>{{inputValue}}</code>
+
+</template>
+</i-code-preview>
+
+### Disabled Input
+
+
+<i-code-preview title="Disabled Input" link="https://github.com/inkline/inkline/tree/master/src/components/Input">
 
 <i-input v-model="disabledInputValue" placeholder="Type something.." disabled />
+
+<template slot="html">
 
 ~~~html
 <i-input v-model="value" placeholder="Type something.." disabled />
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -40,14 +61,24 @@ export default {
 }
 ~~~
 
-## Clearable Input
+</template>
+</i-code-preview>
+
+### Clearable Input
+
+<i-code-preview title="Input" link="https://github.com/inkline/inkline/tree/master/src/components/Input">
 
 <i-input v-model="clearableInputValue" placeholder="Type something.." clearable />
+
+<template slot="html">
 
 ~~~html
 <i-input v-model="value" placeholder="Type something.." clearable />
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -58,35 +89,41 @@ export default {
 }
 ~~~
 
-## Input Prefix and Suffix
+</template>
+</i-code-preview>
+
+### Prefix and Suffix
 Inkline allows you to easily add a prefix or suffix to your inputs. Using prefixes and suffixes you can, indicate 
 your input type using an icon or text. 
 
-<i-input v-model="prefixInputValue" placeholder="Type something..">
+
+<i-code-preview title="Input" link="https://github.com/inkline/inkline/tree/master/src/components/Input">
+
+<i-input v-model="prefixInputValue" placeholder="Type something.." class="_margin-bottom-1">
     <i slot="prefix">@</i>
 </i-input>
 
-~~~html
-<i-input v-model="value" placeholder="Type something..">
-    <i slot="prefix">@</i>
-</i-input>
-~~~
-
-<i-input v-model="suffixInputValue" placeholder="Type something..">
+<i-input v-model="suffixInputValue" placeholder="Type something.." class="_margin-bottom-1">
     <i slot="suffix">@</i>
 </i-input>
-
-~~~html
-<i-input v-model="value" placeholder="Type something..">
-    <i slot="suffix">@</i>
-</i-input>
-~~~
 
 <i-input v-model="prefixSuffixInputValue" placeholder="Type something..">
     <i slot="prefix">@</i>
     <i slot="suffix">@</i>
 </i-input>
 
+<template slot="html">
+
+~~~html
+<i-input v-model="value" placeholder="Type something..">
+    <i slot="prefix">@</i>
+</i-input>
+~~~
+~~~html
+<i-input v-model="value" placeholder="Type something..">
+    <i slot="suffix">@</i>
+</i-input>
+~~~
 ~~~html
 <i-input v-model="value" placeholder="Type something..">
     <i slot="prefix">@</i>
@@ -94,6 +131,9 @@ your input type using an icon or text.
 </i-input>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -104,40 +144,47 @@ export default {
 }
 ~~~
 
-## Input Prepend and Append
+</template>
+</i-code-preview>
+
+### Prepend and Append
 You can add additional content such as select fields, buttons or plain text, to either side of the input by using the prepend and append slots.
 
-<i-input v-model="prependInputValue" placeholder="Type something..">
+
+<i-code-preview title="Input" link="https://github.com/inkline/inkline/tree/master/src/components/Input">
+
+<i-input v-model="prependInputValue" placeholder="Type something.." class="_margin-bottom-1">
     <span slot="prepend">http://</span>
 </i-input>
 
-~~~html
-<i-input v-model="value" placeholder="Type something..">
-    <span slot="prepend">http://</span>
-</i-input>
-~~~
-
-<i-input v-model="appendInputValue" placeholder="Type something..">
+<i-input v-model="appendInputValue" placeholder="Type something.." class="_margin-bottom-1">
     <span slot="append">http://</span>
 </i-input>
-
-~~~html
-<i-input v-model="value" placeholder="Type something..">
-    <span slot="append">.com</span>
-</i-input>
-~~~
 
 <i-input v-model="prependAppendInputValue" placeholder="Type something..">
     <span slot="prepend">http://</span>
     <span slot="append">.com</span>
 </i-input>
 
+<template slot="html">
+
 ~~~html
+<i-input v-model="value" placeholder="Type something..">
+    <span slot="prepend">http://</span>
+</i-input>
+
+<i-input v-model="value" placeholder="Type something..">
+    <span slot="append">.com</span>
+</i-input>
+
 <i-input v-model="value" placeholder="Type something..">
     <span slot="prepend">http://</span>
     <span slot="append">.com</span>
 </i-input>
 ~~~
+
+</template>
+<template slot="js">
 
 ~~~js
 export default {
@@ -149,8 +196,13 @@ export default {
 }
 ~~~
 
-## Input Sizes
+</template>
+</i-code-preview>
+
+### Sizes
 You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
+
+<i-code-preview title="Input Sizes" link="https://github.com/inkline/inkline/tree/master/src/components/Input">
 
 <div class="_margin-bottom-1">
     <i-input size="sm" v-model="smInputValue" placeholder="Type something small.." />
@@ -160,15 +212,24 @@ You're able to use the `size` modifier to control the size of your inputs, using
     <i-input size="md" v-model="mdInputValue" placeholder="Type something medium.." />
 </div>
 
-<div class="_margin-bottom-1">
+<div>
     <i-input size="lg" v-model="lgInputValue" placeholder="Type something large.." />
 </div>
 
+<template slot="html">
+
 ~~~html
 <i-input size="sm" v-model="value" placeholder="Type something small.." />
+~~~
+~~~html
 <i-input size="md" v-model="value" placeholder="Type something medium.." />
+~~~
+~~~html
 <i-input size="lg" v-model="value" placeholder="Type something large.." />
 ~~~
+
+</template>
+<template slot="js">
 
 ~~~js
 export default {
@@ -179,5 +240,8 @@ export default {
   }
 }
 ~~~
+
+</template>
+</i-code-preview>
 
 

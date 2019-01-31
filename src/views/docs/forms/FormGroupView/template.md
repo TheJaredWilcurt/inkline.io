@@ -5,6 +5,8 @@ Form groups are the easiest way to add structure to form elements. { .lead }
 
 The `<i-form-group>` component is a wrapper that provides proper grouping of labels, input, help text, and form validation messaging. By default, form groups add a `margin-bottom` to provide spacing between form groups.
 
+<i-code-preview title="Basic Form Group" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup">
+
 <i-form-group>
     <i-input v-model="input" placeholder="Type something.." />
 </i-form-group>
@@ -31,6 +33,8 @@ The `<i-form-group>` component is a wrapper that provides proper grouping of lab
         <i-radio value="Decline">Decline</i-radio>
     </i-radio-group>
 </i-form-group>
+
+<template slot="html">
 
 ~~~html
 <i-form-group>
@@ -65,6 +69,9 @@ The `<i-form-group>` component is a wrapper that provides proper grouping of lab
 </i-form-group>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -79,8 +86,14 @@ export default {
 }
 ~~~
 
+</template>
+</i-code-preview>
+
 ## Disabled Form Group
 Setting a form group as `disabled` will cause all of its child inputs to be disabled.
+
+
+<i-code-preview title="Disabled Form Group" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup">
 
 <i-form-group disabled>
     <i-input v-model="inputDisabled" placeholder="Type something.." />
@@ -113,6 +126,8 @@ Setting a form group as `disabled` will cause all of its child inputs to be disa
     </i-radio-group>
 </i-form-group>
 
+<template slot="html">
+
 ~~~html
 <i-form-group disabled>
     <i-input v-model="input" placeholder="Type something.." />
@@ -146,6 +161,9 @@ Setting a form group as `disabled` will cause all of its child inputs to be disa
 </i-form-group>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -160,10 +178,15 @@ export default {
 }
 ~~~
 
+</template>
+</i-code-preview>
+
 ## Form Group Sizes
 You're able to use the `size` modifier to control the size of the components inside your `<i-form-group>`, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`. 
 
 All of the components inside the `<i-form-group>` will inherit the parent form group's size.
+
+<i-code-preview title="Small Form Group" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup">
 
 <i-form-group size="sm">
     <i-input v-model="inputSizeSm" placeholder="Type something.." />
@@ -196,6 +219,8 @@ All of the components inside the `<i-form-group>` will inherit the parent form g
     </i-radio-group>
 </i-form-group>
 
+<template slot="html">
+
 ~~~html
 <i-form-group size="sm">
     <i-input v-model="input" placeholder="Type something.." />
@@ -229,6 +254,9 @@ All of the components inside the `<i-form-group>` will inherit the parent form g
 </i-form-group>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -243,6 +271,10 @@ export default {
 }
 ~~~
 
+</template>
+</i-code-preview>
+
+<i-code-preview title="Medium Form Group" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup">
 
 <i-form-group size="md">
     <i-input v-model="inputSizeMd" placeholder="Type something.." />
@@ -275,6 +307,8 @@ export default {
     </i-radio-group>
 </i-form-group>
 
+<template slot="html">
+
 ~~~html
 <i-form-group size="md">
     <i-input v-model="input" placeholder="Type something.." />
@@ -308,6 +342,9 @@ export default {
 </i-form-group>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -321,6 +358,11 @@ export default {
   }
 }
 ~~~
+
+</template>
+</i-code-preview>
+
+<i-code-preview title="Large Form Group" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup">
 
 <i-form-group size="lg">
     <i-input v-model="inputSizeLg" placeholder="Type something.." />
@@ -353,6 +395,8 @@ export default {
     </i-radio-group>
 </i-form-group>
 
+<template slot="html">
+
 ~~~html
 <i-form-group size="lg">
     <i-input v-model="input" placeholder="Type something.." />
@@ -386,6 +430,9 @@ export default {
 </i-form-group>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -400,10 +447,14 @@ export default {
 }
 ~~~
 
+</template>
+</i-code-preview>
+
 ## Form Group Nesting
 You can nest form groups in order to control the `disabled`, `readonly` and `size` properties of multiple inputs at once. All the child inputs of the parent form group will inherit the property. 
 
-<p class="_text-muted">Disabled Form Group</p>
+<i-code-preview title="Disabled Form Group Nesting" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup">
+
 <i-form-group disabled>
     <i-form-group>
         <i-input v-model="inputNested" placeholder="Type something.." />
@@ -412,7 +463,44 @@ You can nest form groups in order to control the `disabled`, `readonly` and `siz
         <i-input v-model="passwordNested" type="password" placeholder="Enter your password.." />
     </i-form-group>
 </i-form-group>
-<p class="_text-muted">Readonly Form Group</p>
+
+<template slot="html">
+
+~~~html
+<i-form-group disabled>
+    <i-form-group>
+        <i-input v-model="input" placeholder="Type something.." />
+    </i-form-group>
+    <i-form-group>
+        <i-input v-model="password" type="password" placeholder="Enter your password.." />
+    </i-form-group>
+</i-form-group>
+~~~
+
+</template>
+<template slot="js">
+
+~~~js
+export default {
+  data () {
+    return {
+      input: '',
+      password: '',
+      textarea: '',
+      select: '',
+      checkbox: ['Football'],
+      radio: 'Decline'
+    };
+  }
+}
+~~~
+
+</template>
+</i-code-preview>
+
+
+<i-code-preview title="Readonly Form Group Nesting" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup">
+
 <i-form-group readonly>
     <i-form-group>
         <i-textarea v-model="textareaNested" placeholder="Write a comment.." />
@@ -425,29 +513,10 @@ You can nest form groups in order to control the `disabled`, `readonly` and `siz
         </i-select>
     </i-form-group>
 </i-form-group>
-<p class="_text-muted">Large Size Form Group</p>
-<i-form-group size="lg">
-    <i-checkbox-group v-model="checkboxNested">
-        <i-checkbox value="Football">Football</i-checkbox>
-        <i-checkbox value="Volleyball">Volleyball</i-checkbox>
-        <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
-    </i-checkbox-group>
-    <i-radio-group v-model="radioNested">
-        <i-radio value="Accept">Accept</i-radio>
-        <i-radio value="Decline">Decline</i-radio>
-    </i-radio-group>
-</i-form-group>
+
+<template slot="html">
 
 ~~~html
-<i-form-group disabled>
-    <i-form-group>
-        <i-input v-model="input" placeholder="Type something.." />
-    </i-form-group>
-    <i-form-group>
-        <i-input v-model="password" type="password" placeholder="Enter your password.." />
-    </i-form-group>
-</i-form-group>
-
 <i-form-group readonly>
     <i-form-group>
         <i-textarea v-model="textarea" placeholder="Write a comment.." />
@@ -460,7 +529,47 @@ You can nest form groups in order to control the `disabled`, `readonly` and `siz
         </i-select>
     </i-form-group>
 </i-form-group>
+~~~
 
+</template>
+<template slot="js">
+
+~~~js
+export default {
+  data () {
+    return {
+      input: '',
+      password: '',
+      textarea: '',
+      select: '',
+      checkbox: ['Football'],
+      radio: 'Decline'
+    };
+  }
+}
+~~~
+
+</template>
+</i-code-preview>
+
+
+<i-code-preview title="Sized Form Group Nesting" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup">
+
+<i-form-group size="lg">
+    <i-checkbox-group v-model="checkboxNested">
+        <i-checkbox value="Football">Football</i-checkbox>
+        <i-checkbox value="Volleyball">Volleyball</i-checkbox>
+        <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
+    </i-checkbox-group>
+    <i-radio-group v-model="radioNested">
+        <i-radio value="Accept">Accept</i-radio>
+        <i-radio value="Decline">Decline</i-radio>
+    </i-radio-group>
+</i-form-group>
+
+<template slot="html">
+
+~~~html
 <i-form-group size="lg">
     <i-form-group>
         <i-checkbox-group v-model="checkbox">
@@ -478,6 +587,9 @@ You can nest form groups in order to control the `disabled`, `readonly` and `siz
 </i-form-group>
 ~~~
 
+</template>
+<template slot="js">
+
 ~~~js
 export default {
   data () {
@@ -492,3 +604,6 @@ export default {
   }
 }
 ~~~
+
+</template>
+</i-code-preview>
