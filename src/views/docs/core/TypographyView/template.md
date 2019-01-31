@@ -140,12 +140,26 @@ Inkline provides basic styling for all common HTML5 inline text elements.
 
 ~~~html 
 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+~~~
+~~~html
 <p><del>This line of text is meant to be treated as deleted text.</del></p>
+~~~
+~~~html
 <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+~~~
+~~~html
 <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+~~~
+~~~html
 <p><u>This line of text will render as underlined</u></p>
+~~~
+~~~html
 <p><small>This line of text is meant to be treated as fine print.</small></p>
+~~~
+~~~html
 <p><strong>This line rendered as bold text.</strong></p>
+~~~
+~~~html
 <p><em>This line rendered as italicized text.</em></p>
 ~~~
 
@@ -245,9 +259,17 @@ You can align, wrap or truncate text responsively for any given `xs`, `sm`, `md`
 
 ~~~html
 <p class="_text-center-xs">This text is centered on extra-small screens.</p>
+~~~
+~~~html
 <p class="_text-center-sm">This text is centered on small screens.</p>
+~~~
+~~~html
 <p class="_text-center-md">This text is centered on medium screens.</p>
+~~~
+~~~html
 <p class="_text-center-lg">This text is centered on large screens.</p>
+~~~
+~~~html
 <p class="_text-center-xl">This text is centered on extra-large screens.</p>
 ~~~
 
@@ -269,6 +291,8 @@ assistive technologies.
 
 ~~~html
 <abbr title="attribute">attr</abbr>
+~~~
+~~~html
 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
 ~~~
 
@@ -279,45 +303,17 @@ assistive technologies.
 To quote blocks of content from another source within your document, wrap `<blockquote class="blockquote">` around any 
 HTML as the quote.
 
-<i-code-preview title="Typography - Left Aligned Blockquote" link="https://github.com/inkline/inkline/tree/master/src/css/core/typography">
+<i-code-preview title="Blockquote Alignment" link="https://github.com/inkline/inkline/tree/master/src/css/core/typography">
 
 <blockquote class="blockquote">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
 
-<template slot="html">
-
-~~~html
-<blockquote class="blockquote">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-</blockquote>
-~~~
-
-</template>
-</i-code-preview>
-
-<i-code-preview title="Typography - Center Aligned Blockquote" link="https://github.com/inkline/inkline/tree/master/src/css/core/typography">
-
 <blockquote class="blockquote -center">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
-
-<template slot="html">
-
-~~~html
-<blockquote class="blockquote -center">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-</blockquote>
-~~~
-
-</template>
-</i-code-preview>
-
-<i-code-preview title="Typography - Right Aligned Blockquote" link="https://github.com/inkline/inkline/tree/master/src/css/core/typography">
 
 <blockquote class="blockquote -right">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -326,6 +322,18 @@ HTML as the quote.
 
 <template slot="html">
 
+~~~html
+<blockquote class="blockquote">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+~~~
+~~~html
+<blockquote class="blockquote -center">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+~~~
 ~~~html
 <blockquote class="blockquote -right">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
