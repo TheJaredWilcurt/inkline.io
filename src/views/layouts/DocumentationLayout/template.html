@@ -1,23 +1,16 @@
-<!--<div id="content">-->
-    <!--<Container>-->
-        <!--<aside>-->
-            <!--<sidebar :items="items"></sidebar>-->
-        <!--</aside>-->
-        <!--<Container>-->
-            <!--<router-view />-->
-        <!--</Container>-->
-    <!--</Container>-->
-<!--</div>-->
-
-<i-container fluid>
+<i-container>
     <i-row>
         <i-column>
-            <i-layout vertical>
-                <i-layout-aside>
+            <i-layout vertical id="layout">
+                <i-layout-aside id="layout-aside-left">
+                    <div id="layout-sponsors">
+                        <h4><router-link :to="{ name: 'home.index' }">Sponsors</router-link></h4>
+                    </div>
+
                     <h4><router-link :to="{ name: 'home.index' }">Inkline</router-link></h4>
                     <table-of-contents></table-of-contents>
                 </i-layout-aside>
-                <i-layout-content>
+                <i-layout-content id="layout-content">
                     <router-view />
                 </i-layout-content>
             </i-layout>
