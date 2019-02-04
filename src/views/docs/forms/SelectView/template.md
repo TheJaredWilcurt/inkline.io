@@ -2,7 +2,7 @@
 
 Allow your users to input data directly from the keyboard. { .lead }
 
-## Basic Select
+### Example
 
 <i-code-preview title="Basic Select" link="https://github.com/inkline/inkline/tree/master/src/components/Select">
 
@@ -45,7 +45,7 @@ Selected value: <code>{{selectValue}}</code>
 </template>
 </i-code-preview>
 
-## Disabled Select
+### Disabled State
 
 <i-code-preview title="Disabled Select" link="https://github.com/inkline/inkline/tree/master/src/components/Select">
 
@@ -83,7 +83,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Select Prefix and Suffix
+### Prefix and Suffix
 Inkline allows you to easily add a prefix or suffix to your inputs. Using prefixes and suffixes you can, indicate 
 your input type using an icon or text. 
 
@@ -161,7 +161,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Select Sizes
+### Sizes
 You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
 
 <i-code-preview title="Select Sizes" link="https://github.com/inkline/inkline/tree/master/src/components/Select">

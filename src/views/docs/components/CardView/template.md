@@ -4,7 +4,7 @@ Cards provide you with a flexible and extensible content container with multiple
 A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, 
 contextual background colors, and powerful display options. 
 
-## Example
+### Example
 Cards are customizable content holders built with as little markup and styles as possible. 
 They are based on flexbox, offering easy alignment and mixing well with other components. 
 
@@ -43,7 +43,7 @@ By default, cards are set to have `width: 100%`, fully spanning the width of the
 </template>
 </i-code-preview>
 
-## Body
+### Body
 The building block of a card is the card body. All the content placed in the default component slot will be placed inside the body.
 
 <i-code-preview title="Card Body" link="https://github.com/inkline/inkline/tree/master/src/components/Card">
@@ -67,7 +67,7 @@ The building block of a card is the card body. All the content placed in the def
 </template>
 </i-code-preview>
 
-## Header and Footer
+### Header and Footer
 Optionally, you can provide a header or a footer for your cards.
 
 <i-code-preview title="Card Header and Footer" link="https://github.com/inkline/inkline/tree/master/src/components/Card">
@@ -95,7 +95,7 @@ Optionally, you can provide a header or a footer for your cards.
 </template>
 </i-code-preview>
 
-## Card Images
+### Card Images
 You can provide an image at the top of the card, using the `image` slot.
 
 <i-code-preview title="Card Image" link="https://github.com/inkline/inkline/tree/master/src/components/Card">
@@ -121,7 +121,7 @@ You can provide an image at the top of the card, using the `image` slot.
 </template>
 </i-code-preview>
 
-## Background Image
+### Background Image
 You can provide an image at the top of the card, using the `image` slot.
 
 <i-code-preview title="Card Background Image" link="https://github.com/inkline/inkline/tree/master/src/components/Card">
@@ -147,7 +147,7 @@ You can provide an image at the top of the card, using the `image` slot.
 </template>
 </i-code-preview>
 
-## Sizes
+### Sizes
 You're able to use the `size` modifier to control the text and spacing size of your cards, using one of the available sizes: `sm`, `md`, and `lg`. 
 The default size is set to `md`.
 
@@ -192,7 +192,7 @@ The default size is set to `md`.
 </template>
 </i-code-preview>
 
-## Variants
+### Variants
 Inkline includes several predefined card styles that you can use within your application. You can apply a style using the `variant` property.
 
 <i-code-preview title="Card Variants" link="https://github.com/inkline/inkline/tree/master/src/components/Card">

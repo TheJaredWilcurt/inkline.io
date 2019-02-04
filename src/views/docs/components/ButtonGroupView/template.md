@@ -1,7 +1,7 @@
 # Button Groups
 Group multiple buttons together on a single line using a button group. {.lead}
 
-## Basic Example
+### Example
 You can group a series of `<i-button>` components inside a `<i-button-group>` to display them inline, conveying additional meaning.
 
 <i-code-preview title="Button Group Example" link="https://github.com/inkline/inkline/tree/master/src/components/ButtonGroup">
@@ -25,7 +25,7 @@ You can group a series of `<i-button>` components inside a `<i-button-group>` to
 </template>
 </i-code-preview>
 
-## Sizes
+### Sizes
 You're able to use the `size` modifier to control the size of your buttons, using one of the available sizes: `sm`, `md`, and `lg`. 
 The default size is set to `md`.
 
@@ -82,7 +82,7 @@ The default size is set to `md`.
 </template>
 </i-code-preview>
 
-## Nesting
+### Nesting
 When placing a `<i-button-group>` inside another `<i-button-group>`, you'll get a mixed series of buttons.
 
 <i-code-preview title="Button Group Nesting" link="https://github.com/inkline/inkline/tree/master/src/components/ButtonGroup">
@@ -112,7 +112,7 @@ When placing a `<i-button-group>` inside another `<i-button-group>`, you'll get 
 </template>
 </i-code-preview>
 
-## Vertical
+### Vertical
 Using the `vertical` property, you can stack a set of buttons vertically rather than horizontally.
 
 <i-code-preview title="Vertical Button Group" link="https://github.com/inkline/inkline/tree/master/src/components/ButtonGroup">
@@ -136,7 +136,7 @@ Using the `vertical` property, you can stack a set of buttons vertically rather 
 </template>
 </i-code-preview>
 
-## Vertical Sizes
+### Vertical Sizes
 Just like horizontal button groups, the size of vertical button groups can also be controlled using the `size` modifier. 
 The default size is set to `md`.
 

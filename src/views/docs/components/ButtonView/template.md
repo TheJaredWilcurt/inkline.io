@@ -1,7 +1,7 @@
 # Buttons
 Inkline provides you with custom button styles with support for multiple sizes, states, and more. { .lead }
 
-## Variants
+### Variants
 Inkline includes several predefined button styles, each serving its own semantic purpose, with a few extra variants available for more control.
 
 <i-code-preview title="Button Variants" link="https://github.com/inkline/inkline/tree/master/src/components/Button">
@@ -48,7 +48,7 @@ Inkline includes several predefined button styles, each serving its own semantic
 </i-code-preview>
 
 
-## Type
+### Button Type
 The `<i-button>` component makes use of a `<button>` element markup behind the scenes. Therefore, you can assign a type to it,
 just like with the `<button>` element.
 
@@ -113,7 +113,7 @@ If you need to change the `<button>` node used to render the component, you can 
 </i-code-preview>
 
 
-## Outline
+### Outline Style
 Sometimes, buttons should not stand out so much. Replace the default modifier classes with the `outline` property
 to remove background images and colors on any button when not interacted with.
 
@@ -160,7 +160,7 @@ to remove background images and colors on any button when not interacted with.
 </template>
 </i-code-preview>
 
-## Link
+### Link Style
 You can create link buttons that look the same as normal links. Link buttons will use the `variant` property to set the color of the link.
 
 <i-code-preview title="Link Button" link="https://github.com/inkline/inkline/tree/master/src/components/Button">
@@ -206,7 +206,7 @@ You can create link buttons that look the same as normal links. Link buttons wil
 </template>
 </i-code-preview>
 
-## Circle
+### Circle Style
 Circle buttons are very common when working with icon actions. You can transform buttons into circles using the `circle`
 modifier. You're also able to use the `size` modifier to control the size of your circle buttons. 
 
@@ -233,7 +233,7 @@ modifier. You're also able to use the `size` modifier to control the size of you
 </template>
 </i-code-preview>
 
-## Sizes
+### Sizes
 You're able to use the `size` modifier to control the size of your buttons, using one of the available sizes: `sm`, `md`, and `lg`. 
 The default size is set to `md`.
 
@@ -260,7 +260,7 @@ The default size is set to `md`.
 </template>
 </i-code-preview>
 
-## Block
+### Block
 You can create block level buttons that span the full width of a parent by adding the `block` property.
 
 <i-code-preview title="Block Button" link="https://github.com/inkline/inkline/tree/master/src/components/Button">
@@ -275,7 +275,7 @@ You can create block level buttons that span the full width of a parent by addin
 </template>
 </i-code-preview>
 
-## Active State
+### Active State
 Buttons will appear pressed when active. You can force a button to have an active appearance with the `active` property (this will also include the aria-pressed="true" attribute).
 
 <i-code-preview title="Active Button State" link="https://github.com/inkline/inkline/tree/master/src/components/Button">
@@ -297,7 +297,7 @@ Buttons will appear pressed when active. You can force a button to have an activ
 </template>
 </i-code-preview>
 
-## Disabled State
+### Disabled State
 You can make buttons look inactive or disabled by adding the `disabled` boolean property to an `<i-button>` element.
 
 <i-code-preview title="Disabled Button State" link="https://github.com/inkline/inkline/tree/master/src/components/Button">
@@ -319,7 +319,7 @@ You can make buttons look inactive or disabled by adding the `disabled` boolean 
 </template>
 </i-code-preview>
 
-## Linking and Routing
+### Linking and Routing
 Buttons will be automatically converted to link anchors `<a>` when providing a `href` property. You can also specify `target` and `rel` properties.
 
 The `<i-button>` component is well integrated with the [Vue Router](https://router.vuejs.org) plugin and will be converted to a `<router-link>` when using the `to` property.

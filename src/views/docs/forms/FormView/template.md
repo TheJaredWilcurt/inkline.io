@@ -1,7 +1,7 @@
 # Forms
 Forms are the main wrapper components for form elements. { .lead }
 
-## Basic Form
+### Basic Form
 
 The `<i-form>` component is a wrapper that provides proper handling of form validation and form grouping.
 
@@ -101,7 +101,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Disabled Form
+### Disabled State
 Setting a form as `disabled` will cause all of its child inputs to be disabled.
 
 
@@ -200,7 +200,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Form Sizes
+### Sizes
 You're able to use the `size` modifier to control the size of the components inside your `<i-form>`, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`. 
 
 All of the components inside the `<i-form>` will inherit the parent form group's size.

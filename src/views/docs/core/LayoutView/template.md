@@ -8,7 +8,7 @@ The layout components are used for scaffolding the basic structure of the page:
 - `<i-layout-content>` is the main content container
 - `<i-layout-footer>` is a container for footer elements
 
-## Common Layouts
+### Common Layouts
 
 The previewed layouts are styled for documentation purposes only. When using the components, they will only 
 provide the correct element positioning without colors and paddings.

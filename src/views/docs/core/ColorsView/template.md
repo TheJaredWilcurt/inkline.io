@@ -1,7 +1,7 @@
 # Colors
 Inkline uses [Gradient Design](http://inkline.io) to achieve a beautiful, consistent color scheme across the framework. { .lead }
 
-#### Brand Colors
+### Brand
 Attract your visitor's attention using brand colors. The main colors of Inkline used for branding are:
 
 <i-code-preview title="Brand Color Background" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
@@ -59,7 +59,7 @@ You can also add brand text colors using text-specific helper classes:
 </i-code-preview>
 
 
-#### State Colors
+### State
 When displaying state information such as info, success, warning, or error messages, you will need to color your message accordingly. The state colors are:
 
 <i-code-preview title="State Color Background" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
@@ -117,7 +117,7 @@ You can also add state text colors using text-specific helper classes:
 </i-code-preview>
 
 
-#### Basic Colors
+### Basic
 Basic colors are useful when working with multiple colors on the same page. The following basic colors are 
 available when using the default variant.
 
@@ -200,7 +200,7 @@ You can also add state text colors using text-specific helper classes:
 </i-code-preview>
 
 
-#### Neutral Colors
+### Neutral
 Neutral colors are used for text, background and border colors. You can use different neutral colors to display your content:
 
 <i-code-preview title="Neutral Color Background" link="https://github.com/inkline/inkline/blob/master/src/css/config/_colors.styl">
@@ -301,7 +301,7 @@ You can also add neutral text colors using text-specific helper classes:
 </i-code-preview>
 
 
-#### Social Media Colors
+### Social Media
 Inkline provides social media colors from most of your favorite sites. Social media colors are available only using
 the default variant.
 

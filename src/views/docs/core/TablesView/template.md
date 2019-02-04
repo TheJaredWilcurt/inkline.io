@@ -1,7 +1,7 @@
 # Tables
 Documentation and examples for opt-in styling of tables with Inkline. { .lead }
 
-## Basic Table
+### Basic Table
 Using the most basic table markup, here’s how tables look in Inkline. All table styles are inherited in Inkline, meaning any nested tables will be styled in the same manner as the parent.
 
 <i-code-preview title="Basic Table" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">
@@ -76,7 +76,7 @@ Using the most basic table markup, here’s how tables look in Inkline. All tabl
 </i-code-preview>
 
 
-## Bordered Table
+### Bordered Table
 Add `.-bordered` for borders on all sides of the table and table cells.
 
 <i-code-preview title="Bordered Table" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">
@@ -151,7 +151,7 @@ Add `.-bordered` for borders on all sides of the table and table cells.
 </i-code-preview>
 
 
-## Striped Table
+### Striped Table
 Add `.-striped` to add zebra-striping to any table row within the table body.
 
 <i-code-preview title="Striped Table" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">
@@ -226,7 +226,7 @@ Add `.-striped` to add zebra-striping to any table row within the table body.
 </i-code-preview>
 
 
-## Hoverable Table
+### Hoverable Table
 Add `.-hover` to enable a hover state on table rows within a `<tbody>`.
 
 <i-code-preview title="Hoverable Table" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">
@@ -300,7 +300,7 @@ Add `.-hover` to enable a hover state on table rows within a `<tbody>`.
 </template>
 </i-code-preview>
 
-## Responsive Table
+### Responsive Table
 Enabled responsiveness by wrapping your table inside a `.table-responsive` class. Responsive tables scroll horizontally on small devices. When viewing on anything larger, you will not see any difference in these tables.
 
 You can target specific responsive breakpoints using `.table-responsive-*`.
@@ -405,7 +405,7 @@ You can target specific responsive breakpoints using `.table-responsive-*`.
 </i-code-preview>
 
 
-## Variants
+### Variants
 Tables can be themed using brand modifier classes such as `.-light`, `.-dark`, `.-primary`, `.-secondary`, `.-info`, `.-success`, `.-warning`, and `.-danger`. You can set a variant for the table as a whole or individual table elements. By default, tables have the `.-light` variant. You can use a variation of any of the above classes to create the table design you need.
 
 <i-code-preview title="Table Variants" link="https://github.com/inkline/inkline/blob/master/src/css/core/_tables.styl">

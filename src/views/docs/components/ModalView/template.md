@@ -115,7 +115,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Modal Variants
+### Variants
 Inkline includes two predefined modal styles, each serving its own semantic purpose. You can set the style of a `<i-modal>` using the `variant` property. By default, modals use the `light` variant.
 
 <i-code-preview title="Modal Variants" link="https://github.com/inkline/inkline/tree/master/src/components/Modal">

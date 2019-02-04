@@ -1,7 +1,7 @@
 # Dropdown
 Dropdowns are contextual overlays toggled through clicking or hovering, used for displaying a predefined list of links.{.lead}
 
-## Example
+### Example
 Wrap both the dropdown's trigger element (such as an `<i-button>`) and the `<i-dropdown-menu>` inside a `<i-dropdown>` component. The dropdown component will always choose the first child element as a trigger and the last child element as the defined dropdown menu.
 
 <i-code-preview title="Dropdown Example" link="https://github.com/inkline/inkline/tree/master/src/components/Dropdown">
@@ -35,7 +35,7 @@ Wrap both the dropdown's trigger element (such as an `<i-button>`) and the `<i-d
 </template>
 </i-code-preview>
 
-## Placement
+### Placement
 Trigger dropdown menus at the `top`, `bottom`, `left` or `right` of elements by adding the `placement` property to the parent `<i-dropdown>` element. 
 
 Each of the positions also has a `-start` or `-end` variant (`top-start`, `top-end`, `bottom-start`, `bottom-end`, etc.) that sets the dropdown to the start or end of the placement instead of centering it. 
@@ -142,7 +142,7 @@ Each of the positions also has a `-start` or `-end` variant (`top-start`, `top-e
 </template>
 </i-code-preview>
 
-## Freeform Dropdown
+### Freeform Dropdown
 You're not required to use any dropdown-specific components inside of `<i-dropdown-menu>`. You can add your own HTML markup without any issues. You might need additional size styles to constrain the content width
 
 <i-code-preview title="Freeform Dropdown" link="https://github.com/inkline/inkline/tree/master/src/components/Dropdown">
@@ -168,7 +168,7 @@ You're not required to use any dropdown-specific components inside of `<i-dropdo
 </template>
 </i-code-preview>
 
-## Trigger type
+### Trigger type
 You can use the `trigger` property to trigger the dropdown on `hover` or `click`. By default, dropdowns are triggered on `click`, a design decision made to improve user experience.
 
 <i-code-preview title="Dropdown Trigger" link="https://github.com/inkline/inkline/tree/master/src/components/Dropdown">
@@ -225,7 +225,7 @@ You can use the `trigger` property to trigger the dropdown on `hover` or `click`
 </template>
 </i-code-preview>
 
-## Dropdown Sizes
+### Sizes
 You're able to use the `size` modifier to control the size of your dropdown menus, using one of the available sizes: `sm`, `md`, and `lg`. 
 The default size is set to `md`.
 
@@ -309,7 +309,7 @@ The default size is set to `md`.
 </i-code-preview>
 
 
-## Dropdown Variants
+### Variants
 Inkline includes two predefined dropdown styles, each serving its own semantic purpose. You can set the style of a `<i-dropdown-menu>` using the `variant` property, which can have a value of `light` or `dark`. By default, dropdown menus use the `light` variant.
 
 <i-code-preview title="Dropdown Variants" link="https://github.com/inkline/inkline/tree/master/src/components/Dropdown">
@@ -370,7 +370,7 @@ Inkline includes two predefined dropdown styles, each serving its own semantic p
 </i-code-preview>
 
 
-## Recursive Dropdowns
+### Recursive Dropdowns
 Inkline allows you to have virtually infinite recursive dropdown submenus structure by defining another `<i-dropdown>` inside of a `<i-dropdown-menu>`. This awesome feature gives you great design flexibility.
 
 <i-code-preview title="Recursive Dropdown" link="https://github.com/inkline/inkline/tree/master/src/components/Dropdown">

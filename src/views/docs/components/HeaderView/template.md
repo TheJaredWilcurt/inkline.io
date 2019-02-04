@@ -116,7 +116,7 @@ You can make headers cover the whole screen width and height (using `vw` and `vh
 </template>
 </i-code-preview>
 
-## Cover Background
+### Cover Background
 The goal of cover background images on a website is to cover the entire browser window at all times. Simply set a background for the header
 
 <i-code-preview title="Header Cover Background" link="https://github.com/inkline/inkline/tree/master/src/components/Header">

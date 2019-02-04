@@ -8,14 +8,14 @@ when zooming.
 When more control is needed, you should check out the textual utility classes. Each font size, style and 
 weight also has a corresponding helper class to style other elements the same.
 
-## Configuration
+### Configuration
 When configuring the stylus files, change the `--font-family-primary-base`, `--font-size`, and `--line-height-base` variables 
 as our typographic base applied to the `<body>`. Set the global link color via `--link-color` and apply link underlines 
 only on `:hover`. The defaults for these global variables are defined in `config/_typography.styl`. 
 
 To learn more about style configuration, please read the [Getting Started](/docs/styling) section.
 
-## Headings
+### Headings
 All HTML headings, `<h1>` through `<h6>`, are available.
 
 <i-code-preview title="Typography - Headings" link="https://github.com/inkline/inkline/tree/master/src/css/core/typography">
@@ -72,7 +72,7 @@ want to match the font styling of a heading but cannot use the associated HTML e
 </i-code-preview>
 
 
-## Display
+### Display
 If you need something larger than headings, you can use displays, `.d1` through `.d6` are available.
 
 <i-code-preview title="Typography - Display" link="https://github.com/inkline/inkline/tree/master/src/css/core/typography">
@@ -101,7 +101,7 @@ If you need something larger than headings, you can use displays, `.d1` through 
 </i-code-preview>
 
 
-## Lead
+### Lead
 Make a paragraph stand out by adding `.lead`.
 
 <i-code-preview title="Typography - Lead" link="https://github.com/inkline/inkline/tree/master/src/css/core/typography">
@@ -122,7 +122,7 @@ Make a paragraph stand out by adding `.lead`.
 </i-code-preview>
 
 
-## Inline Text Elements
+### Inline Text Elements
 Inkline provides basic styling for all common HTML5 inline text elements.
 
 <i-code-preview title="Typography - Inline Text Elements" link="https://github.com/inkline/inkline/tree/master/src/css/core/typography">
@@ -172,7 +172,7 @@ available to apply the same styles as `<mark>` and `<small>`.
 While not shown above, you can also use `<b>` and `<i>` in HTML5. `<b>` is meant to highlight words or phrases 
 without adding additional semantics, while `<i>` is mostly for voice, technical terms, etc.
 
-## Text Utilities
+### Text Utilities
 You can change text alignment, transform, style, weight, and color with text utilities and [color utilities](/docs/colors).
 
 #### Text Alignment
@@ -276,7 +276,7 @@ You can align, wrap or truncate text responsively for any given `xs`, `sm`, `md`
 </template>
 </i-code-preview>
 
-## Abbreviations
+### Abbreviations
 The HTML `<abbr>` element for abbreviations and acronyms is styled to show the expanded version on hover. 
 Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of 
 assistive technologies.
@@ -299,7 +299,7 @@ assistive technologies.
 </template>
 </i-code-preview>
 
-## Blockquotes
+### Blockquotes
 To quote blocks of content from another source within your document, wrap `<blockquote class="blockquote">` around any 
 HTML as the quote.
 
@@ -345,7 +345,7 @@ HTML as the quote.
 </i-code-preview>
 
 
-## Lists
+### Lists
 To enumerate a sequence of elements, you can use lists. Inkline provides you with multiple variations to achieve your 
 target design.
 

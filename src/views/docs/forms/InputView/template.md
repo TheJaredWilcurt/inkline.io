@@ -2,7 +2,7 @@
 
 Allow your users to input data directly from the keyboard. { .lead }
 
-### Basic Input
+### Example
 
 <i-code-preview title="Input" link="https://github.com/inkline/inkline/tree/master/src/components/Input">
 
@@ -35,7 +35,7 @@ Value: <code>{{inputValue}}</code>
 </template>
 </i-code-preview>
 
-### Disabled Input
+### Disabled State
 
 
 <i-code-preview title="Disabled Input" link="https://github.com/inkline/inkline/tree/master/src/components/Input">

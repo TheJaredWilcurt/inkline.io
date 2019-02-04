@@ -2,7 +2,7 @@
 
 Allow your users to input data directly from the keyboard. { .lead }
 
-## Basic Input
+### Example
 
 
 <i-code-preview title="Number Input" link="https://github.com/inkline/inkline/tree/master/src/components/InputNumber">
@@ -36,7 +36,7 @@ Value: <code>{{inputValue}}</code>
 </template>
 </i-code-preview>
 
-## Disabled Input
+### Disabled State
 
 
 <i-code-preview title="Disabled Number Input" link="https://github.com/inkline/inkline/tree/master/src/components/InputNumber">
@@ -66,7 +66,7 @@ export default {
 </i-code-preview>
 
 
-## Minimum and Maximum Value
+### Minimum and Maximum Value
 
 
 <i-code-preview title="Number Input Minimum and Maximum Value" link="https://github.com/inkline/inkline/tree/master/src/components/InputNumber">
@@ -100,7 +100,7 @@ Value: <code>{{minMaxInputValue}}</code>
 </template>
 </i-code-preview>
 
-## Step Size
+### Step Size
 
 You can set the increment / decrement step by using the `step` property. The step is `1` by default.
 
@@ -136,7 +136,7 @@ Value: <code>{{stepInputValue}}</code>
 </template>
 </i-code-preview>
 
-## Precision
+### Precision
 
 You can set the decimal precision using the `precision` property, allowing you to enter floating point numbers into the input.
 
@@ -172,7 +172,7 @@ Value: <code>{{precisionInputValue}}</code>
 </template>
 </i-code-preview>
 
-## Input Prefix and Suffix
+### Prefix and Suffix
 Inkline allows you to easily add a prefix or suffix to your inputs. Using prefixes and suffixes you can, indicate 
 your input type using an icon or text. 
 
@@ -230,7 +230,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Input Prepend and Append
+### Prepend and Append
 You can add additional content such as select fields, buttons or plain text, to either side of the input by using the prepend and append slots.
 
 
@@ -286,7 +286,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Input Sizes
+### Sizes
 You're able to use the `size` modifier to control the size of your inputs, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
 
 <i-code-preview title="Number Input Sizes" link="https://github.com/inkline/inkline/tree/master/src/components/InputNumber">

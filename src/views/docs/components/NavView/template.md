@@ -114,7 +114,7 @@ You're able to use the `size` modifier to control the size of your navs, using o
 </i-code-preview>
 
 
-## Active State
+### Active State
 You can control the active state of your `<i-nav-item>` using the `active` property. If you're providing a `:to` property, converting it into a `router-link`, you can use the `active-class` and `exact-active-class` properties and set them to `-active`.
 
 <i-code-preview title="Nav Active State" link="https://github.com/inkline/inkline/tree/master/src/components/Nav">

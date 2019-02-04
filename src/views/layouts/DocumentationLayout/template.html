@@ -3,16 +3,20 @@
         <i-column>
             <i-layout vertical id="layout">
                 <i-layout-aside id="layout-aside-left">
-                    <div id="layout-sponsors">
-                        <h4><router-link :to="{ name: 'home.index' }">Sponsors</router-link></h4>
+                    <div class="layout-fixed-full-height" v-match-parent-width>
+                        <site-navigation></site-navigation>
                     </div>
-
-                    <h4><router-link :to="{ name: 'home.index' }">Inkline</router-link></h4>
-                    <table-of-contents></table-of-contents>
                 </i-layout-aside>
+
                 <i-layout-content id="layout-content">
                     <router-view />
                 </i-layout-content>
+
+                <i-layout-aside id="layout-aside-right">
+                    <div class="layout-fixed-full-height" v-match-parent-width>
+                        <page-navigation></page-navigation>
+                    </div>
+                </i-layout-aside>
             </i-layout>
         </i-column>
     </i-row>

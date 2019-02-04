@@ -1,7 +1,7 @@
 # Form Groups
 Form groups are the easiest way to add structure to form elements. { .lead }
 
-## Basic Form Group
+### Example
 
 The `<i-form-group>` component is a wrapper that provides proper grouping of labels, input, help text, and form validation messaging. By default, form groups add a `margin-bottom` to provide spacing between form groups.
 
@@ -89,7 +89,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Disabled Form Group
+### Disabled State
 Setting a form group as `disabled` will cause all of its child inputs to be disabled.
 
 
@@ -181,7 +181,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Form Group Sizes
+### Sizes
 You're able to use the `size` modifier to control the size of the components inside your `<i-form-group>`, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`. 
 
 All of the components inside the `<i-form-group>` will inherit the parent form group's size.
@@ -450,7 +450,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Form Group Nesting
+### Form Group Nesting
 You can nest form groups in order to control the `disabled`, `readonly` and `size` properties of multiple inputs at once. All the child inputs of the parent form group will inherit the property. 
 
 <i-code-preview title="Disabled Form Group Nesting" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup">

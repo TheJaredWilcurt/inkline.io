@@ -9,7 +9,7 @@ The grid system is defined using `<i-container>`, `<i-row>` and `<i-column>` com
 - The column width takes a value of 1-12 at each responsive breakpoint (`xs`, `sm`, `md`, `lg`, `xlg`).
 - If the sum of `column` widths in a row is more than 12, then the overflowing column will start on a new line.
 
-## Basic Layout
+### Basic Layout
 Create basic grid layout using columns.
 
 <i-code-preview title="Basic Layout">
@@ -174,7 +174,7 @@ Create basic grid layout using columns.
 </i-code-preview>
 
 
-## Grid Offset
+### Grid Offset
 Grid offsets are used to move a column to the right without creating an empty column next to it.
 
 <i-code-preview title="Grid Offset">
@@ -284,7 +284,7 @@ Grid offsets are used to move a column to the right without creating an empty co
 </i-code-preview>
 
 
-## Grid Push / Pull
+### Grid Push / Pull
 Code-wise, the columns have a different order.
 
 <i-code-preview title="Grid Push / Pull">
@@ -441,7 +441,7 @@ Code-wise, the columns have a different order.
 </i-code-preview>
 
 
-## Auto Width
+### Auto Width
 The grid will automatically fit any number of auto sizing columns to a row.
 
 <i-code-preview title="Auto Width">
@@ -566,7 +566,7 @@ The grid will automatically fit any number of auto sizing columns to a row.
 </i-code-preview>
 
 
-## Nested Grid
+### Nested Grid
 Inkline allows you to nest up to 12 columns inside a row. Row can also be nested inside any column, 
 giving you virtually endless layout possibilities. You can place rows only inside a container or a column, 
 while you can place columns only inside a row.
@@ -633,7 +633,7 @@ while you can place columns only inside a row.
 </i-code-preview>
 
 
-## Horizontal Alignment
+### Horizontal Alignment
 You can align columns horizontally to the start, center, or end of a row.
 
 #### start-*
@@ -706,7 +706,7 @@ You can align columns horizontally to the start, center, or end of a row.
 </i-code-preview>
 
 
-## Vertical Alignment
+### Vertical Alignment
 You can align columns vertically to the top, middle or bottom of the row.
 
 #### top-*
@@ -791,10 +791,10 @@ You can align columns vertically to the top, middle or bottom of the row.
 </i-code-preview>
 
 
-## Distribution
+### Distribution
 Distribute the spacing between the columns of a row.
 
-### around-*
+#### around-*
 
 <i-code-preview title="Distribution - Around">
 
@@ -825,7 +825,7 @@ Distribute the spacing between the columns of a row.
 </template>
 </i-code-preview>
 
-### between-*
+#### between-*
 
 <i-code-preview title="Distribution - Between">
 
@@ -857,10 +857,10 @@ Distribute the spacing between the columns of a row.
 </i-code-preview>
 
 
-## Reordering
+### Reordering
 Reorder columns using helper classes.
 
-### reverse-*
+#### reverse-*
 
 <i-code-preview title="Reordering - Reverse">
 
@@ -895,7 +895,7 @@ Reorder columns using helper classes.
 </template>
 </i-code-preview>
 
-### first-*
+#### first-*
 
 <i-code-preview title="Reordering - First">
 
@@ -930,7 +930,7 @@ Reorder columns using helper classes.
 </template>
 </i-code-preview>
 
-### last-*
+#### last-*
 
 <i-code-preview title="Reordering - Last">
 
@@ -966,7 +966,7 @@ Reorder columns using helper classes.
 </i-code-preview>
 
 
-## Responsive Width
+### Responsive Width
 You can specify column counts for each breakpoint. Try to resize your browser window!
 
 <i-code-preview title="Responsive Grid Width">
@@ -1003,7 +1003,7 @@ You can specify column counts for each breakpoint. Try to resize your browser wi
 </template>
 </i-code-preview>
 
-## Fluid Container
+### Fluid Container
 You can make the `<i-container>` component fill the whole width of the parent element using the `fluid` property. 
 
 <i-code-preview title="Fluid Container">
@@ -1233,7 +1233,7 @@ You can make the `<i-container>` component fill the whole width of the parent el
                     <td><code>false</code></td>
                 </tr>
                 <tr>
-                    <td>lg</td>
+                    <td>xlg</td>
                     <td>Sets the number of columns for extra large screens (screen width lower than <code>92.5rem</code>). A <code>true</code> value will cause it to occupy as much space as it can on extra large screens.</td>
                     <td><code>Number</code>, <code>Boolean</code></td>
                     <td><code>1-12</code>, <code>true</code>, <code>false</code></td>

@@ -1,10 +1,10 @@
 import View from '@components/View';
-import TableOfContents from '@components/TableOfContents';
+import SiteNavigation from '@components/SiteNavigation';
 
 export default {
     name: 'HomeView',
     extends: View,
     components: {
-        TableOfContents
+        SiteNavigation
     }
 };

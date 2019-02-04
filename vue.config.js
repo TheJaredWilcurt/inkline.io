@@ -44,6 +44,7 @@ module.exports = {
         config.resolve.alias
             .set('@', path.join(__dirname, 'src'))
             .set('@components', path.join(__dirname, 'src', 'components'))
+            .set('@directives', path.join(__dirname, 'src', 'directives'))
             .set('@resources', path.join(__dirname, 'src', 'resources'))
             .set('@routes', path.join(__dirname, 'src', 'routes'))
             .set('@views', path.join(__dirname, 'src', 'views'))

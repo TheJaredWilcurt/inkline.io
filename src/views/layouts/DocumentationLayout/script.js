@@ -17,13 +17,19 @@ import 'prismjs/plugins/previewers/prism-previewers';
 import 'prismjs/plugins/previewers/prism-previewers.css';
 
 import Layout from '@components/Layout';
-import TableOfContents from '@components/TableOfContents';
+import SiteNavigation from '@components/SiteNavigation';
+import PageNavigation from '@components/PageNavigation';
+import MatchParentWidth from '@directives/match-parent-width';
 
 export default {
     name: 'DocumentationLayout',
     extends: Layout,
     components: {
-        TableOfContents
+        SiteNavigation,
+        PageNavigation
+    },
+    directives: {
+        MatchParentWidth
     },
     mounted () {
         Prism.highlightAll();

@@ -2,7 +2,7 @@
 
 Allow your users to input data directly from the keyboard, on multiple lines. { .lead }
 
-## Basic Textarea
+### Example
 
 <i-code-preview title="Basic Textarea" link="https://github.com/inkline/inkline/tree/master/src/components/Textarea">
 
@@ -30,7 +30,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Disabled Textarea
+### Disabled State
 
 <i-code-preview title="Disabled Textarea" link="https://github.com/inkline/inkline/tree/master/src/components/Textarea">
 
@@ -58,7 +58,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Clearable Textarea
+### Clearable Textarea
 
 <i-code-preview title="Clearable Textarea" link="https://github.com/inkline/inkline/tree/master/src/components/Textarea">
 
@@ -86,7 +86,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Textarea Prefix and Suffix
+### Prefix and Suffix
 Inkline allows you to easily add a prefix or suffix to your Textareas. Using prefixes and suffixes you can, indicate 
 your Textarea type using an icon or text. 
 
@@ -140,7 +140,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Textarea Prepend and Append
+### Prepend and Append
 You can add additional content such as select fields, buttons or plain text, to either side of the Textarea by using the prepend and append slots.
 
 <i-code-preview title="Textarea Prepend and Append" link="https://github.com/inkline/inkline/tree/master/src/components/Textarea">
@@ -194,7 +194,7 @@ export default {
 </i-code-preview>
 
 
-## Textarea Sizes
+### Sizes
 You're able to use the `size` modifier to control the size of your textareas, using one of the available sizes: `sm`, `md`, and `lg`. The default size is set to `md`.
 
 <i-code-preview title="Textarea Sizes" link="https://github.com/inkline/inkline/tree/master/src/components/Textarea">

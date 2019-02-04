@@ -1,7 +1,7 @@
 # Progress
 A custom component for displaying progress with support for stacked progress bars.{.lead}
 
-## Example
+### Example
 Progress components are built with two components: a wrapper `<i-progress>` and at least one `<i-progress-bar>`. You can set the width of a progress bar by setting its `value` property.
 
 <i-code-preview title="Progress Example" link="https://github.com/inkline/inkline/tree/master/src/components/Progress">
@@ -203,7 +203,7 @@ Inkline includes multiple progress styles. You can change the style of a `<i-pro
 </i-code-preview>
 
 
-## Value
+### Value
 Inkline allows you to set a `min` and `max` modifier to calculate the progress based on a meaningful value. The new `min` will represent `0%` and the `max` will represent `100%`.
 
 <i-code-preview title="Progress Value" link="https://github.com/inkline/inkline/tree/master/src/components/Progress">
@@ -225,7 +225,7 @@ Inkline allows you to set a `min` and `max` modifier to calculate the progress b
 </template>
 </i-code-preview>
 
-## Stacked Bars
+### Stacked Bars
 You can add multiple `<i-progress-bar>` inside the `<i-progress>` component to stack them, adding them up to a `100%` percentage.
 
 <i-code-preview title="Stacked Progress Bars Example" link="https://github.com/inkline/inkline/tree/master/src/components/Progress">

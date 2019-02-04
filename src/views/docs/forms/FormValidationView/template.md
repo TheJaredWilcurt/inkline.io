@@ -1,7 +1,7 @@
 # Form Validation
 Inkline provides you with some powerful form validation utilities. { .lead }
 
-## Basic usage
+### Example
 The `<i-form>` component and all input components have a `schema` property that can be used to provide form schema validation. The schema object provides form validation status fields such as `valid`, `invalid`, `touched`, `untouched`, `dirty`, `pristine` and `errors`.
 
 The `<i-form>` component needs to take the form itself as a `schema`. Each input needs to take the `form.inputName` as a schema and `form.inputName.value` as a model. This will ensure that form validation is working properly.
@@ -53,7 +53,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Default Input Value
+### Default Input Value
 Providing a default value for a schema field can be done using the `value` field as follows:
 
 <i-code-preview title="Form Schema Input Default Value" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
@@ -104,7 +104,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Input Validation
+### Input Validation
 Using the `validators` field, you can specify an array of validators to be used on the input. You can use the `validateOn` field to specify the event that triggers the validation.
 
 <i-code-preview title="Form Schema Input Validation" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
@@ -157,7 +157,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Object Form Groups
+### Object Form Groups
 Objects that aren't empty and don't have a `value` or `validators` field are treated as form groups. Form groups can be used to see the validation status of specific fields.
 
 <i-code-preview title="Form Schema Form Groups" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
@@ -215,7 +215,7 @@ export default {
 </template>
 </i-code-preview>
 
-## Array Form Groups
+### Array Form Groups
 Form groups can be an `Array` of fields, allowing you to loop over them using `v-for`.
 
 <i-code-preview title="Form Schema Array Form Groups" link="https://github.com/inkline/inkline/blob/master/src/factories/FormBuilder.js">
@@ -269,7 +269,7 @@ export default {
 
 
 
-## Complete Form Example
+### Complete Form Example
 
 The `<i-form>` component and all input components have a `schema` property that can be used to provide form schema validation. The schema object provides form validation status fields such as `valid`, `invalid`, `touched`, `untouched`, `dirty`, `pristine` and `errors`.
 
@@ -406,10 +406,10 @@ export default {
 </template>
 </i-code-preview>
 
-## Dynamically Added Fields and Groups
+### Dynamically Added Fields and Groups
 The form validation framework wouldn't be complete without dynamically added fields and groups. Inkline provides a simple API for adding and removing fields.
 
-### Array Group Operations
+#### Array Group Operations
 Inkline provides you with custom implementations for Array group operations using `$push` and`$splice`. These two methods will take care of registering events and making sure your form schema is always up to date.
 
 <code>this.form.group.$push(item, options)</code><br/>
@@ -486,7 +486,7 @@ export default {
 </template>
 </i-code-preview>
 
-### Object Group Operations
+#### Object Group Operations
 Just like Arrays, Objects can be manipulated and kept up to date using a custom API. You can use the `$set` method to update an object field. To enable reactivity, we'll need to also pass in the current Vue instance inside the options to take advantage of it's internal methods.
 
 <code>this.form.group.$set(name, item, options)</code>

@@ -1,7 +1,7 @@
 # Images
 Documentation and examples for images, using lightweight styles and modifier classes. { .lead }
 
-## Responsive Images
+### Responsive Images
 Images in Inkline are made responsive using the `.-responsive` modifier. To achieve that, we apply `max-width: 100%;` 
 and `height: auto;` to the image so that it scales with the parent element, without surpassing the image's native width.
 
@@ -23,7 +23,7 @@ In Internet Explorer 10, SVG images with `.img.-responsive` are disproportionate
 To fix this, we add `width: 100% \9;` where necessary. This fix improperly sizes other image formats, so we don’t 
 apply it automatically unless the extension ends with `.svg`.
 
-## Fluid Images
+### Fluid Images
 Images in Inkline can be made fluid using the `.-fluid` modifier. To achieve that, we apply `width: 100%;` 
 and `height: auto;` to the image so that it scales with the parent element.
 
@@ -40,7 +40,7 @@ and `height: auto;` to the image so that it scales with the parent element.
 </template>
 </i-code-preview>
 
-## Image Thumbnails
+### Image Thumbnails
 You can use the `.-thumbnail` modifier to give an image a rounded 1px border appearance.
 
 <i-code-preview title="Image Thumbnails" link="https://github.com/inkline/inkline/tree/master/src/css/core/images">
@@ -56,7 +56,7 @@ You can use the `.-thumbnail` modifier to give an image a rounded 1px border app
 </template>
 </i-code-preview>
 
-## Polaroid
+### Polaroid
 Besides thumbnails, you can opt for a retro look having a larger bottom border using the `.-polaroid` modifier.
 
 <i-code-preview title="Polaroid Image" link="https://github.com/inkline/inkline/tree/master/src/css/core/images">
@@ -72,7 +72,7 @@ Besides thumbnails, you can opt for a retro look having a larger bottom border u
 </template>
 </i-code-preview>
 
-## Image Alignment
+### Image Alignment
 Align images with the helper classes or text alignment classes. Block-level images can be centered using the `._margin-x-auto` 
 margin utility class.
 
@@ -123,7 +123,7 @@ margin utility class.
 </template>
 </i-code-preview>
 
-## Picture
+### Picture
 If you are using the `<picture>` element to specify multiple `<source>` elements for a specific `<img>`, make sure to add 
 the `.img` classes to the `<img>` and not to the `<picture>` tag.
 
