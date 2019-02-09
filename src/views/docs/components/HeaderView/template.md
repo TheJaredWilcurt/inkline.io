@@ -151,7 +151,7 @@ The goal of cover background images on a website is to cover the entire browser 
 
 ### API
 
-<i-api-preview title="Header API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Header">
+<i-api-preview title="Header API" expanded markup="i-header" link="https://github.com/inkline/inkline/tree/master/src/components/Header">
     <template slot="props">
         <table class="table -bordered">
             <thead>

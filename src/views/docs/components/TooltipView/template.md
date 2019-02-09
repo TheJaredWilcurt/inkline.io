@@ -244,7 +244,7 @@ Inkline includes two predefined tooltip styles, each serving its own semantic pu
 
 ### API
 
-<i-api-preview title="Tooltip API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Tooltip">
+<i-api-preview title="Tooltip API" markup="i-tooltip" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Tooltip">
     <template slot="props">
         <table class="table -bordered">
             <thead>

@@ -212,7 +212,7 @@ Inkline includes two predefined popover styles, each serving its own semantic pu
 
 ### API
 
-<i-api-preview title="Popover API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Popover">
+<i-api-preview title="Popover API" markup="i-popover" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Popover">
     <template slot="props">
         <table class="table -bordered">
             <thead>

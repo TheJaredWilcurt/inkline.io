@@ -1,6 +1,9 @@
 <div class="code-preview" :class="{ '-expanded': expanded }">
     <div class="header">
-        <span class="title">{{title}}</span>
+        <span class="title">
+            {{title}}
+            <code v-if="markup">&lt;{{markup}}&gt;</code>
+        </span>
         <div class="tabs">
             <i-button-group size="sm">
                 <i-button

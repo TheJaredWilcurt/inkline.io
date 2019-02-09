@@ -425,7 +425,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
 
 ### API
 
-<i-api-preview title="Dropdown API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Dropdown">
+<i-api-preview title="Dropdown API" expanded markup="i-dropdown" link="https://github.com/inkline/inkline/tree/master/src/components/Dropdown">
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -530,7 +530,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
     </template>
 </i-api-preview>
 
-<i-api-preview title="Dropdown Menu API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/DropdownMenu">
+<i-api-preview title="Dropdown Menu API" markup="i-dropdown-menu" expanded link="https://github.com/inkline/inkline/tree/master/src/components/DropdownMenu">
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -588,7 +588,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
     </template>
 </i-api-preview>
 
-<i-api-preview title="Dropdown Item API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/DropdownItem">
+<i-api-preview title="Dropdown Item API" markup="i-dropdown-item" expanded link="https://github.com/inkline/inkline/tree/master/src/components/DropdownItem">
     <template slot="props">
         <table class="table -bordered">
             <thead>

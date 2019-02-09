@@ -142,7 +142,7 @@ You can control the active state of your `<i-nav-item>` using the `active` prope
 
 ### API
 
-<i-api-preview title="Nav API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Nav">
+<i-api-preview title="Nav API" expanded markup="i-nav" link="https://github.com/inkline/inkline/tree/master/src/components/Nav">
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -190,7 +190,7 @@ You can control the active state of your `<i-nav-item>` using the `active` prope
     </template>
 </i-api-preview>
 
-<i-api-preview title="Nav Item API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/NavItem">
+<i-api-preview title="Nav Item API" markup="i-nav-item" expanded link="https://github.com/inkline/inkline/tree/master/src/components/NavItem">
     <template slot="props">
         <table class="table -bordered">
             <thead>

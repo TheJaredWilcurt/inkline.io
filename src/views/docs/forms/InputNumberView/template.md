@@ -138,7 +138,7 @@ Value: <code>{{stepInputValue}}</code>
 
 ### Precision
 
-You can set the decimal precision using the `precision` property, allowing you to enter floating point numbers into the input.
+You can set the number precision using the `precision` property, allowing you to enter floating point numbers into the input.
 
 
 <i-code-preview title="Number Input Precision" link="https://github.com/inkline/inkline/tree/master/src/components/InputNumber">
@@ -331,3 +331,169 @@ export default {
 </template>
 </i-code-preview>
 
+
+### API
+
+<i-api-preview title="Input Number API" markup="i-input-number" expanded>
+    <template slot="props">
+        <table class="table -bordered">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Accepted</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>disabled</td>
+                    <td>Sets the state of the number input form component as disabled.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>placeholder</td>
+                    <td>Sets the placeholder of the number input form component.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>Sets the state of the number input form component as readonly.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>schema</td>
+                    <td>Provides a schema binding to the number input form component. See the <router-link :to="{ name: 'docs.forms.form-validation' }">Form Validation</router-link> documentation.</td>
+                    <td><code>Object</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Sets the size of the number input form component.</td>
+                    <td><code>String</code></td>
+                    <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
+                    <td><code>md</code></td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>Sets the value of the number input form component. To be provided using the <code>v-model</code> directive.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td>Sets the minimum value of the number input form component.</td>
+                    <td><code>Number</code></td>
+                    <td></td>
+                    <td>-Infinity</td>
+                </tr>
+                <tr>
+                    <td>max</td>
+                    <td>Sets the maximum value of the number input form component.</td>
+                    <td><code>Number</code></td>
+                    <td></td>
+                    <td>+Infinity</td>
+                </tr>
+                <tr>
+                    <td>precision</td>
+                    <td>Sets the number precision of the number input form component value.</td>
+                    <td><code>Number</code></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>step</td>
+                    <td>Sets increase and decrease step of the number input form component value.</td>
+                    <td><code>Number</code></td>
+                    <td></td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="slots">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>prepend</td>
+                    <td>Slot for number input prepend content. Prepended content appears before the input inside a button-like container.</td>
+                </tr>
+                <tr>
+                    <td>append</td>
+                    <td>Slot for number input append content. Appended content appears after the input inside a button-like container.</td>
+                </tr>
+                <tr>
+                    <td>prefix</td>
+                    <td>Slot for number input prefix content. The prefix content appears inside the input field, on the left side.</td>
+                </tr>
+                <tr>
+                    <td>suffix</td>
+                    <td>Slot for number input suffix content. The suffix content appears inside the input field, on the right side.</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="events">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Prototype</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>click</td>
+                    <td>Emitted when number input form component is clicked.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>focus</td>
+                    <td>Emitted when number input form component is focused.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>blur</td>
+                    <td>Emitted when number input form component is blurred.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>change</td>
+                    <td>Emitted when number input form component value changes.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Emitted when number input form component value changes.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>mouseenter</td>
+                    <td>Emitted when number input form component is hovered.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>mouseleave</td>
+                    <td>Emitted when number input form component is not hovered anymore.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</i-api-preview>

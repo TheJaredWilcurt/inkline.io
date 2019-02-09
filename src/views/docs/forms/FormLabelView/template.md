@@ -149,3 +149,54 @@ export default {
 
 </template>
 </i-code-preview>
+
+
+### API
+
+<i-api-preview title="Form Label API" markup="i-form-label" expanded>
+    <template slot="props">
+        <table class="table -bordered">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Accepted</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>placement</td>
+                    <td>Sets the placement of the form label component.</td>
+                    <td><code>String</code></td>
+                    <td><code>left</code>, <code>default</code>, <code>right</code></td>
+                    <td><code>default</code></td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Sets the size of the form label component.</td>
+                    <td><code>String</code></td>
+                    <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
+                    <td><code>md</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="slots">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>default</td>
+                    <td>Slot for form label default content.</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</i-api-preview>

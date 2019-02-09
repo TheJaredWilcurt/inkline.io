@@ -106,7 +106,7 @@ export default {
 
 ### API
 
-<i-api-preview title="Pagination API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Pagination">
+<i-api-preview title="Pagination API" markup="i-pagination" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Pagination">
     <template slot="props">
         <table class="table -bordered">
             <thead>

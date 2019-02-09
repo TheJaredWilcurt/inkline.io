@@ -265,7 +265,7 @@ export default {
 
 ### API
 
-<i-api-preview title="Modal API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Modal">
+<i-api-preview title="Modal API" markup="i-modal" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Modal">
     <template slot="props">
         <table class="table -bordered">
             <thead>

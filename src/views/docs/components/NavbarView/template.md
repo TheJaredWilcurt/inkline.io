@@ -325,7 +325,7 @@ You can position the `<i-nav>` component to the `start`, `end`, or `center` of t
 
 ### API
 
-<i-api-preview title="Navbar API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Navbar">
+<i-api-preview title="Navbar API" markup="i-navbar" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Navbar">
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -380,7 +380,7 @@ You can position the `<i-nav>` component to the `start`, `end`, or `center` of t
     </template>
 </i-api-preview>
 
-<i-api-preview title="Navbar Brand API" default-active="slots" expanded link="https://github.com/inkline/inkline/tree/master/src/components/NavbarBrand">
+<i-api-preview title="Navbar Brand API" markup="i-navbar-brand" default-active="slots" expanded link="https://github.com/inkline/inkline/tree/master/src/components/NavbarBrand">
     <template slot="slots">
         <table class="table -bordered _margin-bottom-0">
             <thead>
@@ -399,7 +399,7 @@ You can position the `<i-nav>` component to the `start`, `end`, or `center` of t
     </template>
 </i-api-preview>
 
-<i-api-preview title="Navbar Items API" default-active="slots" expanded link="https://github.com/inkline/inkline/tree/master/src/components/NavbarItems">
+<i-api-preview title="Navbar Items API" markup="i-navbar-items" default-active="slots" expanded link="https://github.com/inkline/inkline/tree/master/src/components/NavbarItems">
     <template slot="slots">
         <table class="table -bordered _margin-bottom-0">
             <thead>

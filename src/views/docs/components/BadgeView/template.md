@@ -128,7 +128,7 @@ Badges always match the size of the immediate parent element by using relative f
 
 ### API
 
-<i-api-preview title="Badge API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Badge">
+<i-api-preview title="Badge API" expanded markup="i-badge" link="https://github.com/inkline/inkline/tree/master/src/components/Badge">
     <template slot="props">
         <table class="table -bordered">
             <thead>

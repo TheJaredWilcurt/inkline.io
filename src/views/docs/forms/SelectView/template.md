@@ -235,3 +235,201 @@ export default {
 
 </template>
 </i-code-preview>
+
+
+### API
+
+<i-api-preview title="Select API" markup="i-select" expanded>
+    <template slot="props">
+        <table class="table -bordered">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Accepted</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>disabled</td>
+                    <td>Sets the state of the select form component as disabled.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>placeholder</td>
+                    <td>Sets the placeholder of the select form component.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>Sets the state of the select form component as readonly.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>schema</td>
+                    <td>Provides a schema binding to the select form component. See the <router-link :to="{ name: 'docs.forms.form-validation' }">Form Validation</router-link> documentation.</td>
+                    <td><code>Object</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Sets the size of the select form component.</td>
+                    <td><code>String</code></td>
+                    <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
+                    <td><code>md</code></td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>Sets the value of the select form component. To be provided using the <code>v-model</code> directive.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="slots">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>default</td>
+                    <td>Slot for select default content. To be populated with select option components.</td>
+                </tr>
+                <tr>
+                    <td>prepend</td>
+                    <td>Slot for select prepend content. Prepended content appears before the select inside a button-like container.</td>
+                </tr>
+                <tr>
+                    <td>append</td>
+                    <td>Slot for select append content. Appended content appears after the select inside a button-like container.</td>
+                </tr>
+                <tr>
+                    <td>prefix</td>
+                    <td>Slot for select prefix content. The prefix content appears inside the select field, on the left side.</td>
+                </tr>
+                <tr>
+                    <td>suffix</td>
+                    <td>Slot for select suffix content. The suffix content appears inside the select field, on the right side.</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="events">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Prototype</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>click</td>
+                    <td>Emitted when select form component is clicked.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>focus</td>
+                    <td>Emitted when select form component is focused.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>blur</td>
+                    <td>Emitted when select form component is blurred.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>change</td>
+                    <td>Emitted when select form component value changes.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Emitted when select form component value changes.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>mouseenter</td>
+                    <td>Emitted when select form component is hovered.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>mouseleave</td>
+                    <td>Emitted when select form component is not hovered anymore.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</i-api-preview>
+
+<i-api-preview title="Select Option API" markup="i-select-option" expanded>
+    <template slot="props">
+        <table class="table -bordered">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Accepted</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>disabled</td>
+                    <td>Sets the state of the select form component as disabled.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>Sets the value of the select form component option.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>label</td>
+                    <td>Sets the text label of the select form component option.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="slots">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>default</td>
+                    <td>Slot for select default content. To be populated with select option components.</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</i-api-preview>

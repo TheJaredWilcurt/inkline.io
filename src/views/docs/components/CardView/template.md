@@ -311,7 +311,7 @@ Inkline includes several predefined card styles that you can use within your app
 
 ### API
 
-<i-api-preview title="Card API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Card">
+<i-api-preview markup="i-card" title="Card API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Card">
     <template slot="props">
         <table class="table -bordered">
             <thead>

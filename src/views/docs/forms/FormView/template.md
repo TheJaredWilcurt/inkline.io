@@ -8,7 +8,7 @@ The `<i-form>` component is a wrapper that provides proper handling of form vali
 
 <i-code-preview title="Form" link="https://github.com/inkline/inkline/tree/master/src/components/Form">
 
-<i-form>
+<i-form v-on:submit="onSubmit">
     <i-form-group>
         <i-input v-model="input" name="input" placeholder="Type something.." />
     </i-form-group>
@@ -492,3 +492,98 @@ export default {
 
 </template>
 </i-code-preview>
+
+
+### API
+
+<i-api-preview title="Form API" markup="i-form" expanded>
+    <template slot="props">
+        <table class="table -bordered">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Accepted</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>disabled</td>
+                    <td>Sets the state of the form component as disabled.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>Sets the state of the form component as readonly.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>schema</td>
+                    <td>Provides a schema binding to the form component. See the <router-link :to="{ name: 'docs.forms.form-validation' }">Form Validation</router-link> documentation.</td>
+                    <td><code>Object</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Sets the size of the form component.</td>
+                    <td><code>String</code></td>
+                    <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
+                    <td><code>md</code></td>
+                </tr>
+                <tr>
+                    <td>inline</td>
+                    <td>Sets the form styling to be inline.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="slots">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>default</td>
+                    <td>Slot for form default content.</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="events">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Prototype</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>submit</td>
+                    <td>Emitted when form is submitted.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>validate</td>
+                    <td>Emitted when form is validated.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</i-api-preview>

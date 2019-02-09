@@ -346,7 +346,7 @@ The `<i-button>` component is well integrated with the [Vue Router](https://rout
 
 ### API
 
-<i-api-preview title="Button API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Button">
+<i-api-preview title="Button API" expanded markup="i-button" link="https://github.com/inkline/inkline/tree/master/src/components/Button">
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -466,4 +466,22 @@ The `<i-button>` component is well integrated with the [Vue Router](https://rout
             </tbody>
         </table>
     </template>
+    <template slot="events">
+            <table class="table -bordered _margin-bottom-0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Prototype</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>click</td>
+                        <td>Emitted when button component is clicked.</td>
+                        <td><code>(event: Event) => {}</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
 </i-api-preview>

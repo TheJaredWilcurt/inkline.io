@@ -245,3 +245,148 @@ export default {
 </i-code-preview>
 
 
+
+### API
+
+<i-api-preview title="Input API" markup="i-input" expanded>
+    <template slot="props">
+        <table class="table -bordered">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Accepted</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>clearable</td>
+                    <td>Sets the input as clearable. Clearable inputs have a clear icon when value a is provided.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>disabled</td>
+                    <td>Sets the state of the input form component as disabled.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>placeholder</td>
+                    <td>Sets the placeholder of the input form component.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>Sets the state of the input form component as readonly.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>schema</td>
+                    <td>Provides a schema binding to the input form component. See the <router-link :to="{ name: 'docs.forms.form-validation' }">Form Validation</router-link> documentation.</td>
+                    <td><code>Object</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Sets the size of the input form component.</td>
+                    <td><code>String</code></td>
+                    <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
+                    <td><code>md</code></td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>Sets the value of the input form component. To be provided using the <code>v-model</code> directive.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="slots">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>prepend</td>
+                    <td>Slot for input prepend content. Prepended content appears before the input inside a button-like container.</td>
+                </tr>
+                <tr>
+                    <td>append</td>
+                    <td>Slot for input append content. Appended content appears after the input inside a button-like container.</td>
+                </tr>
+                <tr>
+                    <td>prefix</td>
+                    <td>Slot for input prefix content. The prefix content appears inside the input field, on the left side.</td>
+                </tr>
+                <tr>
+                    <td>suffix</td>
+                    <td>Slot for input suffix content. The suffix content appears inside the input field, on the right side.</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="events">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Prototype</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>click</td>
+                    <td>Emitted when input form component is clicked.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>focus</td>
+                    <td>Emitted when input form component is focused.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>blur</td>
+                    <td>Emitted when input form component is blurred.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>change</td>
+                    <td>Emitted when input form component value changes.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Emitted when input form component value changes.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>mouseenter</td>
+                    <td>Emitted when input form component is hovered.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>mouseleave</td>
+                    <td>Emitted when input form component is not hovered anymore.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</i-api-preview>

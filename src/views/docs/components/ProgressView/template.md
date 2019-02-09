@@ -254,7 +254,7 @@ You can add multiple `<i-progress-bar>` inside the `<i-progress>` component to s
 
 ### API
 
-<i-api-preview title="Progress API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Progress">
+<i-api-preview title="Progress API" markup="i-progress" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Progress">
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -302,7 +302,7 @@ You can add multiple `<i-progress-bar>` inside the `<i-progress>` component to s
     </template>
 </i-api-preview>
 
-<i-api-preview title="Progress Bar API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/ProgressBar">
+<i-api-preview title="Progress Bar API" markup="i-progress-bar" expanded link="https://github.com/inkline/inkline/tree/master/src/components/ProgressBar">
     <template slot="props">
         <table class="table -bordered">
             <thead>

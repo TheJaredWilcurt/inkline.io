@@ -213,7 +213,7 @@ The `<i-list-group-item>` accepts any type of content, allowing you to create la
 
 ### API
 
-<i-api-preview title="List Group API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/ListGroup">
+<i-api-preview title="List Group API" expanded markup="i-list-group" link="https://github.com/inkline/inkline/tree/master/src/components/ListGroup">
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -261,7 +261,7 @@ The `<i-list-group-item>` accepts any type of content, allowing you to create la
     </template>
 </i-api-preview>
 
-<i-api-preview title="List Group Item API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/ListGroupItem">
+<i-api-preview title="List Group Item API" markup="i-list-group-item" expanded link="https://github.com/inkline/inkline/tree/master/src/components/ListGroupItem">
     <template slot="props">
         <table class="table -bordered">
             <thead>

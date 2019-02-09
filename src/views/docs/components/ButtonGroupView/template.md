@@ -196,7 +196,7 @@ The default size is set to `md`.
 
 ### API
 
-<i-api-preview title="Button Group API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/ButtonGroup">
+<i-api-preview title="Button Group API" expanded markup="i-button-group" link="https://github.com/inkline/inkline/tree/master/src/components/ButtonGroup">
     <template slot="props">
         <table class="table -bordered">
             <thead>

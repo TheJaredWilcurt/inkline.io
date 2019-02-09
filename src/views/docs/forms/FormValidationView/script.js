@@ -18,7 +18,12 @@ export default {
     data () {
         return {
             basicForm: this.$form({
-                input: {}
+                input: {
+                    value: 'John Doe',
+                    validators: [
+                        { rule: 'required' }
+                    ]
+                }
             }),
             defaultValueForm: this.$form({
                 input: {
@@ -29,6 +34,106 @@ export default {
                 input: {
                     validators: [
                         { rule: 'required', message: 'Input is required' }
+                    ]
+                }
+            }),
+            alphaValidatorForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'alpha' }
+                    ]
+                },
+                inputSpaces: {
+                    validators: [
+                        { rule: 'alpha', allowSpaces: true }
+                    ]
+                },
+                inputDashes: {
+                    validators: [
+                        { rule: 'alpha', allowDashes: true }
+                    ]
+                }
+            }),
+            alphanumericValidatorForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'alphanumeric' }
+                    ]
+                },
+                inputSpaces: {
+                    validators: [
+                        { rule: 'alphanumeric', allowSpaces: true }
+                    ]
+                },
+                inputDashes: {
+                    validators: [
+                        { rule: 'alphanumeric', allowDashes: true }
+                    ]
+                }
+            }),
+            emailValidatorForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'email' }
+                    ]
+                }
+            }),
+            maxValidatorForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'max' }
+                    ]
+                }
+            }),
+            maxLengthValidatorForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'maxLength' }
+                    ]
+                }
+            }),
+            minValidatorForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'min' }
+                    ]
+                }
+            }),
+            minLengthValidatorForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'minLength' }
+                    ]
+                }
+            }),
+            numberValidatorForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'number' }
+                    ]
+                },
+                inputNegative: {
+                    validators: [
+                        { rule: 'number', allowNegative: true }
+                    ]
+                },
+                inputNegativeDecimal: {
+                    validators: [
+                        { rule: 'number', allowNegative: true, allowDecimal: true }
+                    ]
+                }
+            }),
+            requiredValidatorForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'required' }
+                    ]
+                }
+            }),
+            sameAsValidatorForm: this.$form({
+                input: {
+                    validators: [
+                        { rule: 'sameAs' }
                     ]
                 }
             }),
@@ -52,7 +157,7 @@ export default {
                 },
                 textarea: {
                     validators: [
-                        { rule: 'required', message: 'Textarea is required.', enabled: false }
+                        { rule: 'required', message: 'Textarea is required.' }
                     ]
                 },
                 group: {
@@ -65,19 +170,19 @@ export default {
                     checked: {
                         value: true,
                         validators: [
-                            { rule: 'required', message: 'Checkbox is required.' }
+                            { rule: 'required', message: 'Checkbox is required.', invalidateFalse: true }
                         ]
                     },
                     checkbox: {
                         value: ['Football'],
                         validators: [
-                            { rule: 'required', message: 'Checkbox is required.' }
+                            { rule: 'minLength', value: 1, message: 'At least one checkbox is required.' }
                         ]
                     },
                     radio: {
-                        value: 'Accept',
+                        value: true,
                         validators: [
-                            { rule: 'required', message: 'Radio is required.' }
+                            { rule: 'required', message: 'Radio is required.', invalidateFalse: true }
                         ]
                     }
                 }

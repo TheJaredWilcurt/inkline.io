@@ -311,3 +311,212 @@ export default {
 </template>
 </i-code-preview>
 
+
+### API
+
+<i-api-preview title="Radio API" markup="i-radio" expanded>
+    <template slot="props">
+        <table class="table -bordered">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Accepted</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>custom</td>
+                    <td>Sets the styling of the radio form component to custom or native.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>true</code></td>
+                </tr>
+                <tr>
+                    <td>disabled</td>
+                    <td>Sets the state of the radio form component as disabled.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>indeterminate</td>
+                    <td>Sets the state of the radio form component as indeterminate.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>Sets the state of the radio form component as readonly.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>schema</td>
+                    <td>Provides a schema binding to the radio form component. See the <router-link :to="{ name: 'docs.forms.form-validation' }">Form Validation</router-link> documentation.</td>
+                    <td><code>Object</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Sets the size of the radio form component.</td>
+                    <td><code>String</code></td>
+                    <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
+                    <td><code>md</code></td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>Sets the value of the radio form component.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="slots">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>default</td>
+                    <td>Slot for radio form component label.</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="events">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Prototype</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>click</td>
+                    <td>Emitted when radio form component is clicked.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>focus</td>
+                    <td>Emitted when radio form component is focused.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>blur</td>
+                    <td>Emitted when radio form component is blurred.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Emitted when radio form component value changes.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</i-api-preview>
+
+<i-api-preview title="Radio Group API" markup="i-radio-group" expanded>
+    <template slot="props">
+        <table class="table -bordered">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Accepted</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>disabled</td>
+                    <td>Sets the state of the radio form group component as disabled.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>Sets the state of the radio form group component as readonly.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Sets the size of the radio form group component.</td>
+                    <td><code>String</code></td>
+                    <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
+                    <td><code>md</code></td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>Sets the value of the radio form group component. To be provided using the <code>v-model</code> directive.</td>
+                    <td><code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="slots">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>default</td>
+                    <td>Slot for radio form group component default content.</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="events">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Prototype</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>focus</td>
+                    <td>Emitted when a child radio form component is focused.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>blur</td>
+                    <td>Emitted when a child radio form component is blurred.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Emitted when radio form group component value changes.</td>
+                    <td><code>(value: String) => {}</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</i-api-preview>
+

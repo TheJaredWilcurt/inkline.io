@@ -121,7 +121,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
 
 ### API
 
-<i-api-preview title="Breadcrumb API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Breadcrumb">
+<i-api-preview title="Breadcrumb API" expanded markup="i-breadcrumb" link="https://github.com/inkline/inkline/tree/master/src/components/Breadcrumb">
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -162,7 +162,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
     </template>
 </i-api-preview>
 
-<i-api-preview title="Breadcrumb Item API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/BreadcrumbItem">
+<i-api-preview title="Breadcrumb Item API" expanded markup="i-breadcrumb-item" link="https://github.com/inkline/inkline/tree/master/src/components/BreadcrumbItem">
     <template slot="props">
         <table class="table -bordered">
             <thead>

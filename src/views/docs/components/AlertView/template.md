@@ -207,7 +207,7 @@ export default {
 
 ### API
 
-<i-api-preview title="Alert API" expanded>
+<i-api-preview title="Alert API" markup="i-alert" expanded>
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -236,7 +236,7 @@ export default {
                 </tr>
                 <tr>
                     <td>show</td>
-                    <td>Sets the dismiss v-model for the alert component. Alert is only visible if show is <code>true</code>.</td>
+                    <td>Sets the dismiss <code>v-model</code> for the alert component. Alert is only visible if show is <code>true</code>.</td>
                     <td><code>Boolean</code></td>
                     <td><code>true</code>, <code>false</code></td>
                     <td><code>true</code></td>

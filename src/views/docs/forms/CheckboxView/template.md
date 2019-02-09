@@ -228,28 +228,21 @@ export default {
 </template>
 </i-code-preview>
 
-By setting the `custom` property to `false`, the checkboxes use the browser's default design. 
+### Indeterminate
+You can set the state of a `<i-checkbox>` to be indeterminate by setting the `indeterminate` property to `true`. 
 
-<i-code-preview title="Native Checkbox" link="https://github.com/inkline/inkline/tree/master/src/components/Checkbox">
+<i-code-preview title="Indeterminate Checkbox" link="https://github.com/inkline/inkline/tree/master/src/components/Checkbox">
 
-<i-checkbox-group v-model="checkedCustomFalse">
-    <i-checkbox :custom="false" value="Football">Football</i-checkbox>
-    <i-checkbox :custom="false" value="Volleyball">Tennis</i-checkbox>
-    <i-checkbox :custom="false" value="Basketball">Basketball</i-checkbox>
-</i-checkbox-group>
+<i-checkbox :indeterminate="true">Football</i-checkbox>
 
 <template slot="html">
 
 ~~~html
-<i-checkbox-group v-model="checked">
-    <i-checkbox :custom="false" value="Football">Football</i-checkbox>
-    <i-checkbox :custom="false" value="Volleyball">Tennis</i-checkbox>
-    <i-checkbox :custom="false" value="Basketball">Basketball</i-checkbox>
-</i-checkbox-group>
+<i-checkbox :indeterminate="true">Football</i-checkbox>
 ~~~
 
 </template>
-<template slot="js">
+<template slot="js"> 
 
 ~~~js
 export default {
@@ -263,6 +256,7 @@ export default {
 
 </template>
 </i-code-preview>
+
 
 ### Checkbox Buttons
 
@@ -304,3 +298,210 @@ export default {
 </template>
 </i-code-preview>
 
+### API
+
+<i-api-preview title="Checkbox API" markup="i-checkbox" expanded>
+    <template slot="props">
+        <table class="table -bordered">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Accepted</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>custom</td>
+                    <td>Sets the styling of the checkbox form component to custom or native.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>true</code></td>
+                </tr>
+                <tr>
+                    <td>disabled</td>
+                    <td>Sets the state of the checkbox form component as disabled.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>indeterminate</td>
+                    <td>Sets the state of the checkbox form component as indeterminate.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>Sets the state of the checkbox form component as readonly.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>schema</td>
+                    <td>Provides a schema binding to the checkbox form component. See the <router-link :to="{ name: 'docs.forms.form-validation' }">Form Validation</router-link> documentation.</td>
+                    <td><code>Object</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Sets the size of the checkbox form component.</td>
+                    <td><code>String</code></td>
+                    <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
+                    <td><code>md</code></td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>Sets the value of the checkbox form component. Can be also provided using a <code>v-model</code> directive when the checkbox isn't grouped.</td>
+                    <td><code>Boolean</code>, <code>String</code></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="slots">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>default</td>
+                    <td>Slot for checkbox form component label.</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="events">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Prototype</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>click</td>
+                    <td>Emitted when checkbox form component is clicked.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>focus</td>
+                    <td>Emitted when checkbox form component is focused.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>blur</td>
+                    <td>Emitted when checkbox form component is blurred.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Emitted when checkbox form component value changes.</td>
+                    <td><code>(value: Boolean | String) => {}</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</i-api-preview>
+
+<i-api-preview title="Checkbox Group API" markup="i-checkbox-group" expanded>
+    <template slot="props">
+        <table class="table -bordered">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Accepted</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>disabled</td>
+                    <td>Sets the state of the checkbox form group component as disabled.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>Sets the state of the checkbox form group component as readonly.</td>
+                    <td><code>Boolean</code></td>
+                    <td><code>true</code>, <code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Sets the size of the checkbox form group component.</td>
+                    <td><code>String</code></td>
+                    <td><code>sm</code>, <code>md</code>, <code>lg</code></td>
+                    <td><code>md</code></td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>Sets the value of the checkbox form group component. To be provided using the <code>v-model</code> directive.</td>
+                    <td><code>Array&lt;String&gt;</code></td>
+                    <td></td>
+                    <td><code>[]</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="slots">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>default</td>
+                    <td>Slot for checkbox form group component default content.</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <template slot="events">
+        <table class="table -bordered _margin-bottom-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Prototype</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>focus</td>
+                    <td>Emitted when a child checkbox form component is focused.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>blur</td>
+                    <td>Emitted when a child checkbox form component is blurred.</td>
+                    <td><code>(event: Event) => {}</code></td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Emitted when checkbox form group component value changes.</td>
+                    <td><code>(value: Boolean | String) => {}</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</i-api-preview>

@@ -238,7 +238,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
 
 ### API
 
-<i-api-preview title="Collapsible API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Collapsible">
+<i-api-preview title="Collapsible API" markup="i-collapsible" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Collapsible">
     <template slot="props">
         <table class="table -bordered">
             <thead>
@@ -311,7 +311,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
     </template>
 </i-api-preview>
 
-<i-api-preview title="Collapsible Item API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Collapsible">
+<i-api-preview title="Collapsible Item API" markup="i-collapsible-item" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Collapsible">
     <template slot="props">
         <table class="table -bordered">
             <thead>

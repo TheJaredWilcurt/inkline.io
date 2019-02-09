@@ -34,6 +34,10 @@ export default {
         expanded: {
             type: Boolean,
             default: false
+        },
+        markup: {
+            type: String,
+            default: ''
         }
     },
     methods: {
