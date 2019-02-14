@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{384:function(e,n,o){"use strict";o.r(n);var t=o(50),l=o(9);n.default={name:"CollapsibleView",layout:"documentation",extends:t.a,data:function(){return{active:["panel-1"]}},components:{ICollapsible:l.l,ICollapsibleItem:l.m}}}}]);

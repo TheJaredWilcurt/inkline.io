@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[47],{400:function(o,t,e){"use strict";e.r(t);var n=e(50),d=e(9);t.default={name:"LayoutView",layout:"documentation",extends:n.a,components:{ILayout:d.z,ILayoutHeader:d.D,ILayoutContent:d.B,ILayoutAside:d.A,ILayoutFooter:d.C}}}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{387:function(o,t,n){"use strict";n.r(t);var e=n(50),w=n(9);t.default={name:"ListGroupView",layout:"documentation",extends:e.a,components:{IListGroup:w.E,IListGroupItem:w.F}}}}]);
