@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{392:function(e,n,t){"use strict";t.r(n);var o=t(152),d=t(5);n.default={name:"BadgeView",layout:"documentation",extends:o.a,head:{title:"Badge"},components:{IBadge:d.b}}}}]);

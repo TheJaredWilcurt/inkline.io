@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{389:function(e,t,n){"use strict";n.r(t);var o=n(152),r=n(5);t.default={name:"AlertView",layout:"documentation",extends:o.a,head:{title:"Alert"},components:{IAlert:r.a},data:function(){return{visible:!0}}}}}]);

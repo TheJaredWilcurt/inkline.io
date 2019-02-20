@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[51],{415:function(e,n,o){"use strict";o.r(n);var t=o(152);n.default={name:"TypographyView",layout:"documentation",extends:t.a,head:{title:"Typography"}}}}]);
