@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{382:function(t,n,e){"use strict";e.r(n);var o=e(150),w=e(5);n.default={name:"ButtonView",layout:"documentation",extends:o.a,head:{title:"Button"},components:{IButton:w.e}}}}]);
