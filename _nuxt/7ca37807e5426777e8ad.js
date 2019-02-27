@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{397:function(e,n,t){"use strict";t.r(n);var o=t(153),d=t(5);n.default={name:"CardView",layout:"documentation",extends:o.a,head:{title:"Card"},components:{ICard:d.g}}}}]);
