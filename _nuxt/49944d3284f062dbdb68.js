@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[37],{409:function(o,t,e){"use strict";e.r(t);var n=e(153),w=e(5);t.default={name:"TooltipView",layout:"documentation",extends:n.a,head:{title:"Tooltip"},components:{IButton:w.e,ITooltip:w.Y}}}}]);
