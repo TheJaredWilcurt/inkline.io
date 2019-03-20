@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[31],{766:function(e,t,n){"use strict";n.r(t);var r=n(260),c=n(5);t.default={name:"NavView",layout:"documentation",extends:r.a,head:{title:"Pagination"},components:{IButton:c.e,INav:c.I,INavItem:c.J},data:function(){return{currentPage:1,currentPageSm:1,currentPageMd:1,currentPageLg:1,currentPageLight:1,currentPageDark:1}}}}}]);
