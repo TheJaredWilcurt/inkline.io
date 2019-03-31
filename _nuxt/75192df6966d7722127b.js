@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[73],{790:function(n,t,e){"use strict";e.r(t);var o=e(261);t.default={name:"InstallationView",layout:"documentation",extends:o.a,head:{title:"Installation"}}}}]);
