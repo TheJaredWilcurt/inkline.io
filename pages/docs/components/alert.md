@@ -156,15 +156,15 @@ The following example makes use of the bundled Inkline icons, but you can use an
 <i-code-preview title="Alert Icon" link="https://github.com/inkline/inkline/tree/master/src/components/Alert">
 
 <i-alert variant="info" class="_margin-bottom-1">
-    <template slot="icon"><i class="inkline-icon -info"></i></template>
+    <template slot="icon"><i class="icon -info"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 <i-alert variant="warning" class="_margin-bottom-1">
-    <template slot="icon"><i class="inkline-icon -warning"></i></template>
+    <template slot="icon"><i class="icon -warning"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 <i-alert variant="danger">
-    <template slot="icon"><i class="inkline-icon -danger"></i></template>
+    <template slot="icon"><i class="icon -danger"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 
@@ -172,19 +172,19 @@ The following example makes use of the bundled Inkline icons, but you can use an
 
 ~~~html
 <i-alert variant="info">
-    <template slot="icon"><i class="inkline-icon -info"></i></template>
+    <template slot="icon"><i class="icon -info"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 ~~~
 ~~~html
 <i-alert variant="warning">
-    <template slot="icon"><i class="inkline-icon -warning"></i></template>
+    <template slot="icon"><i class="icon -warning"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 ~~~
 ~~~html
 <i-alert variant="danger">
-    <template slot="icon"><i class="inkline-icon -danger"></i></template>
+    <template slot="icon"><i class="icon -danger"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 ~~~
