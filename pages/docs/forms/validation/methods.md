@@ -18,8 +18,8 @@ Just like Arrays, Objects can be manipulated and kept up to date using a custom 
         <i-input :schema="objectForm.address" v-model="objectForm.address.value" placeholder="Enter your address.." />
     </i-form-group>
     <i-form-group>
-        <i-button @click="setEmail" type="button">Set Email</i-button>&nbsp;
-        <i-button @click="setAddress" type="button">Set Address</i-button>&nbsp;
+        <i-button @click="setEmail" type="button" class="_margin-bottom-0">Set Email</i-button>&nbsp;
+        <i-button @click="setAddress" type="button" class="_margin-bottom-0">Set Address</i-button>&nbsp;
     </i-form-group>
 </i-form>
 <template slot="html">
@@ -97,9 +97,9 @@ Inkline provides you with custom implementations for Array group operations usin
         <i-input :schema="item" v-model="item.value" placeholder="Type something.." />
     </i-form-group>
     <i-form-group>
-        <i-button @click="addField" type="button">Add</i-button>&nbsp;
-        <i-button @click="removeField" type="button">Remove First</i-button>&nbsp;
-        <i-button @click="replaceField" type="button">Replace First</i-button>
+        <i-button @click="addField" type="button" class="_margin-bottom-0">Add</i-button>&nbsp;
+        <i-button @click="removeField" type="button" class="_margin-bottom-0">Remove First</i-button>&nbsp;
+        <i-button @click="replaceField" type="button" class="_margin-bottom-0">Replace First</i-button>
     </i-form-group>
 </i-form>
 <template slot="html">

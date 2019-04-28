@@ -14,7 +14,7 @@ The `<i-form-group>` component is a wrapper that provides proper grouping of lab
     <i-textarea v-model="textarea" placeholder="Write a comment.." />
 </i-form-group>
 <i-form-group>
-    <i-select v-model="select" placeholder="Choose an option">
+    <i-select v-model="select" placeholder="Choose an option" class="_margin-bottom-0">
         <i-select-option value="a" label="Option A" />
         <i-select-option value="b" label="Option B" />
         <i-select-option value="c" label="Option C" disabled />
@@ -104,7 +104,7 @@ Setting a form group as `disabled` will cause all of its child inputs to be disa
 </i-form-group>
 
 <i-form-group disabled>
-    <i-select v-model="selectDisabled" placeholder="Choose an option">
+    <i-select v-model="selectDisabled" placeholder="Choose an option" class="_margin-bottom-0">
         <i-select-option value="a" label="Option A" />
         <i-select-option value="b" label="Option B" />
         <i-select-option value="c" label="Option C" disabled />
@@ -197,7 +197,7 @@ All of the components inside the `<i-form-group>` will inherit the parent form g
 </i-form-group>
 
 <i-form-group size="sm">
-    <i-select v-model="selectSizeSm" placeholder="Choose an option">
+    <i-select v-model="selectSizeSm" placeholder="Choose an option" class="_margin-bottom-0">
         <i-select-option value="a" label="Option A" />
         <i-select-option value="b" label="Option B" />
         <i-select-option value="c" label="Option C" disabled />
@@ -285,7 +285,7 @@ export default {
 </i-form-group>
 
 <i-form-group size="md">
-    <i-select v-model="selectSizeMd" placeholder="Choose an option">
+    <i-select v-model="selectSizeMd" placeholder="Choose an option" class="_margin-bottom-0">
         <i-select-option value="a" label="Option A" />
         <i-select-option value="b" label="Option B" />
         <i-select-option value="c" label="Option C" disabled />
@@ -373,7 +373,7 @@ export default {
 </i-form-group>
 
 <i-form-group size="lg">
-    <i-select v-model="selectSizeLg" placeholder="Choose an option">
+    <i-select v-model="selectSizeLg" placeholder="Choose an option" class="_margin-bottom-0">
         <i-select-option value="a" label="Option A" />
         <i-select-option value="b" label="Option B" />
         <i-select-option value="c" label="Option C" disabled />
@@ -499,7 +499,7 @@ export default {
 </i-code-preview>
 
 
-<i-code-preview title="Readonly Form Group Nesting" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup">
+<i-code-preview title="Readonly Form Group Nesting" link="https://github.com/inkline/inkline/tree/master/src/components/FormGroup" no-panel-margin>
 
 <i-form-group readonly>
     <i-form-group>

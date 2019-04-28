@@ -8,9 +8,8 @@ export default {
     },
     data() {
         return {
-            active: this.defaultActive || 'default',
+            active: this.defaultActive || 'html',
             tabs: [
-                { id: 'default', title: 'Preview', icon: 'eye' },
                 { id: 'html', title: 'HTML', icon: ['fab', 'html5'] },
                 { id: 'css', title: 'CSS', icon: ['fab', 'css3'] },
                 { id: 'js', title: 'JS', icon: ['fab', 'js'] },
@@ -31,6 +30,10 @@ export default {
         link: {
             type: String,
             default: ''
+        },
+        noPanelMargin: {
+            type: Boolean,
+            default: false
         },
         expanded: {
             type: Boolean,

@@ -362,7 +362,7 @@ The schema object `this.form` contains the validation state of the `<i-form>`, a
         </i-form-group>
     </i-form-group>
     <i-form-group>
-        <i-button type="submit">Submit</i-button>
+        <i-button type="submit" class="_margin-bottom-0">Submit</i-button>
     </i-form-group>
 </i-form>
 <template slot="html">

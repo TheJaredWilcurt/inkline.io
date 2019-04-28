@@ -12,7 +12,7 @@ The grid system is defined using `<i-container>`, `<i-row>` and `<i-column>` com
 ### Basic Layout
 Create basic grid layout using columns.
 
-<i-code-preview title="Basic Layout" class="grid-code-preview">
+<i-code-preview title="Basic Layout" class="grid-code-preview" no-panel-margin>
 
 <i-row>
     <i-column xs="12">
@@ -176,7 +176,7 @@ Create basic grid layout using columns.
 ### Grid Offset
 Grid offsets are used to move a column to the right without creating an empty column next to it.
 
-<i-code-preview title="Grid Offset" class="grid-code-preview">
+<i-code-preview title="Grid Offset" class="grid-code-preview" no-panel-margin>
 
 <i-row>
     <i-column xs="12">
@@ -286,7 +286,7 @@ Grid offsets are used to move a column to the right without creating an empty co
 ### Grid Push / Pull
 Code-wise, the columns have a different order.
 
-<i-code-preview title="Grid Push / Pull" class="grid-code-preview">
+<i-code-preview title="Grid Push / Pull" class="grid-code-preview" no-panel-margin>
 
 <i-row>
     <i-column xs="12">
@@ -445,80 +445,80 @@ Code-wise, the columns have a different order.
 ### Auto Width
 The grid will automatically fit any number of auto sizing columns to a row.
 
-<i-code-preview title="Auto Width" class="grid-code-preview">
+<i-code-preview title="Auto Width" class="grid-code-preview" no-panel-margin>
 
 <i-row>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
 </i-row>
 <i-row>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
-        <grid-box></grid-box>
-    </i-column>
-</i-row>
-<i-row>
-    <i-column :xs="true">
-        <grid-box></grid-box>
-    </i-column>
-    <i-column :xs="true">
-        <grid-box></grid-box>
-    </i-column>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
 </i-row>
 <i-row>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
-        <grid-box></grid-box>
-    </i-column>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
 </i-row>
 <i-row>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
-        <grid-box></grid-box>
-    </i-column>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
 </i-row>
 <i-row>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column :xs="true">
+</i-row>
+<i-row>
+    <i-column>
+        <grid-box></grid-box>
+    </i-column>
+    <i-column>
+        <grid-box></grid-box>
+    </i-column>
+    <i-column>
+        <grid-box></grid-box>
+    </i-column>
+    <i-column>
+        <grid-box></grid-box>
+    </i-column>
+    <i-column>
+        <grid-box></grid-box>
+    </i-column>
+    <i-column>
         <grid-box></grid-box>
     </i-column>
 </i-row>
@@ -528,37 +528,37 @@ The grid will automatically fit any number of auto sizing columns to a row.
 ~~~html
 <i-container>
     <i-row>
-        <i-column :xs="true"></i-column>
+        <i-column></i-column>
     </i-row>
     <i-row>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
     </i-row>
     <i-row>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
     </i-row>
     <i-row>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
     </i-row>
     <i-row>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
     </i-row>
     <i-row>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
-        <i-column :xs="true"></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
     </i-row>
 </i-container>
 ~~~
@@ -574,7 +574,7 @@ while you can place columns only inside a row.
 
 <i-code-preview title="Nested Grid">
 
-<i-row>
+<i-row class="_box-no-margin">
     <i-column xs="8">
         <grid-box>
             <i-row>
@@ -639,7 +639,7 @@ You can align columns horizontally to the start, center, or end of a row.
 
 #### start-*
 
-<i-code-preview title="Horizontal Alignment - Start">
+<i-code-preview title="Horizontal Alignment - Start" no-panel-margin>
 
 <i-row start-xs>
     <i-column xs="4">
@@ -662,7 +662,7 @@ You can align columns horizontally to the start, center, or end of a row.
 
 #### center-*
 
-<i-code-preview title="Horizontal Alignment - Center">
+<i-code-preview title="Horizontal Alignment - Center" no-panel-margin>
 
 <i-row center-xs>
     <i-column xs="4">
@@ -685,7 +685,7 @@ You can align columns horizontally to the start, center, or end of a row.
 
 #### end-*
 
-<i-code-preview title="Horizontal Alignment - End">
+<i-code-preview title="Horizontal Alignment - End" no-panel-margin>
 
 <i-row end-xs>
     <i-column xs="4">
@@ -712,7 +712,7 @@ You can align columns vertically to the top, middle or bottom of the row.
 
 #### top-*
 
-<i-code-preview title="Vertical Alignment - Top">
+<i-code-preview title="Vertical Alignment - Top" no-panel-margin>
 
 <i-row top-xs>
     <i-column xs="6">
@@ -739,7 +739,7 @@ You can align columns vertically to the top, middle or bottom of the row.
 
 #### middle-*
 
-<i-code-preview title="Vertical Alignment - Middle">
+<i-code-preview title="Vertical Alignment - Middle" no-panel-margin>
 
 <i-row middle-xs>
     <i-column xs="6">
@@ -766,7 +766,7 @@ You can align columns vertically to the top, middle or bottom of the row.
 
 #### bottom-*
 
-<i-code-preview title="Vertical Alignment - Bottom">
+<i-code-preview title="Vertical Alignment - Bottom" no-panel-margin>
 
 <i-row bottom-xs>
     <i-column xs="6">
@@ -797,7 +797,7 @@ Distribute the spacing between the columns of a row.
 
 #### around-*
 
-<i-code-preview title="Distribution - Around">
+<i-code-preview title="Distribution - Around" no-panel-margin>
 
 <i-row around-xs>
     <i-column xs="3">
@@ -828,7 +828,7 @@ Distribute the spacing between the columns of a row.
 
 #### between-*
 
-<i-code-preview title="Distribution - Between">
+<i-code-preview title="Distribution - Between" no-panel-margin>
 
 <i-row between-xs>
     <i-column xs="3">
@@ -862,7 +862,7 @@ Reorder columns using helper classes.
 
 #### reverse-*
 
-<i-code-preview title="Reordering - Reverse">
+<i-code-preview title="Reordering - Reverse" no-panel-margin>
 
 <i-row reverse-xs>
     <i-column xs="3">
@@ -897,7 +897,7 @@ Reorder columns using helper classes.
 
 #### first-*
 
-<i-code-preview title="Reordering - First">
+<i-code-preview title="Reordering - First" no-panel-margin>
 
 <i-row>
     <i-column xs="3">
@@ -932,7 +932,7 @@ Reorder columns using helper classes.
 
 #### last-*
 
-<i-code-preview title="Reordering - Last">
+<i-code-preview title="Reordering - Last" no-panel-margin>
 
 <i-row>
     <i-column xs="3" last-xs>
@@ -969,7 +969,7 @@ Reorder columns using helper classes.
 ### Responsive Width
 You can specify column counts for each breakpoint. Try to resize your browser window!
 
-<i-code-preview title="Responsive Grid Width">
+<i-code-preview title="Responsive Grid Width" no-panel-margin>
 
 <i-row>
     <i-column xl="3" lg="6" md="6" sm="8" xs="12">
@@ -1006,16 +1006,16 @@ You can specify column counts for each breakpoint. Try to resize your browser wi
 ### Fluid Container
 You can make the `<i-container>` component fill the whole width of the parent element using the `fluid` property. 
 
-<i-code-preview title="Fluid Container">
+<i-code-preview title="Fluid Container" no-panel-margin>
 
 <i-row>
-    <i-column xs>
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column xs>
+    <i-column>
         <grid-box></grid-box>
     </i-column>
-    <i-column xs>
+    <i-column>
         <grid-box></grid-box>
     </i-column>
 </i-row>
@@ -1025,9 +1025,9 @@ You can make the `<i-container>` component fill the whole width of the parent el
 ~~~html
 <i-container fluid>
     <i-row>
-        <i-column xs></i-column>
-        <i-column xs></i-column>
-        <i-column xs></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
+        <i-column></i-column>
     </i-row>
 </i-container>
 ~~~

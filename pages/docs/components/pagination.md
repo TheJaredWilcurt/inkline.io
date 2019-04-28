@@ -44,7 +44,8 @@ Inkline includes two predefined pagination styles. You can set the style of a `<
 
 ~~~html
 <i-pagination v-model="currentPage" variant="light" :items="100" :items-per-page="10"></i-pagination>
-
+~~~
+~~~html
 <i-pagination v-model="currentPage" variant="dark" :items="100" :items-per-page="10"></i-pagination>
 ~~~
 
@@ -81,9 +82,11 @@ You're able to use the `size` modifier to control the size of your pagination it
 
 ~~~html
 <i-pagination v-model="currentPage" size="sm" :items="100" :items-per-page="10"></i-pagination>
-
+~~~
+~~~html
 <i-pagination v-model="currentPage" size="md" :items="100" :items-per-page="10"></i-pagination>
-
+~~~
+~~~html
 <i-pagination v-model="currentPage" size="lg" :items="100" :items-per-page="10"></i-pagination>
 ~~~
 

@@ -1,4 +1,4 @@
-<div class="code-preview" :class="{ '-expanded': expanded }">
+<div class="code-preview" :class="{ '-expanded': expanded, '-no-panel-margin': noPanelMargin }">
     <div class="header">
         <span class="title">
             {{title}}
@@ -22,6 +22,11 @@
             <i-button size="sm" class="link" v-if="link" :href="link" target="_blank">
                 <font-awesome-icon :icon="['fab', 'github']"></font-awesome-icon>
             </i-button>
+        </div>
+    </div>
+    <div class="panel -preview">
+        <div class="panel-content">
+            <slot/>
         </div>
     </div>
     <div class="panels">

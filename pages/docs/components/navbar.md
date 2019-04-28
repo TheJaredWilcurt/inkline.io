@@ -196,7 +196,7 @@ You can use an `<i-dropdown>` component inside the `<i-navbar-items>` or `<i-nav
             <i-nav-item :to="{ name: 'index' }">Contact</i-nav-item>
         </i-nav>
         <i-nav>
-            <i-dropdown placement="bottom-end">
+            <i-dropdown placement="bottom-end" class="_margin-bottom-0">
                 <i-button variant="primary">Dropdown</i-button>
                 <i-dropdown-menu>
                     <i-dropdown-item href>Action</i-dropdown-item>
