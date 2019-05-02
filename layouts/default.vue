@@ -36,7 +36,7 @@ export default {
     },
     methods: {
         onScroll () {
-            this.navbarClass['-transparent'] = (window.pageYOffset || document.documentElement.scrollTop) === 0;
+            this.navbarClass['-transparent'] = (window.pageYOffset || document.documentElement.scrollTop) <= 25;
         }
     },
     created () {
