@@ -21,7 +21,7 @@ Attract your visitor's attention using brand colors. The main colors of Inkline 
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <div class="_background-primary"></div>
@@ -44,7 +44,7 @@ You can also add brand text colors using text-specific helper classes:
     <li class="_text-dark">Dark</li>
 </ul>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <p class="_text-primary"></p>
@@ -76,7 +76,7 @@ When displaying state information such as info, success, warning, or error messa
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <div class="_background-info"></div>
@@ -99,7 +99,7 @@ You can also add state text colors using text-specific helper classes:
     <li class="_text-danger">Danger</li>
 </ul>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <p class="_text-info"></p>
@@ -146,7 +146,7 @@ You can use helper classes to add state color backgrounds:
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <div class="_background-red"></div>
@@ -177,7 +177,7 @@ You can also add state text colors using text-specific helper classes:
     <li class="_text-pink">Pink</li>
 </ul>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <p class="_text-red"></p>
@@ -235,7 +235,7 @@ Neutral colors are used for text, background and border colors. You can use diff
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <div class="_background-white"></div>
@@ -272,7 +272,7 @@ You can also add neutral text colors using text-specific helper classes:
     <li class="_text-black">Black</li>
 </ul>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <p class="_text-white"></p>
@@ -346,7 +346,7 @@ You can use helper classes to add social media color backgrounds:
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <div class="_background-facebook"></div>
@@ -389,7 +389,7 @@ You can also add social media text colors using text-specific helper classes:
     <li class="_text-vine">Vine</li>
 </ul>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <p class="_text-facebook"></p>

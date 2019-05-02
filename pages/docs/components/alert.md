@@ -40,7 +40,7 @@ By default, alerts are set to have `width: 100%`, fully spanning the width of th
     </i-alert>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-alert variant="primary">
@@ -99,7 +99,7 @@ The default size is set to `md`.
     </i-alert>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-alert size="sm">
@@ -134,7 +134,7 @@ Your alerts accept any kind of content, giving you the flexibility to create goo
     </i-alert>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-alert>
@@ -156,35 +156,35 @@ The following example makes use of the bundled Inkline icons, but you can use an
 <i-code-preview title="Alert Icon" link="https://github.com/inkline/inkline/tree/master/src/components/Alert">
 
 <i-alert variant="info" class="_margin-bottom-1">
-    <template slot="icon"><i class="icon -info"></i></template>
+    <template v-slot:icon><i class="icon -info"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 <i-alert variant="warning" class="_margin-bottom-1">
-    <template slot="icon"><i class="icon -warning"></i></template>
+    <template v-slot:icon><i class="icon -warning"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 <i-alert variant="danger">
-    <template slot="icon"><i class="icon -danger"></i></template>
+    <template v-slot:icon><i class="icon -danger"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-alert variant="info">
-    <template slot="icon"><i class="icon -info"></i></template>
+    <template v-slot:icon><i class="icon -info"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 ~~~
 ~~~html
 <i-alert variant="warning">
-    <template slot="icon"><i class="icon -warning"></i></template>
+    <template v-slot:icon><i class="icon -warning"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 ~~~
 ~~~html
 <i-alert variant="danger">
-    <template slot="icon"><i class="icon -danger"></i></template>
+    <template v-slot:icon><i class="icon -danger"></i></template>
     <p>Some quick example text to build on the alert title and make up the bulk of the alert's content.</p>
 </i-alert>
 ~~~
@@ -201,7 +201,7 @@ You can dismiss alerts using a combination of the provided `dismissible` and `sh
     <p>Whoa! Nicely done.</p>
 </i-alert>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-alert dismissible :show="visible" variant="primary">
@@ -210,7 +210,7 @@ You can dismiss alerts using a combination of the provided `dismissible` and `sh
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -228,7 +228,7 @@ export default {
 ### API
 
 <i-api-preview title="Alert API" markup="i-alert" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -278,7 +278,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

@@ -8,7 +8,7 @@ Wrap inline snippets of code with `<code>`. Be sure to escape HTML angle bracket
 
 For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 For example, <code>&lt;section&gt;</code> should be wrapped as inline.
@@ -28,7 +28,7 @@ rendering. You may optionally add the `.-scrollable` modifier, which will set a 
 &lt;p&gt;And another line of sample text here...&lt;/p&gt;</code>
 </pre>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <pre>
@@ -49,7 +49,7 @@ For indicating variables use the HTML5 `<var>` tag.
 
 <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
@@ -66,7 +66,7 @@ You can use the `<kbd>` to indicate input that is typically entered via keyboard
 To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
 To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
@@ -84,7 +84,7 @@ You can use the `<samp>` for indicating sample output from a program.
 
 <samp>This text is meant to be treated as sample output from a computer program.</samp>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <samp>This text is meant to be treated as sample output from a computer program.</samp>

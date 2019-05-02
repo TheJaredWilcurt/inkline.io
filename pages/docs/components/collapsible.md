@@ -18,7 +18,7 @@ Collapsing an element will animate the height from zero to its default value. Th
     </i-collapsible-item>
 </i-collapsible>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-collapsible>
@@ -44,33 +44,33 @@ You can use the `title` slot to provide a custom title for the collapsible panel
 
 <i-collapsible>
     <i-collapsible-item>
-        <template slot="title">Item 1</template>
+        <template v-slot:title>Item 1</template>
         Item 1 content
     </i-collapsible-item>
     <i-collapsible-item>
-        <template slot="title">Item 2</template>
+        <template v-slot:title>Item 2</template>
         Item 2 content
     </i-collapsible-item>
     <i-collapsible-item>
-        <template slot="title">Item 3</template>
+        <template v-slot:title>Item 3</template>
         Item 3 content
     </i-collapsible-item>
 </i-collapsible>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-collapsible>
     <i-collapsible-item>
-        <template slot="title">Item 1</template>
+        <template v-slot:title>Item 1</template>
         Item 1 content
     </i-collapsible-item>
     <i-collapsible-item>
-        <template slot="title">Item 2</template>
+        <template v-slot:title>Item 2</template>
         Item 2 content
     </i-collapsible-item>
     <i-collapsible-item>
-        <template slot="title">Item 3</template>
+        <template v-slot:title>Item 3</template>
         Item 3 content
     </i-collapsible-item>
 </i-collapsible>
@@ -86,40 +86,40 @@ Panels can be opened by default, on page load, using the `active` field of the `
 
 <i-collapsible :active="active">
     <i-collapsible-item id="panel-1">
-        <template slot="title">Item 1</template>
+        <template v-slot:title>Item 1</template>
         Item 1 content
     </i-collapsible-item>
     <i-collapsible-item id="panel-2">
-        <template slot="title">Item 2</template>
+        <template v-slot:title>Item 2</template>
         Item 2 content
     </i-collapsible-item>
     <i-collapsible-item id="panel-3">
-        <template slot="title">Item 3</template>
+        <template v-slot:title>Item 3</template>
         Item 3 content
     </i-collapsible-item>
 </i-collapsible>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-collapsible :active="active">
     <i-collapsible-item id="panel-1">
-        <template slot="title">Item 1</template>
+        <template v-slot:title>Item 1</template>
         Item 1 content
     </i-collapsible-item>
     <i-collapsible-item id="panel-2">
-        <template slot="title">Item 2</template>
+        <template v-slot:title>Item 2</template>
         Item 2 content
     </i-collapsible-item>
     <i-collapsible-item id="panel-3">
-        <template slot="title">Item 3</template>
+        <template v-slot:title>Item 3</template>
         Item 3 content
     </i-collapsible-item>
 </i-collapsible>
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -151,7 +151,7 @@ Accordion collapsible groups can have only one content panel open at a single ti
     </i-collapsible-item>
 </i-collapsible>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-collapsible accordion>
@@ -202,7 +202,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
     </i-collapsible>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-collapsible variant="light">
@@ -239,7 +239,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
 ### API
 
 <i-api-preview title="Collapsible API" markup="i-collapsible" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Collapsible">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -275,7 +275,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -291,7 +291,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -312,7 +312,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
 </i-api-preview>
 
 <i-api-preview title="Collapsible Item API" markup="i-collapsible-item" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Collapsible">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -341,7 +341,7 @@ Inkline includes basic predefined collapsible styles that you can use within you
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

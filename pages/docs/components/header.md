@@ -12,7 +12,7 @@ Here’s an example of the basic components included in a  `<i-navbar>` that aut
     <i-button variant="primary">Button</i-button>
 </i-header>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-header class="_text-center">
@@ -37,7 +37,7 @@ The default size is set to `md`.
     <i-button variant="primary">Button</i-button>
 </i-header>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-header size="sm" class="_text-center">
@@ -58,7 +58,7 @@ The default size is set to `md`.
     <i-button variant="primary">Button</i-button>
 </i-header>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-header size="md" class="_text-center">
@@ -79,7 +79,7 @@ The default size is set to `md`.
     <i-button variant="primary">Button</i-button>
 </i-header>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-header size="lg" class="_text-center">
@@ -103,7 +103,7 @@ You can make headers cover the whole screen width and height (using `vw` and `vh
     <i-button variant="primary">Button</i-button>
 </i-header>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-header fullscreen class="_text-center">
@@ -127,7 +127,7 @@ The goal of cover background images on a website is to cover the entire browser 
     <i-button variant="primary">Button</i-button>
 </i-header>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-header id="header" :cover="true" class="_text-center _text-white">
@@ -138,7 +138,7 @@ The goal of cover background images on a website is to cover the entire browser 
 ~~~
 
 </template>
-<template slot="css">
+<template v-slot:css>
 
 ~~~css
 #header {
@@ -152,7 +152,7 @@ The goal of cover background images on a website is to cover the entire browser 
 ### API
 
 <i-api-preview title="Header API" expanded markup="i-header" link="https://github.com/inkline/inkline/tree/master/src/components/Header">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -195,7 +195,7 @@ The goal of cover background images on a website is to cover the entire browser 
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

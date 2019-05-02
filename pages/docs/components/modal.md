@@ -9,25 +9,25 @@ To create a modal, create an element (such as an `<i-button>`) as a trigger and 
 <div>
     <i-button @click="showModal=true">Modal</i-button>
     <i-modal v-model="showModal">
-        <template slot="header">Modal Header</template>
+        <template v-slot:header>Modal Header</template>
         This is the modal body. Useful information goes here.
-        <template slot="footer">Modal Footer</template>
+        <template v-slot:footer>Modal Footer</template>
     </i-modal>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button @click="visible = true">Modal</i-button>
 <i-modal v-model="visible">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -55,52 +55,52 @@ The default size is set to `md`.
 </div>
 
 <i-modal v-model="showModalSm" size="sm">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
 <i-modal v-model="showModalMd" size="md">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
 <i-modal v-model="showModalLg" size="lg">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button @click="visible = true">Small Modal</i-button>
 <i-modal v-model="visible" size="sm">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 ~~~html
 <i-button @click="visible = true">Medium Modal</i-button>
 <i-modal v-model="visible" size="md">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 ~~~html
 <i-button @click="visible = true">Large Modal</i-button>
 <i-modal v-model="visible" size="lg">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -132,122 +132,122 @@ Inkline includes two predefined modal styles, each serving its own semantic purp
 </div>
 
 <i-modal variant="primary" v-model="showModalPrimary">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
 <i-modal variant="secondary" v-model="showModalSecondary">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
 <i-modal variant="light" v-model="showModalLight">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
 <i-modal variant="dark" v-model="showModalDark">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
 <i-modal variant="info" v-model="showModalInfo">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
 <i-modal variant="success" v-model="showModalSuccess">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
 <i-modal variant="warning" v-model="showModalWarning">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
 <i-modal variant="danger" v-model="showModalDanger">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button variant="primary" @click="visible = true">Primary Modal</i-button>
 <i-modal variant="primary" v-model="visible">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 ~~~html
 <i-button variant="secondary" @click="visible = true">Secondary Modal</i-button>
 <i-modal variant="secondary" v-model="visible">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 ~~~html
 <i-button variant="light" @click="visible = true">Light Modal</i-button>
 <i-modal variant="light" v-model="visible">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 ~~~html
 <i-button variant="dark" @click="visible = true">Dark Modal</i-button>
 <i-modal variant="dark" v-model="visible">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 ~~~html
 <i-button variant="info" @click="visible = true">Info Modal</i-button>
 <i-modal variant="info" v-model="visible">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 ~~~html
 <i-button variant="success" @click="visible = true">Success Modal</i-button>
 <i-modal variant="success" v-model="visible">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 ~~~html
 <i-button variant="warning" @click="visible = true">Warning Modal</i-button>
 <i-modal variant="warning" v-model="visible">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 ~~~html
 <i-button variant="danger" @click="visible = true">Danger Modal</i-button>
 <i-modal variant="danger" v-model="visible">
-    <template slot="header">Modal Header</template>
+    <template v-slot:header>Modal Header</template>
     This is the modal body. Useful information goes here.
-    <template slot="footer">Modal Footer</template>
+    <template v-slot:footer>Modal Footer</template>
 </i-modal>
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -266,7 +266,7 @@ export default {
 ### API
 
 <i-api-preview title="Modal API" markup="i-modal" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Modal">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -310,7 +310,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -334,7 +334,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

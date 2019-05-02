@@ -10,14 +10,14 @@ Using the `i-checkbox` component together with a `i-checkbox-group` allows you t
 
 <i-checkbox v-model="checked">Apple</i-checkbox>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-checkbox v-model="checked">Apple</i-checkbox>
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -30,7 +30,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 
 Checked: <code>{{checked}}</code>
 
@@ -49,7 +49,7 @@ Checked: <code>{{checked}}</code>
     <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
 </i-checkbox-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-checkbox-group v-model="checked">
@@ -62,7 +62,7 @@ Checked: <code>{{checked}}</code>
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -75,7 +75,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 
 Checked values: <code>{{checkedGroup}}</code>
 
@@ -94,7 +94,7 @@ You're able to use the `size` property to control the size of your inputs, using
     <i-checkbox size="lg" value="Basketball">Basketball</i-checkbox>
 </i-checkbox-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-checkbox-group v-model="checked">
@@ -105,7 +105,7 @@ You're able to use the `size` property to control the size of your inputs, using
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -145,7 +145,7 @@ Applying the size `size` property to a `i-checkbox-group` will set the chosen si
     <i-checkbox value="Tennis" disabled>Tennis</i-checkbox>
 </i-checkbox-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-checkbox-group size="sm" v-model="checked">
@@ -173,7 +173,7 @@ Applying the size `size` property to a `i-checkbox-group` will set the chosen si
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -200,7 +200,7 @@ Inkline uses custom checkbox designs by setting the `custom` property to `true` 
     <i-checkbox :custom="true" value="Basketball">Basketball</i-checkbox>    
 </i-checkbox-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-checkbox-group v-model="checkedCustomTrue">
@@ -211,7 +211,7 @@ Inkline uses custom checkbox designs by setting the `custom` property to `true` 
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -233,14 +233,14 @@ You can set the state of a `<i-checkbox>` to be indeterminate by setting the `in
 
 <i-checkbox :indeterminate="true">Football</i-checkbox>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-checkbox :indeterminate="true">Football</i-checkbox>
 ~~~
 
 </template>
-<template slot="js"> 
+<template v-slot:js> 
 
 ~~~js
 export default {
@@ -269,7 +269,7 @@ You can display your checkbox inputs as toggleable buttons using the provided `<
     <i-checkbox-button value="Venus" disabled>Venus</i-checkbox-button>
 </i-checkbox-button-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-checkbox-button-group v-model="checked">
@@ -281,7 +281,7 @@ You can display your checkbox inputs as toggleable buttons using the provided `<
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -299,7 +299,7 @@ export default {
 ### API
 
 <i-api-preview title="Checkbox API" markup="i-checkbox" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -363,7 +363,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -379,7 +379,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -415,7 +415,7 @@ export default {
 </i-api-preview>
 
 <i-api-preview title="Checkbox Group API" markup="i-checkbox-group" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -458,7 +458,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -474,7 +474,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

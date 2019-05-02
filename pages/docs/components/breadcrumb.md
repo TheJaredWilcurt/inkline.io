@@ -17,7 +17,7 @@ Separators are automatically added in CSS through `::before` and `content`. You 
     <i-breadcrumb-item active>Data</i-breadcrumb-item>
 </i-breadcrumb>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-breadcrumb>
@@ -45,7 +45,7 @@ You can generate and bind breadcrumbs from your JS data using a combination of `
     <i-breadcrumb-item v-bind="item" v-for="item in items" :key="item.title">{{item.title}}</i-breadcrumb-item>
 </i-breadcrumb>
 
-<template slot="html">
+<template v-slot:html>
 <div v-pre>
 
 ~~~html
@@ -56,7 +56,7 @@ You can generate and bind breadcrumbs from your JS data using a combination of `
 
 </div>
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -94,7 +94,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
     <i-breadcrumb-item active>Large</i-breadcrumb-item>
 </i-breadcrumb>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-breadcrumb size="sm">
@@ -122,7 +122,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
 ### API
 
 <i-api-preview title="Breadcrumb API" expanded markup="i-breadcrumb" link="https://github.com/inkline/inkline/tree/master/src/components/Breadcrumb">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -144,7 +144,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -163,7 +163,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
 </i-api-preview>
 
 <i-api-preview title="Breadcrumb Item API" expanded markup="i-breadcrumb-item" link="https://github.com/inkline/inkline/tree/master/src/components/BreadcrumbItem">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -206,7 +206,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

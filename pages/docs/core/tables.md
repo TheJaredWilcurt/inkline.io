@@ -37,7 +37,7 @@ Using the most basic table markup, here’s how tables look in Inkline. All tabl
   </tbody>
 </i-table>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-table>
@@ -111,7 +111,7 @@ Add the `bordered` property for borders on all sides of the table and table cell
   </tbody>
 </i-table>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-table bordered>
@@ -185,7 +185,7 @@ Add the `striped` property to add zebra-striping to any table row within the tab
   </tbody>
 </i-table>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-table striped>
@@ -259,7 +259,7 @@ Add the `hover` property to enable a hover state on table rows within a `<tbody>
   </tbody>
 </i-table>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-table hover>
@@ -347,7 +347,7 @@ You can target specific responsive breakpoints by setting a value to the `respon
   </tbody>
 </i-table>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-table responsive>
@@ -643,7 +643,7 @@ Tables can be themed using the `variant` property. You can use colors such as `l
   </tbody>
 </i-table>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-table variant="light"> .. </i-table>

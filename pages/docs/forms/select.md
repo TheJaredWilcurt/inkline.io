@@ -13,7 +13,7 @@ Allow your users to input data directly from the keyboard. { .lead }
     <i-select-option value="d" label="Option D" disabled />
 </i-select>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-select v-model="value" placeholder="Choose an option">
@@ -25,7 +25,7 @@ Allow your users to input data directly from the keyboard. { .lead }
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -38,7 +38,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 
 Selected value: <code>{{selectValue}}</code>
 
@@ -56,7 +56,7 @@ Selected value: <code>{{selectValue}}</code>
     <i-select-option value="d" label="Option D" disabled />
 </i-select>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-select v-model="value" placeholder="Choose an option">
@@ -68,7 +68,7 @@ Selected value: <code>{{selectValue}}</code>
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -114,7 +114,7 @@ your input type using an icon or text.
     <i slot="prefix">@</i>
 </i-select>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-select v-model="value" placeholder="Choose an option">
@@ -146,7 +146,7 @@ your input type using an icon or text.
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -193,7 +193,7 @@ You're able to use the `size` modifier to control the size of your inputs, using
     </i-select>
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-select v-model="value" size="sm" placeholder="Choose an option">
@@ -221,7 +221,7 @@ You're able to use the `size` modifier to control the size of your inputs, using
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -240,7 +240,7 @@ export default {
 ### API
 
 <i-api-preview title="Select API" markup="i-select" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -297,7 +297,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -329,7 +329,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -380,7 +380,7 @@ export default {
 </i-api-preview>
 
 <i-api-preview title="Select Option API" markup="i-select-option" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -416,7 +416,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

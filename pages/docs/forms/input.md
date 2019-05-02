@@ -7,14 +7,14 @@ Allow your users to input data directly from the keyboard. { .lead }
 
 <i-input v-model="inputValue" placeholder="Type something.." />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something.." />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -27,7 +27,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 
 Value: <code>{{inputValue}}</code>
 
@@ -41,14 +41,14 @@ Value: <code>{{inputValue}}</code>
 
 <i-input v-model="disabledInputValue" placeholder="Type something.." disabled />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something.." disabled />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -69,14 +69,14 @@ export default {
 
 <i-input v-model="clearableInputValue" placeholder="Type something.." clearable />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something.." clearable />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -111,7 +111,7 @@ your input type using an icon or text.
     <i slot="suffix">@</i>
 </i-input>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something..">
@@ -131,7 +131,7 @@ your input type using an icon or text.
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -165,7 +165,7 @@ You can add additional content such as select fields, buttons or plain text, to 
     <span slot="append">.com</span>
 </i-input>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input v-model="value" placeholder="Type something..">
@@ -183,7 +183,7 @@ You can add additional content such as select fields, buttons or plain text, to 
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -215,7 +215,7 @@ You're able to use the `size` modifier to control the size of your inputs, using
     <i-input size="lg" v-model="lgInputValue" placeholder="Type something large.." />
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input size="sm" v-model="value" placeholder="Type something small.." />
@@ -228,7 +228,7 @@ You're able to use the `size` modifier to control the size of your inputs, using
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -248,7 +248,7 @@ export default {
 ### API
 
 <i-api-preview title="Input API" markup="i-input" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -312,7 +312,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -340,7 +340,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

@@ -10,7 +10,7 @@ Progress components are built with two components: a wrapper `<i-progress>` and 
     <i-progress-bar value="65" />
 </i-progress>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-progress>
@@ -45,7 +45,7 @@ The default size is set to `md`.
     </i-progress>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-progress size="sm">
@@ -85,7 +85,7 @@ Inkline includes multiple progress styles. You can change the style of a`<i-prog
 </div>
 
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-progress variant="light">
@@ -154,7 +154,7 @@ Inkline includes multiple progress styles. You can change the style of a `<i-pro
     </i-progress>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-progress>
@@ -214,7 +214,7 @@ Inkline allows you to set a `min` and `max` modifier to calculate the progress b
     </i-progress>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-progress>
@@ -238,7 +238,7 @@ You can add multiple `<i-progress-bar>` inside the `<i-progress>` component to s
     </i-progress>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-progress>
@@ -255,7 +255,7 @@ You can add multiple `<i-progress-bar>` inside the `<i-progress>` component to s
 ### API
 
 <i-api-preview title="Progress API" markup="i-progress" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Progress">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -284,7 +284,7 @@ You can add multiple `<i-progress-bar>` inside the `<i-progress>` component to s
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -303,7 +303,7 @@ You can add multiple `<i-progress-bar>` inside the `<i-progress>` component to s
 </i-api-preview>
 
 <i-api-preview title="Progress Bar API" markup="i-progress-bar" expanded link="https://github.com/inkline/inkline/tree/master/src/components/ProgressBar">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -346,7 +346,7 @@ You can add multiple `<i-progress-bar>` inside the `<i-progress>` component to s
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

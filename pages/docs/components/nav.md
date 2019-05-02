@@ -13,7 +13,7 @@ Navigation components make use of the base `<i-nav>` component for building all 
     <i-nav-item disabled>Disabled</i-nav-item>
 </i-nav>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-nav>
@@ -41,7 +41,7 @@ You can stack nav items into a vertical navigation component by setting the `ver
     <i-nav-item disabled>Disabled</i-nav-item>
 </i-nav>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-nav vertical>
@@ -83,7 +83,7 @@ You're able to use the `size` modifier to control the size of your navs, using o
 </i-nav>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-nav size="sm">
@@ -126,7 +126,7 @@ You can control the active state of your `<i-nav-item>` using the `active` prope
 </i-nav>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-nav>
@@ -143,7 +143,7 @@ You can control the active state of your `<i-nav-item>` using the `active` prope
 ### API
 
 <i-api-preview title="Nav API" expanded markup="i-nav" link="https://github.com/inkline/inkline/tree/master/src/components/Nav">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -172,7 +172,7 @@ You can control the active state of your `<i-nav-item>` using the `active` prope
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -191,7 +191,7 @@ You can control the active state of your `<i-nav-item>` using the `active` prope
 </i-api-preview>
 
 <i-api-preview title="Nav Item API" markup="i-nav-item" expanded link="https://github.com/inkline/inkline/tree/master/src/components/NavItem">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -227,7 +227,7 @@ You can control the active state of your `<i-nav-item>` using the `active` prope
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

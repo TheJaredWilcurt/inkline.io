@@ -8,14 +8,14 @@ Pagination items are automatically generated based on the total item count `item
 
 <i-pagination v-model="currentPage" :items="300" :items-per-page="20"></i-pagination>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-pagination v-model="currentPage" :items="300" :items-per-page="20"></i-pagination>
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -40,7 +40,7 @@ Inkline includes two predefined pagination styles. You can set the style of a `<
 
 <i-pagination v-model="currentPageDark" variant="dark" :items="100" :items-per-page="10"></i-pagination>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-pagination v-model="currentPage" variant="light" :items="100" :items-per-page="10"></i-pagination>
@@ -50,7 +50,7 @@ Inkline includes two predefined pagination styles. You can set the style of a `<
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -78,7 +78,7 @@ You're able to use the `size` modifier to control the size of your pagination it
 <i-pagination v-model="currentPageLg" size="lg" :items="100" :items-per-page="10"></i-pagination>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-pagination v-model="currentPage" size="sm" :items="100" :items-per-page="10"></i-pagination>
@@ -91,7 +91,7 @@ You're able to use the `size` modifier to control the size of your pagination it
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -110,7 +110,7 @@ export default {
 ### API
 
 <i-api-preview title="Pagination API" markup="i-pagination" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Pagination">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -167,7 +167,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -191,7 +191,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

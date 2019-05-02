@@ -40,7 +40,7 @@ The `<i-form>` component is a wrapper that provides proper handling of form vali
     </i-form-group>
 </i-form>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form>
@@ -82,7 +82,7 @@ The `<i-form>` component is a wrapper that provides proper handling of form vali
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -139,7 +139,7 @@ Setting a form as `disabled` will cause all of its child inputs to be disabled.
     </i-form-group>
 </i-form>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form disabled>
@@ -181,7 +181,7 @@ Setting a form as `disabled` will cause all of its child inputs to be disabled.
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -240,7 +240,7 @@ All of the components inside the `<i-form>` will inherit the parent form group's
     </i-form-group>
 </i-form>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form size="sm">
@@ -282,7 +282,7 @@ All of the components inside the `<i-form>` will inherit the parent form group's
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -336,7 +336,7 @@ export default {
     </i-form-group>
 </i-form>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form size="md">
@@ -378,7 +378,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -432,7 +432,7 @@ export default {
     </i-form-group>
 </i-form>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form size="lg">
@@ -474,7 +474,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -497,7 +497,7 @@ export default {
 ### API
 
 <i-api-preview title="Form API" markup="i-form" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -547,7 +547,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -563,7 +563,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

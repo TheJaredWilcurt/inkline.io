@@ -14,7 +14,7 @@ Using the `validators` field, you can specify an array of validators to be used 
         <i-input :schema="basicForm.input" v-model="basicForm.input.value" placeholder="Enter your first name.." />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -25,7 +25,7 @@ Using the `validators` field, you can specify an array of validators to be used 
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -45,7 +45,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <pre>
 <code>
 <span class="_text-muted">// console.log(this.form);</span>
@@ -55,7 +55,7 @@ export default {
 </template>
 </i-code-preview>
 
-<i-alert variant="info" class="-code"><template slot="icon"><i class="icon -info h3"></i></template>The following keywords are reserved for validation purpopses and cannot be used as field names:<div class="_margin-top-1-2"></div>`name`, `fields`, `validate`, `validateOn`, `validators`, `invalid`, `valid`, `touch`, `touched`, `untouched`, `dirty`, `pristine`, `set`, `add`, `remove`, `errors`.</i-alert> 
+<i-alert variant="info" class="-code"><template v-slot:icon><i class="icon -info h3"></i></template>The following keywords are reserved for validation purpopses and cannot be used as field names:<div class="_margin-top-1-2"></div>`name`, `fields`, `validate`, `validateOn`, `validators`, `invalid`, `valid`, `touch`, `touched`, `untouched`, `dirty`, `pristine`, `set`, `add`, `remove`, `errors`.</i-alert> 
 
 ### Input Default Value
 Providing a default value for a schema field can be done using the `value` field as follows:
@@ -66,7 +66,7 @@ Providing a default value for a schema field can be done using the `value` field
         <i-input :schema="defaultValueForm.input" v-model="defaultValueForm.input.value" placeholder="Enter your first name.." />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -77,7 +77,7 @@ Providing a default value for a schema field can be done using the `value` field
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -94,7 +94,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -114,7 +114,7 @@ Each validator accepts a custom error message using the `message` field. This al
         <i-input :schema="validateValueForm.input" v-model="validateValueForm.input.value" placeholder="Enter your first name.." />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -125,7 +125,7 @@ Each validator accepts a custom error message using the `message` field. This al
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -144,7 +144,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -166,7 +166,7 @@ By using the `validateOn` field you can specify the event that triggers the vali
         <i-input :schema="validateOnForm.input2" v-model="validateOnForm.input2.value" placeholder="This field is validated on blur" />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -180,7 +180,7 @@ By using the `validateOn` field you can specify the event that triggers the vali
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -206,7 +206,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -232,7 +232,7 @@ Objects that aren't empty and don't have a `value` or `validators` field are tre
         <i-input :schema="groupedValueForm.group.input" v-model="groupedValueForm.group.input.value" placeholder="Enter your address.." />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -246,7 +246,7 @@ Objects that aren't empty and don't have a `value` or `validators` field are tre
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -264,7 +264,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -283,7 +283,7 @@ Form groups can be an `Array` of fields, allowing you to loop over them using `v
         <i-input :schema="field" v-model="field.value" placeholder="Type something.." />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -294,7 +294,7 @@ Form groups can be an `Array` of fields, allowing you to loop over them using `v
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -312,7 +312,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -365,7 +365,7 @@ The schema object `this.form` contains the validation state of the `<i-form>`, a
         <i-button type="submit" class="_margin-bottom-0">Submit</i-button>
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -403,7 +403,7 @@ The schema object `this.form` contains the validation state of the `<i-form>`, a
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -447,7 +447,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>

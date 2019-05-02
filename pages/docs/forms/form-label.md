@@ -11,7 +11,7 @@ You can add a label to your input by grouping an `<i-form-label>` and any input 
     <i-input v-model="labelInputValue" placeholder="Type something.." />
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group>
@@ -21,7 +21,7 @@ You can add a label to your input by grouping an `<i-form-label>` and any input 
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -56,7 +56,7 @@ You can add labels to either side of your input using the `label` slot, together
     <i-input v-model="labelRightInputValue" placeholder="Type something.." />
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group>
@@ -78,7 +78,7 @@ You can add labels to either side of your input using the `label` slot, together
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -113,7 +113,7 @@ You're able to use the `size` property to control the size of your form labels, 
     <i-input v-model="labelLgInputValue" placeholder="Type something.." />
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group>
@@ -135,7 +135,7 @@ You're able to use the `size` property to control the size of your form labels, 
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -154,7 +154,7 @@ export default {
 ### API
 
 <i-api-preview title="Form Label API" markup="i-form-label" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -183,7 +183,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

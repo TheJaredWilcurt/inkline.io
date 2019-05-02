@@ -22,7 +22,7 @@ Just like Arrays, Objects can be manipulated and kept up to date using a custom 
         <i-button @click="setAddress" type="button" class="_margin-bottom-0">Set Address</i-button>&nbsp;
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -44,7 +44,7 @@ Just like Arrays, Objects can be manipulated and kept up to date using a custom 
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -73,7 +73,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -102,7 +102,7 @@ Inkline provides you with custom implementations for Array group operations usin
         <i-button @click="replaceField" type="button" class="_margin-bottom-0">Replace First</i-button>
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -119,7 +119,7 @@ Inkline provides you with custom implementations for Array group operations usin
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -148,7 +148,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>

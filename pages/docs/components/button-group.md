@@ -12,7 +12,7 @@ You can group a series of `<i-button>` components inside a `<i-button-group>` to
     <i-button>Right</i-button>
 </i-button-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button-group>
@@ -55,7 +55,7 @@ The default size is set to `md`.
     </i-button-group>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button-group size="sm">
@@ -96,7 +96,7 @@ When placing a `<i-button-group>` inside another `<i-button-group>`, you'll get 
     </i-button-group>
 </i-button-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button-group>
@@ -123,7 +123,7 @@ Using the `vertical` property, you can stack a set of buttons vertically rather 
     <i-button>Button 3</i-button>
 </i-button-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button-group vertical>
@@ -166,7 +166,7 @@ The default size is set to `md`.
     </div>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button-group vertical size="sm">
@@ -197,7 +197,7 @@ The default size is set to `md`.
 ### API
 
 <i-api-preview title="Button Group API" expanded markup="i-button-group" link="https://github.com/inkline/inkline/tree/master/src/components/ButtonGroup">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -233,7 +233,7 @@ The default size is set to `md`.
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

@@ -28,7 +28,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-content>
 </i-layout>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-layout>
@@ -59,7 +59,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-footer>
 </i-layout>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-layout>
@@ -99,7 +99,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-footer>
 </i-layout>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-layout>
@@ -124,7 +124,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 ~~~   
 
 </template>
-<template slot="css">
+<template v-slot:css>
 
 ~~~css
 .layout-aside {
@@ -154,7 +154,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-footer>
 </i-layout>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-layout>
@@ -179,7 +179,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 ~~~
 
 </template>
-<template slot="css">
+<template v-slot:css>
 
 ~~~css
 .layout-aside {
@@ -212,7 +212,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-footer>
 </i-layout>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-layout>
@@ -241,7 +241,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 ~~~
 
 </template>
-<template slot="css">
+<template v-slot:css>
 
 ~~~css
 .layout-aside {
@@ -271,7 +271,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout>
 </i-layout>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-layout vertical>
@@ -296,7 +296,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 ~~~
 
 </template>
-<template slot="css">
+<template v-slot:css>
 
 ~~~css
 .layout-aside {
@@ -326,7 +326,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-aside>
 </i-layout>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-layout vertical>
@@ -351,7 +351,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 ~~~
 
 </template>
-<template slot="css">
+<template v-slot:css>
 
 ~~~css
 .layout-aside {
@@ -384,7 +384,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
     </i-layout-aside>
 </i-layout>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-layout vertical>
@@ -413,7 +413,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 ~~~
 
 </template>
-<template slot="css">
+<template v-slot:css>
 
 ~~~css
 .layout-aside {
@@ -427,7 +427,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 ### API
 
 <i-api-preview title="Layout API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Layout">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -449,7 +449,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -468,7 +468,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-api-preview>
 
 <i-api-preview title="Layout Header API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/LayoutHeader" default-active='slots'>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -487,7 +487,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-api-preview>
 
 <i-api-preview title="Layout Content API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/LayoutContent" default-active='slots'>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -506,7 +506,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-api-preview>
 
 <i-api-preview title="Layout Footer API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/LayoutFooter" default-active='slots'>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -525,7 +525,7 @@ Layouts are based on flexbox, so please make sure your browser fully supports it
 </i-api-preview>
 
 <i-api-preview title="Layout Aside API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/LayoutAside" default-active='slots'>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

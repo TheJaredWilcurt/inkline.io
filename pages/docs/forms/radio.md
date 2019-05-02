@@ -15,7 +15,7 @@ You will need to use the `i-radio` component together with a `i-radio-group`.
     <i-radio value="Tennis" disabled>Tennis</i-radio>
 </i-radio-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-radio-group v-model="selected">
@@ -27,7 +27,7 @@ You will need to use the `i-radio` component together with a `i-radio-group`.
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -40,7 +40,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 
 Selected value: <code>{{selectedGroup}}</code>
 
@@ -60,7 +60,7 @@ You're able to use the `size` property to control the size of your inputs, using
     <i-radio size="lg" value="Basketball">Basketball</i-radio>
 </i-radio-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-radio-group v-model="selected">
@@ -71,7 +71,7 @@ You're able to use the `size` property to control the size of your inputs, using
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -113,7 +113,7 @@ Applying the size `size` property to a `i-radio-group` will set the chosen size 
 </i-radio-group>
 
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-radio-group size="sm" v-model="selected">
@@ -141,7 +141,7 @@ Applying the size `size` property to a `i-radio-group` will set the chosen size 
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -168,7 +168,7 @@ Inkline uses custom radio designs by setting the `custom` property to `true` by 
     <i-radio :custom="true" value="Basketball">Basketball</i-radio>    
 </i-radio-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-radio-group v-model="selectedCustomTrue">
@@ -179,7 +179,7 @@ Inkline uses custom radio designs by setting the `custom` property to `true` by 
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -205,7 +205,7 @@ By setting the `custom` property to `false`, the radios use the browser's defaul
     <i-radio :custom="false" value="Basketball">Basketball</i-radio>
 </i-radio-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-radio-group v-model="selected">
@@ -216,7 +216,7 @@ By setting the `custom` property to `false`, the radios use the browser's defaul
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -244,7 +244,7 @@ You can display your radio inputs as toggleable buttons using the provided `<i-r
     <i-radio-button value="Venus" disabled>Venus</i-radio-button>
 </i-radio-button-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-radio-button-group v-model="selected">
@@ -256,7 +256,7 @@ You can display your radio inputs as toggleable buttons using the provided `<i-r
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -275,7 +275,7 @@ export default {
 ### API
 
 <i-api-preview title="Radio API" markup="i-radio" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -339,7 +339,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -355,7 +355,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -391,7 +391,7 @@ export default {
 </i-api-preview>
 
 <i-api-preview title="Radio Group API" markup="i-radio-group" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -434,7 +434,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -450,7 +450,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

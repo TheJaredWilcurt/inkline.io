@@ -17,7 +17,7 @@ Inkline includes several predefined button styles, each serving its own semantic
 <i-button variant="dark">Dark</i-button>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button variant="primary">Primary</i-button>
@@ -60,7 +60,7 @@ just like with the `<button>` element.
 <i-button type="reset">Reset</i-button>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button type="button">Button</i-button>
@@ -93,7 +93,7 @@ If you need to change the `<button>` node used to render the component, you can 
 <i-button tag="input" type="reset" value="Reset Input"></i-button>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button tag="a">Link Button</i-button>
@@ -130,7 +130,7 @@ to remove background images and colors on any button when not interacted with.
 <i-button outline variant="dark">Dark</i-button>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button outline variant="primary">Primary</i-button>
@@ -176,7 +176,7 @@ You can create link buttons that look the same as normal links. Link buttons wil
 <i-button link variant="dark">Dark</i-button>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button link variant="primary">Primary</i-button>
@@ -218,7 +218,7 @@ modifier. You're also able to use the `size` modifier to control the size of you
 <i-button circle size="lg">L</i-button>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button circle size="sm">S</i-button>
@@ -245,7 +245,7 @@ The default size is set to `md`.
 <i-button size="lg">Large Button</i-button>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button size="sm">Small Button</i-button>
@@ -266,7 +266,7 @@ You can create block level buttons that span the full width of a parent by addin
 <i-code-preview title="Block Button" link="https://github.com/inkline/inkline/tree/master/src/components/Button" no-panel-margin>
 <i-button block>Block Button</i-button>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button block>Block Button</i-button>
@@ -285,7 +285,7 @@ Buttons will appear pressed when active. You can force a button to have an activ
 <i-button active variant="primary">Active Primary Button</i-button>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button active>Active Default Button</i-button>
@@ -307,7 +307,7 @@ You can make buttons look inactive or disabled by adding the `disabled` boolean 
 <i-button disabled variant="primary">Disabled Primary Button</i-button>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button active>Active Default Button</i-button>
@@ -331,7 +331,7 @@ The `<i-button>` component is well integrated with the [Vue Router](https://rout
 <i-button :to="{ name: 'docs-components-button' }">Button Route</i-button>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-button href="http://inkline.io">Button Link</i-button>
@@ -347,7 +347,7 @@ The `<i-button>` component is well integrated with the [Vue Router](https://rout
 ### API
 
 <i-api-preview title="Button API" expanded markup="i-button" link="https://github.com/inkline/inkline/tree/master/src/components/Button">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -446,7 +446,7 @@ The `<i-button>` component is well integrated with the [Vue Router](https://rout
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -466,7 +466,7 @@ The `<i-button>` component is well integrated with the [Vue Router](https://rout
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
             <table class="table -bordered _margin-bottom-0">
                 <thead>
                     <tr>

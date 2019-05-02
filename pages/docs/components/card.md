@@ -15,7 +15,7 @@ By default, cards are set to have `width: 100%`, fully spanning the width of the
 <i-row>
     <i-column md="6">
         <i-card>
-            <img slot="image" src="/images/placeholder-500x250.jpg" alt="Card Image" />
+            <template v-slot:image><img src="/images/placeholder-500x250.jpg" alt="Card Image" /></template>
             <h4 class="title">Card Title</h4>
             <p class="subtitle">Card Subtitle</p>
             <p>
@@ -26,11 +26,11 @@ By default, cards are set to have `width: 100%`, fully spanning the width of the
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-card>
-    <img slot="image" src=".." alt="Card Image" />
+    <template v-slot:image><img src=".." alt="Card Image" /></template>
     <h4 class="title">Card Title</h4>
     <p class="subtitle">Card Subtitle</p>
     <p>
@@ -56,7 +56,7 @@ The building block of a card is the card body. All the content placed in the def
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-card>
@@ -75,20 +75,20 @@ Optionally, you can provide a header or a footer for your cards.
 <i-row>
     <i-column md="6">
         <i-card>
-            <template slot="header">Card Header</template>
+            <template v-slot:header>Card Header</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
-            <template slot="footer">Card Footer</template>
+            <template v-slot:footer>Card Footer</template>
         </i-card>
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-card>
-    <template slot="header">Card Header</template>
+    <template v-slot:header>Card Header</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
-    <template slot="footer">Card Footer</template>
+    <template v-slot:footer>Card Footer</template>
 </i-card>
 ~~~
 
@@ -103,17 +103,17 @@ You can provide an image at the top of the card, using the `image` slot.
 <i-row>
     <i-column md="6">
         <i-card>
-            <img slot="image" src="/images/placeholder-500x250.jpg" alt="Card Image" />
+            <template v-slot:image><img src="/images/placeholder-500x250.jpg" alt="Card Image" /></template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-card>
-    <img slot="image" src=".." alt="Card Image" />
+    <template v-slot:image><img src=".." alt="Card Image" /></template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 ~~~
@@ -149,7 +149,7 @@ The default size is set to `md`.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-card size="sm">
@@ -178,13 +178,13 @@ Inkline includes several predefined card styles that you can use within your app
 <i-row class="_margin-bottom-1">
     <i-column md="6">
         <i-card variant="light">
-            <template slot="header">Light Card</template>
+            <template v-slot:header>Light Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
     <i-column md="6">
         <i-card variant="dark">
-            <template slot="header">Dark Card</template>
+            <template v-slot:header>Dark Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
@@ -193,13 +193,13 @@ Inkline includes several predefined card styles that you can use within your app
 <i-row class="_margin-bottom-1">
     <i-column md="6">
         <i-card variant="primary">
-            <template slot="header">Primary Card</template>
+            <template v-slot:header>Primary Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
     <i-column md="6">
         <i-card variant="secondary">
-            <template slot="header">Secondary Card</template>
+            <template v-slot:header>Secondary Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
@@ -208,13 +208,13 @@ Inkline includes several predefined card styles that you can use within your app
 <i-row class="_margin-bottom-1">
     <i-column md="6">
         <i-card variant="success">
-            <template slot="header">Success Card</template>
+            <template v-slot:header>Success Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
     <i-column md="6">
         <i-card variant="danger">
-            <template slot="header">Danger Card</template>
+            <template v-slot:header>Danger Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
@@ -223,65 +223,65 @@ Inkline includes several predefined card styles that you can use within your app
 <i-row>
     <i-column md="6">
         <i-card variant="warning">
-            <template slot="header">Warning Card</template>
+            <template v-slot:header>Warning Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
     <i-column md="6">
         <i-card variant="info">
-            <template slot="header">Info Card</template>
+            <template v-slot:header>Info Card</template>
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </i-card>
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-card variant="light">
-    <template slot="header">Light Card</template>
+    <template v-slot:header>Light Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 ~~~
 ~~~html
 <i-card variant="dark">
-    <template slot="header">Dark Card</template>
+    <template v-slot:header>Dark Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 ~~~
 ~~~html
 <i-card variant="primary">
-    <template slot="header">Primary Card</template>
+    <template v-slot:header>Primary Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 ~~~
 ~~~html
 <i-card variant="secondary">
-    <template slot="header">Secondary Card</template>
+    <template v-slot:header>Secondary Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 ~~~
 ~~~html
 <i-card variant="success">
-    <template slot="header">Success Card</template>
+    <template v-slot:header>Success Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 ~~~
 ~~~html
 <i-card variant="danger">
-    <template slot="header">Danger Card</template>
+    <template v-slot:header>Danger Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 ~~~
 ~~~html
 <i-card variant="warning">
-    <template slot="header">Warning Card</template>
+    <template v-slot:header>Warning Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 ~~~
 ~~~html
 <i-card variant="info">
-    <template slot="header">Info Card</template>
+    <template v-slot:header>Info Card</template>
     Some quick example text to build on the card title and make up the bulk of the card's content.
 </i-card>
 ~~~
@@ -293,7 +293,7 @@ Inkline includes several predefined card styles that you can use within your app
 ### API
 
 <i-api-preview markup="i-card" title="Card API" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Card">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -322,7 +322,7 @@ Inkline includes several predefined card styles that you can use within your app
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

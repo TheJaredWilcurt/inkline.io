@@ -34,7 +34,7 @@ The `<i-form-group>` component is a wrapper that provides proper grouping of lab
     </i-radio-group>
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group>
@@ -70,7 +70,7 @@ The `<i-form-group>` component is a wrapper that provides proper grouping of lab
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -126,7 +126,7 @@ Setting a form group as `disabled` will cause all of its child inputs to be disa
     </i-radio-group>
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group disabled>
@@ -162,7 +162,7 @@ Setting a form group as `disabled` will cause all of its child inputs to be disa
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -219,7 +219,7 @@ All of the components inside the `<i-form-group>` will inherit the parent form g
     </i-radio-group>
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group size="sm">
@@ -255,7 +255,7 @@ All of the components inside the `<i-form-group>` will inherit the parent form g
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -307,7 +307,7 @@ export default {
     </i-radio-group>
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group size="md">
@@ -343,7 +343,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -395,7 +395,7 @@ export default {
     </i-radio-group>
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group size="lg">
@@ -431,7 +431,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -464,7 +464,7 @@ You can nest form groups in order to control the `disabled`, `readonly` and `siz
     </i-form-group>
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group disabled>
@@ -478,7 +478,7 @@ You can nest form groups in order to control the `disabled`, `readonly` and `siz
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -514,7 +514,7 @@ export default {
     </i-form-group>
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group readonly>
@@ -532,7 +532,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -567,7 +567,7 @@ export default {
     </i-radio-group>
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form-group size="lg">
@@ -588,7 +588,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -612,7 +612,7 @@ export default {
 ### API
 
 <i-api-preview title="Form Group API" markup="i-form-group" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -662,7 +662,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

@@ -15,7 +15,7 @@ There are several validation options that can be used in the `validators` field:
         <i-input :schema="alphaValidatorForm.inputDashes" v-model="alphaValidatorForm.inputDashes.value" placeholder="This field should contain only letters and dashes" />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -32,7 +32,7 @@ There are several validation options that can be used in the `validators` field:
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -61,7 +61,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -83,7 +83,7 @@ export default {
         <i-input :schema="alphanumericValidatorForm.inputDashes" v-model="alphanumericValidatorForm.inputDashes.value" placeholder="This field should contain only letters, numbers and dashes" />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -100,7 +100,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -129,7 +129,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -146,7 +146,7 @@ export default {
         <i-input :schema="emailValidatorForm.input" v-model="emailValidatorForm.input.value" placeholder="This field an is email" />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -157,7 +157,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -176,7 +176,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -193,7 +193,7 @@ export default {
         <i-input :schema="maxValidatorForm.input" v-model="maxValidatorForm.input.value" placeholder="This field accepts a maximum value of 100." />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -204,7 +204,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -223,7 +223,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -240,7 +240,7 @@ export default {
         <i-input :schema="minValidatorForm.input" v-model="minValidatorForm.input.value" placeholder="This field accepts a minimum value of 10." />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -251,7 +251,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -270,7 +270,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -287,7 +287,7 @@ export default {
         <i-input :schema="maxLengthValidatorForm.input" v-model="maxLengthValidatorForm.input.value" placeholder="This field accepts up to 12 characters." />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -298,7 +298,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -317,7 +317,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -334,7 +334,7 @@ export default {
         <i-input :schema="minLengthValidatorForm.input" v-model="minLengthValidatorForm.input.value" placeholder="This field requires at least 6 characters." />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -345,7 +345,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -364,7 +364,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -387,7 +387,7 @@ export default {
         <i-input :schema="numberValidatorForm.inputNegativeDecimal" v-model="numberValidatorForm.inputNegativeDecimal.value" placeholder="This field should contain positive or negative decimal numbers" />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -404,7 +404,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -433,7 +433,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -450,7 +450,7 @@ export default {
         <i-input :schema="requiredValidatorForm.input" v-model="requiredValidatorForm.input.value" placeholder="This field is required" />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -461,7 +461,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -480,7 +480,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -500,7 +500,7 @@ export default {
         <i-input :schema="sameAsValidatorForm.passwordConfirmation" v-model="sameAsValidatorForm.passwordConfirmation.value" type="password" placeholder="Password Confirmation" />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -514,7 +514,7 @@ export default {
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -534,7 +534,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>
@@ -555,7 +555,7 @@ You can provide a custom validation function that will be applied on the value o
         <i-input :schema="customValidatorForm.input" v-model="customValidatorForm.input.value" placeholder="This field is custom validated. It needs to contain 'inkline'" />
     </i-form-group>
 </i-form>
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-form :schema="form">
@@ -566,7 +566,7 @@ You can provide a custom validation function that will be applied on the value o
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -585,7 +585,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 <span class="_text-muted">// console.log(this.form);</span>
 <pre>
 <code>

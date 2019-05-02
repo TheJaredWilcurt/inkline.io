@@ -10,7 +10,7 @@ To achieve that, we apply `max-width: 100%;` and `height: auto;` to the image so
 
 <img src="/images/placeholder-1000x400.jpg" width="1000" height="400" class="image -responsive" alt="Responsive image" link="https://github.com/inkline/inkline/tree/master/src/css/core/images">
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <img src="..." width="1000" height="400" class="image -responsive" alt="Responsive image">
@@ -31,7 +31,7 @@ Images in Inkline can be made fluid using the `.-fluid` modifier. To achieve tha
 
 <img src="/images/placeholder-1000x400.jpg" width="1000" height="400" class="image -fluid" alt="Fluid image">
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <img src="..." width="1000" height="400" class="image -fluid" alt="Fluid image">
@@ -47,7 +47,7 @@ You can use the `.-thumbnail` modifier to give an image a rounded 1px border app
 
 <img src="/images/placeholder-400x400.jpg" width="200" height="200" class="image -thumbnail" alt="Thumbnail">
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <img src="..." class="image -thumbnail" alt="Thumbnail">
@@ -63,7 +63,7 @@ Besides thumbnails, you can opt for a retro look having a larger bottom border u
 
 <img src="/images/placeholder-400x400.jpg" width="200" height="200" class="image -polaroid" alt="Polaroid">
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <img src="..." class="image -polaroid" alt="Polaroid">
@@ -83,7 +83,7 @@ margin utility class.
     Inkline is making this image float on the left side of the text. Inkline provides you with useful helper classes for positioning page elements such as images. The text will flow to the right and underneath this image, something you will find useful when adding left or right aligned images to a blog article. It is common to also add a right and bottom padding to the image. 
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <img src="..." class="image _float-left" alt="Left floating image">
@@ -100,7 +100,7 @@ margin utility class.
     Inkline is making this image float on the right side of the text. Inkline provides you with useful helper classes for positioning page elements such as images. The text will flow to the left and underneath this image, something you will find useful when adding left or right aligned images to a blog article. It is common to also add a left and bottom padding to the image. 
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <img src="..." class="image _float-right" alt="Right floating image">
@@ -116,7 +116,7 @@ margin utility class.
     <img src="/images/placeholder-400x400.jpg" width="200" height="200" alt="Centered image">
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <div class="_text-center">
@@ -131,7 +131,7 @@ margin utility class.
 
 <img src="/images/placeholder-400x400.jpg" width="200" height="200" class="_display-block _margin-x-auto" alt="Centered image">
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <img src="..." class="_display-block _margin-x-auto" alt="Centered image">
@@ -145,7 +145,7 @@ If you are using the `<picture>` element to specify multiple `<source>` elements
 the `.image` classes to the `<img>` and not to the `<picture>` tag.
 
 <i-code-preview title="Image Alignment - Margin Auto" default-active="html" link="https://github.com/inkline/inkline/tree/master/src/css/core/images">
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 ​<picture>

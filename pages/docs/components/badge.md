@@ -31,7 +31,7 @@ Inkline includes several predefined badge styles, each serving its own semantic 
     Danger
 </i-badge>
     
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-badge variant="primary">Primary</i-badge>
@@ -76,7 +76,7 @@ You're able to use the `size` modifier to control the text and spacing size of y
     Large
 </i-badge>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-badge size="sm">Small</i-badge>
@@ -101,7 +101,7 @@ Badges always match the size of the immediate parent element by using relative f
 <h5 class="_margin-top-0">Heading 5 <i-badge variant="primary">New</i-badge></h5>
 <h6 class="_margin-top-0">Heading 6 <i-badge variant="primary">New</i-badge></h6>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <h1>Heading 1 <i-badge variant="primary">New</i-badge></h1>
@@ -129,7 +129,7 @@ Badges always match the size of the immediate parent element by using relative f
 ### API
 
 <i-api-preview title="Badge API" expanded markup="i-badge" link="https://github.com/inkline/inkline/tree/master/src/components/Badge">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -158,7 +158,7 @@ Badges always match the size of the immediate parent element by using relative f
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

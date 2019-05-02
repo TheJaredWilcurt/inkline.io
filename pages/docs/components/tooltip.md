@@ -2,21 +2,21 @@
 Tooltips are useful for conveying information when an user hovers over an element.{.lead}
 
 ### Example
-Wrap both the tooltip's trigger element (such as an `<i-button>`) and the `<template slot="body">` inside a `<i-tooltip>` component.
+Wrap both the tooltip's trigger element (such as an `<i-button>`) and the `<template v-slot:body>` inside a `<i-tooltip>` component.
 
 <i-code-preview title="Tooltip Example" link="https://github.com/inkline/inkline/tree/master/src/components/Tooltip" no-panel-margin>
 
 <i-tooltip>
     <i-button>Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-tooltip>
     <i-button>Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 
@@ -33,49 +33,49 @@ Each of the positions also has a `-start` or `-end` variant (`top-start`, `top-e
 <div>
 <i-tooltip placement="top">
     <i-button>Top Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip placement="bottom">
     <i-button>Bottom Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip placement="left">
     <i-button>Left Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip placement="right">
     <i-button>Right Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-tooltip placement="top">
     <i-button>Top Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 ~~~html
 <i-tooltip placement="bottom">
     <i-button>Bottom Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 ~~~html
 <i-tooltip placement="left">
     <i-button>Left Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 ~~~html
 <i-tooltip placement="right">
     <i-button>Right Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 
@@ -90,7 +90,7 @@ Tooltips can contain text of virtually any size. You can control the wrapping an
 <div>
 <i-tooltip>
     <i-button>Normal Tooltip</i-button>
-    <template slot="body">
+    <template v-slot:body>
         This is a <strong>freeform tooltip</strong> with a <u>long text</u>. Its width is not controlled.
     </template>
 </i-tooltip>&nbsp;
@@ -103,12 +103,12 @@ Tooltips can contain text of virtually any size. You can control the wrapping an
 </i-tooltip>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-tooltip>
     <i-button>Normal Tooltip</i-button>
-    <template slot="body">
+    <template v-slot:body>
         This is a <strong>freeform tooltip</strong> with a <u>long text</u>. Its width is not controlled.
     </template>
 </i-tooltip>
@@ -132,59 +132,59 @@ You can use the `trigger` property to trigger the tooltip on `hover` or `click`.
 
 <i-tooltip trigger="click">
     <i-button>Click Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip trigger="hover">
     <i-button>Hover Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip trigger="focus">
     <i-button>Focus Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip :trigger="['focus', 'hover']">
     <i-button>Multiple Events Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip trigger="manual" v-model="manualTooltip">
     <i-button @click="manualTooltip = !manualTooltip">Manual Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-tooltip trigger="click">
     <i-button>Click Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 ~~~html
 <i-tooltip trigger="hover">
     <i-button>Hover Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 ~~~html
 <i-tooltip trigger="focus">
     <i-button>Focus Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 ~~~html
 <i-tooltip :trigger="['focus', 'hover']">
     <i-button>Multiple Events Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 ~~~
 ~~~html
 <i-tooltip trigger="manual" v-model="visible">
     <i-button @click="visible = !visible">Manual Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 
@@ -200,38 +200,38 @@ The default size is set to `md`.
 <div>
 <i-tooltip size="sm">
     <i-button>Small Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip size="md">
     <i-button>Medium Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip size="lg">
     <i-button>Large Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-tooltip size="sm">
     <i-button>Small Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 ~~~html
 <i-tooltip size="md">
     <i-button>Medium Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 ~~~html
 <i-tooltip size="lg">
     <i-button>Large Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 
@@ -247,27 +247,27 @@ Inkline includes two predefined tooltip styles, each serving its own semantic pu
 <div>
 <i-tooltip variant="light">
     <i-button variant="light">Light Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>&nbsp;
 
 <i-tooltip variant="dark">
     <i-button variant="dark">Dark Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-tooltip variant="light">
     <i-button variant="light">Light Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 ~~~html
 <i-tooltip variant="dark">
     <i-button variant="dark">Dark Tooltip</i-button>
-    <template slot="body">Tooltip</template>
+    <template v-slot:body>Tooltip</template>
 </i-tooltip>
 ~~~
 
@@ -278,7 +278,7 @@ Inkline includes two predefined tooltip styles, each serving its own semantic pu
 ### API
 
 <i-api-preview title="Tooltip API" markup="i-tooltip" expanded link="https://github.com/inkline/inkline/tree/master/src/components/Tooltip">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -365,7 +365,7 @@ Inkline includes two predefined tooltip styles, each serving its own semantic pu
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -385,7 +385,7 @@ Inkline includes two predefined tooltip styles, each serving its own semantic pu
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

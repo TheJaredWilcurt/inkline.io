@@ -8,14 +8,14 @@ Allow your users to input data directly from the keyboard, on multiple lines. { 
 
 <i-textarea v-model="textareaValue" placeholder="Type something.." />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-textarea v-model="value" placeholder="Type something.." />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -36,14 +36,14 @@ export default {
 
 <i-textarea v-model="disabledTextareaValue" placeholder="Type something.." disabled />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-textarea v-model="value" placeholder="Type something.." disabled />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -64,14 +64,14 @@ export default {
 
 <i-textarea v-model="clearableTextareaValue" placeholder="Type something.." clearable />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-textarea v-model="value" placeholder="Type something.." clearable />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -105,7 +105,7 @@ your Textarea type using an icon or text.
     <i slot="suffix" class="form-input-icon">@</i>
 </i-textarea>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-textarea v-model="value" placeholder="Type something..">
@@ -125,7 +125,7 @@ your Textarea type using an icon or text.
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -158,7 +158,7 @@ You can add additional content such as select fields, buttons or plain text, to 
     <span slot="append" class="form-input-append">.com</span>
 </i-textarea>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-textarea v-model="value" placeholder="Type something..">
@@ -178,7 +178,7 @@ You can add additional content such as select fields, buttons or plain text, to 
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -203,7 +203,7 @@ You're able to use the `size` modifier to control the size of your textareas, us
 <i-textarea size="md" v-model="mdTextareaValue" placeholder="Type something medium.." class="_margin-bottom-1" />
 <i-textarea size="lg" v-model="lgTextareaValue" placeholder="Type something large.." />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-textarea size="sm" v-model="value" placeholder="Type something small.." />
@@ -216,7 +216,7 @@ You're able to use the `size` modifier to control the size of your textareas, us
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -235,7 +235,7 @@ export default {
 ### API
 
 <i-api-preview title="Textarea API" markup="i-textarea" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -299,7 +299,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -327,7 +327,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

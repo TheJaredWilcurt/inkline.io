@@ -14,7 +14,7 @@ List groups support any content inside of them. Take advantage of their flexibil
     <i-list-group-item disabled>Disabled</i-list-group-item>
 </i-list-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-list-group>
@@ -59,7 +59,7 @@ You're able to use the `size` modifier to control the padding of your list group
 </i-list-group>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-list-group size="sm">
@@ -101,7 +101,7 @@ You can control the active state of your `<i-list-group-item>` using the `active
 </i-list-group>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-list-group>
@@ -126,7 +126,7 @@ You can control the disabled state of your `<i-list-group-item>` using the `disa
 </i-list-group>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-list-group>
@@ -152,7 +152,7 @@ You can disable the border of your list group by setting the `bordered` property
 </i-list-group>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-list-group :bordered="false">
@@ -188,7 +188,7 @@ The `<i-list-group-item>` accepts any type of content, allowing you to create la
 </i-list-group>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-list-group>
@@ -214,7 +214,7 @@ The `<i-list-group-item>` accepts any type of content, allowing you to create la
 ### API
 
 <i-api-preview title="List Group API" expanded markup="i-list-group" link="https://github.com/inkline/inkline/tree/master/src/components/ListGroup">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -243,7 +243,7 @@ The `<i-list-group-item>` accepts any type of content, allowing you to create la
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -262,7 +262,7 @@ The `<i-list-group-item>` accepts any type of content, allowing you to create la
 </i-api-preview>
 
 <i-api-preview title="List Group Item API" markup="i-list-group-item" expanded link="https://github.com/inkline/inkline/tree/master/src/components/ListGroupItem">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -298,7 +298,7 @@ The `<i-list-group-item>` accepts any type of content, allowing you to create la
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

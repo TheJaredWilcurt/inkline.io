@@ -9,14 +9,14 @@ Allow your users to input data directly from the keyboard. { .lead }
 
 <i-input-number v-model="inputValue" placeholder="Type something.." />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input-number v-model="value" placeholder="Type something.." />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -29,7 +29,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 
 Value: <code>{{inputValue}}</code>
 
@@ -43,14 +43,14 @@ Value: <code>{{inputValue}}</code>
 
 <i-input-number v-model="disabledInputValue" placeholder="Type something.." disabled />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input-number v-model="value" placeholder="Type something.." disabled />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -73,14 +73,14 @@ export default {
 
 <i-input-number v-model="minMaxInputValue" :min="1" :max="10" placeholder="Type something.." />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input-number v-model="value" :min="1" :max="10" placeholder="Type something.." />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -93,7 +93,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 
 Value: <code>{{minMaxInputValue}}</code>
 
@@ -109,14 +109,14 @@ You can set the increment / decrement step by using the `step` property. The ste
 
 <i-input-number v-model="stepInputValue" :step="10" placeholder="Type something.." />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input-number v-model="value" :step="10" placeholder="Type something.." />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -129,7 +129,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 
 Value: <code>{{stepInputValue}}</code>
 
@@ -145,14 +145,14 @@ You can set the number precision using the `precision` property, allowing you to
 
 <i-input-number v-model="precisionInputValue" :precision="2" placeholder="Type something.." />
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input-number v-model="value" :precision="2" placeholder="Type something.." />
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -165,7 +165,7 @@ export default {
 ~~~
 
 </template>
-<template slot="output">
+<template v-slot:output>
 
 Value: <code>{{precisionInputValue}}</code>
 
@@ -193,7 +193,7 @@ your input type using an icon or text.
 </i-input-number>
 
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input-number v-model="value" placeholder="Type something..">
@@ -215,7 +215,7 @@ your input type using an icon or text.
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -249,7 +249,7 @@ You can add additional content such as select fields, buttons or plain text, to 
     <span slot="append" class="form-input-append">.com</span>
 </i-input-number>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input-number v-model="value" placeholder="Type something..">
@@ -271,7 +271,7 @@ You can add additional content such as select fields, buttons or plain text, to 
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -303,7 +303,7 @@ You're able to use the `size` modifier to control the size of your inputs, using
     <i-input-number size="lg" v-model="lgInputValue" placeholder="Type something large.." />
 </i-form-group>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-input-number size="sm" v-model="value" placeholder="Type something small.." />
@@ -316,7 +316,7 @@ You're able to use the `size` modifier to control the size of your inputs, using
 ~~~
 
 </template>
-<template slot="js">
+<template v-slot:js>
 
 ~~~js
 export default {
@@ -335,7 +335,7 @@ export default {
 ### API
 
 <i-api-preview title="Input Number API" markup="i-input-number" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -420,7 +420,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -448,7 +448,7 @@ export default {
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

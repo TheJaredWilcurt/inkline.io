@@ -29,7 +29,7 @@ All HTML headings, `<h1>` through `<h6>`, are available.
     <h6>h6. Inkline heading</h6>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <h1>h1. Inkline heading</h1>
@@ -57,7 +57,7 @@ want to match the font styling of a heading but cannot use the associated HTML e
     <div><span class="h6">h6. Inkline heading</span></div>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <span class="h1">h1. Inkline heading</span>
@@ -85,7 +85,7 @@ If you need something larger than headings, you can use displays, `.d1` through 
     <div><span class="d6">d6. Inkline display</span></div>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <span class="d1">d1. Inkline display</span>
@@ -108,7 +108,7 @@ Make a paragraph stand out by adding `.lead`.
     Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
 </p>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <p class="lead">
@@ -133,7 +133,7 @@ Inkline provides basic styling for all common HTML5 inline text elements.
 <p><strong>This line rendered as bold text.</strong></p>
 <p><em>This line rendered as italicized text.</em></p>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html 
 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
@@ -181,7 +181,7 @@ You can easily realign text to components with text alignment classes.
     Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.
 </p>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <p class="_text-justify">
@@ -204,7 +204,7 @@ You can easily realign text to components with text alignment classes.
     This text is right aligned.
 </p>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <p class="_text-left">This text is left aligned.</p>
@@ -228,7 +228,7 @@ You can easily realign text to components with text alignment classes.
     This text should overflow the parent.
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <div class="_text-nowrap" style="width: 8rem;">
@@ -251,7 +251,7 @@ You can align, wrap or truncate text responsively for any given `xs`, `sm`, `md`
 <p class="_text-center-lg">This text is centered on large screens.</p>
 <p class="_text-center-xl">This text is centered on extra-large screens.</p>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <p class="_text-center-xs">This text is centered on extra-small screens.</p>
@@ -283,7 +283,7 @@ assistive technologies.
 
 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <abbr title="attribute">attr</abbr>
@@ -316,7 +316,7 @@ HTML as the quote.
   <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <blockquote class="blockquote">
@@ -367,7 +367,7 @@ When enumerating elements in no specific order, use an unordered list.
   <li>Eget porttitor lorem</li>
 </ul>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <ul>
@@ -416,7 +416,7 @@ When enumerating elements in a specific order, use an ordered list.
   <li>Eget porttitor lorem</li>
 </ol>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <ol>
@@ -465,7 +465,7 @@ This applies to immediate children list items only, meaning you will need to add
   <li>Eget porttitor lorem</li>
 </ul>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <ul class="list -unstyled">
@@ -501,7 +501,7 @@ Remove a list’s bullets and apply some light margin using the `-inline` list m
   <li>Nulla volutpat</li>
 </ul>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <ul class="list -inline">
@@ -544,7 +544,7 @@ Remove a list’s bullets and apply some light margin using the `-inline` list m
   </dd>
 </dl>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <dl class="row">

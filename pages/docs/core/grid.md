@@ -113,7 +113,7 @@ Create basic grid layout using columns.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -239,7 +239,7 @@ Grid offsets are used to move a column to the right without creating an empty co
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -387,7 +387,7 @@ Code-wise, the columns have a different order.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -523,7 +523,7 @@ The grid will automatically fit any number of auto sizing columns to a row.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -607,7 +607,7 @@ while you can place columns only inside a row.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -647,7 +647,7 @@ You can align columns horizontally to the start, center, or end of a row.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -670,7 +670,7 @@ You can align columns horizontally to the start, center, or end of a row.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -693,7 +693,7 @@ You can align columns horizontally to the start, center, or end of a row.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -723,7 +723,7 @@ You can align columns vertically to the top, middle or bottom of the row.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -750,7 +750,7 @@ You can align columns vertically to the top, middle or bottom of the row.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -777,7 +777,7 @@ You can align columns vertically to the top, middle or bottom of the row.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -811,7 +811,7 @@ Distribute the spacing between the columns of a row.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -842,7 +842,7 @@ Distribute the spacing between the columns of a row.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -879,7 +879,7 @@ Reorder columns using helper classes.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -914,7 +914,7 @@ Reorder columns using helper classes.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -949,7 +949,7 @@ Reorder columns using helper classes.
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -987,7 +987,7 @@ You can specify column counts for each breakpoint. Try to resize your browser wi
 </i-row>
 <i-row/>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container>
@@ -1020,7 +1020,7 @@ You can make the `<i-container>` component fill the whole width of the parent el
     </i-column>
 </i-row>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-container fluid>
@@ -1039,7 +1039,7 @@ You can make the `<i-container>` component fill the whole width of the parent el
 ### API
 
 <i-api-preview title="Container API" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -1061,7 +1061,7 @@ You can make the `<i-container>` component fill the whole width of the parent el
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -1080,7 +1080,7 @@ You can make the `<i-container>` component fill the whole width of the parent el
 </i-api-preview>
 
 <i-api-preview title="Row API" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -1172,7 +1172,7 @@ You can make the `<i-container>` component fill the whole width of the parent el
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -1192,7 +1192,7 @@ You can make the `<i-container>` component fill the whole width of the parent el
 
 
 <i-api-preview title="Column API" expanded>
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -1277,7 +1277,7 @@ You can make the `<i-container>` component fill the whole width of the parent el
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>

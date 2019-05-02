@@ -17,7 +17,7 @@ Wrap both the dropdown's trigger element (such as an `<i-button>`) and the `<i-d
     </i-dropdown-menu>
 </i-dropdown>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-dropdown>
@@ -88,7 +88,7 @@ Each of the positions also has a `-start` or `-end` variant (`top-start`, `top-e
 </i-dropdown>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-dropdown placement="top">
@@ -154,7 +154,7 @@ You're not required to use any dropdown-specific components inside of `<i-dropdo
     </i-dropdown-menu>
 </i-dropdown>&nbsp;
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-dropdown>
@@ -195,7 +195,7 @@ You can use the `trigger` property to trigger the dropdown on `hover` or `click`
     </i-dropdown-menu>
 </i-dropdown>&nbsp;
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-dropdown trigger="click">
@@ -266,7 +266,7 @@ The default size is set to `md`.
 </i-dropdown>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-dropdown>
@@ -338,7 +338,7 @@ Inkline includes two predefined dropdown styles, each serving its own semantic p
 </i-dropdown>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-dropdown>
@@ -396,7 +396,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
 </i-dropdown>
 </div>
 
-<template slot="html">
+<template v-slot:html>
 
 ~~~html
 <i-dropdown :hide-on-click="false">
@@ -426,7 +426,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
 ### API
 
 <i-api-preview title="Dropdown API" expanded markup="i-dropdown" link="https://github.com/inkline/inkline/tree/master/src/components/Dropdown">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -496,7 +496,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -512,7 +512,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
             </tbody>
         </table>
     </template>
-    <template slot="events">
+    <template v-slot:events>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -538,7 +538,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
 </i-api-preview>
 
 <i-api-preview title="Dropdown Menu API" markup="i-dropdown-menu" expanded link="https://github.com/inkline/inkline/tree/master/src/components/DropdownMenu">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -577,7 +577,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
@@ -596,7 +596,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
 </i-api-preview>
 
 <i-api-preview title="Dropdown Item API" markup="i-dropdown-item" expanded link="https://github.com/inkline/inkline/tree/master/src/components/DropdownItem">
-    <template slot="props">
+    <template v-slot:props>
         <table class="table -bordered">
             <thead>
                 <tr>
@@ -636,7 +636,7 @@ Inkline allows you to have virtually infinite recursive dropdown submenus struct
             </tbody>
         </table>
     </template>
-    <template slot="slots">
+    <template v-slot:slots>
         <table class="table -bordered _margin-bottom-0">
             <thead>
                 <tr>
