@@ -1,8 +1,11 @@
 <template lang="md" src="./rendering.md" />
 <script>
 import View from '@components/View';
+import TableProgress from '@components/TableProgress';
 import {title} from '@helpers/title';
-import { IForm, IFormGroup, IFormLabel, IInput, ITextarea, ICheckbox, ICheckboxGroup, IRadio, IRadioGroup } from '@inkline/inkline';
+import Vue from 'vue';
+
+Vue.component(TableProgress.name, TableProgress);
 
 export default {
     extends: View,
@@ -23,7 +26,18 @@ export default {
                 { id: '3', name: 'John Reid', address: { city: 'Timisoara', country: 'Romania' } },
                 { id: '4', name: 'Robert Smith', address: { city: 'London', country: 'England' } },
                 { id: '5', name: 'Lisa Hendricks', address: { city: 'Melbourne', country: 'Australia' } },
-            ]
+            ],
+            columnsComponent: [
+                { title: 'Name', key: 'name' },
+                { title: 'Progress', key: 'progress', component: 'table-progress' },
+            ],
+            rowsComponent: [
+                { id: '1', name: 'Alice Spring', progress: 82 },
+                { id: '2', name: 'Connie Tenamn', progress: 55 },
+                { id: '3', name: 'John Reid', progress: 70 },
+                { id: '4', name: 'Robert Smith', progress: 36 },
+                { id: '5', name: 'Lisa Hendricks', progress: 95 },
+            ],
         };
     }
 };
