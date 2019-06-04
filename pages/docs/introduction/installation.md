@@ -36,3 +36,19 @@ Vue.use(Inkline);
 
 **You're all set!** Start using the many components and utilities that Inkline has to offer.
 
+
+
+### Other
+
+Alternatively, Inkline is integrated with the following frameworks and environments:
+
+**Install using `Vue CLI`**
+
+~~~js
+vue create my-app
+cd my-app
+~~~
+
+~~~js
+vue add inkline
+~~~
